@@ -50,19 +50,26 @@ vec4 get_water_terrain()
 	vec2 prov_id = texture(provinces_texture_sampler, tex_coord).xy;
 
 	// Water effect taken from Vic2 fx/water/PixelShader_HoiWater_2_0
-	const float WRAP = 0.8f;
-	const float WaveModOne = 3.0f;
-	const float WaveModTwo = 5.0f;
-	const float SpecValueOne = 4.0f;
-	const float SpecValueTwo = 2.0f;
-	const float vWaterTransparens = 0.5f; //more transparance lets you see more of background
+	const float WRAP = 0.8;
+	const float WaveModOne = 3.0;
+	const float WaveModTwo = 4.0;
+	const float SpecValueOne = 8.0;
+	const float SpecValueTwo = 2.0;
+	const float vWaterTransparens = 1.0; //more transparance lets you see more of background
 	const float vColorMapFactor = 1.0f; //how much colormap
 
 	vec2 tex_coord = tex_coord;
 	vec2 corrected_coord = get_corrected_coords(tex_coord);
 	vec3 WorldColorColor = texture(colormap_water, corrected_coord).rgb;
+        WorldColorColor.b = WorldColorColor.r;
+        WorldColorColor.g *= 0.88f;
+        WorldColorColor.r *= 0.5f;
+	if (corrected_coord.y > 1)
+		WorldColorColor = vec3(0.14, 0.23, 0.36);
+	if (corrected_coord.y < 0)
+		WorldColorColor = vec3(0.20, 0.35, 0.43);
 	tex_coord *= 100.;
-	tex_coord = tex_coord * 0.25 + time * 0.001f;
+	tex_coord = tex_coord * 0.25 + time * 0.002;
 
 	const vec3 eyeDirection = vec3(0.0, 1.0, 1.0);
 	const vec3 lightDirection = vec3(0.0, 1.0, 1.0);
@@ -82,7 +89,10 @@ vec4 get_water_terrain()
 	coordD += vec2(0.02, -0.01) * time;
 	vec4 vBumpD = texture(water_normal, coordD);
 
-	vec3 vBumpTex = normalize(WaveModOne * (vBumpA.xyz + vBumpB.xyz + vBumpC.xyz + vBumpD.xyz) - WaveModTwo);
+	vec3 vBumpTex = normalize(WaveModOne * (vBumpA.xyz + vBumpB.xyz +
+		vBumpC.xyz + vBumpD.xyz) - WaveModTwo);
+
+
 	vec3 eyeDir = normalize(eyeDirection);
 	float NdotL = max(dot(eyeDir, (vBumpTex / 2)), 0);
 
@@ -91,12 +101,14 @@ vec4 get_water_terrain()
 
 	vec3 OutColor = NdotL * (WorldColorColor * vColorMapFactor);
 
-	vec3 reflVector = -reflect(lightDirection, vBumpTex);
-	float specular = dot(normalize(reflVector), eyeDir);
-	specular = clamp(specular, 0.f, 1.f);
+	vec3	reflVector = -reflect(lightDirection, vBumpTex);
+	float	specular = dot(normalize(reflVector), eyeDir);
+	specular = clamp(specular, 0.0, 1.0);
+
 	specular = pow(specular, SpecValueOne);
 	OutColor += (specular / SpecValueTwo);
-	OutColor.b *= 1.5f;
+	OutColor *= 1.5;
+
 	OutColor *= texture(province_fow, prov_id).rgb;
 
 	return vec4(OutColor, vWaterTransparens);
@@ -104,17 +116,16 @@ vec4 get_water_terrain()
 
 layout(index = 4) subroutine(get_water_class)
 vec4 get_water_political() {
-	vec4 color = vec4(0.76f, 0.71f, 0.64f, 1.f);
-	vec2 corrected_coord = get_corrected_coords(tex_coord);
-	vec3 water_color = texture(colormap_water, corrected_coord).rgb;
-	color.rgb = mix(color.rgb, water_color, 0.11f);
+	vec3 color = texture(colormap_water, get_corrected_coords(tex_coord)).rgb;
 
+	// The "foldable map" overlay effect
 	vec4 OverlayColor = texture(overlay, tex_coord * vec2(11., 11.*map_size.y/map_size.x));
 	vec4 OutColor;
 	OutColor.r = OverlayColor.r < .5 ? (2. * OverlayColor.r * color.r) : (1. - 2. * (1. - OverlayColor.r) * (1. - color.r));
 	OutColor.g = OverlayColor.r < .5 ? (2. * OverlayColor.g * color.g) : (1. - 2. * (1. - OverlayColor.g) * (1. - color.g));
 	OutColor.b = OverlayColor.b < .5 ? (2. * OverlayColor.b * color.b) : (1. - 2. * (1. - OverlayColor.b) * (1. - color.b));
 	OutColor.a = OverlayColor.a;
+
 	return OutColor;
 }
 
@@ -161,7 +172,7 @@ vec4 get_land_political_close() {
 
 	// Make the terrain a gray scale color
 	const vec3 GREYIFY = vec3( 0.212671, 0.715160, 0.072169 );
-	float grey = dot(terrain.rgb, GREYIFY);
+    float grey = dot( terrain.rgb, GREYIFY.rgb );
 	terrain.rgb = vec3(grey);
 
 	vec2 tex_coords = tex_coord;
@@ -187,13 +198,14 @@ vec4 get_land_political_close() {
 	vec3 political = clamp(mix(prov_color, stripe_color, stripeFactor) + vec4(prov_highlight), 0.0, 1.0).rgb;
 	political *= texture(province_fow, prov_id).rgb;
 	// Mix together the terrain and map mode color
-	terrain.rgb = mix(terrain.rgb, political, 0.77f);
+	terrain.rgb = mix(terrain.rgb, political, 0.5);
+	terrain.rgb *= 1.5f;
 	return terrain;
 }
 
 layout(index = 2) subroutine(get_land_class)
 vec4 get_terrain_political_far() {
-	vec4 terrain = get_terrain_mix();
+	vec4 terrain = get_terrain(vec2(0, 0), vec2(0));
 	float is_land = terrain.a;
 	vec2 prov_id = texture(provinces_texture_sampler, tex_coord).xy;
 
@@ -207,20 +219,22 @@ vec4 get_terrain_political_far() {
 	float stripeFactor = texture(stripes_texture, stripe_coord).a;
 	float prov_highlight = texture(province_highlight, prov_id).r * (abs(cos(time * 3.f)) + 1.f);
 	vec3 political = clamp(mix(prov_color, stripe_color, stripeFactor) + vec4(prov_highlight), 0.0, 1.0).rgb;
+	political = political - 0.7;
 
-	political = mix(political, vec3(terrain.r), 0.11f);
-
+	// The "foldable map" overlay effect
 	vec4 OverlayColor = texture(overlay, tex_coord * vec2(11., 11.*map_size.y/map_size.x));
 	vec4 OutColor;
 	OutColor.r = OverlayColor.r < .5 ? (2. * OverlayColor.r * political.r) : (1. - 2. * (1. - OverlayColor.r) * (1. - political.r));
 	OutColor.g = OverlayColor.r < .5 ? (2. * OverlayColor.g * political.g) : (1. - 2. * (1. - OverlayColor.g) * (1. - political.g));
 	OutColor.b = OverlayColor.b < .5 ? (2. * OverlayColor.b * political.b) : (1. - 2. * (1. - OverlayColor.b) * (1. - political.b));
-	//OutColor.rgb = vec3(1.54f) * OverlayColor.rgb * political.rgb;
-	//OutColor.a = OverlayColor.a;
-	OutColor.rgb *= OutColor.rgb * OutColor.rgb * vec3(1.f);
-	OutColor.rgb = mix(vec3(250.f/255.f, 247.f/255.f, 202.f/255.f), OutColor.rgb, 0.85f);
-	OutColor.rgb = mix(vec3(0.63f, 0.41f, 0.32f), OutColor.rgb, 0.75f);
+	OutColor.a = OverlayColor.a;
+
+	vec3 background = texture(colormap_political, get_corrected_coords(tex_coord)).rgb;
+	OutColor.rgb = mix(background, OutColor.rgb, 0.3);
+
+	OutColor.rgb *= 1.5;
 	OutColor.a = is_land;
+
 	return OutColor;
 }
 
@@ -232,7 +246,7 @@ void main() {
 	vec4 water = vec4(0.21, 0.38, 0.55, 1.0f);
 	water = get_water();
 
-	frag_color = pow(mix(water, terrain, is_land), vec4(0.8f));
+	frag_color = mix(water, terrain, is_land);
 	frag_color.a = 1;
 
 	frag_color = gamma_correct(frag_color);
