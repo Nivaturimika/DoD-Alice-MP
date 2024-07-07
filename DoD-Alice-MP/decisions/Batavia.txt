@@ -3,32 +3,28 @@ political_decisions = {
 # Old formable decisions are blocked unless under exceptional circumstances
 
 	form_batavia = { 
-	
-	potential = {
-		OR = { tag = LWE tag = ORA  tag = TRN tag = NFL }
-	}
-	
-	allow = { 
-		LWE = { all_core = { test = in_influence_of_this } }
-		TRN = { all_core = { test = in_influence_of_this } }
-		NFL = { all_core = { test = in_influence_of_this } }
-	}
-	
-	effect = { 
-	any_country = {
+		potential = {
+			OR = { tag = LWE tag = ORA  tag = TRN tag = NFL }
+		}
+		
+		allow = { 
+			LWE = { all_core = { test = in_influence_of_this } }
+			TRN = { all_core = { test = in_influence_of_this } }
+			NFL = { all_core = { test = in_influence_of_this } }
+		}
+		
+		effect = { 
+			any_country = {
 				limit = {
 					primary_culture = boer
-					OR = {
-						in_sphere = THIS
-						vassal_of = THIS
-					}
+					test = can_annex_to_this_sphere_criteria
 				}
 				annex_to = THIS
 			}
-	ENG_2087 = { add_core = BTV }
-	change_tag = BTV 
-	prestige = 20 
-	}
+			ENG_2087 = { add_core = BTV }
+			change_tag = BTV 
+			prestige = 20
+		}
 	}
 	
 	form_south_africa = {
@@ -36,22 +32,17 @@ political_decisions = {
 			part_of_sphere = no
 			NOT = { exists = SAF }
 			OR = { 
-			tag = GRQ
-			tag = ZUL
-			tag = BSH
-			tag = XHO
+				tag = GRQ
+				tag = ZUL
+				tag = BSH
+				tag = XHO
 			}
 		}
 		allow = {
 			civilized = yes
 			SAF = {
 				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-						}
-					}
+					test = in_influence_of_this
 				}
 			}
 		}
@@ -62,22 +53,17 @@ political_decisions = {
 				limit = {
 					OR = {
 						tag = TRN
-				tag = GRQ
-				tag = LWE
-				tag = NFL
-				tag = ZUL
+						tag = GRQ
+						tag = LWE
+						tag = NFL
+						tag = ZUL
 					}
-					in_sphere = THIS
-					NOT = {
-						tag = THIS
-					}
+					test = can_annex_to_this_sphere_criteria
 				}
 				annex_to = THIS
 			}
 			any_owned = {
-				limit = {
-					is_core = THIS
-				}
+				limit = { is_core = THIS }
 				add_core = SAF
 			}
 			BTV = { all_core = { add_core = SAF } }

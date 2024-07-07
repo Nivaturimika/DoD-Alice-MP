@@ -216,3 +216,10 @@ merchant_republic = {
 	appoint_ruling_party = no
 	flagType = republic
 }
+
+military_junta = {
+	fascist = yes
+	election = no
+	appoint_ruling_party = no
+	flagType = fascist
+}

@@ -79,13 +79,9 @@ country_event = {
 			duration = 720
 		}
 	    war = {
-		target = ILO
-			attacker_goal = {
-				casus_belli = conquest_any
-			}
-			defender_goal = {
-				casus_belli = conquest_any
-			   }
+			target = ILO
+			attacker_goal = { casus_belli = conquest_any }
+			defender_goal = { casus_belli = conquest_any }
 		 }
 	}
 }

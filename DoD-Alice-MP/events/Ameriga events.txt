@@ -961,8 +961,8 @@ country_event = {
 	}
 	
 	option = { 
-	name = "97087.A"
-	random_owned = {
+		name = "97087.A"
+		if = {
 			limit = {
 				2404 = { owned_by = THIS }
 				2549 = { empty = yes }
@@ -970,7 +970,7 @@ country_event = {
 			}
 			2549 = { secede_province = THIS }
 		}
-	random_owned = {
+		if = {
 			limit = {
 				2404 = { owned_by = THIS }
 				2407 = { empty = yes }
@@ -978,7 +978,7 @@ country_event = {
 			}
 			2407 = { secede_province = THIS }
 		}
-	random_owned = {
+		if = {
 			limit = {
 				2402 = { owned_by = THIS }
 				2404 = { empty = yes }
@@ -986,7 +986,7 @@ country_event = {
 			}
 			2404 = { secede_province = THIS }
 		}
-	random_owned = {
+		if = {
 			limit = {
 				2402 = { owned_by = THIS }
 				2403 = { empty = yes }

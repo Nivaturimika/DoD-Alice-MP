@@ -7,11 +7,11 @@ country_event = {
 	picture = "llaneros"
 
 	trigger = { 
-	tag = SAN 
-	has_global_flag = SAN_WAR_OVER
-	CAS = { exists = yes } 
-	QUI = { exists = yes has_country_flag = QUI_DICTATORSHIP } 
-	NOT = { has_global_flag = congress_granada } 
+		tag = SAN 
+		has_global_flag = SAN_WAR_OVER
+		CAS = { exists = yes } 
+		QUI = { exists = yes has_country_flag = QUI_DICTATORSHIP } 
+		NOT = { has_global_flag = congress_granada } 
 	}
 	
 	mean_time_to_happen = { 

@@ -9,9 +9,9 @@ country_event = { #### Choice of government
 	is_triggered_only = yes 
 
 	option = { 
-	name = "AMA34.A"
-	prestige = -10 
-	change_tag = ANT
+		name = "AMA34.A"
+		prestige = -10 
+		change_tag = ANT
 	}
 }
 
@@ -24,30 +24,26 @@ country_event = { #### Monarchy ?
 	fire_only_once = yes
 
 	trigger = { 
-	OR = { tag = AMA tag = ANT }
-	government = presidential_dictatorship 
-	has_global_flag = AMA_RESOLVED
+		OR = { tag = AMA tag = ANT }
+		government = presidential_dictatorship 
+		has_global_flag = AMA_RESOLVED
 	}
 	
 	mean_time_to_happen = { 
-	months = 5 
+		months = 5 
 	}
 	
 	option = { 
-	name = "98431.A"
-	clr_country_flag = newgov 
-	country_event = 98432
-	ai_chance = { 
-	factor = 50 } 
+		name = "98431.A"
+		clr_country_flag = newgov 
+		country_event = 98432
 	}
 	
 	option = { 
-	name = "98431.B"
-	any_pop = { 
-		limit = { 
-		culture = amazonian  
-			}
-		militancy = -2 
+		name = "98431.B"
+		any_pop = { 
+			limit = { culture = amazonian }
+			militancy = -2 
 		}
 	}
 }
@@ -151,9 +147,9 @@ country_event = { #### Ploumanao
 	}
 
 	option = { 
-	name = "AMA34.A" 
-	set_country_flag = breton_amazon
-	prestige = 1 
-	2402 = { change_province_name = "Ploumanao" } 
+		name = "AMA34.A" 
+		set_country_flag = breton_amazon
+		prestige = 1 
+		2402 = { change_province_name = "Ploumanao" } 
 	}
 }

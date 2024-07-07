@@ -3414,12 +3414,9 @@ country_event = {
 			}
 		}
 	}
-	
-	
 	fire_only_once = yes 
-	
 	option = {
-	name = "AREM44.A"
+		name = "AREM44.A"
 	    clr_country_flag = Govt_End
 		set_country_flag = ARE_NoLarp
 		plurality = 5

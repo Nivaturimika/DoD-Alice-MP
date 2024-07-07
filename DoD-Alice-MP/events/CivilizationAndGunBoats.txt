@@ -12,7 +12,6 @@ country_event = {
 	picture = "Western"
 	
 	trigger = {	
-		exists = yes
 		civilized = no
 		or = {
 			diplomatic_reform = interactive

@@ -143,28 +143,16 @@ political_decisions = {
 			ITA = { all_core = { add_core = ARI } }
 
 			change_tag = ARI
-			
-			random_owned = {
-			limit = {
-				owner = { NOT = { tag = PIE } NOT = { has_global_flag = AVIGNON_CRISIS } OR = { government = theocracy government = absolute_monarchy government = prussian_constitutionalism government = hms_government government = fascist_monarchy }  }
-			}
-			owner =  { country_event = { id = 110660 days = 1 } }
+			if = {
+				limit = {
+					NOT = { tag = PIE }
+					NOT = { has_global_flag = AVIGNON_CRISIS }
+					test = is_monarchy_government
+				}
+				country_event = { id = 110660 days = 1 }
 			}
 
-			any_country = { 
-				any_owned = { 
-					limit = {
-						is_core = THIS
-					}
-					remove_core = THIS
-				}
-			}
-			any_owned = { 
-				limit = {
-					is_core = THIS
-				}
-				remove_core = THIS
-			}
+			all_core = { remove_core = THIS }
 		}
 		ai_will_do = {
 			factor = 1

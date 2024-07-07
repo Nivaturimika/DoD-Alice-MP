@@ -3,13 +3,13 @@ political_decisions = {
 	cusco_capital = {
 		picture = Cuzco
 			potential = {
-				OR = { tag = INC AND = { tag = ARE has_country_flag = ARE_NoLARP } }
+				OR = { tag = INC tag = ARE }
 				capital = 2302
 				NOT = { has_global_flag = restored_Cuzco }
 			}
 			allow = {
+				owns = 2302
 				war = no
-				2302 = { owned_by = THIS }
 				mechanized_mining = 1 
 				romanticism = 1 
 				money = 25000
@@ -18,13 +18,13 @@ political_decisions = {
 				money = -25000
 				prestige = 10
 				set_global_flag = restored_Cuzco
-				2302 = { life_rating = 10 } 
 				2302 = {
+					life_rating = 10
 					add_province_modifier = { 
-					name = baby_boom
-					duration = 3600
+						name = baby_boom
+						duration = 3600
+					}
 				}
-			}
 			}
 			ai_will_do = {
 				factor = 1
@@ -332,7 +332,7 @@ political_decisions = {
 		high_pressure_steam_engine = 1 
 		interchangeable_parts = 1 
 		market_structure = 1
-		SA_6 = { owned_by = THIS } 
+		SA_6 = { owned_by = THIS }
 		CHL_2322 = { owned_by = THIS } 
 		INC_2308 = { owned_by = THIS }  
 	} 
@@ -1170,9 +1170,9 @@ political_decisions = {
 		}
 		
 		allow = { 
-		war = no 
-		INC = { exists = no }
-		2302 = { owned_by = THIS } 
+			war = no 
+			INC = { exists = no }
+			owns = 2302
 		}
 		
 		effect = { 
@@ -1206,17 +1206,22 @@ political_decisions = {
 		allow = { 
 			war = no 
 			INC = { exists = no }
-			2302 = { owned_by = THIS } 
+			owns = 2302
 		}
 		
 		effect = { 
-		change_tag = ARE 
-		ECU_2279 = { remove_core = INC add_core = QUI } 
-		PEU_2291 = { remove_core = INC add_core = QUI } 
-		PEU_2296 = { remove_core = INC add_core = QUI } 
-		PEU_2303 = { add_core = INC } 
-		INC = { all_core = { limit = { NOT = { is_core =  QOL } } add_core = ARE } }
-		QUI = { all_core = { add_core = ARE } }
+			change_tag = ARE 
+			ECU_2279 = { remove_core = INC add_core = THIS } 
+			PEU_2291 = { remove_core = INC add_core = THIS } 
+			PEU_2296 = { remove_core = INC add_core = THIS } 
+			PEU_2303 = { add_core = INC } 
+			INC = {
+				all_core = {
+					limit = { NOT = { is_core =  QOL } }
+					add_core = ARE
+				}
+			}
+			all_core = { add_core = ARE }
 		}
 	}
 	

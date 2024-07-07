@@ -19,13 +19,8 @@ country_event = {
 		name = "EVTOPTA333110"
 		war = {
 			target = AMT
-			attacker_goal = {
-				casus_belli = civil_war
-			}
-			
-			defender_goal = {
-				casus_belli = civil_war
-			}
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
 		}	
 	}
 }
