@@ -3,7 +3,7 @@ political_decisions = {
 		picture = italian_islands
 		potential = {
 			is_culture_group = italian
-			culture_union = { exists = no }
+			cultural_union = { exists = no }
 			war = no
 			NOT = { tag = ITC }
 			NOT = {

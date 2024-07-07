@@ -3,10 +3,10 @@ political_decisions = {
 		picture = Tatarstan
 		potential = {
 			is_culture_group = tatar_group
-			culture_union = { exists = no }
+			cultural_union = { exists = no }
 		}
 		allow = {
-			culture_union = { all_core = { test = in_influence_of_this } }
+			cultural_union = { all_core = { test = in_influence_of_this } }
 		}
 		effect = {
 			any_country = {
@@ -28,7 +28,7 @@ political_decisions = {
 	TAR_encourage_sedentarization = {
 		potential = {
 			is_culture_group = tatar_group
-			culture_union = { tag = THIS }
+			cultural_union = { tag = THIS }
 			NOT = { has_country_flag = TAR_urbanization }
 		}
 		allow = {
@@ -61,7 +61,7 @@ political_decisions = {
 	great_Saraj_capital = {
 		potential = {
 			is_culture_group = tatar_group
-			culture_union = { tag = THIS }
+			cultural_union = { tag = THIS }
 			has_country_flag = TAR_urbanization
 			NOT = { capital = 1039 }
 		}
@@ -80,7 +80,7 @@ political_decisions = {
 	expansion_TAR_tier1 = {
 		potential = {
 			is_culture_group = tatar_group
-			culture_union = { tag = THIS }
+			cultural_union = { tag = THIS }
 			#Not yet cored SIB and BAH
 			NOT = {
 				SIB = { all_core = { is_core = THIS } }
@@ -101,7 +101,7 @@ political_decisions = {
 	expansion_TAR_tier2 = {
 		potential = {
 			is_culture_group = tatar_group
-			culture_union = { tag = THIS }
+			cultural_union = { tag = THIS }
 			#Not yet cored NOG and ZHE
 			NOT = {
 				NOG = { all_core = { is_core = THIS } }
@@ -130,7 +130,7 @@ political_decisions = {
 	accept_kazakhs_TAR = {
 		potential = {
 			is_culture_group = tatar_group
-			culture_union = { tag = THIS }
+			cultural_union = { tag = THIS }
 			NOT = { is_accepted_culture = kazak }
 		}
 		allow = {
@@ -148,7 +148,7 @@ political_decisions = {
 	accept_siberian_TAR = {
 		potential = {
 			is_culture_group = tatar_group
-			culture_union = { tag = THIS }
+			cultural_union = { tag = THIS }
 			NOT = { is_accepted_culture = altaic }
 		}
 		allow = {
@@ -166,7 +166,7 @@ political_decisions = {
 	expansion_TAR_tier3 = {
 		potential = {
 			is_culture_group = tatar_group
-			culture_union = { tag = THIS }
+			cultural_union = { tag = THIS }
 			has_country_flag = tier_2
 			NOT = {
 				ZAZ = { all_core = { is_core = THIS } }

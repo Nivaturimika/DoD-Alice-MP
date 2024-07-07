@@ -24,7 +24,7 @@ political_decisions = {
 					NOV = { test = in_influence_of_this }
 				}
 			}
-			culture_union = { exists = no }
+			cultural_union = { exists = no }
 			NOT = { has_global_flag = a_russian_tragedy }
 		}
 
@@ -63,7 +63,7 @@ political_decisions = {
 			remove_country_modifier = war_justification_blocked
 			remove_country_modifier = neutrality
 			change_tag = culture
-			culture_union = {
+			cultural_union = {
 				THIS_bounce = {
 					add_accepted_culture = russian
 					add_accepted_culture = north_russian
@@ -2533,7 +2533,7 @@ political_decisions = {
 
 		potential = {
 			is_culture_group = east_slavic
-			culture_union = { tag = THIS }
+			cultural_union = { tag = THIS }
 			exists = PLC
 			has_global_flag = THE_WESTERN_BEAR
 			has_country_flag = panslavic_focus

@@ -4,14 +4,14 @@ political_decisions = {
 		potential = {
 			tag = NEJ
 			test = is_monarchy_government
-			culture_union = { exists = no }
+			cultural_union = { exists = no }
 			has_country_flag = is_protector
 		}
 		
 		allow = {
 			prestige >= 20
 			has_unclaimed_cores = no
-			culture_union = { all_core = { test = in_influence_of_this } }
+			cultural_union = { all_core = { test = in_influence_of_this } }
 			OR = {
 				AND = {
 					is_greater_power = yes
@@ -37,7 +37,7 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			change_tag = union
-			culture_union = { THIS_bounce = { 1177 = { add_core = THIS } } }
+			cultural_union = { THIS_bounce = { 1177 = { add_core = THIS } } }
 		}
 		ai_will_do = {
 			factor = 1
