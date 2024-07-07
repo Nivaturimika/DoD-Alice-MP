@@ -1,0 +1,366 @@
+political_decisions = {
+	buy_durres = {
+		picture = Greece_VEN
+		potential = {
+			tag = VEN
+			ALB = { exists = yes }
+			NOT = { has_country_flag = buy_durres }  
+			ALB = { owns = 851 }
+		}
+		
+		allow = {
+			ALB = { in_sphere = THIS }
+			war = no
+			is_greater_power = yes
+			state_n_government = 1
+			money = 175000
+		}
+		
+		effect = {
+			ALB = {
+				###Sale of Dürres
+				lambda_country_event = { # Triggered event for buying Dürres
+					title = "500000.T"
+					desc = "500000.D"
+					major = yes #<- Correct
+					option = { # Agree to sell
+						name = "500000.A"
+						prestige = -20
+						any_pop = { militancy = 2 }
+						FROM = {
+							lambda_country_event = { # Venice gains Dürres
+								title = "500001.T"
+								desc = "500001.D"
+								option = { 
+									name = "500001.A"
+									prestige = 10
+									851 = {
+										secede_province = THIS
+										add_core = THIS
+									}
+									money = -175000
+									FROM = { money = 175000 }
+									set_country_flag = bought_durres
+								}
+							}
+						}
+						ai_chance = {  factor = 15 }
+					}
+					option = { # Refuse to sell
+						name = "500000.B"
+						prestige = 10
+						any_pop = { militancy = -1 }
+						FROM = {
+							lambda_country_event = { # Venice is informed of Albanian refusal
+								title = "500002.T"
+								desc = "500002.D"
+								option = { # Declare war
+									name = "500002.A"
+									prestige = 5
+									set_country_flag = war_for_durres
+									war = {
+										target = FROM
+										attacker_goal = { casus_belli = make_puppet }
+									}		
+								}
+								option = { # Not worth it
+									name = "500002.B"
+									prestige = -25
+									any_pop = { militancy = 2 }
+								}
+							}
+						}
+						ai_chance = {  factor = 85 }
+					}
+				}
+			}
+			set_country_flag = buy_durres
+		}
+	}
+	
+	buy_kotor = {
+		picture = Greece_VEN
+		potential = {
+			tag = VEN
+			MON = { owns = 2582 }
+			NOT = { has_country_flag = buy_kotor }  
+		}
+		
+		allow = {
+			war = no
+			is_greater_power = yes
+			ideological_thought = 1
+			money = 125000
+		}
+		
+		effect = {
+			MON = {
+				###Sale of Kotor, FROM=VEN,THIS=MON
+				lambda_country_event = { # Triggered event for buying Kotor
+					title = "500004.T"
+					desc = "500004.D"
+					major = yes
+					option = { # Agree to sell
+						name = "500004.A"
+						prestige = -20
+						any_pop = { militancy = 2 }
+						FROM = {
+							# Venice gains Kotor, FROM=MON,THIS=(FROM=VEN)
+							lambda_country_event = {
+								id = 500005
+								title = "500005.T"
+								desc = "500005.D"
+								option = { 
+									name = "500005.A"
+									prestige = 5
+									2582 = {
+										secede_province = THIS
+										add_core = THIS
+									}
+									money = -125000
+									FROM = { money = 125000 }
+								}
+							}
+						}
+						ai_chance = { factor = 15 }
+					}
+					option = { # Refuse to sell
+						name = "500004.B"
+						prestige = 10
+						any_pop = { militancy = -1 }
+						FROM = {
+							# Venice is informed of Montenegran refusal, FROM=MON,THIS=(FROM=VEN)
+							lambda_country_event = {
+								title = "500006.T"
+								desc = "500006.D"
+								option = { # Declare war
+									name = "500006.A"
+									prestige = 2.5
+									set_country_flag = war_for_kotor
+									war = {
+										target = FROM
+										attacker_goal = { casus_belli = make_puppet }
+									}		
+								}
+								option = { # Not worth it
+									name = "500006.B"
+									prestige_factor = -0.75
+									any_pop = { militancy = 2 }
+								}
+							}
+						}
+						ai_chance = { factor = 85 }
+					}
+				}
+			}
+			set_country_flag = buy_kotor
+		}
+	}
+	
+	claim_greater_greece_dominion = {
+		picture = unite_with_greece
+		potential = {
+			tag = VEN
+			GRE = { vassal_of = THIS }
+			NOT = { has_country_flag = VEN_accepts }
+			NOT = { has_country_flag = council_opened }		
+			NOT = { has_country_flag = claim_greater_greece }  
+			NOT = { has_country_flag = claim_balkans }
+			has_country_flag = venice_greek_autonomy
+		}
+		
+		allow = {
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			has_country_flag = venice_greek_autonomy
+		}
+		
+		effect = {
+			TUR_806 = { add_core = GRE }
+			TUR_859 = { add_core = GRE }
+			860 = { add_core = GRE }
+			860 = { add_core = VEN }
+			862 = { add_core = GRE }
+			863 = { add_core = GRE }
+			864 = { add_core = GRE }
+			865 = { add_core = GRE }
+			869 = { add_core = GRE }
+			870 = { add_core = GRE }
+			872 = { add_core = GRE }
+			880 = { add_core = GRE }
+			882 = { add_core = GRE }
+			853 = { add_core = GRE }
+			set_country_flag = claim_greater_greece
+			add_casus_belli = {
+				target = TUR
+				type = liberate_country
+				months = 24
+			}
+			badboy = 10
+		}
+	}
+	
+	claim_greater_greece_intergration = {
+		picture = unite_with_greece
+		potential = {
+			tag = VEN
+			has_country_flag = venice_greek_intergration
+			NOT = { has_country_flag = claim_greater_greece }  
+			NOT = { has_country_flag = claim_balkans }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			TUR_806 = { add_core = GRE }
+			TUR_859 = { add_core = GRE }
+			860 = { add_core = GRE }
+			862 = { add_core = GRE }
+			863 = { add_core = GRE }
+			864 = { add_core = GRE }
+			865 = { add_core = GRE }
+			869 = { add_core = GRE }
+			870 = { add_core = GRE }
+			872 = { add_core = GRE }
+			880 = { add_core = GRE }
+			882 = { add_core = GRE }
+			853 = { add_core = GRE }
+			TUR_806 = { add_core = VEN }
+			TUR_859 = { add_core = VEN }
+			860 = { add_core = VEN }
+			862 = { add_core = VEN }
+			863 = { add_core = VEN }
+			864 = { add_core = VEN }
+			865 = { add_core = VEN }
+			869 = { add_core = VEN }
+			870 = { add_core = VEN }
+			872 = { add_core = VEN }
+			880 = { add_core = VEN }
+			882 = { add_core = VEN }
+			853 = { add_core = VEN }
+			set_country_flag = claim_greater_greece
+			badboy = 10
+		}
+	}
+	
+	take_epirus_dominion = {
+		picture = unite_with_greece
+		potential = {
+			tag = VEN
+			has_country_flag = claim_greater_greece
+			has_country_flag = venice_greek_autonomy
+			NOT = { GRE = { owns = 861 } }
+		}
+		allow = {
+			war = no
+			is_greater_power = yes
+			ALB = { test = can_annex_to_this_sphere_criteria }
+		}
+		effect = {
+			861 = { secede_province = GRE }
+		}
+	}
+	
+	take_epirus_intergration = {
+		picture = unite_with_greece
+		potential = {
+			tag = VEN
+			has_country_flag = claim_greater_greece
+			has_country_flag = venice_greek_autonomy
+			NOT = { THIS = { owns = 861 } }
+		}
+		allow = {
+			war = no
+			is_greater_power = yes
+			ALB = { test = can_annex_to_this_sphere_criteria }
+		}
+		effect = {
+			861 = { secede_province = THIS }
+		}
+	}
+	
+	deal_with_macedonia = {
+	
+		picture = restore_macedonia
+	
+		potential = {
+			tag = VEN
+			has_country_flag = claim_greater_greece
+		}
+		
+		allow = {
+			war = no
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			owns = 860
+			MAC = { test = can_annex_to_this_sphere_criteria }
+		}
+		
+		effect = {
+			add_casus_belli = {
+				target = MAC
+				type = make_puppet
+				months = 24
+			}
+			badboy = 5
+			set_global_flag = intergrate_macedonia_into_greece
+		}
+	}
+	
+	intergrate_greece = {
+		picture = Greece_VEN
+		potential = {
+			tag = VEN
+			has_country_flag = claim_greater_greece
+			has_country_flag = venice_greek_autonomy
+			NOT = { has_country_flag = intergrate_greece }
+		}
+		
+		allow = {
+			war = no
+			is_greater_power = yes
+			revolution_n_counterrevolution = 1
+			GRE = {
+				test = can_annex_to_this_sphere_criteria
+				all_core = { test = in_influence_of_this }
+			}
+		}
+		
+		effect = {
+			GRE = { add_accepted_culture = venetian }
+			inherit = GRE
+			badboy = 5
+			set_country_flag = intergrate_greece
+			add_accepted_culture = greek
+		}
+	}
+	
+	venetian_legation_alexandria = {
+		picture = repubblica_di_venezia
+		potential = {
+			tag = VEN
+			EGY = { civilized = no }
+		}
+		
+		allow = {
+			war = no
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			EGY = { test = can_annex_to_this_sphere_criteria }
+		}
+		
+		effect = {
+			1751 = {
+				add_province_modifier = {
+					name = legation_quarter
+					duration = 3650
+				}
+			}
+			relation = { who = EGY value = 50 }
+			set_global_flag = legation_quarter_alexandria
+		}
+	}
+}

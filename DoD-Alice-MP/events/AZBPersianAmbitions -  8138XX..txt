@@ -1,0 +1,54 @@
+country_event = {
+		
+	id = 813800	
+	title = "813800.T"
+	desc = "813800.D"
+	picture = "russian_claims_on_holy_land"
+	fire_only_once = yes
+	trigger = {
+		tag = AZB
+		NOT = { has_country_flag = AZBtoTCA }
+		OR = {
+			NOT = { any_owned_province = { is_core = PER } }
+			exists = PER
+		}
+	}
+	mean_time_to_happen = {
+		days = 7
+	}	
+	option = {
+		name = "813800.A"
+		prestige = -10
+		GEO = { all_core = { remove_core = THIS } }
+		ARM = { all_core = { remove_core = THIS } }
+		RUS_1102 = { add_core = THIS }
+		set_country_flag = AZBtoTCA
+	}
+}
+
+country_event = {
+		
+	id = 813801	
+	title = "813801.T"
+	desc = "813801.D"
+	picture = "Ottoman"
+	trigger = {
+		tag = AZB
+		has_country_flag = AZBTreza
+		owns = 887
+		war = no
+		NOT = { has_country_flag = AZBTrezabond }		
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+		
+	option = {
+		name = "813801.A"
+		prestige = 10
+		clr_country_flag = AZBTreza
+		set_country_flag = AZBTrezabond
+		TUR_884 = { add_core = THIS add_core = ARM }
+	}
+}

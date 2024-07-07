@@ -1,0 +1,16 @@
+alice_mmapmode_tooltip_34;Player: $x$ 
+alice_mmapmode_tooltip_34_you_sp;This is you! 
+alice_mmapmode_tooltip_34_you;Player: $x$ (This is you!) 
+alice_mmapmode_tooltip_34_ai;AI controlled
+alice_mmapmode_tooltip_35;Life needs satisfied: $x$
+alice_mmapmode_tooltip_36;Everyday needs satisfied: $x$
+alice_mmapmode_tooltip_37;Luxury needs satisfied: $x$
+alice_mmapmode_tooltip_38;Total officers: $x$ ($y$ of population, $value$ is optimal)
+alice_mmapmode_tooltip_39;Clerks-to-craftsmen-ratio: $fraction$ ($x$/$y$), $value$ is optimal
+alice_mmapmode_tooltip_40;Life rating: $x$
+alice_mmapmode_tooltip_41;Crime: $x$
+alice_mmapmode_tooltip_42_1;Has land rally point?
+alice_mmapmode_tooltip_42_2;Has naval rally point?
+alice_mmapmode_tooltip_43;Workforce distrobution:
+alice_mmapmode_tooltip_44;Mobilized regiments from this province: $x$ (out of $y$ possible)
+alice_mmapmode_tooltip_44_2;No possible regiments

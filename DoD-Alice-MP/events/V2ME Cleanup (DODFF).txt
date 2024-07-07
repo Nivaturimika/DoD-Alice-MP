@@ -1,0 +1,1083 @@
+#
+# V2ME Cleanup 1.0.3 by Bob Bobington and Dr, configured for DoDFF by DeNuke
+#
+# Features:
+#
+#	-Nearly invisible cleanup tag
+#	-Zero performance degradation
+#	-Immersion will not be ruined, player interaction with cleanup is kept to an absolute minimum
+#	-Multiple stability improvements and bug fixes
+#	-Easy to customize for new content
+#	-Handles backend tasks (i.e. setting govflags, invention flags, etc) on a daily, monthly, or yearly tick, as needed
+#	-Handles vassal interactions with one decision instead of hundreds
+#
+# Notable bugs addressed:
+#
+#	-Ghost units and ships of non-existing nations cleaned monthly
+#	-Prevent uncivs from gaining colonial states/capitals incorrectly
+#	-Prevent countries with slavery outlawed from having bugged slave states
+#	-Prevents existing countries from having non-existing overlords
+#	-Prevents existing countries from having non-existing vassals (disabled by default, this is intended in some mods)
+#
+# Upcoming features (TBA):
+#	-Permanent fix to craftsmen exploit/bug, without player interaction
+#	-Dynamically adressing the liquidity crisis, effectively
+#
+
+
+country_event = {
+	id = 477877787
+	title = "AI: Daily Cleanup Check"
+	desc = "AI: Daily Cleanup Check"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Checking..."
+
+		any_country = {
+            limit = {
+				exists = yes
+                civilized = yes
+				has_country_modifier = western_presence
+            }
+            remove_country_modifier = western_presence
+        }
+
+		any_country = {
+            limit = {
+				exists = yes
+				is_vassal = no
+				has_country_modifier = autonomous_dependency_modifier
+            }
+            remove_country_modifier = autonomous_dependency_modifier
+        }
+
+		#remove sanctions
+		any_country = {
+			limit = {
+				is_disarmed = yes
+				has_recently_lost_war = yes
+				OR = {
+					has_country_modifier = kinda_bad_badboy
+					has_country_modifier = bad_badboy
+				}
+				war = no
+			}
+			remove_country_modifier = kinda_bad_badboy
+            remove_country_modifier = bad_badboy
+		}
+
+		#abolishing serfdom
+		any_country = {
+            limit = {
+				exists = yes
+                any_owned_province = { has_pop_type = serfs }
+                NOT = { debt_law = serfdom }
+            }
+            any_owned = {
+                limit = {
+                    has_pop_type = serfs
+                    has_pop_type = labourers
+                }
+                any_pop = { limit = { type = serfs } pop_type = labourers money = 1000 }
+            }
+            any_owned = {
+                limit = {
+                    has_pop_type = serfs
+                    has_pop_type = farmers
+                }
+                any_pop = { limit = { type = serfs } pop_type = farmers money = 1000 }
+            }
+            any_owned = {
+                limit = {
+                    has_pop_type = serfs
+                    NOT = { has_pop_type = farmers has_pop_type = labourers }
+                }
+                any_pop = { limit = { type = serfs } pop_type = farmers money = 1000 }
+            }
+        }
+
+		#updating missing flags
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					has_country_flag = existing_country
+				}
+			}
+			set_country_flag = existing_country
+			country_event = 60160
+		}
+
+		any_country = {
+			limit = {
+				exists = no
+				has_country_flag = existing_country
+			}
+			clr_country_flag = existing_country
+		}
+
+		#pay owed steamers
+		any_country = {
+			limit = {
+				exists = yes
+				check_variable = { which = owed_ammunition value = 5 }
+				ammunition = 5
+			}
+			ammunition = -5
+			change_variable = { which = owed_ammunition value = -5 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				check_variable = { which = owed_small_arms value = 5 }
+				small_arms = 5
+			}
+			small_arms = -5
+			change_variable = { which = owed_small_arms value = -5 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				check_variable = { which = owed_steamers value = 5 }
+				steamer_convoy = 5
+			}
+			steamer_convoy = -5
+			change_variable = { which = owed_steamers value = -5 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				check_variable = { which = owed_artillery value = 5 }
+				artillery = 5
+			}
+			artillery = -5
+			change_variable = { which = owed_artillery value = -5 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				check_variable = { which = owed_canned_food value = 5 }
+				canned_food = 5
+			}
+			canned_food = -5
+			change_variable = { which = owed_canned_food value = -5 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				check_variable = { which = owed_cash_money value = 1 }
+				money = 10000
+			}
+			money = -10000
+			change_variable = { which = owed_cash_money value = -10 }
+		}
+
+		#release colonies that weren't annexed (soon to be deprecated, remove later)
+		any_country = {
+			limit = {
+				exists = yes
+				is_vassal = yes
+				has_country_flag = colony_to_be_annexed_flag
+				NOT = { has_country_modifier = colony_to_be_annexed }
+				war = no
+			}
+			clr_country_flag = colony_to_be_annexed_flag
+			lambda_country_event = {
+				title = "Freedom!"
+				desc = "We have acquired independence!"
+				option = {
+					name = "Nice."
+					overlord = { diplomatic_influence = { who = THIS value = -200 } release_vassal = THIS }
+				}
+			}
+			neutrality = yes
+		}
+
+		#new round of dismantlement (soon to be deprecated, remove later)
+		any_country = {
+			limit = {
+				exists = yes
+				is_vassal = yes
+				has_country_modifier = colony_to_be_annexed
+				ai = yes
+				OR = {
+					any_greater_power = { has_country_modifier = dismantling_country }
+					any_neighbor_country = { has_country_modifier = dismantling_country }
+				}
+				war = no
+				NOT = { has_country_modifier = considering_colonial_offer }
+			}
+			overlord = {
+				random_list = {
+                	17 = { country_event = 70005 } }
+                	17 = { country_event = { id = 70005 days = 1 } }
+                	17 = { country_event = { id = 70005 days = 2 } }
+                	17 = { country_event = { id = 70005 days = 3 } }
+                	17 = { country_event = { id = 70005 days = 4 } }
+                	15 = { country_event = { id = 70005 days = 5 } }
+            	}
+			}
+		}
+		CLN = { country_event = { id = 477877787 days = 1 } }
+	}
+}
+
+country_event = {
+	id = 477877790
+	title = "AI: Monthly Cleanup Check"
+	desc = "AI: Monthly Cleanup Check"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Checking..."
+
+		#clean up crisis tension
+		any_country = {
+            limit = {
+				exists = yes
+                OR = {
+                    NOT = { test = revolution_n_counter_researched }
+                    is_vassal = yes
+                }
+            }
+            any_state  = { flashpoint_tension = -100 }
+        }
+		#silver mine modifiers
+		any_country = {
+			limit = {
+				any_owned_province = {
+					OR = {
+						province_id = 2158
+						province_id = 2322
+						province_id = 2323
+						province_id = 2296
+						province_id = 312
+						province_id = 2283
+						province_id = 2294
+						province_id = 2293
+						province_id = 2299
+						province_id = 2304
+					}
+					trade_goods = precious_metal
+					NOT = { has_province_modifier = silver_mine }
+				}
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 2158
+						province_id = 2322
+						province_id = 2323
+						province_id = 2296
+						province_id = 312
+						province_id = 2283
+						province_id = 2294
+						province_id = 2293
+						province_id = 2299
+						province_id = 2304
+					}
+					trade_goods = precious_metal
+					NOT = { has_province_modifier = silver_mine }
+				}
+				add_province_modifier = { name = silver_mine duration = -1 }
+			}
+		}
+
+		any_country = {
+			limit = {
+				any_owned_province = {
+					has_province_modifier = silver_mine
+			    }
+			}
+			any_owned = {
+				limit = {
+				    has_province_modifier = silver_mine
+					NOT = { trade_goods = precious_metal }
+				}
+				remove_province_modifier = silver_mine
+			}
+		}
+
+		#stop vassal payments
+		any_country = {
+			limit = {
+				exists = yes
+				is_vassal = yes
+				overlord = { has_country_flag = vassals_dont_need_to_pay }
+			}
+			set_country_flag = exempt_from_vassal_contribution
+		}
+
+		#cleanup colonial cores
+		any_country = {
+			limit = {
+				civilized = yes
+				NOT = { capital_scope = { continent = africa } }
+			}
+			any_owned = {
+				limit = {
+					is_core = NGR
+					OR = {
+						is_core = SOK
+						is_core = ILO
+						is_core = TOU
+						is_core = OYO
+						is_core = KNO
+						is_core = ADW
+						is_core = NRI
+						is_core = KAN
+					}
+				}
+				remove_core = SOK
+				remove_core = ILO
+				remove_core = TOU
+				remove_core = OYO
+				remove_core = KNO
+				remove_core = ADW
+				remove_core = NRI
+				remove_core = KAN
+			}
+			any_owned = {
+				limit = {
+					is_core = CMR
+					OR = {
+						is_core = SOK
+						is_core = ADW
+						is_core = NRI
+						is_core = KAN
+					}
+				}
+				remove_core = SOK
+				remove_core = ADW
+				remove_core = NRI
+				remove_core = KAN
+			}
+			any_owned = {
+				limit = {
+					is_core = CAR
+					OR = {
+						is_core = KAN
+						is_core = ADW
+						is_core = WTT
+					}
+				}
+				remove_core = KAN
+				remove_core = ADW
+				remove_core = WTT
+			}
+			any_owned = {
+				limit = {
+					is_core = IVC
+					OR = {
+						is_core = ASH
+						is_core = WTT
+					}
+				}
+				remove_core = ASH
+				remove_core = MOS
+				remove_core = WTT
+			}
+			any_owned = {
+				limit = {
+					is_core = GNE
+					OR = {
+						is_core = FJA
+						is_core = WTT
+					}
+				}
+				remove_core = FJA
+				remove_core = WTT
+			}
+			any_owned = {
+				limit = {
+					is_core = SNG
+					OR = {
+						is_core = FJA
+						is_core = TOU
+					}
+				}
+				remove_core = FJA
+				remove_core = TOU
+			}
+			any_owned = {
+				limit = {
+					is_core = NIG
+					OR = {
+						is_core = ILO
+						is_core = TOU
+						is_core = KNO
+						is_core = KAN
+						is_core = SOK
+					}
+				}
+				remove_core = SOK
+				remove_core = ILO
+				remove_core = TOU
+				remove_core = KNO
+				remove_core = KAN
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = CNG
+						is_core = CGO
+					}
+					OR = {
+						is_core = LOA
+						is_core = KON
+					}
+				}
+				remove_core = LOA
+				remove_core = KON
+			}
+			any_owned = {
+				limit = {
+					is_core = MAL
+					OR = {
+						is_core = TOU
+						is_core = FJA
+						is_core = ILO
+					}
+				}
+				remove_core = TOU
+				remove_core = FJA
+				remove_core = MOS
+				remove_core = ILO
+
+			}
+			any_owned = {
+				limit = {
+					is_core = GMB
+					OR = {
+						is_core = FJA
+						is_core = TOU
+					}
+				}
+				remove_core = FJA
+				remove_core = TOU
+			}
+			any_owned = {
+				limit = {
+					is_core = MOZ
+					OR = {
+						is_core = ZUL
+						is_core = SHO
+					}
+				}
+				remove_core = ZUL
+				remove_core = SHO
+			}
+			any_owned = {
+				limit = {
+					is_core = ALD
+					OR = {
+						is_core = ALJ
+						is_core = KBL
+					}
+				}
+				remove_core = KBL
+				remove_core = ALJ
+			}
+			any_owned = {
+				limit = {
+					is_core = TRA
+					OR = {
+						is_core = MYS
+						is_core = MDR
+						is_core = ADR
+						is_core = HYD
+					}
+				}
+				remove_core = MYS
+				remove_core = MDR
+				remove_core = ADR
+				remove_core = HYD
+			}
+			any_owned = {
+				limit = {
+					is_core = PAK
+					OR = {
+						is_core = SIN
+						is_core = KAS
+						is_core = JOD
+						is_core = MEW
+						is_core = JAI
+						is_core = JAS
+						is_core = BIK
+					}
+				}
+				remove_core = SIN
+				remove_core = KAS
+				remove_core = JOD
+				remove_core = MEW
+				remove_core = JAI
+				remove_core = JAS
+				remove_core = BIK
+			}
+			any_owned = {
+				limit = {
+					is_core = MUG
+					OR = {
+						is_core = KAS
+						is_core = BUN
+						is_core = AWA
+						is_core = BIH
+						is_core = GWA
+						is_core = ORI
+						is_core = NAG
+					}
+				}
+				remove_core = KAS
+				remove_core = BUN
+				remove_core = AWA
+				remove_core = BIH
+				remove_core = GWA
+				remove_core = ORI
+				remove_core = NAG
+			}
+			any_owned = {
+				limit = {
+					is_core = RAJ
+					OR = {
+						is_core = JOD
+						is_core = MEW
+						is_core = JAI
+						is_core = JAS
+						is_core = BIK
+						is_core = BER
+					}
+				}
+				remove_core = JOD
+				remove_core = MEW
+				remove_core = JAI
+				remove_core = JAS
+				remove_core = BIK
+				remove_core = BER
+			}
+		}
+
+		#fix for bad modifier
+		any_country = {
+			limit = {
+				ai = no
+				war = no
+				has_country_modifier = disable_conquest_cb
+			}
+			remove_country_modifier = disable_conquest_cb
+		}
+
+		#Remove call_allies flag
+		any_country = {
+			limit = {
+				ai = yes
+				war = no
+				has_country_flag = calling_all_allies
+			}
+			clr_country_flag = calling_all_allies
+		}
+
+		#cleanup unciv colonies
+		any_country = {
+			limit = {
+				civilized = no
+				any_state = { is_colonial = yes }
+				NOT = { UTI = { exists = yes } }
+			}
+			any_state = {
+				limit = { is_colonial = yes }
+				any_owned = { add_core = UTI }
+			}
+			any_owned = {
+				limit = { is_core = UTI }
+				secede_province = THIS
+			}
+			THIS = {
+				any_owned = {
+					limit = { is_core = UTI }
+					secede_province = UTI
+				}
+				create_vassal = UTI
+			}
+			inherit = UTI
+			any_owned = {
+				limit = { is_core = UTI }
+				remove_core = UTI
+			}
+		}
+
+		#cleanup bugged slave states
+		any_country = {
+			limit = {
+				any_state = { is_slave = yes }
+				slavery = no_slavery
+			}
+			any_state = {
+				limit = { is_slave = yes }
+				is_slave = no
+			}
+		}
+
+		# Levys are dead jim
+		any_country = {
+			limit = {
+			    NOT = { has_country_flag = levys_abolished }
+				NOT = { recruitment_reform = peasant_levys }
+			}
+			set_country_flag = levys_abolished
+		}
+
+		# Delete Illegal Soldier Pops
+		any_country = {
+			limit = {
+				OR = {
+					recruitment_reform = peasant_levys
+					recruitment_reform = restricted_recruitment
+				}
+			}
+            any_owned = {
+				limit = {
+					has_pop_type = soldiers
+					has_pop_type = labourers
+					is_colonial = no
+				}
+				soldiers = {
+					limit = { NOT = { is_accepted_culture = yes is_primary_culture = yes } }
+					militancy = 1 pop_type = labourers
+				}
+            }
+            any_owned = {
+				limit = {
+					has_pop_type = soldiers
+					has_pop_type = farmers
+					is_colonial = no
+				}
+				soldiers = {
+					limit = { NOT = { is_accepted_culture = yes is_primary_culture = yes } }
+					militancy = 1 pop_type = farmers
+				}
+            }
+            any_owned = {
+				limit = {
+					has_pop_type = soldiers
+					NOT = { has_pop_type = farmers has_pop_type = labourers }
+					is_colonial = no
+				}
+				soldiers = {
+					limit = { NOT = { is_accepted_culture = yes is_primary_culture = yes } }
+					militancy = 1 pop_type = farmers
+				}
+			}
+		}
+		#If Tuscan global flag has not been cleared and its 1850 then clear it
+		any_country = {
+			limit = {
+				has_global_flag = TUS_carbonari
+				year = 1850
+			}
+			clr_global_flag = TUS_carbonari
+		}
+		CLN = { country_event = { id = 477877790 days = 30 } }
+	}
+}
+
+country_event = {
+	id = 477877791
+	title = "AI: Yearly Cleanup Check"
+	desc = "AI: Yearly Cleanup Check"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Checking..."
+
+		# Colonial Mait - Pre-Post Colonial
+		any_country = {
+			any_owned = {
+				limit = { is_colonial = yes }
+				add_province_modifier = {
+					name = colonial_province
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					owner = { invention = colonial_exploitation }
+					is_colonial = yes
+				}
+				add_province_modifier = {
+					name = colonial_exploitation_tech_effect
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = { is_colonial = no }
+				remove_province_modifier = colonial_province
+				remove_province_modifier = colonial_exploitation_tech_effect
+			}
+		}
+		any_country = {
+			if = {
+				limit = { ai = yes }
+				add_country_modifier = { name = ai_nation_boost_income duration = -1 }
+			} else = {
+				remove_country_modifier = ai_nation_boost_income
+			}
+		}
+
+		# Colonial Mait - Post Colonial
+
+		any_country = {
+		    limit = {
+			   ai = yes
+			   exists = yes
+			   has_global_flag = post_colonial_era_fired
+			}
+			any_country = {
+				any_owned = {
+					remove_province_modifier = colonial_province
+				}
+			}
+		    any_country = {
+			   limit = {
+				   NOT = { capital_scope = { continent = africa } }
+			   }
+			   any_owned = {
+				   limit = {
+					   is_colonial = yes
+					   continent = africa
+				   }
+				   add_province_modifier = {
+					  name = colonial_dawn
+					  duration = -1
+				   }
+			   }
+		   }
+		   any_country = {
+			   limit = {
+				   NOT = { capital_scope = { continent = asia } }
+			   }
+			   any_owned = {
+				   limit = {
+					   is_colonial = yes
+					   continent = asia
+					   NOT = { is_core = RUS }
+				   }
+				   add_province_modifier = {
+					   name = colonial_dawn
+					   duration = -1
+				   }
+			   }
+		   }
+		   any_country = {
+			   limit = {
+				   is_vassal = yes
+				   capital_scope = { continent = africa }
+			   }
+			   any_owned = {
+			   	   limit = {
+					   continent = africa
+				   }
+				   add_province_modifier = {
+					   name = colonial_dawn
+					   duration = -1
+				   }
+			   }
+		   }
+		   any_country = {
+		 	   limit = {
+				   is_vassal = yes
+				   capital_scope = { continent = asia }
+			   }
+			   any_owned = {
+				    limit = {
+					   continent = asia
+					   NOT = { is_core = RUS }
+				   }
+				   add_province_modifier = {
+					   name = colonial_dawn
+					   duration = -1
+				   }
+			   }
+		   }
+		   any_country = {
+			   any_owned = {
+				   limit = {
+					   owner = { invention = colonial_exploitation }
+					   is_colonial = yes
+					   NOT = { is_core = RUS }
+				   }
+				   add_province_modifier = {
+					   name = colonial_exploitation_tech_effect
+					   duration = -1
+				   }
+			   }
+		   }
+		   any_country = {
+				any_owned = {
+					limit = {
+					    OR = {
+						   is_colonial = no
+						   is_core = RUS
+						}
+					}
+					remove_province_modifier = colonial_province
+					remove_province_modifier = colonial_exploitation_tech_effect
+					remove_province_modifier = colonial_dawn
+				}
+		   }
+		}
+
+		#slave pop growth
+		any_country = {
+            limit = {
+				exists = yes
+                NOT = { has_country_modifier = slave_growth }
+                slavery = yes_slavery
+                any_owned_province = { has_pop_type = slaves NOT = { slaves = 0.75 } }
+            }
+            slaves = {
+                limit = { NOT = { location = { slaves = 0.75 } } }
+                random_list = {
+                    10 = {}
+                    10 = { reduce_pop = 1.04 }
+                    10 = { reduce_pop = 1.05 }
+                    10 = { reduce_pop = 1.06 }
+                    10 = { reduce_pop = 1.07 }
+                    10 = { reduce_pop = 1.08 }
+                    10 = { reduce_pop = 1.09 }
+                    10 = { reduce_pop = 1.10 }
+                    10 = { reduce_pop = 1.11 }
+                    10 = { reduce_pop = 1.12 }
+                }
+            }
+            slaves = {
+                random = { chance = 10 reduce_pop = 0.97 }
+            }
+            slaves = {
+                random = { chance = 10 reduce_pop = 0.98 }
+            }
+            random_list = {
+                33 = { add_country_modifier = { name = slave_growth duration = 1460 } }
+                33 = { add_country_modifier = { name = slave_growth duration = 1827 } }
+                33 = { add_country_modifier = { name = slave_growth duration = 2190 } }
+            }
+            any_pop = { limit = { type = slaves } literacy = -0.1 }
+        }
+
+		#substate payment
+		any_country = {
+			limit = {
+				exists = yes
+				OR = {
+					is_substate = yes
+					AND = {
+						is_vassal = yes
+						is_substate = no
+						total_pops = 250000
+					}
+				}
+				NOT = { has_country_flag = exempt_from_vassal_contribution }
+				NOT = { has_country_modifier = monthly_payment_made }
+			}
+			if = {
+				limit = {
+					money = 1500
+					NOT = { total_pops = 750000 }
+				}
+				treasury = -1500
+				overlord = { treasury = 1500 }
+				add_country_modifier = { name = monthly_payment_made duration = 365 }
+			} else_if = {
+				limit = {
+					money = 2500
+					total_pops = 750000
+					NOT = { total_pops = 1000000 }
+				}
+				treasury = -2500
+				overlord = { treasury = 2500 }
+				add_country_modifier = { name = monthly_payment_made duration = 365 }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 3000
+						total_pops = 1000000
+						NOT = { total_pops = 1250000 }
+					}
+				}
+				owner = {
+					treasury = -3000
+					overlord = { treasury = 3000 }
+					add_country_modifier = { name = monthly_payment_made duration = 365 }
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 3500
+						total_pops = 1250000
+						NOT = { total_pops = 1500000 }
+					}
+				}
+				owner = {
+					treasury = -3500
+					overlord = { treasury = 3500 }
+					add_country_modifier = { name = monthly_payment_made duration = 365 }
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 4000
+						total_pops = 1500000
+						NOT = { total_pops = 1750000 }
+					}
+				}
+				owner = {
+					treasury = -4000
+					overlord = { treasury = 4000 }
+					add_country_modifier = { name = monthly_payment_made duration = 365 }
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 4500
+						total_pops = 1750000
+						NOT = { total_pops = 2000000 }
+					}
+				}
+				owner = {
+					treasury = -4500
+					overlord = { treasury = 4500 }
+					add_country_modifier = { name = monthly_payment_made duration = 365 }
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 5000
+						total_pops = 2000000
+						NOT = { total_pops = 2250000 }
+					}
+				}
+				owner = {
+					treasury = -5000
+					overlord = { treasury = 5000 }
+					add_country_modifier = { name = monthly_payment_made duration = 365 }
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 5500
+						total_pops = 2250000
+						NOT = { total_pops = 2500000 }
+					}
+				}
+				owner = {
+					treasury = -5500
+					overlord = { treasury = 5500 }
+					add_country_modifier = { name = monthly_payment_made duration = 365 }
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 6000
+						total_pops = 2500000
+					}
+				}
+				owner = {
+					treasury = -6000
+					overlord = { treasury = 6000 }
+					add_country_modifier = { name = monthly_payment_made duration = 365 }
+				}
+			}
+		}
+
+		#upgrade rebels
+		if = {
+			limit = {
+				year = 1850
+				NOT = { has_global_flag = rebel_tech_1850 }
+				NOT = { has_global_flag = disable_rebel_improvement }
+			}
+			REB = { activate_technology = flintlock_rifles }
+			set_global_flag = rebel_tech_1850
+		} else_if = {
+			limit = {
+				year = 1865
+				NOT = { has_global_flag = rebel_tech_1865 }
+				NOT = { has_global_flag = disable_rebel_improvement }
+			}
+			REB = { activate_technology = muzzle_loaded_rifles }
+			set_global_flag = rebel_tech_1865
+		} else_if = {
+			limit = {
+				year = 1880
+				NOT = { has_global_flag = rebel_tech_1880 }
+			}
+			set_global_flag = rebel_tech_1880
+			REB = {
+				activate_technology = breech_loaded_rifles
+				activate_technology = post_napoleonic_thought
+				activate_technology = bronze_muzzle_loaded_artillery
+				activate_technology = military_staff_system
+				activate_technology = army_command_principle
+			}
+		} else_if = {
+			limit = {
+				year = 1900
+				NOT = { has_global_flag = rebel_tech_1900 }
+			}
+			set_global_flag = rebel_tech_1900
+			REB = {
+				activate_technology = machine_guns
+				activate_technology = strategic_mobility
+				activate_technology = iron_muzzle_loaded_artillery
+				activate_technology = military_plans
+				activate_technology = army_professionalism
+			}
+		} else_if = {
+			limit = {
+				year = 1920
+				NOT = { has_global_flag = rebel_tech_1920 }
+			}
+			set_global_flag = rebel_tech_1920
+			REB = {
+				activate_technology = bolt_action_rifles
+				activate_technology = point_defense_system
+				activate_technology = iron_breech_loaded_artillery
+				activate_technology = military_statistics
+				activate_technology = army_decision_making
+			}
+		}
+		CLN = { country_event = { id = 477877791 days = 365 } }
+	}
+}
+
+country_event = {
+	id = 477877789
+	title = "AI: Cleanup Setup"
+	desc = "AI: Cleanup Setup"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Cleanup Setup"
+		CLN = {
+			country_event = 477877787
+			country_event = 477877790
+			country_event = 477877791
+			add_country_modifier = { name = neutrality duration = -1 }
+		}
+	}
+}

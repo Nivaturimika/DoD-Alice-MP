@@ -1,0 +1,100 @@
+political_decisions = {
+	# Vassal Interactions Decision
+	vassal_interactions = {
+        picture = gtfo
+        alert = no
+        potential = {
+			ai = no
+            has_country_flag = hidden_decisions
+            num_of_vassals_no_substates = 1
+            is_vassal = no
+		    OR = {
+			   NOT = { tag = JAP }
+			   year = 1870 
+			}
+        }
+        allow = { civilized = yes }
+        effect = {
+			random_country = {
+				limit = {
+					exists = yes
+					vassal_of = THIS
+				}
+				lambda_country_event = {
+					title = "AI: Vassal Interactions"
+					desc = "This event lets your overlord interact with you. If you are a player, just close this."
+					option = {
+						name = "OK"
+						set_country_flag = interacted_with
+						FROM = { clr_country_flag = possible_interactions }
+						overlord = {
+							##vassal interactions events
+							lambda_country_event = {
+								title = "Vassal Interactions: $FROMCOUNTRY$"
+								desc = "If $FROMCOUNTRY$ is the country you want to interact with, select an option. Otherwise, select 'Next country' to cycle through, or select 'Exit options' to return to the game."
+								option = {
+									name = "Release this country"
+									if = { limit = { prestige < 200 } prestige_factor = -0.05 }
+									else = { prestige = -10 }
+									FROM = {
+										lambda_country_event = {
+											title = "Freedom!"
+											desc = "We have acquired independence!"
+											option = {
+												name = "Nice."
+												overlord = { diplomatic_influence = { who = THIS value = -200 } release_vassal = THIS }
+											}
+										}
+									}
+									any_country = {
+										limit = { vassal_of = THIS }
+										clr_country_flag = interacted_with
+									}
+								}
+								option = {
+									name = "Return cores to this country"
+									any_owned = {
+										limit = {
+											is_core = FROM
+											NOT = { is_core = THIS }
+										}
+										secede_province = FROM
+									}
+									any_country = {
+										limit = { vassal_of = THIS }
+										clr_country_flag = interacted_with
+									}
+								}
+								option = {
+									name = "Next country"
+									random_country = {
+										limit = {
+											vassal_of = THIS
+											NOT = { has_country_flag = interacted_with }
+										}
+										country_event = 477877793
+										THIS = { set_country_flag = possible_interactions }
+									}
+									any_country = {
+										limit = {
+											vassal_of = THIS
+											THIS = { NOT = { has_country_flag = possible_interactions } }
+										}
+										clr_country_flag = interacted_with
+									}
+								}
+								option = {
+									name = "Exit options"
+									any_country = {
+										limit = { vassal_of = THIS }
+										clr_country_flag = interacted_with
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+    }
+}

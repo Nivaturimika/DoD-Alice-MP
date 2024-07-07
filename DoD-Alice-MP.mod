@@ -1,0 +1,6 @@
+name = "Alice MP - Divergences of Darkness"
+path = "mod/DoD-Alice-MP"
+replace_path = "decisions"
+replace_path = "events"
+replace_path = "localisation"
+replace_path = "history"

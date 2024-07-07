@@ -1,0 +1,116 @@
+is_colonial_power = {
+	main_parameter = nation
+	OR = {
+		is_greater_power = yes
+		is_secondary_power = yes
+	}
+}
+
+revolution_n_counter_researched = {
+	any_country = { revolution_n_counterrevolution = 1 }
+}
+
+in_influence_of_this = {
+	main_parameter = province
+	this_parameter = nation
+	OR = {
+		owned_by = THIS
+		owner = {
+			OR = {
+				vassal_of = THIS
+				in_sphere = THIS
+				overlord = {
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+	}
+}
+
+is_monarchy_government = {
+	main_parameter = nation
+	OR = {
+		government = absolute_monarchy
+		government = prussian_constitutionalism
+		government = hms_government
+		government = fascist_monarchy
+		government = feudal_monarchy
+		government = khanate #Technically a monarchy
+		government = theocracy #Technically a monarchy
+	}
+}
+
+#Equivalent to controlled_by = this
+any_owned_not_controlled_by_this = {
+	main_parameter = nation
+	any_owned_province = { controlled_by != owner }
+}
+any_owned_not_controlled_by_this = {
+	main_parameter = state
+	any_owned_province = { controlled_by != owner }
+}
+
+can_annex_to_this_criteria = {
+	main_parameter = nation
+	this_parameter = nation
+	vassal_of = THIS
+	ai = yes
+}
+can_annex_to_this_sphere_criteria = {
+	main_parameter = nation
+	this_parameter = nation
+	OR = {
+		vassal_of = THIS
+		in_sphere = THIS
+	}
+	ai = yes
+}
+
+#Is a country an indirect vassal of? This tests up to 5 levels of vassalage
+is_indirectly_vassal_of = {
+	main_parameter = nation
+	this_parameter = nation
+	OR = {
+		vassal_of = THIS
+		overlord = { vassal_of = THIS }
+		overlord = { overlord = { vassal_of = THIS } }
+		overlord = { overlord = { overlord = { vassal_of = THIS } } }
+		overlord = { overlord = { overlord = { overlord = { vassal_of = THIS } } } }
+		overlord = { overlord = { overlord = { overlord = { overlord = { vassal_of = THIS } } } } }
+	}
+}
+
+aragon_can_interfere_in_italy = {
+	main_parameter = nation
+	this_parameter = nation
+	THIS = {
+		#Must be a colonial power to give them legitimacy over interference
+		test = is_colonial_power
+		#And own a part of italy
+		OR = {
+			owns = 746
+			owns = 742
+			owns = 749
+		}
+		#And has to be a monarchy
+		test = is_monarchy_government
+	}
+	#Tuscany is the protector of italy, no tuscany or a "neutralized" Tuscany means we can intervene
+	OR = {
+		TUS = { vassal_of = THIS }
+		TUS = { in_sphere = THIS }
+		NOT = { exists = TUS }
+		TUS = {
+			government != democracy
+			government != parliamentary_republic
+			government != socialist_republic
+		}
+	}
+	#Sicily can't exist
+	NOT = { has_country_modifier = sicily_burns }
+	NOT = { exists = SIC }
+	NOT = { exists = NAP }
+}

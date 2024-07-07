@@ -1,0 +1,46 @@
+political_decisions = {
+	
+	unite_arabia = {
+		potential = {
+			tag = NEJ
+			test = is_monarchy_government
+			culture_union = { exists = no }
+			has_country_flag = is_protector
+		}
+		
+		allow = {
+			prestige >= 20
+			has_unclaimed_cores = no
+			culture_union = { all_core = { test = in_influence_of_this } }
+			OR = {
+				AND = {
+					is_greater_power = yes
+					NEJ = { OR = { exists = no have_core_in = THIS } }
+					HDJ = { OR = { exists = no have_core_in = THIS } }
+					ABU = { OR = { exists = no have_core_in = THIS } }
+					OMA = { OR = { exists = no have_core_in = THIS } }
+					ALH = { OR = { exists = no have_core_in = THIS } }
+					YEM = { OR = { exists = no have_core_in = THIS } }
+				}
+				AND = {
+					is_secondary_power = yes
+					NEJ = { all_core = { owned_by = THIS } }
+					HDJ = { all_core = { owned_by = THIS } }
+					ABU = { all_core = { owned_by = THIS } }
+					OMA = { all_core = { owned_by = THIS } }
+					ALH = { all_core = { owned_by = THIS } }
+					YEM = { all_core = { owned_by = THIS } }
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			change_tag = union
+			culture_union = { THIS_bounce = { 1177 = { add_core = THIS } } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

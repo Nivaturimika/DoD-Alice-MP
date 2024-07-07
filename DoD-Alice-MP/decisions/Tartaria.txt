@@ -1,0 +1,211 @@
+political_decisions = {
+	form_tatarstan = {
+		picture = Tatarstan
+		potential = {
+			is_culture_group = tatar_group
+			culture_union = { exists = no }
+		}
+		allow = {
+			culture_union = { all_core = { test = in_influence_of_this } }
+		}
+		effect = {
+			any_country = {
+				limit = {
+					is_culture_group = this_union
+					test = can_annex_to_this_sphere_criteria
+				}
+				annex_to = THIS
+			}
+			add_accepted_culture = union
+			change_tag = culture
+			tech_school = industrial_tech_school
+			years_of_research = 1
+			prestige = 15
+		}
+		ai_will_do = { factor = 1 }
+	}
+	#Makes Sebestapol, Astrakhan, Kazan and Saraj grow. More POPs for a unified Tataristan.
+	TAR_encourage_sedentarization = {
+		potential = {
+			is_culture_group = tatar_group
+			culture_union = { tag = THIS }
+			NOT = { has_country_flag = TAR_urbanization }
+		}
+		allow = {
+			civilized = yes
+			medicine = 1
+		}
+		effect = {
+			set_country_flag = TAR_urbanization
+			all_core = {
+				random_list = {
+					90 = { add_province_modifier = { name = baby_boom duration = 30 } }
+					80 = { add_province_modifier = { name = baby_boom duration = 60 } }
+					70 = { add_province_modifier = { name = baby_boom duration = 90 } }
+					60 = { add_province_modifier = { name = baby_boom duration = 120 } }
+					50 = { add_province_modifier = { name = baby_boom duration = 150 } }
+					40 = { add_province_modifier = { name = baby_boom duration = 180 } }
+					30 = { add_province_modifier = { name = baby_boom duration = 200 } }
+					20 = { add_province_modifier = { name = baby_boom duration = 300 } }
+					10 = { add_province_modifier = { name = baby_boom duration = 400 } }
+					5 = { add_province_modifier = { name = baby_boom duration = 500 } }
+					4 = { add_province_modifier = { name = baby_boom duration = 700 } }
+					3 = { add_province_modifier = { name = baby_boom duration = 1000 } }
+					1 = { add_province_modifier = { name = baby_boom duration = 1500 } }
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	great_Saraj_capital = {
+		potential = {
+			is_culture_group = tatar_group
+			culture_union = { tag = THIS }
+			has_country_flag = TAR_urbanization
+			NOT = { capital = 1039 }
+		}
+		allow = {
+			owns = 1039
+			early_railroad = 1
+			state_n_government = 1
+		}
+		effect = {
+			capital = 1039
+			prestige = 5
+			1039 = { life_rating = 5 }
+		}
+	}
+
+	expansion_TAR_tier1 = {
+		potential = {
+			is_culture_group = tatar_group
+			culture_union = { tag = THIS }
+			#Not yet cored SIB and BAH
+			NOT = {
+				SIB = { all_core = { is_core = THIS } }
+				BAH = { all_core = { is_core = THIS } }
+			}
+		}
+		allow = {
+			civilized = yes
+			state_n_government = 1
+			all_core = { test = in_influence_of_this }
+		}
+		effect = {
+			SIB = { all_core = { add_core = THIS } }
+			BAH = { all_core = { add_core = THIS } }
+		}
+	}
+
+	expansion_TAR_tier2 = {
+		potential = {
+			is_culture_group = tatar_group
+			culture_union = { tag = THIS }
+			#Not yet cored NOG and ZHE
+			NOT = {
+				NOG = { all_core = { is_core = THIS } }
+				ZHE = { all_core = { is_core = THIS } }
+			}
+		}
+		allow = {
+			#Already invaded SIB and BAH
+			SIB = { all_core = { test = in_influence_of_this } }
+			BAH = { all_core = { test = in_influence_of_this } }
+			OR = {
+				test = is_colonial_power
+				all_core = { test = in_influence_of_this }
+			}
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			RUS_1102 = { add_core = THIS }
+			RUS_1052 = { add_core = THIS }
+			RUS_1049 = { add_core = THIS }
+			NOG = { all_core = { add_core = THIS } }
+			ZHE = { all_core = { add_core = THIS } }
+		}
+	}
+
+	accept_kazakhs_TAR = {
+		potential = {
+			is_culture_group = tatar_group
+			culture_union = { tag = THIS }
+			NOT = { is_accepted_culture = kazak }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			#Already invaded NOG and ZHE
+			NOG = { all_core = { test = in_influence_of_this } }
+			ZHE = { all_core = { test = in_influence_of_this } }
+		}
+		effect = {
+			prestige_factor = -0.15
+			add_accepted_culture = kazak
+		}
+	}
+
+	accept_siberian_TAR = {
+		potential = {
+			is_culture_group = tatar_group
+			culture_union = { tag = THIS }
+			NOT = { is_accepted_culture = altaic }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			#Already invaded SIB and BAH
+			SIB = { all_core = { test = in_influence_of_this } }
+			BAH = { all_core = { test = in_influence_of_this } }
+		}
+		effect = {
+			prestige_factor = -0.15
+			add_accepted_culture = altaic
+		}
+	}
+
+	expansion_TAR_tier3 = {
+		potential = {
+			is_culture_group = tatar_group
+			culture_union = { tag = THIS }
+			has_country_flag = tier_2
+			NOT = {
+				ZAZ = { all_core = { is_core = THIS } }
+				KHK = { all_core = { is_core = THIS } }
+				VOR = { all_core = { is_core = THIS } }
+				CSK = { all_core = { is_core = THIS } }
+				BUK = { all_core = { is_core = THIS } }
+				KHI = { all_core = { is_core = THIS } }
+				KOK = { all_core = { is_core = THIS } }
+				UGH = { all_core = { is_core = THIS } }
+			}
+		}
+
+		allow = {
+			has_unclaimed_cores = no
+			test = is_colonial_power
+			mass_politics = 1
+			#Already invaded SIB and BAH
+			SIB = { all_core = { test = in_influence_of_this } }
+			BAH = { all_core = { test = in_influence_of_this } }
+			#Already invaded NOG and ZHE
+			NOG = { all_core = { test = in_influence_of_this } }
+			ZHE = { all_core = { test = in_influence_of_this } }
+		}
+
+		effect = {
+			badboy = 20
+			RUS_1090 = { add_core = THIS }
+			GEO_1 = { add_core = THIS }
+			RUS_1098 = { add_core = THIS }
+			RUS_1196 = { add_core = THIS }
+			ZAZ = { all_core = { add_core = THIS } }
+			KHK = { all_core = { add_core = THIS } }
+			VOR = { all_core = { add_core = THIS } }
+			CSK = { all_core = { add_core = THIS } }
+			BUK = { all_core = { add_core = THIS } }
+			KHI = { all_core = { add_core = THIS } }
+			KOK = { all_core = { add_core = THIS } }
+			UGH = { all_core = { add_core = THIS } }
+		}
+	}
+}
