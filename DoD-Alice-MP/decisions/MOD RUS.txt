@@ -20,8 +20,8 @@ political_decisions = {
 					NOT = { tag = MOS }
 					NOT = { tag = NOV }
 					primary_culture = north_russian
-					MOS = { test = in_influence_of_this }
-					NOV = { test = in_influence_of_this }
+					MOS = { all_core = { test = in_influence_of_this } }
+					NOV = { all_core = { test = in_influence_of_this } }
 				}
 			}
 			cultural_union = { exists = no }

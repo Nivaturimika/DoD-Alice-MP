@@ -36,7 +36,7 @@ political_decisions = {
 		
 		effect = {
 			prestige = 10
-			change_tag = union
+			change_tag = culture
 			cultural_union = { THIS_bounce = { 1177 = { add_core = THIS } } }
 		}
 		ai_will_do = {

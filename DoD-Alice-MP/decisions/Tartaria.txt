@@ -11,7 +11,7 @@ political_decisions = {
 		effect = {
 			any_country = {
 				limit = {
-					is_culture_group = this_union
+					is_culture_group = THIS
 					test = can_annex_to_this_sphere_criteria
 				}
 				annex_to = THIS
