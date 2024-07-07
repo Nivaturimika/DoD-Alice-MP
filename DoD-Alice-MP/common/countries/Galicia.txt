@@ -1,4 +1,5 @@
 color = { 160  170  190 }
+template = "default"
 graphical_culture = SpanishGC
 
 party = {

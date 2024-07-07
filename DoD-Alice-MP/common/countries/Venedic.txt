@@ -3,6 +3,7 @@ proletarian_dictatorship = { 182 86 90 }
 fascist_dictatorship = { 99 63 86 }
 socialist_republic = { 182 86 90 }
 fascist_monarchy = { 151 127 142 } 
+template = "default"
 graphical_culture = AustriaHungaryGC
 
 ## Early Parties are generally Anti-Military or Pacifist apart from Conservatives
@@ -411,22 +412,22 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		"Jan Hus" "Karel IV" "Prokop Veliký" "Jan Žižka" "Josef Ressel" 
+		"Jan Hus" "Karel IV" "Prokop Velikï¿½" "Jan ï¿½iï¿½ka" "Josef Ressel" 
 	}
 	ironclad = {
 		Praha Brno Ostrava Plzen Liberec 
 	}
 	manowar = {
-		Milešovka Lovos Hazmburk Koštálov "Ceské Stredohorí" 
+		Mileï¿½ovka Lovos Hazmburk Koï¿½tï¿½lov "Ceskï¿½ Stredohorï¿½" 
 	}
 	cruiser = {
 		Jizera Metuje Morava Svratka Olza  
 	}
 	frigate = {
-		"Jan Dismas Zelenka" "Šimon Brixi" "František Tuma" "Antonín Kraft" "František Xaver Dušek" 
+		"Jan Dismas Zelenka" "ï¿½imon Brixi" "Frantiï¿½ek Tuma" "Antonï¿½n Kraft" "Frantiï¿½ek Xaver Duï¿½ek" 
 	}
 	monitor = {
-		"Petr Brandl" "Václav Hollar" "Jan Jahn" "Jan Kupecký" "Karel Škréta" 
+		"Petr Brandl" "Vï¿½clav Hollar" "Jan Jahn" "Jan Kupeckï¿½" "Karel ï¿½krï¿½ta" 
 	}
 	clipper_transport = {
 		
@@ -435,6 +436,6 @@ unit_names = {
 		
 	}
 	commerce_raider = {
-		"Pražský hrad" Vyšehrad Zbraslav Kolodeje Chvaly 
+		"Praï¿½skï¿½ hrad" Vyï¿½ehrad Zbraslav Kolodeje Chvaly 
 	}
 }

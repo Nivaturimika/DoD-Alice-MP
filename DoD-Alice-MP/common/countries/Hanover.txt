@@ -1,4 +1,5 @@
 color = { 230 179 0 }
+template = "default"
 graphical_culture = EuropeanGC
 
 party = {
@@ -517,36 +518,36 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		Hannover Victoria "König Georg" Askanian Welf "Heinrich der Löwe" "Ernst August" Emden Wittekind Stade Lüneburg Hildesheim Osnabrück 
+		Hannover Victoria "Kï¿½nig Georg" Askanian Welf "Heinrich der Lï¿½we" "Ernst August" Emden Wittekind Stade Lï¿½neburg Hildesheim Osnabrï¿½ck 
 
 Aurich
 	}
 	ironclad = {
-		Hannover Victoria "König Georg" Askanian Welf "Heinrich der Löwe" "Ernst August" Emden Wittekind Stade Lüneburg Hildesheim Osnabrück 
+		Hannover Victoria "Kï¿½nig Georg" Askanian Welf "Heinrich der Lï¿½we" "Ernst August" Emden Wittekind Stade Lï¿½neburg Hildesheim Osnabrï¿½ck 
 
 Aurich
 		
 	}
 	manowar = {
-		Hannover Victoria "König Georg" Askanian Welf "Heinrich der Löwe" "Ernst August" Emden Wittekind Stade Lüneburg Hildesheim Osnabrück 
+		Hannover Victoria "Kï¿½nig Georg" Askanian Welf "Heinrich der Lï¿½we" "Ernst August" Emden Wittekind Stade Lï¿½neburg Hildesheim Osnabrï¿½ck 
 
 Aurich
 		
 	}
 	cruiser = {
-		Hannover Victoria "König Georg" Askanian Welf "Heinrich der Löwe" "Ernst August" Emden Wittekind Stade Lüneburg Hildesheim Osnabrück 
+		Hannover Victoria "Kï¿½nig Georg" Askanian Welf "Heinrich der Lï¿½we" "Ernst August" Emden Wittekind Stade Lï¿½neburg Hildesheim Osnabrï¿½ck 
 
 Aurich
 		
 	}
 	frigate = {
-		Hannover Victoria "König Georg" Askanian Welf "Heinrich der Löwe" "Ernst August" Emden Wittekind Stade Lüneburg Hildesheim Osnabrück 
+		Hannover Victoria "Kï¿½nig Georg" Askanian Welf "Heinrich der Lï¿½we" "Ernst August" Emden Wittekind Stade Lï¿½neburg Hildesheim Osnabrï¿½ck 
 
 Aurich
 		
 	}
 	monitor = {
-		Hannover Victoria "König Georg" Askanian Welf "Heinrich der Löwe" "Ernst August" Emden Wittekind Stade Lüneburg Hildesheim Osnabrück 
+		Hannover Victoria "Kï¿½nig Georg" Askanian Welf "Heinrich der Lï¿½we" "Ernst August" Emden Wittekind Stade Lï¿½neburg Hildesheim Osnabrï¿½ck 
 
 Aurich
 		
@@ -558,7 +559,7 @@ Aurich
 		
 	}
 	commerce_raider = {
-		Hannover Victoria "König Georg" Askanian Welf "Heinrich der Löwe" "Ernst August" Emden Wittekind Stade Lüneburg Hildesheim Osnabrück 
+		Hannover Victoria "Kï¿½nig Georg" Askanian Welf "Heinrich der Lï¿½we" "Ernst August" Emden Wittekind Stade Lï¿½neburg Hildesheim Osnabrï¿½ck 
 
 Aurich
 		

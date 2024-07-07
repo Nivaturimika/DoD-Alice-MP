@@ -8,6 +8,7 @@ prussian_constitutionalism = { 194 229 255 }
 hms_government = { 194 229 255 } 
 presidential_dictatorship = { 112 195 255 }
 
+template = "default"
 graphical_culture = ChineseGC
 
 party = {

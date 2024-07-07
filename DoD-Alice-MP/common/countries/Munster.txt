@@ -1,4 +1,5 @@
 color = { 75 221 138 }
+template = "default"
 graphical_culture = EuropeanGC
 
 party = {

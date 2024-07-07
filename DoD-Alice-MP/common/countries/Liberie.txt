@@ -7,6 +7,7 @@ hms_government = { 120 41 15 }
 proletarian_dictatorship = { 149 37 13 } 
 fascist_dictatorship = { 37 12 4 } 
 
+template = "default"
 graphical_culture = AfricanGC
 
 party = {

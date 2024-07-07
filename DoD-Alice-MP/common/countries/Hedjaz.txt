@@ -1,4 +1,5 @@
 color = { 121  229  215 }
+template = "default"
 graphical_culture = MiddleEasternGC
 party = {
 	name = "AAA_conservative_1" # Loyalists

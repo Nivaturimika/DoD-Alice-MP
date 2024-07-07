@@ -1,4 +1,5 @@
 color = { 160  30  154 } 
+template = "default"
 graphical_culture = ItalianGC
 
 party = {

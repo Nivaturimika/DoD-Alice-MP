@@ -1,4 +1,5 @@
 color = { 106  178  46 }
+template = "default"
 graphical_culture = ItalianGC
 
 

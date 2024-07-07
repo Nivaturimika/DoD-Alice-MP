@@ -1,4 +1,5 @@
 color = { 181  72  106 } #randomise
+template = "default"
 graphical_culture = EuropeanGC # inherit
 
 party = {

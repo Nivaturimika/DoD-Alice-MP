@@ -3,6 +3,7 @@ proletarian_dictatorship = { 176 85 113 }
 fascist_dictatorship = { 76 85 113 }
 socialist_republic = { 176 85 113 }
 fascist_monarchy = { 76 85 113 }
+template = "default"
 graphical_culture = EuropeanGC
 
 party = {

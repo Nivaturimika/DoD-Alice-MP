@@ -1,4 +1,5 @@
 color = { 27 73 157}
+template = "default"
 graphical_culture = EuropeanGC
 
 party = {
@@ -227,7 +228,7 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		"Charles le Téméraire" "La Bourgogne" Ambiorix
+		"Charles le Tï¿½mï¿½raire" "La Bourgogne" Ambiorix
 	}
 	ironclad = {
 		"Comte de Hainaut" "Comte de Namur" "Prince de Liege" "Duc d'Ursel" 	
@@ -236,7 +237,7 @@ unit_names = {
 	 	"St. Marie" "St. Joris" "St. Franciscus" "St. Jacobus" "St. Petrus" "St. Bonifatius" 
 	}
 	cruiser = {
-		"François Pelsaert" "Louis Boisot" "Olivier Brunel" "Simon de Cordes" "Albert Dorville" "Jessé de Forest" "Louis Hennepin" 
+		"Franï¿½ois Pelsaert" "Louis Boisot" "Olivier Brunel" "Simon de Cordes" "Albert Dorville" "Jessï¿½ de Forest" "Louis Hennepin" 
 	 "Jacob Mahu"
 	}
 	frigate = {

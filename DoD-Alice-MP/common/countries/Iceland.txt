@@ -3,6 +3,7 @@ proletarian_dictatorship = { 169 96 124 }
 fascist_dictatorship = { 69 96 124 }
 socialist_republic = { 169 96 124 }
 fascist_monarchy = { 69 96 124 }
+template = "default"
 graphical_culture = EuropeanGC
 
 party = {
@@ -231,22 +232,22 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		Áss Vanr Álfr Jötunn
+		ï¿½ss Vanr ï¿½lfr Jï¿½tunn
 	}
 	ironclad = {
 		Ellida Sleipner Viking Frithjof Rjukan Sarpen Lougen Glommen 
 	}
 	manowar = {
-		Freia Desideira "St Olaf" "Kong Sverre" Ellida Nordssthernen Nornen Nidaros Ørnen
+		Freia Desideira "St Olaf" "Kong Sverre" Ellida Nordssthernen Nornen Nidaros ï¿½rnen
 	}
 	cruiser = {
 		Thor Odin Njord Freyr Tyr Bragl Heimdall Hoder Vidar Ale Ullr Forseti
 	}
 	frigate = {
-		Freia Desideira "St Olaf" "Kong Sverre" Ellida Nordssthernen Nornen Nidaros Ørnen
+		Freia Desideira "St Olaf" "Kong Sverre" Ellida Nordssthernen Nornen Nidaros ï¿½rnen
 	}
 	monitor = {
-		Skorpionen Mjølner Thrudvang
+		Skorpionen Mjï¿½lner Thrudvang
 	}
 	clipper_transport = {
 	}

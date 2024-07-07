@@ -1,4 +1,5 @@
 color = { 101 102 163  }
+template = "default"
 graphical_culture = EuropeanGC # inherit
 
 party = {

@@ -1,5 +1,6 @@
 color = { 105  145  40 }
 autonomous_dependency = { 165 122 53 }
+template = "default"
 graphical_culture = Generic
 
 party = {

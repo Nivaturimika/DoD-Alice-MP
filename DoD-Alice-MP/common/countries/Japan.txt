@@ -8,6 +8,7 @@ absolute_monarchy = { 222 31 31 }
 democracy = { 214 116 116 }
 parliamentary_republic = { 214 116 116 }
 
+template = "default"
 graphical_culture = JapaneseGC
 
 party = {

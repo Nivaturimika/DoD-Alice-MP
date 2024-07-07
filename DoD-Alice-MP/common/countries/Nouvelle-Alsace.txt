@@ -1,4 +1,5 @@
 color = { 190  50  40 }
+template = "default"
 graphical_culture = SouthAmericanGC
 
 party = {

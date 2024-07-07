@@ -1,4 +1,5 @@
 color = { 128  0  0 }
+template = "default"
 graphical_culture = Generic
 
 party = {
@@ -275,12 +276,12 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		"Cuzco" "Pachacuti" "Sacsayhuamán" "Tupac Yupanqui" "Inti" "Machu Pichu" "Viracocha" "Huayna Capac" "Sapa Inca" "Inca Capac" "Apu" 
+		"Cuzco" "Pachacuti" "Sacsayhuamï¿½n" "Tupac Yupanqui" "Inti" "Machu Pichu" "Viracocha" "Huayna Capac" "Sapa Inca" "Inca Capac" "Apu" 
 		"Tupac Amaru" "Yongle" "Quito" "Hurin" "Hanan" "Charcas" "Atahualpa" "Yahuar Pampa" "Apu Illapu" "Lima" "Pachacuti II" 
 		
 	}
 	ironclad = {
-		"Cuzco" "Pachacuti" "Sacsayhuamán" "Tupac Yupanqui" "Inti" "Machu Pichu" "Viracocha" "Huayna Capac" "Sapa Inca" "Inca Capac" "Apu" 
+		"Cuzco" "Pachacuti" "Sacsayhuamï¿½n" "Tupac Yupanqui" "Inti" "Machu Pichu" "Viracocha" "Huayna Capac" "Sapa Inca" "Inca Capac" "Apu" 
 		"Tupac Amaru" "Yongle" "Quito" "Hurin" "Hanan" "Charcas" "Atahualpa" "Yahuar Pampa" "Apu Illapu" "Lima" "Pachacuti II" 
 	}
 	manowar = {
@@ -289,7 +290,7 @@ unit_names = {
 		"Hai Shen" "Ying Swei" "Fei Hung" 
 	}
 	cruiser = {
-		"Cuzco" "Pachacuti" "Sacsayhuamán" "Tupac Yupanqui" "Inti" "Machu Pichu" "Viracocha" "Huayna Capac" "Sapa Inca" "Inca Capac" "Apu" 
+		"Cuzco" "Pachacuti" "Sacsayhuamï¿½n" "Tupac Yupanqui" "Inti" "Machu Pichu" "Viracocha" "Huayna Capac" "Sapa Inca" "Inca Capac" "Apu" 
 		"Tupac Amaru" "Yongle" "Quito" "Hurin" "Hanan" "Charcas" "Atahualpa" "Yahuar Pampa" "Apu Illapu" "Lima" "Pachacuti II" 
 	}
 	frigate = {
@@ -298,7 +299,7 @@ unit_names = {
 		"Hai Shen" "Ying Swei" "Fei Hung" 
 	}
 	monitor = {
-		"Cuzco" "Pachacuti" "Sacsayhuamán" "Tupac Yupanqui" "Inti" "Machu Pichu" "Viracocha" "Huayna Capac" "Sapa Inca" "Inca Capac" "Apu" 
+		"Cuzco" "Pachacuti" "Sacsayhuamï¿½n" "Tupac Yupanqui" "Inti" "Machu Pichu" "Viracocha" "Huayna Capac" "Sapa Inca" "Inca Capac" "Apu" 
 		"Tupac Amaru" "Yongle" "Quito" "Hurin" "Hanan" "Charcas" "Atahualpa" "Yahuar Pampa" "Apu Illapu" "Lima" "Pachacuti II"  
 	}
 	clipper_transport = {

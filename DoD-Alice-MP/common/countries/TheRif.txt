@@ -1,4 +1,5 @@
 color = { 105 140 181 }
+template = "default"
 graphical_culture = MoroccoGC
 
 party = {

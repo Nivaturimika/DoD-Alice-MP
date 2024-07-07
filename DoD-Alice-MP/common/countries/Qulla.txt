@@ -1,4 +1,5 @@
 color = { 0 150 115 }
+template = "default"
 graphical_culture = Generic
 
 party = {

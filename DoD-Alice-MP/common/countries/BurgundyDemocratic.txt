@@ -3,6 +3,7 @@ fascist_dictatorship = { 96 0 24 }
 proletarian_dictatorship = { 191 31 31 }
 socialist_republic = { 191 31 31 }
 fascist_monarchy = { 96 0 24 }
+template = "default"
 graphical_culture = BritishGC
 
 party = {
@@ -375,7 +376,7 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		"Charles le Téméraire" "La Bourgogne" Ambiorix
+		"Charles le Tï¿½mï¿½raire" "La Bourgogne" Ambiorix
 	}
 	ironclad = {
 		"Comte de Hainaut" "Comte de Namur" "Prince de Liege" "Duc d'Ursel" 	
@@ -384,7 +385,7 @@ unit_names = {
 	 	"St. Marie" "St. Joris" "St. Franciscus" "St. Jacobus" "St. Petrus" "St. Bonifatius" 
 	}
 	cruiser = {
-		"François Pelsaert" "Louis Boisot" "Olivier Brunel" "Simon de Cordes" "Albert Dorville" "Jessé de Forest" "Louis Hennepin" 
+		"Franï¿½ois Pelsaert" "Louis Boisot" "Olivier Brunel" "Simon de Cordes" "Albert Dorville" "Jessï¿½ de Forest" "Louis Hennepin" 
 	 "Jacob Mahu"
 	}
 	frigate = {

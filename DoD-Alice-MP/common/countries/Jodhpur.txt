@@ -1,4 +1,5 @@
 color = { 104  207  140 }
+template = "default"
 graphical_culture = IndianGC
 
 party = {

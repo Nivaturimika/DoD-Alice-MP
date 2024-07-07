@@ -9,6 +9,7 @@ hms_government = { 62 221 181 }
 presidential_dictatorship = { 181 221 62 }
 
 
+template = "default"
 graphical_culture = Generic
 
 party = {

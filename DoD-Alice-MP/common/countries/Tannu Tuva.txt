@@ -1,4 +1,5 @@
 color = { 107 71 142 }
+template = "default"
 graphical_culture = AsianGC
 
 party = {
@@ -227,38 +228,38 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesünto'a" Qipchaq
-		"Ögedai Khan" Güyük "Möngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
+		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesï¿½nto'a" Qipchaq
+		"ï¿½gedai Khan" Gï¿½yï¿½k "Mï¿½ngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
 		Irtysh "Amir Husayn" "Timur i Leng"
 	}
 	battleship = {
-		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesünto'a" Qipchaq
-		"Ögedai Khan" Güyük "Möngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
+		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesï¿½nto'a" Qipchaq
+		"ï¿½gedai Khan" Gï¿½yï¿½k "Mï¿½ngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
 		Irtysh "Amir Husayn" "Timur i Leng"
 	}
 	ironclad = {
-		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesünto'a" Qipchaq
-		"Ögedai Khan" Güyük "Möngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
+		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesï¿½nto'a" Qipchaq
+		"ï¿½gedai Khan" Gï¿½yï¿½k "Mï¿½ngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
 		Irtysh "Amir Husayn" "Timur i Leng"
 	}
 	manowar = {
-		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesünto'a" Qipchaq
-		"Ögedai Khan" Güyük "Möngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
+		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesï¿½nto'a" Qipchaq
+		"ï¿½gedai Khan" Gï¿½yï¿½k "Mï¿½ngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
 		Irtysh "Amir Husayn" "Timur i Leng"
 	}
 	cruiser = {
-		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesünto'a" Qipchaq
-		"Ögedai Khan" Güyük "Möngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
+		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesï¿½nto'a" Qipchaq
+		"ï¿½gedai Khan" Gï¿½yï¿½k "Mï¿½ngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
 		Irtysh "Amir Husayn" "Timur i Leng"
 	}
 	frigate = {
-		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesünto'a" Qipchaq
-		"Ögedai Khan" Güyük "Möngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
+		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesï¿½nto'a" Qipchaq
+		"ï¿½gedai Khan" Gï¿½yï¿½k "Mï¿½ngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
 		Irtysh "Amir Husayn" "Timur i Leng"
 	}
 	monitor = {
-		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesünto'a" Qipchaq
-		"Ögedai Khan" Güyük "Möngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
+		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesï¿½nto'a" Qipchaq
+		"ï¿½gedai Khan" Gï¿½yï¿½k "Mï¿½ngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
 		Irtysh "Amir Husayn" "Timur i Leng"
 	}
 	clipper_transport = {
@@ -268,8 +269,8 @@ unit_names = {
 		
 	}
 	commerce_raider = {
-		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesünto'a" Qipchaq
-		"Ögedai Khan" Güyük "Möngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
+		"Genghis Khan" "Alghu Khan" "Baraq Khan" "Yesï¿½nto'a" Qipchaq
+		"ï¿½gedai Khan" Gï¿½yï¿½k "Mï¿½ngke Khan" "Qubilai Khan" Duwa "Qazan Khan" "Tughlugh Timur"
 		Irtysh "Amir Husayn" "Timur i Leng"
 	}
 }

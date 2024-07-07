@@ -1,4 +1,5 @@
 color = { 36 119 131 }
+template = "default"
 graphical_culture = ChineseGC
 
 party = {

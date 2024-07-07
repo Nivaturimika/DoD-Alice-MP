@@ -1,4 +1,5 @@
 color = { 115 92 38 }
+template = "default"
 graphical_culture = EuropeanGC
 
 
@@ -518,22 +519,22 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		Braunschweig Wolfenbüttel Welf "Heinrich der Löwe" Lüneburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
+		Braunschweig Wolfenbï¿½ttel Welf "Heinrich der Lï¿½we" Lï¿½neburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
 	}
 	ironclad = {
-		Braunschweig Wolfenbüttel Welf "Heinrich der Löwe" Lüneburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
+		Braunschweig Wolfenbï¿½ttel Welf "Heinrich der Lï¿½we" Lï¿½neburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
 	}
 	manowar = {
-		Braunschweig Wolfenbüttel Welf "Heinrich der Löwe" Lüneburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
+		Braunschweig Wolfenbï¿½ttel Welf "Heinrich der Lï¿½we" Lï¿½neburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
 	}
 	cruiser = {
-		Braunschweig Wolfenbüttel Welf "Heinrich der Löwe" Lüneburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
+		Braunschweig Wolfenbï¿½ttel Welf "Heinrich der Lï¿½we" Lï¿½neburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
 	}
 	frigate = {
-		Braunschweig Wolfenbüttel Welf "Heinrich der Löwe" Lüneburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
+		Braunschweig Wolfenbï¿½ttel Welf "Heinrich der Lï¿½we" Lï¿½neburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
 	}
 	monitor = {
-		Braunschweig Wolfenbüttel Welf "Heinrich der Löwe" Lüneburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
+		Braunschweig Wolfenbï¿½ttel Welf "Heinrich der Lï¿½we" Lï¿½neburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
 	}
 	clipper_transport = {
 		
@@ -542,6 +543,6 @@ unit_names = {
 		
 	}
 	commerce_raider = {
-		Braunschweig Wolfenbüttel Welf "Heinrich der Löwe" Lüneburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
+		Braunschweig Wolfenbï¿½ttel Welf "Heinrich der Lï¿½we" Lï¿½neburg "Friedrich Wilhelm" Helmstedt Gandersheim Holzminden Blankenburg	
 	}
 }

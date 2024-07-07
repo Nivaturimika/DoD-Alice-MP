@@ -1,4 +1,5 @@
 color = { 173 116 62 }
+template = "default"
 graphical_culture = AfricanGC
 
 party = {
@@ -241,7 +242,7 @@ unit_names = {
 	 	"St. Marie" "St. Joris" "St. Franciscus" "St. Jacobus" "St. Petrus" "St. Bonifatius" 
 	}
 	cruiser = {
-		"François Pelsaert" "Louis Boisot" "Olivier Brunel" "Simon de Cordes" "Albert Dorville" "Jessé de Forest" "Louis Hennepin" 
+		"Franï¿½ois Pelsaert" "Louis Boisot" "Olivier Brunel" "Simon de Cordes" "Albert Dorville" "Jessï¿½ de Forest" "Louis Hennepin" 
 		"Melchior van den Kerckhove" "Jacob Mahu"
 	}
 	frigate = {

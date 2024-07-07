@@ -1,4 +1,5 @@
 color = { 118  128  177 }
+template = "default"
 graphical_culture = AsianGC
 
 # Spicy

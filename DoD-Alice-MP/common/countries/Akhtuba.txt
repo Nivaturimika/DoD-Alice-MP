@@ -1,5 +1,6 @@
 color = { 142 97 97 }
 autonomous_dependency = { 187 99 178 }
+template = "default"
 graphical_culture = EuropeanGC
 
 party = {
@@ -211,7 +212,7 @@ unit_names = {
 		Dniester Dnipro Desna Prypiat Prut 
 	}
 	monitor = {
-		Sofyivsky "Pechers’ka lavra" "Kam’ianets’-Podil’s’kyi" Khotyn Khortyts'a
+		Sofyivsky "Pechersï¿½ka lavra" "Kamï¿½ianetsï¿½-Podilï¿½sï¿½kyi" Khotyn Khortyts'a
 	}
 	clipper_transport = { 
 		

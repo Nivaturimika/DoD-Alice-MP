@@ -7,6 +7,7 @@ absolute_monarchy = { 189 81 45 }
 prussian_constitutionalism = { 189 81 45  } 
 hms_government = { 189 81 45  } 
 presidential_dictatorship = { 165 70 39 }
+template = "default"
 graphical_culture = ConfederateGC
 # Since this place is basically a WORSE-THEN-CSA I think they deserve it.
 

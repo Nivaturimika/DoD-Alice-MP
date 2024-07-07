@@ -1,4 +1,5 @@
 color = { 128 190 252 }
+template = "default"
 graphical_culture = MiddleEasternGC
 
 party = {

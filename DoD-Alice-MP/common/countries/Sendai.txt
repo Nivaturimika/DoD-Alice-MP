@@ -1,5 +1,6 @@
 color = { 133 104 64 }
 
+template = "default"
 graphical_culture = JapaneseGC
 
 party = {

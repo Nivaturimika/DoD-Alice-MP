@@ -5,6 +5,7 @@ socialist_republic = { 86 165 165 }
 parliamentary_republic = { 86 165 165 }
 proletarian_dictatorship = { 91 100 100 } 
 fascist_dictatorship = { 175 213 213 } 
+template = "default"
 graphical_culture = ConfederateGC
 # Since this place is basically a WORSE-THEN-CSA I think they deserve it.
 

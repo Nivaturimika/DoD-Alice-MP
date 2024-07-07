@@ -1,4 +1,5 @@
 color = { 196 86 86 }
+template = "default"
 graphical_culture = EuropeanGC
 
 party = {
@@ -182,7 +183,7 @@ unit_names = {
 		"Arend Dickmann" "Boleslaw I Chrobry" "Jan Kostka" "Michal Figenow" "Mateusz Schapring" "Jakob Mora" "Jan III Sobieski" 
 	}
 	ironclad = {
-		Kraków Warszawa Lódz Poznan Wroclaw Lwów Gdansk 
+		Krakï¿½w Warszawa Lï¿½dz Poznan Wroclaw Lwï¿½w Gdansk 
 	}
 	manowar = {
 		Wisla Odra Warta Narew San Notec Bug 

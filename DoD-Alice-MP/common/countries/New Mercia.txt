@@ -1,4 +1,5 @@
 color = { 228 233 78 }
+template = "default"
 graphical_culture = BritishGC
 
 party = {

@@ -4,6 +4,7 @@ fascist_dictatorship = { 83 56 92 }
 socialist_republic = { 206 38 62 }
 fascist_monarchy = { 83 56 92 }
 autonomous_dependency = { 106 122 183 }
+template = "default"
 graphical_culture = EuropeanGC
 
 party = {

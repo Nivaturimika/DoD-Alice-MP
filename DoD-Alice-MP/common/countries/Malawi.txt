@@ -1,4 +1,5 @@
 color = { 165 157 168 }
+template = "default"
 graphical_culture = ZuluGC
 
 party = {

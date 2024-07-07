@@ -1,4 +1,5 @@
 color = { 180  158  127 }
+template = "default"
 graphical_culture = FrenchGC
 
 party = {

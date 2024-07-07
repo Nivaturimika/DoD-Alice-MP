@@ -4,6 +4,7 @@ proletarian_dictatorship = { 220 43 77 }
 fascist_dictatorship = { 104 44 166 }
 socialist_republic = { 220 43 77 }
 fascist_monarchy = { 104 44 166 }
+template = "default"
 graphical_culture = EuropeanGC
 
 party = {
@@ -267,7 +268,7 @@ unit_names = {
 		"Arend Dickmann" "Boleslaw I Chrobry" "Jan Kostka" "Michal Figenow" "Mateusz Schapring" "Jakob Mora" "Jan III Sobieski" 
 	}
 	ironclad = {
-		Kraków Warszawa Lódz Poznan Wroclaw Lwów Gdansk 
+		Krakï¿½w Warszawa Lï¿½dz Poznan Wroclaw Lwï¿½w Gdansk 
 	}
 	manowar = {
 		Wisla Odra Warta Narew San Notec Bug 

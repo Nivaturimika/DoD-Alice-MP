@@ -7,6 +7,7 @@ hms_government = { 240 109 106  }
 proletarian_dictatorship = { 192 126 97 } 
 fascist_dictatorship = { 147 121 94 } 
 
+template = "default"
 graphical_culture = EuropeanGC
 
 party = {

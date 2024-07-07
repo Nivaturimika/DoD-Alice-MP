@@ -1,4 +1,5 @@
 color = { 155  148  0 }
+template = "default"
 graphical_culture = AfricanGC
 
 party = {

@@ -1,4 +1,5 @@
 color = { 190  50  40 }
+template = "default"
 graphical_culture = EuropeanGC
 
 party = {
@@ -517,22 +518,22 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		Baden Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
+		Baden Zï¿½hringen Markgraf "Groï¿½herzog Leopold" "Groï¿½herzog Karl Friedrich" Tï¿½rkenlouis Reichsgraf Durlach Sausenberg Hachberg
 	}
 	ironclad = {
-		Baden Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
+		Baden Zï¿½hringen Markgraf "Groï¿½herzog Leopold" "Groï¿½herzog Karl Friedrich" Tï¿½rkenlouis Reichsgraf Durlach Sausenberg Hachberg
 	}
 	manowar = {
-		Baden Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
+		Baden Zï¿½hringen Markgraf "Groï¿½herzog Leopold" "Groï¿½herzog Karl Friedrich" Tï¿½rkenlouis Reichsgraf Durlach Sausenberg Hachberg
 	}
 	cruiser = {
-		Baden Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
+		Baden Zï¿½hringen Markgraf "Groï¿½herzog Leopold" "Groï¿½herzog Karl Friedrich" Tï¿½rkenlouis Reichsgraf Durlach Sausenberg Hachberg
 	}
 	frigate = {
-		Baden Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
+		Baden Zï¿½hringen Markgraf "Groï¿½herzog Leopold" "Groï¿½herzog Karl Friedrich" Tï¿½rkenlouis Reichsgraf Durlach Sausenberg Hachberg
 	}
 	monitor = {
-		Baden Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
+		Baden Zï¿½hringen Markgraf "Groï¿½herzog Leopold" "Groï¿½herzog Karl Friedrich" Tï¿½rkenlouis Reichsgraf Durlach Sausenberg Hachberg
 	}
 	clipper_transport = {
 		Adler Albatross Amazone Bremse Brummer Donau Drache Feldberg Frauenlob Greif Karlsruhe Natter Neckar Salamander Seeadler Rhein 
@@ -541,6 +542,6 @@ unit_names = {
 		Adler Albatross Amazone Bremse Brummer Donau Drache Feldberg Frauenlob Greif Karlsruhe Natter Neckar Salamander Seeadler Rhein 
 	}
 	commerce_raider = {
-		Baden Zähringen Markgraf "Großherzog Leopold" "Großherzog Karl Friedrich" Türkenlouis Reichsgraf Durlach Sausenberg Hachberg
+		Baden Zï¿½hringen Markgraf "Groï¿½herzog Leopold" "Groï¿½herzog Karl Friedrich" Tï¿½rkenlouis Reichsgraf Durlach Sausenberg Hachberg
 	}
 }

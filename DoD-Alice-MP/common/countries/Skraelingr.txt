@@ -7,6 +7,7 @@ hms_government = { 158 73 85 }
 proletarian_dictatorship = { 94 33 53 } 
 fascist_dictatorship = { 88 27 84 } 
 
+template = "default"
 graphical_culture = Generic
 
 party = {

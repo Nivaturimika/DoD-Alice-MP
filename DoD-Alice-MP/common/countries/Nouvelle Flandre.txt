@@ -1,4 +1,5 @@
 color = { 55 125 85 }
+template = "default"
 graphical_culture = UsGC
 
 party = {
