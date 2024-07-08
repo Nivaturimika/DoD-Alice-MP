@@ -2583,7 +2583,7 @@ country_event = {
 		has_country_flag = potencial_lithuanians
 		war = no
 		SMG = { NOT = { vassal_of = THIS } }
-		NOT = { owns = 357 }
+		NOT = { RUS_358 = { owned_by = THIS } }
 	}
 	
 	mean_time_to_happen = {
@@ -2591,14 +2591,14 @@ country_event = {
 	}
 	
 	immediate = {
-	release_vassal = SMG
+		release_vassal = SMG
 	}
 	
 	option = { 
-	name = "SCALAT42.A"
-	prestige = -20
-	release_vassal = SMG
-	clr_country_flag = potencial_lithuanians
+		name = "SCALAT42.A"
+		prestige = -20
+		release_vassal = SMG
+		clr_country_flag = potencial_lithuanians
 	}
 }
 

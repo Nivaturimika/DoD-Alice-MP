@@ -1323,124 +1323,43 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = {
-	name = "135602.A"
+		name = "135602.A"
 		money = 100000
 		2233 = { remove_core = THIS }
-		FROM = { country_event = 371262 }
+		FROM = {
+			lambda_country_event = {
+				title = "NeuKur2.T"
+				desc = "NeuKur2.D"
+				option = {
+					name = "190441.A"
+					prestige = 5
+					money = -100000
+					2233 = { secede_province = THIS }
+					relation = { who = FROM value = 50 }
+					any_pop = { consciousness = -1 }
+				}
+			}
+		}
 		ai_chance = {
 			factor = 75
-		modifier = { 
-		factor = 1.5 
-		relation = { who = FROM value = 100 }
-			}
-		modifier = { 
-		factor = 1.5 
-		relation = { who = FROM value = 150 }
-			}
 		}
 	}
 
 	option = {
-	name = "135602.B"
-	FROM = { country_event = 371263 }
+		name = "135602.B"
+		FROM = {
+			lambda_country_event = {
+				title = "NeuKur3.T"
+				desc = "NeuKur3.D"
+				option = {
+					name = "135622.A"
+					relation = { who = FROM value = -100 }
+				}
+			}
+		}
 		ai_chance = {
 			factor = 25
 		}
-	}
-}
-
-country_event = {
-	id = 371262
-	title = "NeuKur2.T"
-	desc = "NeuKur2.D"
-	
-	is_triggered_only = yes
-	
-	option = {
-	name = "190441.A"
-	prestige = 5
-	money = -100000
-	2233 = { secede_province = THIS }
-	relation = { who = FROM value = 50 }
-	any_pop = { consciousness = -1 }
-	}
-}
-
-country_event = {
-	id = 371263
-	title = "NeuKur3.T"
-	desc = "NeuKur3.D"
-	
-	is_triggered_only = yes
-	
-	option = {
-	name = "135622.A"
-	relation = { who = FROM value = -100 }
-	}
-}
-
-country_event = {
-	id = 371264
-	title = "NeuKur4.T"
-	desc = "NeuKur4.D"
-	
-	is_triggered_only = yes 
-	
-	option = {
-	name = "135620.A"
-		money = 150000
-		any_owned = { 
-		ENG_2228 = { remove_core = THIS secede_province = FROM }
-		}
-		FROM = { country_event = 371265 }
-		ai_chance = {
-			factor = 75
-		modifier = { 
-		factor = 1.5 
-		relation = { who = FROM value = 100 }
-			}
-		modifier = { 
-		factor = 1.5 
-		relation = { who = FROM value = 150 }
-			}
-		}
-	}
-
-	option = {
-	name = "135620.B"
-	FROM = { country_event = 371266 }
-		ai_chance = {
-			factor = 25
-		}
-	}
-}
-
-country_event = {
-	id = 371265
-	title = "NeuKur2.T"
-	desc = "NeuKur5.D"
-	
-	is_triggered_only = yes
-	
-	option = {
-	name = "97205.A"
-	prestige = 5
-	money = -150000
-	relation = { who = FROM value = 50 }
-	any_pop = { consciousness = -1 }
-	}
-}
-
-country_event = {
-	id = 371266
-	title = "NeuKur3.T"
-	desc = "NeuKur3.D"
-	
-	is_triggered_only = yes
-	
-	option = {
-	name = "135632.A"
-	relation = { who = FROM value = -100 }
 	}
 }
 
@@ -1452,26 +1371,18 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = {
-	name = "135630.A"
+		name = "135630.A"
 		money = 100000
 		2231 = { remove_core = THIS}
 		FROM = { country_event = 371268 }
 		ai_chance = {
 			factor = 75
-		modifier = { 
-		factor = 1.5 
-		relation = { who = FROM value = 100 }
-			}
-		modifier = { 
-		factor = 1.5 
-		relation = { who = FROM value = 150 }
-			}
 		}
 	}
 
 	option = {
-	name = "135630.B"
-	FROM = { country_event = 371269 }
+		name = "135630.B"
+		FROM = { country_event = 371269 }
 		ai_chance = {
 			factor = 25
 		}
@@ -1695,70 +1606,5 @@ country_event = {
 	option = {
 	name = "371269.A"
 	relation = { who = FROM value = -100 }
-	}
-}
-
-country_event = {
-	id = 371279
-	title = "NeuKur19.T"
-	desc = "NeuKur19.D"
-	
-	is_triggered_only = yes 
-	
-	option = {
-		name = "371267.A"
-		money = 50000
-		any_owned = { 
-			ENG_2224 = { remove_core = THIS secede_province = FROM }
-		}
-		FROM = { country_event = 371280 }
-		ai_chance = {
-			factor = 75
-			modifier = { 
-				factor = 1.5 
-				relation = { who = FROM value = 100 }
-			}
-			modifier = { 
-				factor = 1.5 
-				relation = { who = FROM value = 150 }
-			}
-		}
-	}
-
-	option = {
-		name = "371267.B"
-		FROM = { country_event = 371281 }
-		ai_chance = {
-			factor = 25
-		}
-	}
-}
-
-country_event = {
-	id = 371280
-	title = "NeuKur2.T"
-	desc = "NeuKur20.D"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "135611.A"
-		prestige = 5
-		money = -50000
-		relation = { who = FROM value = 50 }
-		any_pop = { consciousness = -1 }
-	}
-}
-
-country_event = {
-	id = 371281
-	title = "NeuKur3.T"
-	desc = "NeuKur3.D"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "371272.A"
-		relation = { who = FROM value = -100 }
 	}
 }
