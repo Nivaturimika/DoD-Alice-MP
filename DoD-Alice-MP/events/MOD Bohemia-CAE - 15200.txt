@@ -4576,7 +4576,7 @@ country_event = {
 		clr_country_flag = anarcho_liberal_gov
 		
 
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -8548,7 +8548,7 @@ country_event = {
 		clr_country_flag = anarcho_liberal_gov
 		
 
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -8721,7 +8721,7 @@ country_event = {
 		clr_country_flag = anarcho_liberal_gov
 		
 
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -8833,7 +8833,7 @@ country_event = {
 		clr_country_flag = anarcho_liberal_gov
 		
 
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -8875,7 +8875,7 @@ country_event = {
 		clr_country_flag = anarcho_liberal_gov
 		
 
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -9655,7 +9655,7 @@ country_event = {
 		clr_country_flag = anarcho_liberal_gov
 		
 
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -9793,7 +9793,7 @@ country_event = {
 		clr_country_flag = anarcho_liberal_gov
 		
 
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win

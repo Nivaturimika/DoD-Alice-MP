@@ -865,7 +865,7 @@ country_event = { #CRS choice : clans and liberalism
 	clr_country_flag = anarcho_liberal_gov
 	
 	
-	clr_country_flag = election_started
+	
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -876,15 +876,15 @@ country_event = { #CRS choice : clans and liberalism
 	clr_country_flag = social_liberal_election_win
 	clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-	clr_country_flag = conservative_party_in_power
-	clr_country_flag = liberal_party_in_power
-	clr_country_flag = reactionary_party_in_power
-	clr_country_flag = socialist_party_in_power
-	clr_country_flag = communist_party_in_power
-	clr_country_flag = fascist_party_in_power
-	clr_country_flag = paternal_party_in_power
-	clr_country_flag = anarcho_liberal_party_in_power
-	clr_country_flag = market_liberal_party_in_power
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	money = 50000
 	ai_chance = { 
 		factor = 50
@@ -1262,7 +1262,7 @@ country_event = { #Declaration of independence
 	clr_country_flag = anarcho_liberal_gov
 	
 	
-	clr_country_flag = election_started
+	
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -1273,15 +1273,15 @@ country_event = { #Declaration of independence
 	clr_country_flag = social_liberal_election_win
 	clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-	clr_country_flag = conservative_party_in_power
-	clr_country_flag = liberal_party_in_power
-	clr_country_flag = reactionary_party_in_power
-	clr_country_flag = socialist_party_in_power
-	clr_country_flag = communist_party_in_power
-	clr_country_flag = fascist_party_in_power
-	clr_country_flag = paternal_party_in_power
-	clr_country_flag = anarcho_liberal_party_in_power
-	clr_country_flag = market_liberal_party_in_power
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	money = 50000
 	add_country_modifier = { 
 	name = small_country_draft 
@@ -1755,7 +1755,7 @@ country_event = { #Moderate Victory -Commons Insurrection
 	clr_country_flag = anarcho_liberal_gov
 	
 	
-	clr_country_flag = election_started
+	
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -1766,15 +1766,15 @@ country_event = { #Moderate Victory -Commons Insurrection
 	clr_country_flag = social_liberal_election_win
 	clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-	clr_country_flag = conservative_party_in_power
-	clr_country_flag = liberal_party_in_power
-	clr_country_flag = reactionary_party_in_power
-	clr_country_flag = socialist_party_in_power
-	clr_country_flag = communist_party_in_power
-	clr_country_flag = fascist_party_in_power
-	clr_country_flag = paternal_party_in_power
-	clr_country_flag = anarcho_liberal_party_in_power
-	clr_country_flag = market_liberal_party_in_power
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	any_pop = { 
 	militancy = -3 
 	ideology = {
@@ -1928,7 +1928,7 @@ country_event = { #Republican Victory -Conservative Coup
 	clr_country_flag = anarcho_liberal_gov
 	
 	
-	clr_country_flag = election_started
+	
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -1939,15 +1939,15 @@ country_event = { #Republican Victory -Conservative Coup
 	clr_country_flag = social_liberal_election_win
 	clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-	clr_country_flag = conservative_party_in_power
-	clr_country_flag = liberal_party_in_power
-	clr_country_flag = reactionary_party_in_power
-	clr_country_flag = socialist_party_in_power
-	clr_country_flag = communist_party_in_power
-	clr_country_flag = fascist_party_in_power
-	clr_country_flag = paternal_party_in_power
-	clr_country_flag = anarcho_liberal_party_in_power
-	clr_country_flag = market_liberal_party_in_power
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	government = democracy 
 	political_reform = universal_voting
 	any_pop = { 
@@ -3044,15 +3044,15 @@ any_country = {
 	clr_country_flag = social_liberal_election_win
 	clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-	set_country_flag = conservative_party_in_power
-	clr_country_flag = liberal_party_in_power
-	clr_country_flag = reactionary_party_in_power
-	clr_country_flag = socialist_party_in_power
-	clr_country_flag = communist_party_in_power
-	clr_country_flag = fascist_party_in_power
-	clr_country_flag = paternal_party_in_power
-	clr_country_flag = anarcho_liberal_party_in_power
-	clr_country_flag = market_liberal_party_in_power
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	}
 	ARN = { 
 	war = { 
@@ -7081,15 +7081,15 @@ country_event = {
 		
 		
 		
-		clr_country_flag = election_started
-		clr_country_flag = conservative_party_in_power
-		set_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		clr_country_flag = tory_election_win
 		set_country_flag = liberal_election_win
 		clr_country_flag = communist_election_win
@@ -7099,7 +7099,7 @@ country_event = {
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-		clr_country_flag = market_liberal_party_in_power	
+			
 		any_country = {
 			limit = {
 			tag != THIS
@@ -7193,7 +7193,7 @@ country_event = {
 		clr_country_flag = anarcho_liberal_gov
 		
 		
-		clr_country_flag = conservative_party_in_power
+		
 		clr_global_flag = ITA_revolutionary_war
 		clr_country_flag = custom_treaty_loser
 		TRE = { all_core = { add_core = SGF remove_core = THIS } } 

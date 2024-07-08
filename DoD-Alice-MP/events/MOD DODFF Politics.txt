@@ -915,8 +915,8 @@ country_event = {
 			militancy = 2
 		}
 		clr_country_flag = fascist_monarchy_rebels
-		clr_country_flag = fascist_party_in_power
-		set_country_flag = conservative_party_in_power
+		
+		
 		ai_chance = {
 			factor = 5
 		}
@@ -975,7 +975,7 @@ country_event = {
 		name = "DODFFP9.A"
 		prestige = -5
 		ruling_party_ideology = socialist
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		set_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -984,15 +984,15 @@ country_event = {
 		clr_country_flag = reactionary_election_win
 		clr_country_flag = anarcho_liberal_election_win
 		clr_country_flag = social_liberal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		set_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		add_country_modifier = {
@@ -1044,7 +1044,7 @@ country_event = {
 		name = "DODFFP10.A"
 		prestige = -5
 		ruling_party_ideology = socialist
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		set_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -1053,15 +1053,15 @@ country_event = {
 		clr_country_flag = reactionary_election_win
 		clr_country_flag = anarcho_liberal_election_win
 		clr_country_flag = social_liberal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		set_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		remove_country_modifier = socrep_setback
@@ -1116,7 +1116,7 @@ country_event = {
 		name = "DODFFP11.A"
 		prestige_factor = -0.2
 		ruling_party_ideology = socialist
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		set_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -1125,15 +1125,15 @@ country_event = {
 		clr_country_flag = reactionary_election_win
 		clr_country_flag = anarcho_liberal_election_win
 		clr_country_flag = social_liberal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		set_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		remove_country_modifier = socrep_failure
@@ -1780,16 +1780,16 @@ country_event = {
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		clr_country_flag = election_started
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 
 
@@ -2488,16 +2488,16 @@ country_event = {
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		clr_country_flag = election_started
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 
 
@@ -2601,16 +2601,16 @@ country_event = {
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		clr_country_flag = election_started
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 
 
@@ -2682,16 +2682,16 @@ country_event = {
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		clr_country_flag = election_started
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 
 
@@ -2764,16 +2764,16 @@ country_event = {
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		clr_country_flag = election_started
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 
 
@@ -2846,16 +2846,16 @@ country_event = {
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		clr_country_flag = election_started
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 
 
@@ -3955,8 +3955,8 @@ country_event = {
 		clr_country_flag = constitutional_crisis_socialist
 		prestige = -5
 		ruling_party_ideology = reactionary
-		set_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
+		
+		
 		clr_country_flag = international_communism
 		set_country_flag = legal_socialism
 		random_owned = {

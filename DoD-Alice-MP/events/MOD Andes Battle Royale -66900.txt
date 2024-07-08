@@ -5038,14 +5038,14 @@ country_event = {
 		clr_country_flag = anarcho_liberal_election_win
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
 		INC = { country_event = 67032 }
 	}
 }
@@ -5573,14 +5573,14 @@ country_event = {
 	clr_country_flag = anarcho_liberal_election_win
 	clr_country_flag = social_liberal_election_win
 	clr_country_flag = market_liberal_election_win
-	clr_country_flag = conservative_party_in_power
-    clr_country_flag = liberal_party_in_power
-	clr_country_flag = reactionary_party_in_power
-	clr_country_flag = socialist_party_in_power
-	clr_country_flag = communist_party_in_power
-	clr_country_flag = fascist_party_in_power
-	clr_country_flag = anarcho_liberal_party_in_power
-    clr_country_flag = market_liberal_party_in_power
+	
+    
+	
+	
+	
+	
+	
+    
 	SCA = { country_event = 67050 }
 	}
 }
@@ -6656,14 +6656,14 @@ country_event = {
 		clr_country_flag = anarcho_liberal_election_win
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
@@ -9597,14 +9597,14 @@ country_event = {
 		clr_country_flag = anarcho_liberal_election_win
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
 		ai_chance = { 
 			factor = 34 
 		}
@@ -9645,14 +9645,14 @@ country_event = {
 		clr_country_flag = anarcho_liberal_election_win
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+		
 		ai_chance = { 
 			factor = 33 
 		}

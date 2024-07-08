@@ -5567,7 +5567,7 @@ country_event = {
 
 	
 
-	clr_country_flag = election_started
+	
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -6245,7 +6245,7 @@ country_event = {
 
 		
 
-		clr_country_flag = election_started
+		
 		iron = 10
 		wool = 10
 		timber = 25
@@ -6321,7 +6321,7 @@ country_event = {
 
 		
 
-		clr_country_flag = election_started
+		
 		iron = 10
 		wool = 10
 		timber = 25
@@ -6378,7 +6378,7 @@ country_event = {
 
 		
 
-		clr_country_flag = election_started
+		
 		iron = 10
 		wool = 10
 		timber = 25
@@ -7375,7 +7375,7 @@ country_event = {
 
 
 
-	clr_country_flag = election_started
+	
 	iron = 10
 	wool = 10
 	timber = 25
@@ -7422,10 +7422,10 @@ country_event = {
 	option = {
 		name = "LATIN84.A"
 		ruling_party_ideology = conservative
-		clr_country_flag = election_started
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = socialist_party_in_power
-		set_country_flag = conservative_party_in_power
+		
+		
+		
+		
 		any_pop = {
 			limit = {
 				OR = {

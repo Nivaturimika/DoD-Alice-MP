@@ -1875,72 +1875,21 @@ country_event = {
 	picture = "chartist_rally"
 
 	trigger = {
-		ai = no
 		election = no
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
 			government = parliamentary_republic
 		}
-		OR = {
-			AND = {
-				has_country_flag = conservative_party_in_power
-				NOT = { ruling_party_ideology = conservative }
-			}
-			AND = {
-				has_country_flag = market_liberal_party_in_power
-				NOT = { ruling_party_ideology = market_liberal }
-			}
-			AND = {
-				has_country_flag = social_liberal_party_in_power
-				NOT = { ruling_party_ideology = social_liberal }
-			}
-			AND = {
-				has_country_flag = liberal_party_in_power
-				NOT = { ruling_party_ideology = liberal }
-			}
-			AND = {
-				has_country_flag = reactionary_party_in_power
-				NOT = { ruling_party_ideology = reactionary }
-			}
-			AND = {
-				has_country_flag = socialist_party_in_power
-				NOT = { ruling_party_ideology = socialist }
-			}
-			AND = {
-				has_country_flag = communist_party_in_power
-				NOT = { ruling_party_ideology = communist }
-			}
-			AND = {
-				has_country_flag = fascist_party_in_power
-				NOT = { ruling_party_ideology = fascist }
-			}
-			AND = {
-				has_country_flag = paternal_party_in_power
-				NOT = { ruling_party_ideology = paternal }
-			}
-			AND = {
-				has_country_flag = anarcho_liberal_party_in_power
-				NOT = { ruling_party_ideology = anarcho_liberal }
-			}
-		}
+		always = no
 	}
 	
 	mean_time_to_happen = { months = 3 }
 	
 	option = {
 		name = "EVT6016818OPTA"
-		clr_country_flag = election_started
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-		clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = social_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
 		add_country_modifier = { name = constitutional_crisis duration = 365 }
 		#Primary Culture Only Angry
 		random_owned = {
@@ -2161,7 +2110,7 @@ country_event = {
 		random_owned = {
 			limit = { owner = { ruling_party_ideology = market_liberal } }
 			owner = {
-				set_country_flag = market_liberal_party_in_power
+				
 				any_pop = {
 					limit = {
 						OR = {
@@ -2183,7 +2132,7 @@ country_event = {
 		random_owned = {
 			limit = { owner = { ruling_party_ideology = social_liberal } }
 			owner = {
-				set_country_flag = social_liberal_party_in_power
+				
 				any_pop = {
 					limit = {
 						OR = {
@@ -2205,7 +2154,7 @@ country_event = {
 		random_owned = {
 			limit = { owner = { ruling_party_ideology = conservative } }
 			owner = {
-				set_country_flag = conservative_party_in_power
+				
 				any_pop = {
 					limit = {
 						OR = {
@@ -2227,7 +2176,7 @@ country_event = {
 		random_owned = {
 			limit = { owner = { ruling_party_ideology = liberal } }
 			owner = {
-				set_country_flag = liberal_party_in_power
+				
 				any_pop = {
 					limit = {
 						OR = {
@@ -2249,7 +2198,7 @@ country_event = {
 		random_owned = {
 			limit = { owner = { ruling_party_ideology = reactionary } }
 			owner = {
-				set_country_flag = reactionary_party_in_power
+				
 				any_pop = {
 					limit = {
 						OR = {
@@ -2271,7 +2220,7 @@ country_event = {
 		random_owned = {
 			limit = { owner = { ruling_party_ideology = socialist } }
 			owner = {
-				set_country_flag = socialist_party_in_power
+				
 				any_pop = {
 					limit = {
 						OR = {
@@ -2293,7 +2242,7 @@ country_event = {
 		random_owned = {
 			limit = { owner = { ruling_party_ideology = communist } }
 			owner = {
-				set_country_flag = communist_party_in_power
+				
 				any_pop = {
 					limit = {
 						OR = {
@@ -2315,7 +2264,7 @@ country_event = {
 		random_owned = {
 			limit = { owner = { ruling_party_ideology = fascist } }
 			owner = {
-				set_country_flag = fascist_party_in_power
+				
 				any_pop = {
 					limit = {
 						OR = {
@@ -2337,7 +2286,7 @@ country_event = {
 		random_owned = {
 			limit = { owner = { ruling_party_ideology = paternal } }
 			owner = {
-				set_country_flag = paternal_party_in_power
+				
 				any_pop = {
 					limit = {
 						OR = {
@@ -2359,7 +2308,7 @@ country_event = {
 		random_owned = {
 			limit = { owner = { ruling_party_ideology = anarcho_liberal } }
 			owner = {
-				set_country_flag = anarcho_liberal_party_in_power
+				
 				any_pop = {
 					limit = {
 						OR = {

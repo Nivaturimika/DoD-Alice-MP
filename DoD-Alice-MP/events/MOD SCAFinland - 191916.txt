@@ -933,7 +933,7 @@ country_event = {
 	clr_country_flag = anarcho_liberal_gov
 	
 
-	set_country_flag = conservative_party_in_power
+	
 	remove_accepted_culture = scandinavian
 	treasury = 10000
 	ammunition = 1000
@@ -1161,7 +1161,7 @@ country_event = {
 	clr_country_flag = anarcho_liberal_gov
 	
 
-	clr_country_flag = conservative_party_in_power
+	
 	ai_chance = {
 	factor = 40
 		}
@@ -1192,7 +1192,7 @@ country_event = {
 	clr_country_flag = anarcho_liberal_gov
 	
 
-	clr_country_flag = conservative_party_in_power
+	
 	ai_chance = {
 	factor = 10
 		}

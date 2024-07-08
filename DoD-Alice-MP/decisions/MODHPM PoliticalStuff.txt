@@ -1452,15 +1452,15 @@ political_decisions = {
 			set_country_flag = no_maelstrom_for_now 
 			set_country_flag = show_trials_ongoing
 			ruling_party_ideology = conservative
-			clr_country_flag = election_started
-			set_country_flag = conservative_party_in_power
-			clr_country_flag = liberal_party_in_power
-			clr_country_flag = reactionary_party_in_power
-			clr_country_flag = socialist_party_in_power
-			clr_country_flag = communist_party_in_power
-			clr_country_flag = fascist_party_in_power
-			clr_country_flag = paternal_party_in_power
-			clr_country_flag = anarcho_liberal_party_in_power
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			set_country_flag = tory_election_win
 			clr_country_flag = socialist_election_win
 			clr_country_flag = liberal_election_win
@@ -1471,7 +1471,7 @@ political_decisions = {
 			clr_country_flag = social_liberal_election_win
 			clr_country_flag = market_liberal_election_win		
 			clr_country_flag = paternal_election_win
-			clr_country_flag = market_liberal_party_in_power
+			
 			plurality = 25
 			random_owned = {
 			limit = {
@@ -1572,15 +1572,15 @@ political_decisions = {
 			set_country_flag = show_trials_ongoing
 			set_country_flag = communist_purge
 			ruling_party_ideology = conservative
-			clr_country_flag = election_started
-			set_country_flag = conservative_party_in_power
-			clr_country_flag = liberal_party_in_power
-			clr_country_flag = reactionary_party_in_power
-			clr_country_flag = socialist_party_in_power
-			clr_country_flag = communist_party_in_power
-			clr_country_flag = fascist_party_in_power
-			clr_country_flag = paternal_party_in_power
-			clr_country_flag = anarcho_liberal_party_in_power
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			set_country_flag = tory_election_win
 			clr_country_flag = socialist_election_win
 			clr_country_flag = liberal_election_win
@@ -1591,7 +1591,7 @@ political_decisions = {
 			clr_country_flag = social_liberal_election_win
 			clr_country_flag = market_liberal_election_win		
 			clr_country_flag = paternal_election_win
-			clr_country_flag = market_liberal_party_in_power
+			
 			plurality = 25
 			random_owned = {
 			limit = {
@@ -1737,15 +1737,15 @@ political_decisions = {
 			set_country_flag = fascist_purge
 			set_country_flag = communist_purge
 			ruling_party_ideology = conservative
-			clr_country_flag = election_started
-			set_country_flag = conservative_party_in_power
-			clr_country_flag = liberal_party_in_power
-			clr_country_flag = reactionary_party_in_power
-			clr_country_flag = socialist_party_in_power
-			clr_country_flag = communist_party_in_power
-			clr_country_flag = fascist_party_in_power
-			clr_country_flag = paternal_party_in_power
-			clr_country_flag = anarcho_liberal_party_in_power
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			set_country_flag = tory_election_win
 			clr_country_flag = socialist_election_win
 			clr_country_flag = liberal_election_win
@@ -1756,7 +1756,7 @@ political_decisions = {
 			clr_country_flag = social_liberal_election_win
 			clr_country_flag = market_liberal_election_win		
 			clr_country_flag = paternal_election_win
-			clr_country_flag = market_liberal_party_in_power
+			
 			plurality = 50
 			random_owned = {
 			limit = {

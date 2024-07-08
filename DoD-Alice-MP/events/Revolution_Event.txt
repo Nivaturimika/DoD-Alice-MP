@@ -18,7 +18,7 @@ country_event = {
 
 	option = {
 		name = "800050.A"
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -29,15 +29,15 @@ country_event = {
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-	    clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+	    
+		
+		
 		clr_country_flag = fascist_coup_enabled
 		random_owned = {
 			limit = { owner = { has_country_modifier = the_brown_scare } }
@@ -55,7 +55,7 @@ country_event = {
 					ruling_party_ideology = paternal
 				}
 			}
-			owner = { set_country_flag = paternal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -68,7 +68,7 @@ country_event = {
 					ruling_party_ideology = market_liberal
 				}
 			}
-			owner = { set_country_flag = market_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -81,7 +81,7 @@ country_event = {
 					ruling_party_ideology = conservative
 				}
 			}
-			owner = { set_country_flag = conservative_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -94,7 +94,7 @@ country_event = {
 					ruling_party_ideology = liberal
 				}
 			}
-			owner = { set_country_flag = liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -107,7 +107,7 @@ country_event = {
 					ruling_party_ideology = reactionary
 				}
 			}
-			owner = { set_country_flag = reactionary_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -120,7 +120,7 @@ country_event = {
 					ruling_party_ideology = socialist
 				}
 			}
-			owner = { set_country_flag = socialist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -133,7 +133,7 @@ country_event = {
 					ruling_party_ideology = communist
 				}
 			}
-			owner = { set_country_flag = communist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -146,7 +146,7 @@ country_event = {
 					ruling_party_ideology = fascist
 				}
 			}
-			owner = { set_country_flag = fascist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -159,7 +159,7 @@ country_event = {
 					ruling_party_ideology = anarcho_liberal
 				}
 			}
-			owner = { set_country_flag = anarcho_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -309,7 +309,7 @@ country_event = {
 
 	option = {
 		name = "800051.A"
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -320,15 +320,15 @@ country_event = {
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-	    clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+	    
+		
+		
 		clr_country_flag = fascist_coup_enabled
 		
 		random_owned = {
@@ -347,7 +347,7 @@ country_event = {
 					ruling_party_ideology = paternal
 				}
 			}
-			owner = { set_country_flag = paternal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -360,7 +360,7 @@ country_event = {
 					ruling_party_ideology = market_liberal
 				}
 			}
-			owner = { set_country_flag = market_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -373,7 +373,7 @@ country_event = {
 					ruling_party_ideology = conservative
 				}
 			}
-			owner = { set_country_flag = conservative_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -386,7 +386,7 @@ country_event = {
 					ruling_party_ideology = liberal
 				}
 			}
-			owner = { set_country_flag = liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -399,7 +399,7 @@ country_event = {
 					ruling_party_ideology = reactionary
 				}
 			}
-			owner = { set_country_flag = reactionary_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -412,7 +412,7 @@ country_event = {
 					ruling_party_ideology = socialist
 				}
 			}
-			owner = { set_country_flag = socialist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -425,7 +425,7 @@ country_event = {
 					ruling_party_ideology = communist
 				}
 			}
-			owner = { set_country_flag = communist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -438,7 +438,7 @@ country_event = {
 					ruling_party_ideology = fascist
 				}
 			}
-			owner = { set_country_flag = fascist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -451,7 +451,7 @@ country_event = {
 					ruling_party_ideology = anarcho_liberal
 				}
 			}
-			owner = { set_country_flag = anarcho_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -804,7 +804,7 @@ country_event = {
 
 	option = {
 		name = "800052.A"
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -815,15 +815,15 @@ country_event = {
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-	    clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+	    
+		
+		
 		clr_country_flag = fascist_coup_enabled
 		random_owned = {
 			limit = { owner = { has_country_modifier = the_red_scare } }
@@ -841,7 +841,7 @@ country_event = {
 					ruling_party_ideology = paternal
 				}
 			}
-			owner = { set_country_flag = paternal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -854,7 +854,7 @@ country_event = {
 					ruling_party_ideology = market_liberal
 				}
 			}
-			owner = { set_country_flag = market_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -867,7 +867,7 @@ country_event = {
 					ruling_party_ideology = conservative
 				}
 			}
-			owner = { set_country_flag = conservative_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -880,7 +880,7 @@ country_event = {
 					ruling_party_ideology = liberal
 				}
 			}
-			owner = { set_country_flag = liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -893,7 +893,7 @@ country_event = {
 					ruling_party_ideology = reactionary
 				}
 			}
-			owner = { set_country_flag = reactionary_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -906,7 +906,7 @@ country_event = {
 					ruling_party_ideology = socialist
 				}
 			}
-			owner = { set_country_flag = socialist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -919,7 +919,7 @@ country_event = {
 					ruling_party_ideology = communist
 				}
 			}
-			owner = { set_country_flag = communist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -932,7 +932,7 @@ country_event = {
 					ruling_party_ideology = fascist
 				}
 			}
-			owner = { set_country_flag = fascist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -945,7 +945,7 @@ country_event = {
 					ruling_party_ideology = anarcho_liberal
 				}
 			}
-			owner = { set_country_flag = anarcho_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1190,7 +1190,7 @@ country_event = {
 
 	option = {
 		name = "800053.A"
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -1201,15 +1201,15 @@ country_event = {
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-	    clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+	    
+		
+		
 		clr_country_flag = fascist_coup_enabled
 		random_owned = {
 			limit = {
@@ -1222,7 +1222,7 @@ country_event = {
 					ruling_party_ideology = paternal
 				}
 			}
-			owner = { set_country_flag = paternal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1235,7 +1235,7 @@ country_event = {
 					ruling_party_ideology = market_liberal
 				}
 			}
-			owner = { set_country_flag = market_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1248,7 +1248,7 @@ country_event = {
 					ruling_party_ideology = conservative
 				}
 			}
-			owner = { set_country_flag = conservative_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1261,7 +1261,7 @@ country_event = {
 					ruling_party_ideology = liberal
 				}
 			}
-			owner = { set_country_flag = liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1274,7 +1274,7 @@ country_event = {
 					ruling_party_ideology = reactionary
 				}
 			}
-			owner = { set_country_flag = reactionary_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1287,7 +1287,7 @@ country_event = {
 					ruling_party_ideology = socialist
 				}
 			}
-			owner = { set_country_flag = socialist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1300,7 +1300,7 @@ country_event = {
 					ruling_party_ideology = communist
 				}
 			}
-			owner = { set_country_flag = communist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1313,7 +1313,7 @@ country_event = {
 					ruling_party_ideology = fascist
 				}
 			}
-			owner = { set_country_flag = fascist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1326,7 +1326,7 @@ country_event = {
 					ruling_party_ideology = anarcho_liberal
 				}
 			}
-			owner = { set_country_flag = anarcho_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1578,7 +1578,7 @@ country_event = {
 
 	option = {
 		name = "800054.A"
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -1589,15 +1589,15 @@ country_event = {
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-	    clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+	    
+		
+		
 		clr_country_flag = fascist_coup_enabled
 		random_owned = {
 			limit = {
@@ -1610,7 +1610,7 @@ country_event = {
 					ruling_party_ideology = paternal
 				}
 			}
-			owner = { set_country_flag = paternal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1623,7 +1623,7 @@ country_event = {
 					ruling_party_ideology = market_liberal
 				}
 			}
-			owner = { set_country_flag = market_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1636,7 +1636,7 @@ country_event = {
 					ruling_party_ideology = conservative
 				}
 			}
-			owner = { set_country_flag = conservative_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1649,7 +1649,7 @@ country_event = {
 					ruling_party_ideology = liberal
 				}
 			}
-			owner = { set_country_flag = liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1662,7 +1662,7 @@ country_event = {
 					ruling_party_ideology = reactionary
 				}
 			}
-			owner = { set_country_flag = reactionary_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1675,7 +1675,7 @@ country_event = {
 					ruling_party_ideology = socialist
 				}
 			}
-			owner = { set_country_flag = socialist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1688,7 +1688,7 @@ country_event = {
 					ruling_party_ideology = communist
 				}
 			}
-			owner = { set_country_flag = communist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1701,7 +1701,7 @@ country_event = {
 					ruling_party_ideology = fascist
 				}
 			}
-			owner = { set_country_flag = fascist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -1714,7 +1714,7 @@ country_event = {
 					ruling_party_ideology = anarcho_liberal
 				}
 			}
-			owner = { set_country_flag = anarcho_liberal_party_in_power }
+			owner = {  }
 		}
 		
 		random_owned = {
@@ -2023,7 +2023,7 @@ country_event = {
 
 	option = {
 		name = "800057.A"
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -2034,15 +2034,15 @@ country_event = {
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-	    clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+	    
+		
+		
 		clr_country_flag = fascist_coup_enabled
 		random_owned = {
 			limit = { owner = { has_country_modifier = the_brown_scare } }
@@ -2060,7 +2060,7 @@ country_event = {
 					ruling_party_ideology = paternal
 				}
 			}
-			owner = { set_country_flag = paternal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2073,7 +2073,7 @@ country_event = {
 					ruling_party_ideology = market_liberal
 				}
 			}
-			owner = { set_country_flag = market_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2086,7 +2086,7 @@ country_event = {
 					ruling_party_ideology = conservative
 				}
 			}
-			owner = { set_country_flag = conservative_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2099,7 +2099,7 @@ country_event = {
 					ruling_party_ideology = liberal
 				}
 			}
-			owner = { set_country_flag = liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2112,7 +2112,7 @@ country_event = {
 					ruling_party_ideology = reactionary
 				}
 			}
-			owner = { set_country_flag = reactionary_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2125,7 +2125,7 @@ country_event = {
 					ruling_party_ideology = socialist
 				}
 			}
-			owner = { set_country_flag = socialist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2138,7 +2138,7 @@ country_event = {
 					ruling_party_ideology = communist
 				}
 			}
-			owner = { set_country_flag = communist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2151,7 +2151,7 @@ country_event = {
 					ruling_party_ideology = fascist
 				}
 			}
-			owner = { set_country_flag = fascist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2164,7 +2164,7 @@ country_event = {
 					ruling_party_ideology = anarcho_liberal
 				}
 			}
-			owner = { set_country_flag = anarcho_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2475,16 +2475,16 @@ country_event = {
 	
 	option = {
 		name = "810055.A"
-		clr_country_flag = election_started
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-	    clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+		
+	    
+		
+		
 		
 		random_owned = {
 			limit = {
@@ -2497,7 +2497,7 @@ country_event = {
 					ruling_party_ideology = paternal
 				}
 			}
-			owner = { set_country_flag = paternal_party_in_power }
+			owner = {  }
 		}		
 		random_owned = {
 			limit = {
@@ -2510,7 +2510,7 @@ country_event = {
 					ruling_party_ideology = market_liberal
 				}
 			}
-			owner = { set_country_flag = market_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2523,7 +2523,7 @@ country_event = {
 					ruling_party_ideology = conservative
 				}
 			}
-			owner = { set_country_flag = conservative_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2536,7 +2536,7 @@ country_event = {
 					ruling_party_ideology = liberal
 				}
 			}
-			owner = { set_country_flag = liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2549,7 +2549,7 @@ country_event = {
 					ruling_party_ideology = reactionary
 				}
 			}
-			owner = { set_country_flag = reactionary_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2562,7 +2562,7 @@ country_event = {
 					ruling_party_ideology = socialist
 				}
 			}
-			owner = { set_country_flag = socialist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2575,7 +2575,7 @@ country_event = {
 					ruling_party_ideology = communist
 				}
 			}
-			owner = { set_country_flag = communist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2588,7 +2588,7 @@ country_event = {
 					ruling_party_ideology = fascist
 				}
 			}
-			owner = { set_country_flag = fascist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2601,7 +2601,7 @@ country_event = {
 					ruling_party_ideology = anarcho_liberal
 				}
 			}
-			owner = { set_country_flag = anarcho_liberal_party_in_power }
+			owner = {  }
 		}
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
@@ -2672,7 +2672,7 @@ country_event = {
 
 	option = {
 		name = "810056.A"
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -2683,15 +2683,15 @@ country_event = {
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-	    clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+	    
+		
+		
 		clr_country_flag = fascist_coup_enabled
 		random_owned = {
 			limit = { owner = { has_country_modifier = the_red_scare } }
@@ -2709,7 +2709,7 @@ country_event = {
 					ruling_party_ideology = paternal
 				}
 			}
-			owner = { set_country_flag = paternal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2722,7 +2722,7 @@ country_event = {
 					ruling_party_ideology = market_liberal
 				}
 			}
-			owner = { set_country_flag = market_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2735,7 +2735,7 @@ country_event = {
 					ruling_party_ideology = conservative
 				}
 			}
-			owner = { set_country_flag = conservative_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2748,7 +2748,7 @@ country_event = {
 					ruling_party_ideology = liberal
 				}
 			}
-			owner = { set_country_flag = liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2761,7 +2761,7 @@ country_event = {
 					ruling_party_ideology = reactionary
 				}
 			}
-			owner = { set_country_flag = reactionary_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2774,7 +2774,7 @@ country_event = {
 					ruling_party_ideology = socialist
 				}
 			}
-			owner = { set_country_flag = socialist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2787,7 +2787,7 @@ country_event = {
 					ruling_party_ideology = communist
 				}
 			}
-			owner = { set_country_flag = communist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2800,7 +2800,7 @@ country_event = {
 					ruling_party_ideology = fascist
 				}
 			}
-			owner = { set_country_flag = fascist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -2813,7 +2813,7 @@ country_event = {
 					ruling_party_ideology = anarcho_liberal
 				}
 			}
-			owner = { set_country_flag = anarcho_liberal_party_in_power }
+			owner = {  }
 		}
 		
 		random_owned = {
@@ -3117,7 +3117,7 @@ country_event = {
 	
 	option = {
 		name = "810057.A"
-		clr_country_flag = election_started
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -3128,15 +3128,15 @@ country_event = {
 		clr_country_flag = social_liberal_election_win
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
-		clr_country_flag = conservative_party_in_power
-		clr_country_flag = liberal_party_in_power
-		clr_country_flag = reactionary_party_in_power
-		clr_country_flag = socialist_party_in_power
-		clr_country_flag = communist_party_in_power
-		clr_country_flag = fascist_party_in_power
-	    clr_country_flag = paternal_party_in_power
-		clr_country_flag = anarcho_liberal_party_in_power
-		clr_country_flag = market_liberal_party_in_power
+		
+		
+		
+		
+		
+		
+	    
+		
+		
 		clr_country_flag = fascist_coup_enabled
 		
 		random_owned = {
@@ -3150,7 +3150,7 @@ country_event = {
 					ruling_party_ideology = paternal
 				}
 			}
-			owner = { set_country_flag = paternal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -3163,7 +3163,7 @@ country_event = {
 					ruling_party_ideology = market_liberal
 				}
 			}
-			owner = { set_country_flag = market_liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -3176,7 +3176,7 @@ country_event = {
 					ruling_party_ideology = conservative
 				}
 			}
-			owner = { set_country_flag = conservative_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -3189,7 +3189,7 @@ country_event = {
 					ruling_party_ideology = liberal
 				}
 			}
-			owner = { set_country_flag = liberal_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -3202,7 +3202,7 @@ country_event = {
 					ruling_party_ideology = reactionary
 				}
 			}
-			owner = { set_country_flag = reactionary_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -3215,7 +3215,7 @@ country_event = {
 					ruling_party_ideology = socialist
 				}
 			}
-			owner = { set_country_flag = socialist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -3228,7 +3228,7 @@ country_event = {
 					ruling_party_ideology = communist
 				}
 			}
-			owner = { set_country_flag = communist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -3241,7 +3241,7 @@ country_event = {
 					ruling_party_ideology = fascist
 				}
 			}
-			owner = { set_country_flag = fascist_party_in_power }
+			owner = {  }
 		}
 		random_owned = {
 			limit = {
@@ -3254,7 +3254,7 @@ country_event = {
 					ruling_party_ideology = anarcho_liberal
 				}
 			}
-			owner = { set_country_flag = anarcho_liberal_party_in_power }
+			owner = {  }
 		}
 		
 		random_owned = {
