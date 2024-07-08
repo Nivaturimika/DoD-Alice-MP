@@ -2572,7 +2572,7 @@ country_event = {
 	    
 	    
     	
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    set_variable = {
 		    which = NBG_CORP
@@ -2882,7 +2882,7 @@ country_event = {
 	    
 	    
     	
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    inherit = CBV
 	}
@@ -3049,7 +3049,7 @@ country_event = {
 	    
 	    
     	
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	   any_pop = {
 		   ideology = {
@@ -3123,7 +3123,7 @@ country_event = {
 	    
 	    
     	
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	   any_pop = {
 		   ideology = {
@@ -3883,7 +3883,7 @@ country_event = {
 	    
 	    
     	
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	country_event = { id = 79061 days = 7 }
 	}
@@ -4132,7 +4132,7 @@ country_event = {
 	    
 	    
     	
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
  	    any_pop = {
 		   ideology = {
@@ -4960,7 +4960,7 @@ country_event = {
 	    
 	    
     	
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    set_global_flag = NBG_OLD_ARCADIAN
 		country_event = { id = 79079 days = 7 }
@@ -5026,7 +5026,7 @@ country_event = {
 	    
 	    
     	
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    set_global_flag = NBG_NEW_ARCADIAN
 		set_country_flag = NBG_peaceful_unify
@@ -5093,7 +5093,7 @@ country_event = {
 	    
 	    
     	
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    set_global_flag = NBG_BURGUNDIAN
 		country_event = { id = 79080 days = 7 }
@@ -5159,7 +5159,7 @@ country_event = {
 	    
 	    
     	
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    set_global_flag = NBG_LIONS
 		country_event = { id = 79080 days = 7 }
@@ -5497,7 +5497,7 @@ country_event = {
 	    
 	    
     	
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	ai_chance = { 
 	factor = 95
@@ -5585,7 +5585,7 @@ country_event = {
 	    
 	    
     	
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 		set_country_flag = proletarian_dictatorship_gov
 	}

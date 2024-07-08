@@ -1169,7 +1169,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 			iron = 10
@@ -1522,7 +1522,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		set_global_flag = SKR_IS_FRESH_MEAT
@@ -1568,7 +1568,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		set_global_flag = SKR_IS_FRESH_MEAT
@@ -1614,7 +1614,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		set_country_flag = SKR_FAIL_CHECK_THREE
@@ -3425,7 +3425,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		add_country_modifier = {
 			name = ARC_MILITARY_OCCUPATION
@@ -3611,7 +3611,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		add_country_modifier = {
 			name = ARC_MILITARY_OCCUPATION
@@ -3701,7 +3701,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		add_country_modifier = {
 			name = ARC_MILITARY_OCCUPATION
@@ -4654,7 +4654,7 @@ country_event = {
 			
 			
 			
-			clr_country_flag = anarcho_liberal_gov
+			
 			
 			any_owned = {
 			limit = {
@@ -4913,7 +4913,7 @@ country_event = {
 			
 			
 			
-			clr_country_flag = anarcho_liberal_gov
+			
 			
 			set_global_flag = NBG_LIONS
 			clr_global_flag = NBG_BURGUNDIAN

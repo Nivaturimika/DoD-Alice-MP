@@ -82,7 +82,7 @@ country_event = {
 		
 		
 		
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 		any_pop = { militancy = 1 }
@@ -110,7 +110,7 @@ country_event = {
 		
 		
 		
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 		any_pop = { militancy = 2 }
@@ -137,7 +137,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	political_reform = wealth_voting

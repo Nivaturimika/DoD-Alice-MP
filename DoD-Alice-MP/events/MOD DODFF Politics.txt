@@ -326,7 +326,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		clr_country_flag = tory_election_win
@@ -386,7 +386,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		clr_country_flag = tory_election_win
@@ -447,7 +447,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 
 
 		clr_country_flag = tory_election_win
@@ -523,7 +523,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		clr_country_flag = tory_election_win
@@ -567,7 +567,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		clr_country_flag = tory_election_win
@@ -718,7 +718,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		clr_country_flag = tory_election_win
@@ -875,7 +875,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		plurality = -25
@@ -1193,7 +1193,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		clr_country_flag = tory_election_win
@@ -1241,7 +1241,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		clr_country_flag = tory_election_win
@@ -1333,7 +1333,7 @@ country_event = {
 
 	option = {
 		name = "DODFFP15.A"
-		clr_country_flag = anarcho_liberal_gov
+		
 		if = {
 			limit = { tag = PRV }
 			government = absolute_monarchy
@@ -1796,7 +1796,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 
 		
 
@@ -2504,7 +2504,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 
 		
 
@@ -2617,7 +2617,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 
 		
 
@@ -2698,7 +2698,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 
 		
 
@@ -2780,7 +2780,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 
 		
 
@@ -2862,7 +2862,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 
 		
 
@@ -4131,7 +4131,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 
 
 		clr_country_flag = tory_election_win
@@ -4321,7 +4321,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		country_event = 800052
@@ -5252,7 +5252,7 @@ country_event = {
 
 
 
-			clr_country_flag = anarcho_liberal_gov
+			
 			
 
 		}
@@ -5281,7 +5281,7 @@ country_event = {
 
 
 
-			clr_country_flag = anarcho_liberal_gov
+			
 			
 
 		}
@@ -5310,7 +5310,7 @@ country_event = {
 
 
 
-			clr_country_flag = anarcho_liberal_gov
+			
 			
 
 		}

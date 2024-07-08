@@ -473,7 +473,7 @@ country_event = {
 		   
 		   
 		   
-		   clr_country_flag = anarcho_liberal_gov
+		   
 	       
 	       
 	       treasury = 10000
@@ -760,7 +760,7 @@ country_event = {
 		   
 		   
 		   
-		   clr_country_flag = anarcho_liberal_gov
+		   
 	       
 	       
 	   }
@@ -854,7 +854,7 @@ country_event = {
 		   
 		   
 		   
-		   clr_country_flag = anarcho_liberal_gov
+		   
 	       
 	       
 	   }
@@ -2437,7 +2437,7 @@ country_event = {
 		   
 		   
 		   
-		   clr_country_flag = anarcho_liberal_gov
+		   
 	       
 	       
 	       treasury = 10000
@@ -2643,7 +2643,7 @@ country_event = {
 		   
 		   
 		   
-		   clr_country_flag = anarcho_liberal_gov
+		   
 	       
 	       
 	       treasury = 10000
@@ -2726,7 +2726,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -2775,7 +2775,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -3234,7 +3234,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	any_owned = {
@@ -3791,7 +3791,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -4093,7 +4093,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	any_owned = {
@@ -4319,7 +4319,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	any_owned = {
@@ -4451,7 +4451,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	ai_chance = {
@@ -4494,7 +4494,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	ai_chance = {
@@ -4726,7 +4726,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	SCA = {
@@ -4795,7 +4795,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	SCA = {
@@ -5275,7 +5275,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	SCA = {
@@ -5340,7 +5340,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	SCA = {
@@ -5669,7 +5669,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	}
@@ -5883,7 +5883,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -6124,7 +6124,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -6211,7 +6211,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	}
@@ -6605,7 +6605,7 @@ country_event = {
 	  
 	  
 	  
-	  clr_country_flag = anarcho_liberal_gov
+	  
 	  
 	  
 	  
@@ -6739,7 +6739,7 @@ country_event = {
 	  
 	  
 	  
-	  clr_country_flag = anarcho_liberal_gov
+	  
 	  
 	  
 	  country_event = { id = 2325970 days = 3 }
@@ -6891,7 +6891,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	# Instant Stablity
@@ -7063,7 +7063,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	# Inherit All States
@@ -7163,7 +7163,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -7280,7 +7280,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -7579,7 +7579,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -7650,7 +7650,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -8054,7 +8054,7 @@ country_event = {
 	   
 	   
 	   
-	   clr_country_flag = anarcho_liberal_gov
+	   
 	   
 	   
 	   

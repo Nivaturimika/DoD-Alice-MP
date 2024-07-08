@@ -1872,7 +1872,7 @@ communist_rebels = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		clr_country_flag = red_guard_gov
 
 
@@ -2260,7 +2260,7 @@ anarcho_liberal_rebels = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		clr_country_flag = red_guard_gov
 
 
@@ -2922,7 +2922,7 @@ pan_nationalist_rebels = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		clr_country_flag = red_guard_gov
 
 
@@ -3450,7 +3450,7 @@ liberal_rebels = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		clr_country_flag = red_guard_gov
 
 
@@ -4529,7 +4529,7 @@ socialist_rebels = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 
 
 
@@ -5128,7 +5128,7 @@ turkish_nationalist_rebels = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		clr_country_flag = red_guard_gov
 
 
@@ -5367,7 +5367,7 @@ native_rebels = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		clr_country_flag = red_guard_gov
 
 

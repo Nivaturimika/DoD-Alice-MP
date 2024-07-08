@@ -263,7 +263,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 
@@ -319,7 +319,7 @@ country_event = {
 		political_reform = underground_parties
 
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 
@@ -353,7 +353,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 
@@ -391,7 +391,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 
@@ -570,7 +570,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 
@@ -752,7 +752,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 
@@ -1082,7 +1082,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 
@@ -5202,7 +5202,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 	any_pop = {
@@ -7250,7 +7250,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 	set_country_flag = ARE_WE_STABLE_HERE_MOS
@@ -7853,7 +7853,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 	ai_chance = {
@@ -7882,7 +7882,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 
@@ -7924,7 +7924,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 	ai_chance = {

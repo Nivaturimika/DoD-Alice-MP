@@ -629,7 +629,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	}
@@ -967,7 +967,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -1101,7 +1101,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -1213,7 +1213,7 @@ country_event = {
 		political_reform = primary_culture_only
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		set_country_flag = siggy_is_straight

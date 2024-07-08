@@ -1029,7 +1029,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -2303,7 +2303,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -3838,7 +3838,7 @@ country_event = {
 	    
 	    
         
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 		set_country_flag = the_house_divided
@@ -4380,7 +4380,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -6772,7 +6772,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -6898,7 +6898,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -7042,7 +7042,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -7254,7 +7254,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -7438,7 +7438,7 @@ country_event = {
 	   
 	   
 	   
-	   clr_country_flag = anarcho_liberal_gov
+	   
 	   
 	   		
 	}

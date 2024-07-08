@@ -394,7 +394,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 			
 	}
 }
@@ -455,7 +455,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -531,7 +531,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		any_pop = {
@@ -707,7 +707,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 			
 		any_pop = {
@@ -778,7 +778,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 				
 		set_country_flag = WUR_burgundy
@@ -1307,7 +1307,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		any_pop = {
@@ -1334,7 +1334,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 				
 		clr_country_flag = WUR_danubian
@@ -4352,7 +4352,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -5489,7 +5489,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 			
@@ -5536,7 +5536,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -6218,7 +6218,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 			
 	}

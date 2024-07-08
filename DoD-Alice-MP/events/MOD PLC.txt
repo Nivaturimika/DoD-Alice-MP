@@ -560,7 +560,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -2161,7 +2161,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -2343,7 +2343,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -3169,7 +3169,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -3320,7 +3320,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -4454,7 +4454,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -4510,7 +4510,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -4796,7 +4796,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -4844,7 +4844,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -4901,7 +4901,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -5190,7 +5190,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -5238,7 +5238,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -5295,7 +5295,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -5373,7 +5373,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -5395,7 +5395,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -5548,7 +5548,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -6868,7 +6868,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	}
 }
@@ -7573,7 +7573,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 	clr_country_flag = custom_treaty_loser
@@ -8352,7 +8352,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	set_country_flag = LATE_KIE
 	}
@@ -8561,7 +8561,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	clr_country_flag = custom_treaty_loser
@@ -9347,7 +9347,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -10770,7 +10770,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	add_country_modifier = {
@@ -10941,7 +10941,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	add_country_modifier = {
@@ -12013,7 +12013,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -12157,7 +12157,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -12314,7 +12314,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 					
 		clr_country_flag = tory_election_win
@@ -12515,7 +12515,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 					
 		clr_country_flag = tory_election_win

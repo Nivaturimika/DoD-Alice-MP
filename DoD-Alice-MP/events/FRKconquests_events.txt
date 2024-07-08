@@ -55,7 +55,7 @@ country_event = {
         
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -156,7 +156,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    	
 	    clr_country_flag = tory_election_win

@@ -1135,7 +1135,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		treasury = 10000
@@ -1258,7 +1258,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		treasury = 10000
@@ -1764,7 +1764,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		set_country_flag = tory_election_win
@@ -2259,7 +2259,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		clr_country_flag = tory_election_win
@@ -2497,7 +2497,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		
@@ -2615,7 +2615,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		clr_country_flag = tory_election_win
@@ -2739,7 +2739,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 
@@ -2978,7 +2978,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		clr_country_flag = tory_election_win
@@ -3103,7 +3103,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 
@@ -4069,7 +4069,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 
@@ -4155,7 +4155,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 

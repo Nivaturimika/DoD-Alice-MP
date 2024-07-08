@@ -277,7 +277,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		capital = 343
@@ -335,7 +335,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 
 		capital = 342
@@ -750,7 +750,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 	election = yes
@@ -930,7 +930,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 	
@@ -1158,7 +1158,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 	
@@ -1189,7 +1189,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 	
@@ -1575,7 +1575,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 
@@ -1622,7 +1622,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 
@@ -1725,7 +1725,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 	any_owned = { add_province_modifier = { name = ingrian_integration duration = 36500 } }

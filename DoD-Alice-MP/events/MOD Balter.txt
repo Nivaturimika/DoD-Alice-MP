@@ -1134,7 +1134,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		add_country_modifier = { name = small_country_draft duration = -1 }
 		}

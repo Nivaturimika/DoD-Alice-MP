@@ -5097,7 +5097,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -6401,7 +6401,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		add_country_modifier = {
@@ -6572,7 +6572,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		set_country_flag = proletarian_dictatorship_gov
 		change_variable = {
@@ -6667,7 +6667,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		clr_country_flag = proletarian_dictatorship_gov
 		change_variable = {
@@ -7737,7 +7737,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -9514,7 +9514,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		set_country_flag = proletarian_dictatorship_gov
 		PRU_549 = { add_core = POM }
@@ -9589,7 +9589,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		}
 		BAV_595 = { add_core = FRE }
@@ -9687,7 +9687,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -9741,7 +9741,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 					
 		clr_country_flag = tory_election_win
@@ -9954,7 +9954,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -9985,7 +9985,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -10015,7 +10015,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -10057,7 +10057,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		set_country_flag = proletarian_dictatorship_gov
 	}
@@ -10211,7 +10211,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -10300,7 +10300,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		}
 		any_country = {
@@ -10445,7 +10445,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		}
 		any_country = {
@@ -10826,7 +10826,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		

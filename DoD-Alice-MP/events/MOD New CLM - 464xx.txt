@@ -494,7 +494,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -624,7 +624,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -725,7 +725,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -895,7 +895,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -1101,7 +1101,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -1202,7 +1202,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -1284,7 +1284,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -1380,7 +1380,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -1601,7 +1601,7 @@ country_event = {
 				duration = -1
 			}
 			
-			clr_country_flag = anarcho_liberal_gov
+			
 			
 			
 			
@@ -1771,7 +1771,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -1835,7 +1835,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -1990,7 +1990,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -2257,7 +2257,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -2324,7 +2324,7 @@ country_event = {
 		set_country_flag = native_policy_possible
 		government = presidential_dictatorship
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		ruling_party_ideology = reactionary
 	    any_pop = {
 		ideology = {
@@ -2591,7 +2591,7 @@ country_event = {
 	       
 	       
     	   
-	       clr_country_flag = anarcho_liberal_gov
+	       
 	       
 	       
 		   all_core = { remove_core = MEX }
@@ -2629,7 +2629,7 @@ country_event = {
 	       
 	       
     	   
-	       clr_country_flag = anarcho_liberal_gov
+	       
 	       
 	       
 		   all_core = { remove_core = MEX }
@@ -2655,7 +2655,7 @@ country_event = {
 		remove_country_modifier = caudillo_state_modifier
 		government = presidential_dictatorship
 		
-		clr_country_flag = anarcho_liberal_gov
+		
         any_pop = { limit = { culture = mexican } militancy = 5 }	
         ai_chance = {
             factor = 60
@@ -2759,7 +2759,7 @@ country_event = {
 		set_country_flag = CASTO_CLM_CUBA
 		government = presidential_dictatorship
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		political_reform = mandatory_service
         political_reform = unitary
 		add_country_modifier = {
@@ -3064,7 +3064,7 @@ country_event = {
         
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -3554,7 +3554,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -3687,7 +3687,7 @@ country_event = {
 		remove_country_modifier = major_immigration_CLM
 		government = presidential_dictatorship
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		ruling_party_ideology = reactionary
 	    any_pop = {
 		ideology = {
@@ -3814,7 +3814,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -4230,7 +4230,7 @@ country_event = {
 	       
 	       
     	   
-	       clr_country_flag = anarcho_liberal_gov
+	       
 	       
 	       
 		   small_arms = 100
@@ -4283,7 +4283,7 @@ country_event = {
         
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -4782,7 +4782,7 @@ country_event = {
 	       
 	       
     	   
-	       clr_country_flag = anarcho_liberal_gov
+	       
 	       
 	       
 		   all_core = { remove_core = MEX }
@@ -4820,7 +4820,7 @@ country_event = {
 	       
 	       
     	   
-	       clr_country_flag = anarcho_liberal_gov
+	       
 	       
 	       
 		   all_core = { remove_core = MEX }
@@ -4979,7 +4979,7 @@ country_event = {
 	       
 	       
     	   
-	       clr_country_flag = anarcho_liberal_gov
+	       
 	       
 	       
 		   money = 500000
@@ -5047,7 +5047,7 @@ country_event = {
 	       
 	       
     	   
-	       clr_country_flag = anarcho_liberal_gov
+	       
 	       
 	       
 		   money = 500000
@@ -5214,7 +5214,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -5591,7 +5591,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -5721,7 +5721,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    
@@ -5776,7 +5776,7 @@ country_event = {
 	    
 	    
 	    
-	    clr_country_flag = anarcho_liberal_gov
+	    
 	    
 	    
 	    

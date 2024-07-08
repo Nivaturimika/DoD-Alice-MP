@@ -569,7 +569,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 	    
 	    
 		ai_chance = {
@@ -664,7 +664,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 	    
 	    
 		ai_chance = {
@@ -723,7 +723,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 	    
 	    
 		ai_chance = {

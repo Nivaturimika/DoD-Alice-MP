@@ -862,7 +862,7 @@ country_event = { #CRS choice : clans and liberalism
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -1259,7 +1259,7 @@ country_event = { #Declaration of independence
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -1752,7 +1752,7 @@ country_event = { #Moderate Victory -Commons Insurrection
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -1925,7 +1925,7 @@ country_event = { #Republican Victory -Conservative Coup
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	
@@ -2668,7 +2668,7 @@ country_event = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 	
 	country_event = { id = 110660 days = 1 }
@@ -3031,7 +3031,7 @@ any_country = {
 	
 	
 	
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 		
 	set_country_flag = tory_election_win
@@ -7077,7 +7077,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		
@@ -7190,7 +7190,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = anarcho_liberal_gov
+		
 		
 		
 		

@@ -5019,7 +5019,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 	}
@@ -5167,7 +5167,7 @@ country_event = { ##Total Collapse of the Anglois Dream - French Revolution
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 	}
@@ -5481,7 +5481,7 @@ country_event = { ##The End of Anglois France
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	
 
 	any_owned = {

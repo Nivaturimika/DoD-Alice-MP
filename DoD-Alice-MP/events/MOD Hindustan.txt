@@ -279,7 +279,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	treasury = 10000
 	ammunition = 1000
 	small_arms = 1000
@@ -311,7 +311,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	treasury = 10000
 	ammunition = 1000
 	small_arms = 1000
@@ -343,7 +343,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	treasury = 10000
 	ammunition = 1000
 	small_arms = 1000
@@ -375,7 +375,7 @@ country_event = {
 
 
 
-	clr_country_flag = anarcho_liberal_gov
+	
 	treasury = 10000
 	ammunition = 1000
 	small_arms = 1000
@@ -985,7 +985,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 	}
 	ai_chance = {
 			factor = 100
@@ -1075,7 +1075,7 @@ country_event = {
 
 
 
-		clr_country_flag = anarcho_liberal_gov
+		
 	}
 	ai_chance = {
 			factor = 100
