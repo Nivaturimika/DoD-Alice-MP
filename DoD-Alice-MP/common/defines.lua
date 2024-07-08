@@ -750,4 +750,9 @@ graphics =
 	CITIES_SIZE_MAX_POPULATION_K = 1000 			-- When province population reach 1mln, the city will get it's maximum size.
 }
 
+alice =
+{
+    ALICE_FULL_REINFORCE = 0.0,
+}
+
 }
