@@ -523,11 +523,9 @@ political_decisions = {
 		picture = athesia
 		potential = {
 			200 = { empty = yes }
+			NOT = { ATS = { vassal_of = THIS } }
 			OR = {
-				AND = {
-					owns = 3267
-					NOT = { ATS = { vassal_of = THIS } }
-				}
+				owns = 3267
 				AND = {
 					tag = VEN
 					owns = 199
