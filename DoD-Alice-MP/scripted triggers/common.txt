@@ -78,35 +78,3 @@ is_indirectly_vassal_of = {
 		overlord = { overlord = { overlord = { overlord = { overlord = { vassal_of = THIS } } } } }
 	}
 }
-
-aragon_can_interfere_in_italy = {
-	main_parameter = nation
-	this_parameter = nation
-	THIS = {
-		#Must be a colonial power to give them legitimacy over interference
-		test = is_colonial_power
-		#And own a part of italy
-		OR = {
-			owns = 746
-			owns = 742
-			owns = 749
-		}
-		#And has to be a monarchy
-		test = is_monarchy_government
-	}
-	#Tuscany is the protector of italy, no tuscany or a "neutralized" Tuscany means we can intervene
-	OR = {
-		TUS = { vassal_of = THIS }
-		TUS = { in_sphere = THIS }
-		NOT = { exists = TUS }
-		TUS = {
-			government != democracy
-			government != parliamentary_republic
-			government != socialist_republic
-		}
-	}
-	#Sicily can't exist
-	NOT = { has_country_modifier = sicily_burns }
-	NOT = { exists = SIC }
-	NOT = { exists = NAP }
-}
