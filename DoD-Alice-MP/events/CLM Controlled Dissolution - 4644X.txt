@@ -57,8 +57,8 @@ country_event = { #The De Marquez State
 		political_reform = no_trade_unions
 		political_reform = first_past_the_post
 		political_reform = underground_parties
-		clr_country_flag = merchantrepublic_gov
-		clr_country_flag = socialist_republic_gov
+		
+		
 		set_country_flag = activate_de_marquez
 		#THIS=UCA,FROM=---
 		lambda_country_event = { #A Game of Governors - De Marquez is having trouble maintaining control over a Federation of differing interests which don't have pan-columbanism to bind them together
@@ -240,7 +240,7 @@ country_event = {
 		political_reform = all_voting_pops
 		political_reform = secret_ballots
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -249,7 +249,7 @@ country_event = {
 
 
 
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		any_country = {
@@ -289,7 +289,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -299,7 +299,7 @@ country_event = {
 
 
 
-		clr_country_flag = socialist_republic_gov
+		
 		any_country = {
 			limit = {
 			primary_culture = central_american

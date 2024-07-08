@@ -215,7 +215,7 @@ country_event = {
         }
 	    clr_country_flag = fascist_purge
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -224,7 +224,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 		clr_country_flag = election_started
 		clr_country_flag = conservative_party_in_power
 		clr_country_flag = liberal_party_in_power
@@ -550,7 +550,7 @@ country_event = {
         }
 	    clr_country_flag = communist_purge
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -560,7 +560,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 		clr_country_flag = election_started
 		clr_country_flag = conservative_party_in_power

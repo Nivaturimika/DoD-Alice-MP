@@ -89,7 +89,6 @@ political_decisions = {
 			political_reform = proportional_representation
 			political_reform = universal_voting
 	        
-	        clr_country_flag = merchantrepublic_gov
 	        
 	        
 	        
@@ -98,7 +97,8 @@ political_decisions = {
 	        
 	        
 	        
-	        clr_country_flag = socialist_republic_gov
+	        
+	        
 	        
 	        
 			nationalvalue = nv_equality

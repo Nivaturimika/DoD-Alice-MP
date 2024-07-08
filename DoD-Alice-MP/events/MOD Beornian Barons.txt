@@ -187,7 +187,7 @@ country_event = {
 	    political_reform = mandatory_service
 	    political_reform = primary_culture_only
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -196,7 +196,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 	    	
 	}
@@ -211,7 +211,7 @@ country_event = {
         political_reform = first_past_the_post
         political_reform = underground_parties
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -220,7 +220,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 	    
 	RAP = {
@@ -241,7 +241,7 @@ country_event = {
     political_reform = first_past_the_post
     political_reform = gerrymandering
 	
-	   clr_country_flag = merchantrepublic_gov
+	   
 	    
 	   
 	    
@@ -250,7 +250,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 	    
 	RAP = {
@@ -569,7 +569,7 @@ country_event = {
 	    political_reform = mandatory_service
 	    political_reform = primary_culture_only
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -578,7 +578,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 	    
 		ruling_party_ideology = reactionary
@@ -632,7 +632,7 @@ country_event = {
 	    political_reform = mandatory_service
 	    political_reform = primary_culture_only
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -641,7 +641,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 	    
 	}
@@ -696,7 +696,7 @@ country_event = {
 	    political_reform = mandatory_service
 	    political_reform = primary_culture_only
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -705,7 +705,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 	    
 	release_vassal = NMC 
@@ -863,7 +863,7 @@ country_event = {
 	    political_reform = mandatory_service
 	    political_reform = primary_culture_only
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -872,7 +872,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 	    
 	}
@@ -927,7 +927,7 @@ country_event = {
 	    political_reform = mandatory_service
 	    political_reform = primary_culture_only
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -936,7 +936,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 	    
 	release_vassal = NMC 
@@ -1288,7 +1288,7 @@ country_event = {
 		   clr_country_flag = market_liberal_election_win		
 		   clr_country_flag = paternal_election_win
 		   
-		   clr_country_flag = merchantrepublic_gov
+		   
 		   
 		   
 		   
@@ -1298,7 +1298,7 @@ country_event = {
 		   
 		   
 		   clr_country_flag = anarcho_liberal_gov
-		   clr_country_flag = socialist_republic_gov
+		   
 		   
 		}
 	war = { 

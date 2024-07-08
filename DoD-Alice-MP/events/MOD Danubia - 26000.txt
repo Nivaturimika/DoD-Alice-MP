@@ -2501,7 +2501,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 	    clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -2511,7 +2511,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 		add_country_modifier = {
 			name = BAV_secured_absolutism
@@ -2601,7 +2601,7 @@ country_event = {
         political_reform = first_past_the_post
         political_reform = harassment
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -2610,7 +2610,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 	    
 	    set_country_flag = tory_election_win
@@ -2723,7 +2723,7 @@ country_event = {
 	    political_reform = secret_ballots
 		political_reform = jefferson_method
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -2732,7 +2732,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 	    
 	    set_country_flag = tory_election_win
@@ -5446,7 +5446,7 @@ country_event = {
 		political_reform = all_voting_pops
         political_reform = gerrymandering
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -5455,7 +5455,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 	    
         election = yes		

@@ -43,13 +43,6 @@ political_decisions = {
 					civilized = no
 				}
 				set_country_flag = opened_society 
-			}	
-			any_country = {
-				limit = {
-					government = feudal_monarchy
-					NOT = { has_country_flag = feudal }
-				}
-				set_country_flag = feudal
 			}
 			any_country = {
 				limit = {
@@ -68,13 +61,11 @@ political_decisions = {
 				}
 				set_country_flag = nomad
 			}
-			set_country_flag = feudal			
 			any_country = {
 				limit = {
 					government = feudal_monarchy
 					civilized = yes
 				}
-				clr_country_flag = feudal
 				political_reform = appointed
 				government = absolute_monarchy
 			}
@@ -880,25 +871,19 @@ political_decisions = {
 		}
 
 		effect = {
+			remove_country_modifier = malevolent_ai
+			remove_country_modifier = benefactor_ai
+			remove_country_modifier = coward_ai
 			random = {
 				chance = 10
-				remove_country_modifier = malevolent_ai
-				remove_country_modifier = benefactor_ai
-				remove_country_modifier = coward_ai
 				add_country_modifier = { name = benefactor_ai duration = 8030 }
 			}
 			random = {
 				chance = 10
-				remove_country_modifier = malevolent_ai
-				remove_country_modifier = benefactor_ai
-				remove_country_modifier = coward_ai
 				add_country_modifier = { name = malevolent_ai duration = 8030 }
 			}
 			random = {
 				chance = 10
-				remove_country_modifier = malevolent_ai
-				remove_country_modifier = benefactor_ai
-				remove_country_modifier = coward_ai
 				add_country_modifier = { name = coward_ai duration = 8030 }
 			}
 			random_list = {

@@ -5010,7 +5010,7 @@ country_event = {
 	clr_country_flag = market_liberal_election_win
 	clr_country_flag = paternal_election_win
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -5020,7 +5020,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 	}
 }
@@ -5158,7 +5158,7 @@ country_event = { ##Total Collapse of the Anglois Dream - French Revolution
 	clr_country_flag = market_liberal_election_win
 	clr_country_flag = paternal_election_win
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -5168,7 +5168,7 @@ country_event = { ##Total Collapse of the Anglois Dream - French Revolution
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 	}
 }
@@ -5472,7 +5472,7 @@ country_event = { ##The End of Anglois France
 	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -5482,7 +5482,7 @@ country_event = { ##The End of Anglois France
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 	any_owned = {
 	   limit = { is_core = IRE }

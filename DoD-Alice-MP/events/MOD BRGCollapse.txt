@@ -682,7 +682,7 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = gerrymandering
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -692,7 +692,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 		
 	set_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
@@ -1663,7 +1663,7 @@ country_event = {
 	political_reform = secret_ballots
 	political_reform = no_draft
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -1673,7 +1673,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -1752,7 +1752,7 @@ country_event = {
 	clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -1762,7 +1762,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	add_country_modifier = { 
 	name = calm_before_storm
@@ -2764,7 +2764,7 @@ country_event = {
 	political_reform = proportional_representation
 	political_reform = secret_ballots
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -2774,7 +2774,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -2902,7 +2902,7 @@ country_event = {
 	political_reform = proportional_representation
 	political_reform = secret_ballots
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -2912,7 +2912,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -2954,7 +2954,7 @@ country_event = {
 	political_reform = underground_parties
 	political_reform = mandatory_service
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -2964,7 +2964,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -3289,7 +3289,7 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = gerrymandering
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -3299,7 +3299,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 		
 	set_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
@@ -3439,7 +3439,7 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = gerrymandering
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -3449,7 +3449,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 		
 	set_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
@@ -3541,7 +3541,7 @@ country_event = {
 	political_reform = underground_parties
 	political_reform = four_year_draft
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -3551,7 +3551,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -3655,7 +3655,7 @@ country_event = {
 	political_reform = underground_parties
 	political_reform = mandatory_service
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -3665,7 +3665,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -3702,7 +3702,7 @@ country_event = {
 	political_reform = underground_parties
 	political_reform = mandatory_service
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -3712,7 +3712,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -3749,7 +3749,7 @@ country_event = {
 	political_reform = underground_parties
 	political_reform = mandatory_service
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -3759,7 +3759,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -3796,7 +3796,7 @@ country_event = {
 	political_reform = underground_parties
 	political_reform = mandatory_service
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -3806,7 +3806,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -4033,7 +4033,7 @@ country_event = {
 	political_reform = underground_parties
 	political_reform = mandatory_service
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -4043,7 +4043,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -4080,7 +4080,7 @@ country_event = {
 	political_reform = underground_parties
 	political_reform = mandatory_service
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -4090,7 +4090,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -4127,7 +4127,7 @@ country_event = {
 	political_reform = underground_parties
 	political_reform = mandatory_service
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -4137,7 +4137,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -4174,7 +4174,7 @@ country_event = {
 	political_reform = underground_parties
 	political_reform = mandatory_service
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -4184,7 +4184,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -4370,7 +4370,7 @@ country_event = {
 	political_reform = underground_parties
 	political_reform = mandatory_service
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -4380,7 +4380,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win

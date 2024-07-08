@@ -266,7 +266,7 @@ country_event = {
 	political_reform = yes_meeting
 	political_reform = free_press
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -275,7 +275,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 
 	election = yes
@@ -328,7 +328,7 @@ country_event = {
 	political_reform = free_press
 	political_reform = mandatory_service
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -337,7 +337,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 
 	clr_country_flag = election_started
@@ -465,7 +465,7 @@ country_event = {
 	political_reform = free_press
 	political_reform = mandatory_service
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -474,7 +474,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 
 	clr_country_flag = election_started
@@ -650,7 +650,7 @@ country_event = {
 	political_reform = free_press
 	political_reform = mandatory_service
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -659,7 +659,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 
 	clr_country_flag = election_started

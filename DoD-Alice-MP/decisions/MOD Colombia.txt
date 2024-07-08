@@ -117,7 +117,6 @@ political_decisions = {
 	           political_reform = four_year_draft
 	           political_reform = all_voting_pops
 	           
-	           clr_country_flag = merchantrepublic_gov
 	           
 	           
 	           
@@ -126,7 +125,8 @@ political_decisions = {
 	           
 	           
 	           
-	           clr_country_flag = socialist_republic_gov
+	           
+	           
 	           
 	           
 	           any_pop = {
@@ -596,7 +596,7 @@ political_decisions = {
             political_reform = secret_ballots
 		    political_reform = federalism
             
-	        clr_country_flag = merchantrepublic_gov
+	        
 	        
 	        
             
@@ -606,7 +606,7 @@ political_decisions = {
 	        
 	        
 	        
-	        clr_country_flag = socialist_republic_gov
+	        
 	        
 		    election = yes
 	        any_pop = {

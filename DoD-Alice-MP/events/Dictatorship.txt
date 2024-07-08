@@ -374,7 +374,7 @@ country_event = {
 			remove_province_modifier = underground_newspaper
 		}
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -384,7 +384,7 @@ country_event = {
 		
 		
     	
-     	clr_country_flag = socialist_republic_gov
+     	
 	    	
 		country_event = 800054
 		ai_chance = {
@@ -895,7 +895,7 @@ country_event = {
 			}
 		}
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -905,7 +905,7 @@ country_event = {
 		
 		
     	
-     	clr_country_flag = socialist_republic_gov
+     	
 	    	
 		country_event = 800054
 	}

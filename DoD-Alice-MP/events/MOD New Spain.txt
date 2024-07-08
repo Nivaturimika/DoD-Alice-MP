@@ -162,7 +162,7 @@ country_event = {
 		political_reform = yes_meeting
 		political_reform = harassment
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -171,7 +171,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		any_pop = {
@@ -233,7 +233,7 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = gerrymandering
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -242,7 +242,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		change_variable = {
@@ -406,7 +406,7 @@ country_event = {
 		political_reform = yes_meeting
 		political_reform = harassment
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -415,7 +415,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		ai_chance = {
@@ -470,7 +470,7 @@ country_event = {
 		political_reform = jefferson_method
 		political_reform = gerrymandering
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -479,7 +479,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		change_variable = {
@@ -804,7 +804,7 @@ country_event = {
 		political_reform = jefferson_method
 		political_reform = gerrymandering
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -813,7 +813,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 
@@ -1432,7 +1432,7 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = underground_parties
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -1441,7 +1441,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		clr_country_flag = SPA_wait_DUA
@@ -3984,7 +3984,7 @@ country_event = {
 		political_reform = gerrymandering
 		political_reform = four_year_draft
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -3993,7 +3993,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		money = 500000
@@ -4074,7 +4074,7 @@ country_event = {
 		political_reform = gerrymandering
 		political_reform = four_year_draft
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -4083,7 +4083,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		money = 500000
@@ -4544,7 +4544,7 @@ country_event = {
 		political_reform = gerrymandering
 		political_reform = four_year_draft
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -4553,7 +4553,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		clr_country_flag = CST_high_centralization
@@ -4595,7 +4595,7 @@ country_event = {
 		political_reform = underground_parties
 		political_reform = mandatory_service
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -4604,7 +4604,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		clr_country_flag = CST_high_centralization
@@ -4635,7 +4635,7 @@ country_event = {
 		political_reform = underground_parties
 		political_reform = four_year_draft
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -4644,7 +4644,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		clr_country_flag = CST_high_centralization
@@ -5594,7 +5594,7 @@ country_event = {
 		political_reform = underground_parties
 		political_reform = mandatory_service
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -5603,7 +5603,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		clr_country_flag = CST_SOLUTION
@@ -6025,7 +6025,7 @@ country_event = {
 		political_reform = proportional_representation
 		political_reform = secret_ballots
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -6034,7 +6034,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		election = yes
@@ -6316,7 +6316,7 @@ country_event = {
 		political_reform = yes_meeting
 		political_reform = harassment
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -6325,7 +6325,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		any_pop = {

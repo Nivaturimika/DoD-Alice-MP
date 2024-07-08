@@ -337,7 +337,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = socialist_republic_gov
+		
 			
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
@@ -496,7 +496,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = socialist_republic_gov
+		
 			
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
@@ -666,7 +666,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = socialist_republic_gov
+		
 			
 		
 		remove_country_modifier = fight_the_power
@@ -705,7 +705,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA60040"
 		government = absolute_monarchy
-		clr_country_flag = socialist_republic_gov
+		
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -752,7 +752,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = socialist_republic_gov
+		
 			
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
@@ -807,7 +807,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = socialist_republic_gov
+		
 			
 		
 	}
@@ -857,7 +857,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = socialist_republic_gov
+		
 			
 		random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
 	}
@@ -914,7 +914,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = socialist_republic_gov
+		
 			
 	}
 }
@@ -952,7 +952,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = socialist_republic_gov
+		
 		
 		
 		clr_country_flag = tory_election_win
@@ -1002,7 +1002,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = socialist_republic_gov
+		
 			
 		
 		clr_country_flag = tory_election_win
@@ -1060,7 +1060,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = socialist_republic_gov
+		
 			
 		
 		clr_country_flag = tory_election_win
@@ -1114,7 +1114,7 @@ country_event = {
 		
 		
 		
-		clr_country_flag = socialist_republic_gov
+		
 			
 		
 		clr_country_flag = tory_election_win

@@ -2879,7 +2879,7 @@ country_event = {
 		
 		clr_country_flag = anarcho_liberal_gov
 		
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 		prestige = -25
 		clr_country_flag = tory_election_win

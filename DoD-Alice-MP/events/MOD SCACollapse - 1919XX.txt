@@ -1104,7 +1104,7 @@ country_event = {
 		political_reform = non_socialist
 		political_reform = secret_ballots
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -1114,7 +1114,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		election = yes
 		any_pop = {
@@ -1847,7 +1847,7 @@ country_event = {
 		political_reform = underground_parties 
 		political_reform = peonage
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -1856,7 +1856,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		
 		treasury = 10000
@@ -1906,7 +1906,7 @@ country_event = {
 		political_reform = secret_ballots
 		political_reform = mandatory_service
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -1916,7 +1916,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		clr_country_flag = election_started
 		clr_country_flag = tory_election_win
@@ -2123,7 +2123,7 @@ country_event = {
 		political_reform = secret_ballots
 		political_reform = mandatory_service
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -2133,7 +2133,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		clr_country_flag = election_started
 		clr_country_flag = tory_election_win
@@ -4115,7 +4115,7 @@ country_event = {
 		owner = { political_reform = jefferson_method }
 		}
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -4125,7 +4125,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 	}
 }
@@ -4372,7 +4372,7 @@ country_event = {
 	SFJ = { 
 	government = democracy
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -4382,7 +4382,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 		}
 	prestige = -10 
@@ -4408,7 +4408,7 @@ country_event = {
 	SFJ = { 
 	government = democracy
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -4418,7 +4418,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 		}
 	war = {
@@ -4731,7 +4731,7 @@ country_event = {
 	government = democracy
 	country_event = 192008
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -4741,7 +4741,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 		}
 	}
@@ -4912,7 +4912,7 @@ country_event = {
 	government = democracy
 	country_event = 192013
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -4922,7 +4922,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 		}
 	}

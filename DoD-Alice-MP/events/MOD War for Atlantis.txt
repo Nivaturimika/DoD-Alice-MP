@@ -4263,7 +4263,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify

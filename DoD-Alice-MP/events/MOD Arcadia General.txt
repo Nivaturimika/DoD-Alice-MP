@@ -1160,7 +1160,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -1170,7 +1170,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 			iron = 10
 			wool = 10
@@ -1513,7 +1513,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -1523,7 +1523,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		set_global_flag = SKR_IS_FRESH_MEAT
 		ai_chance = { 
@@ -1559,7 +1559,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -1569,7 +1569,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		set_global_flag = SKR_IS_FRESH_MEAT
 		ai_chance = { 
@@ -1605,7 +1605,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -1615,7 +1615,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		set_country_flag = SKR_FAIL_CHECK_THREE
 		set_global_flag = SKR_IS_FRESH_MEAT
@@ -3416,7 +3416,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -3426,7 +3426,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		add_country_modifier = {
 			name = ARC_MILITARY_OCCUPATION
 			duration = -1
@@ -3602,7 +3602,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -3612,7 +3612,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		add_country_modifier = {
 			name = ARC_MILITARY_OCCUPATION
 			duration = -1
@@ -3692,7 +3692,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -3702,7 +3702,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		add_country_modifier = {
 			name = ARC_MILITARY_OCCUPATION
 			duration = -1
@@ -4645,7 +4645,7 @@ country_event = {
 			clr_country_flag = market_liberal_election_win		
 			clr_country_flag = paternal_election_win
 			
-			clr_country_flag = merchantrepublic_gov
+			
 			
 			
 			
@@ -4655,7 +4655,7 @@ country_event = {
 			
 			
 			clr_country_flag = anarcho_liberal_gov
-			clr_country_flag = socialist_republic_gov
+			
 			any_owned = {
 			limit = {
 				is_core = LOU
@@ -4904,7 +4904,7 @@ country_event = {
 			clr_country_flag = market_liberal_election_win		
 			clr_country_flag = paternal_election_win
 			
-			clr_country_flag = merchantrepublic_gov
+			
 			
 			
 			
@@ -4914,7 +4914,7 @@ country_event = {
 			
 			
 			clr_country_flag = anarcho_liberal_gov
-			clr_country_flag = socialist_republic_gov
+			
 			set_global_flag = NBG_LIONS
 			clr_global_flag = NBG_BURGUNDIAN
 			clr_global_flag = NBG_NEW_ARCADIAN

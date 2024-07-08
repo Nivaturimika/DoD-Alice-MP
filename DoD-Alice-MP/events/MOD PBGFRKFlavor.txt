@@ -221,7 +221,7 @@ country_event = {
     political_reform = secret_ballots
 	political_reform = no_draft
     
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
     
@@ -230,7 +230,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	
 	clr_country_flag = election_started
@@ -352,7 +352,7 @@ country_event = {
     political_reform = secret_ballots
 	political_reform = no_draft
     
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
     
@@ -362,7 +362,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -456,7 +456,7 @@ country_event = {
 			owner = { remove_country_modifier = regency_government }
 	}
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -465,7 +465,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	
 	clr_country_flag = election_started
@@ -1658,7 +1658,7 @@ country_event = {
 			owner = { remove_country_modifier = regency_government }
 	}
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -1667,7 +1667,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	
 	clr_country_flag = election_started
@@ -2221,7 +2221,7 @@ country_event = {
 	political_reform = secret_ballots
 	political_reform = jefferson_method
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -2230,7 +2230,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	
 	set_country_flag = show_trials_possible
@@ -2324,7 +2324,7 @@ country_event = {
 	political_reform = jefferson_method
 	nationalvalue = nv_liberty
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -2333,7 +2333,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	
 	set_country_flag = show_trials_possible
@@ -2439,7 +2439,7 @@ country_event = {
 	political_reform = secret_ballots
 	political_reform = jefferson_method
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -2448,7 +2448,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	
 	set_country_flag = show_trials_possible
@@ -2941,7 +2941,7 @@ country_event = {
        political_reform = unitary
        political_reform = mandatory_service
        
-	   clr_country_flag = merchantrepublic_gov
+	   
 	   
 	   
        
@@ -2951,7 +2951,7 @@ country_event = {
 	   
 	   
 	   clr_country_flag = anarcho_liberal_gov
-	   clr_country_flag = socialist_republic_gov
+	   
 	   
 	   clr_country_flag = election_started
 	   add_country_modifier = { 

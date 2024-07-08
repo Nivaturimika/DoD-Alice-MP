@@ -87,7 +87,7 @@ country_event = {
        political_reform = two_year_draft
 	   political_reform = culture_voting_only
        
-	   clr_country_flag = merchantrepublic_gov
+	   
 	   
 	   
        
@@ -97,7 +97,7 @@ country_event = {
 	   
 	   
 	   clr_country_flag = anarcho_liberal_gov
-	   clr_country_flag = socialist_republic_gov
+	   
 	   
 	   clr_country_flag = election_started
 	   clr_country_flag = tory_election_win
@@ -749,7 +749,7 @@ country_event = {
        political_reform = harassment
 	   political_reform = no_draft
 	   
-	   clr_country_flag = merchantrepublic_gov
+	   
 	   
 	   
 	   
@@ -758,7 +758,7 @@ country_event = {
 	   
 	   
 	   clr_country_flag = anarcho_liberal_gov
-	   clr_country_flag = socialist_republic_gov
+	   
 	   
 	   
 	}
@@ -819,7 +819,7 @@ country_event = {
 	   political_reform = all_voting_pops
        political_reform = gerrymandering
 	   
-	   clr_country_flag = merchantrepublic_gov
+	   
 	   
 	   
 	   
@@ -828,7 +828,7 @@ country_event = {
 	   
 	   
 	   clr_country_flag = anarcho_liberal_gov
-	   clr_country_flag = socialist_republic_gov
+	   
 	   
 	   	
 	}
@@ -931,7 +931,7 @@ country_event = {
 	   political_reform = no_draft
 	   political_reform = culture_voting_only
        
-	   clr_country_flag = merchantrepublic_gov
+	   
 	   
 	   
        
@@ -941,7 +941,7 @@ country_event = {
 	   
 	   
 	   clr_country_flag = anarcho_liberal_gov
-	   clr_country_flag = socialist_republic_gov
+	   
 	   
 	   clr_country_flag = election_started
 	   clr_country_flag = tory_election_win
@@ -997,7 +997,7 @@ country_event = {
 	   political_reform = all_voting_pops
        political_reform = gerrymandering
 	   
-	   clr_country_flag = merchantrepublic_gov
+	   
 	   
 	   
 	   
@@ -1006,7 +1006,7 @@ country_event = {
 	   
 	   
 	   clr_country_flag = anarcho_liberal_gov
-	   clr_country_flag = socialist_republic_gov
+	   
 	   
 	   	
 	   ## INCORRECT GOVERNMENT TYPE - THE STUARTS ARE COMING TO KICK YOUR SHIT IN.
@@ -1504,7 +1504,7 @@ country_event = {
         political_reform = mandatory_service
 	    political_reform = culture_voting_only
         
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
         
@@ -1514,7 +1514,7 @@ country_event = {
 	    
 	    
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 	    clr_country_flag = election_started
 	    clr_country_flag = tory_election_win
@@ -1652,7 +1652,7 @@ country_event = {
 	   political_reform = all_voting_pops
        political_reform = gerrymandering
 	   
-	   clr_country_flag = merchantrepublic_gov
+	   
 	   
 	   
 	   
@@ -1661,7 +1661,7 @@ country_event = {
 	   
 	   
 	   clr_country_flag = anarcho_liberal_gov
-	   clr_country_flag = socialist_republic_gov
+	   
 	   
 	   	
 	}

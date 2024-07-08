@@ -268,7 +268,7 @@ country_event = {
 		political_parties = non_secret_ballots
 		ruling_party_ideology = conservative
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -278,7 +278,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 		capital = 343
 		prestige = -10
@@ -326,7 +326,7 @@ country_event = {
 		ruling_party_ideology = conservative
 		remove_accepted_culture = scandinavian
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -336,7 +336,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 		capital = 342
 		election = yes
@@ -741,7 +741,7 @@ country_event = {
 	capital = 343
 	prestige = 10
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -751,7 +751,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 	election = yes
 	}
@@ -921,7 +921,7 @@ country_event = {
 	ruling_party_ideology = conservative
 	capital = 343
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -931,7 +931,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 	set_country_flag = conservative_party_in_power
 	remove_accepted_culture = scandinavian
@@ -1149,7 +1149,7 @@ country_event = {
 	political_reform = gerrymandering
 	political_reform = non_secret_ballots
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -1159,7 +1159,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 	clr_country_flag = conservative_party_in_power
 	ai_chance = {
@@ -1180,7 +1180,7 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = underground_parties
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -1190,7 +1190,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 	clr_country_flag = conservative_party_in_power
 	ai_chance = {
@@ -1567,7 +1567,7 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = underground_parties
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -1576,7 +1576,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 
 	}
@@ -1614,7 +1614,7 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = underground_parties
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -1623,7 +1623,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 
 	}
@@ -1716,7 +1716,7 @@ country_event = {
 	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -1726,7 +1726,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 	any_owned = { add_province_modifier = { name = ingrian_integration duration = 36500 } }
 	}

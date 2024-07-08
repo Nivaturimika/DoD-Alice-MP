@@ -270,7 +270,7 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = underground_parties
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -302,7 +302,7 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = underground_parties
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -334,7 +334,7 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = underground_parties
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -366,7 +366,7 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = underground_parties
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -976,7 +976,7 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = underground_parties
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -1066,7 +1066,7 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = underground_parties
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 

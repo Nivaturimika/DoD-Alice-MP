@@ -291,7 +291,7 @@ reactionary_rebels = {
 		any_pop = { militancy = -3 }
 		ruling_party_ideology = reactionary
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -303,7 +303,7 @@ reactionary_rebels = {
 		
 		clr_country_flag = red_guard_gov
 				
-		clr_country_flag = socialist_republic_gov
+		
         		
 		political_reform = none_voting
 		political_reform = party_appointed
@@ -633,7 +633,7 @@ paternal_rebels = {
 	demands_enforced_effect = {
 		any_pop = { militancy = -3 }
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -645,7 +645,7 @@ paternal_rebels = {
 		
         clr_country_flag = red_guard_gov
 				
-		clr_country_flag = socialist_republic_gov	
+			
 		
 		ruling_party_ideology = paternal
 		political_reform = none_voting
@@ -1056,7 +1056,7 @@ fascist_rebels = {
 	demands_enforced_effect = {
 		any_pop = { militancy = -3 }
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -1068,7 +1068,7 @@ fascist_rebels = {
 		
         clr_country_flag = red_guard_gov
 				
-		clr_country_flag = socialist_republic_gov	
+			
 		
 		ruling_party_ideology = fascist
 		political_reform = none_voting
@@ -1483,7 +1483,7 @@ fascist_monarchy_rebels = {
 	demands_enforced_effect = {
 		any_pop = { militancy = -3 }
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -1495,7 +1495,7 @@ fascist_monarchy_rebels = {
 		
         clr_country_flag = red_guard_gov
 				
-		clr_country_flag = socialist_republic_gov	
+			
 		
 		ruling_party_ideology = fascist
 		political_reform = none_voting
@@ -1900,7 +1900,7 @@ communist_rebels = {
 	demands_enforced_effect = {
 		any_pop = { militancy = -3 }
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -1912,7 +1912,7 @@ communist_rebels = {
 		clr_country_flag = anarcho_liberal_gov
         clr_country_flag = red_guard_gov
 				
-		clr_country_flag = socialist_republic_gov	
+			
 		
 		ruling_party_ideology = communist
 		political_reform = all_voting_pops
@@ -2292,7 +2292,7 @@ anarcho_liberal_rebels = {
 	        owner = { set_country_flag = transitional_government }
          }
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -2304,7 +2304,7 @@ anarcho_liberal_rebels = {
 		clr_country_flag = anarcho_liberal_gov
         clr_country_flag = red_guard_gov
 				
-		clr_country_flag = socialist_republic_gov	
+			
 		
 		ruling_party_ideology = anarcho_liberal
 		political_reform = universal_voting
@@ -2958,7 +2958,7 @@ pan_nationalist_rebels = {
 	        owner = { set_country_flag = transitional_government }
         }
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -2970,7 +2970,7 @@ pan_nationalist_rebels = {
 		clr_country_flag = anarcho_liberal_gov
         clr_country_flag = red_guard_gov
 				
-		clr_country_flag = socialist_republic_gov
+		
 		
 		random_owned = {
 			limit = {
@@ -3490,7 +3490,7 @@ liberal_rebels = {
 	        owner = { set_country_flag = transitional_government }
         }
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -3502,7 +3502,7 @@ liberal_rebels = {
 		clr_country_flag = anarcho_liberal_gov
         clr_country_flag = red_guard_gov
 				
-		clr_country_flag = socialist_republic_gov
+		
 				
 		ruling_party_ideology = liberal
 		political_reform = yes_meeting
@@ -4577,7 +4577,7 @@ socialist_rebels = {
 	        owner = { set_country_flag = transitional_government }
         }
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -4588,7 +4588,7 @@ socialist_rebels = {
 		
 		clr_country_flag = anarcho_liberal_gov
 				
-		clr_country_flag = socialist_republic_gov
+		
 		
 		set_country_flag = red_guard_gov
 		
@@ -5184,7 +5184,7 @@ turkish_nationalist_rebels = {
 	        owner = { set_country_flag = transitional_government }
         }
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -5196,7 +5196,7 @@ turkish_nationalist_rebels = {
 		clr_country_flag = anarcho_liberal_gov
         clr_country_flag = red_guard_gov
 				
-		clr_country_flag = socialist_republic_gov
+		
 		
 		clr_country_flag = turkish_nationalism_activated
 		ruling_party_ideology = liberal
@@ -5423,7 +5423,7 @@ native_rebels = {
 	        owner = { set_country_flag = transitional_government }
         }
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -5435,7 +5435,7 @@ native_rebels = {
 		clr_country_flag = anarcho_liberal_gov
         clr_country_flag = red_guard_gov
 				
-		clr_country_flag = socialist_republic_gov	
+			
 		
 		any_country = {
 			limit = { is_culture_group = THIS }

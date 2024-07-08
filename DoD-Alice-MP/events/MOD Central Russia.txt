@@ -255,7 +255,7 @@ country_event = {
 			owner = { remove_country_modifier = regency_government }
 		}
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -264,7 +264,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		clr_country_flag = election_started
@@ -318,9 +318,9 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = underground_parties
 
-		clr_country_flag = merchantrepublic_gov
+		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		aristocrats = {
@@ -345,7 +345,7 @@ country_event = {
 		political_reform = first_past_the_post
 		political_parties = gerrymandering
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -354,7 +354,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		any_pop = {
@@ -383,7 +383,7 @@ country_event = {
 		political_reform = non_socialist
 		political_reform = secret_ballots
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -392,7 +392,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		clr_country_flag = election_started
@@ -562,7 +562,7 @@ country_event = {
 			owner = { remove_country_modifier = regency_government }
 		}
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -571,7 +571,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		clr_country_flag = election_started
@@ -744,7 +744,7 @@ country_event = {
 			owner = { remove_country_modifier = regency_government }
 		}
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -753,7 +753,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		clr_country_flag = election_started
@@ -1074,7 +1074,7 @@ country_event = {
 			owner = { remove_country_modifier = regency_government }
 		}
 
-		clr_country_flag = merchantrepublic_gov
+		
 
 
 
@@ -1083,7 +1083,7 @@ country_event = {
 
 
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 
 
 		clr_country_flag = election_started
@@ -5193,7 +5193,7 @@ country_event = {
 	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -5203,7 +5203,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 	any_pop = {
 	limit = {
@@ -7241,7 +7241,7 @@ country_event = {
 	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -7251,7 +7251,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 	set_country_flag = ARE_WE_STABLE_HERE_MOS
 }
@@ -7844,7 +7844,7 @@ country_event = {
 	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -7854,7 +7854,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 	ai_chance = {
 	factor = 30
@@ -7874,7 +7874,7 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = gerrymandering
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -7883,7 +7883,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 
 	ai_chance = {
@@ -7915,7 +7915,7 @@ country_event = {
 	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 
-	clr_country_flag = merchantrepublic_gov
+	
 
 
 
@@ -7925,7 +7925,7 @@ country_event = {
 
 
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 
 	ai_chance = {
 	factor = 30

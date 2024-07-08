@@ -620,7 +620,7 @@ country_event = {
 	political_reform = no_meeting
 	political_reform = censored_press
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -630,7 +630,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	}
 	badboy = 6 
@@ -959,7 +959,7 @@ country_event = {
 		political_reform = underground_parties 	
 		political_reform = mandatory_service
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -968,7 +968,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		
 		set_country_flag = siggy_is_shaken
@@ -1093,7 +1093,7 @@ country_event = {
 		political_reform = harassment
 		political_reform = all_voting_pops
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -1102,7 +1102,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		
 		set_country_flag = siggy_is_stirred
@@ -1212,9 +1212,9 @@ country_event = {
 		political_reform = harassment
 		political_reform = primary_culture_only
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		set_country_flag = siggy_is_straight
 		rich_strata = {

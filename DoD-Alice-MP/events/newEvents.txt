@@ -762,7 +762,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 		
 		aristocrats = {
@@ -952,7 +952,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 		
 		aristocrats = {
@@ -1949,7 +1949,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 		
 		clr_country_flag = election_started
@@ -2176,7 +2176,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    
 		
 		clr_country_flag = election_started

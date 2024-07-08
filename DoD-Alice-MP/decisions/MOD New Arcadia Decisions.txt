@@ -1439,7 +1439,7 @@ political_decisions = {
 	       clr_country_flag = social_liberal_election_win
 	       clr_country_flag = market_liberal_election_win
 
-	       clr_country_flag = merchantrepublic_gov
+	       
 
 
 
@@ -1449,7 +1449,7 @@ political_decisions = {
 
 
 
-	       clr_country_flag = socialist_republic_gov
+	       
 		   add_country_modifier = {
 			  name = ARC_MILITARY_OCCUPATION
 			  duration = -1

@@ -5088,7 +5088,7 @@ country_event = {
 		government = parliamentary_republic
 		ruling_party_ideology = socialist
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -5098,7 +5098,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		clr_country_flag = election_started
 		clr_country_flag = tory_election_win
@@ -6392,7 +6392,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -6402,7 +6402,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		add_country_modifier = {
 			name = the_red_scare
@@ -6563,7 +6563,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -6573,7 +6573,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		set_country_flag = proletarian_dictatorship_gov
 		change_variable = {
 		which = FASCIST_COUNCIL
@@ -6658,7 +6658,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -6668,7 +6668,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		clr_country_flag = proletarian_dictatorship_gov
 		change_variable = {
 		which = FASCIST_COUNCIL
@@ -7728,7 +7728,7 @@ country_event = {
 		set_country_flag = parlimentary_debate_phoenix
 		government = parliamentary_republic
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -7738,7 +7738,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		clr_country_flag = election_started
 		clr_country_flag = tory_election_win
@@ -9505,7 +9505,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -9515,7 +9515,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		set_country_flag = proletarian_dictatorship_gov
 		PRU_549 = { add_core = POM }
 		PRU_546 = { add_core = POM }
@@ -9580,7 +9580,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -9590,7 +9590,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		}
 		BAV_595 = { add_core = FRE }
 		FRW_597 = { add_core = FRE }
@@ -9679,7 +9679,7 @@ country_event = {
 		political_reform = mandatory_service
 		political_reform = bankruptcy
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -9688,7 +9688,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		
 		}
@@ -9732,7 +9732,7 @@ country_event = {
 		political_reform = secret_ballots
 		political_reform = mandatory_service
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -9946,7 +9946,7 @@ country_event = {
 		political_reform = secret_ballots
 		political_reform = mandatory_service
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -9955,7 +9955,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		
 	}
@@ -9977,7 +9977,7 @@ country_event = {
 		political_reform = secret_ballots
 		political_reform = mandatory_service
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -9986,7 +9986,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		
 	}
@@ -10007,7 +10007,7 @@ country_event = {
 		political_reform = gerrymandering
 		political_reform = mandatory_service
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -10016,7 +10016,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		
 	}
@@ -10048,7 +10048,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -10058,7 +10058,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		set_country_flag = proletarian_dictatorship_gov
 	}
 	### Literally Jeanist Superfascists
@@ -10203,7 +10203,7 @@ country_event = {
 		political_reform = gerrymandering
 		political_reform = mandatory_service
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -10212,7 +10212,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		
 	}
@@ -10291,7 +10291,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -10301,7 +10301,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		}
 		any_country = {
 		limit = {
@@ -10436,7 +10436,7 @@ country_event = {
 		clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -10446,7 +10446,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		}
 		any_country = {
 		limit = {
@@ -10818,7 +10818,7 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = underground_parties 
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -10827,7 +10827,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		
 		clr_country_flag = election_started

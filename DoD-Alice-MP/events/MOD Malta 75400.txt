@@ -291,7 +291,7 @@ country_event = {
 	political_reform = yes_meeting
 	political_reform = free_press
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -301,7 +301,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 		
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
@@ -739,7 +739,7 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = gerrymandering
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -749,7 +749,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 		
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win

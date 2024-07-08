@@ -2563,7 +2563,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -2573,7 +2573,7 @@ country_event = {
 	    
     	
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    set_variable = {
 		    which = NBG_CORP
 		    value = 3
@@ -2873,7 +2873,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -2883,7 +2883,7 @@ country_event = {
 	    
     	
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    inherit = CBV
 	}
 }
@@ -3040,7 +3040,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -3050,7 +3050,7 @@ country_event = {
 	    
     	
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	   any_pop = {
 		   ideology = {
 			  value = liberal
@@ -3114,7 +3114,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -3124,7 +3124,7 @@ country_event = {
 	    
     	
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	   any_pop = {
 		   ideology = {
 			  value = conservative
@@ -3874,7 +3874,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -3884,7 +3884,7 @@ country_event = {
 	    
     	
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	country_event = { id = 79061 days = 7 }
 	}
 }
@@ -4123,7 +4123,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -4133,7 +4133,7 @@ country_event = {
 	    
     	
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
  	    any_pop = {
 		   ideology = {
 		      value = paternal
@@ -4951,7 +4951,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -4961,7 +4961,7 @@ country_event = {
 	    
     	
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    set_global_flag = NBG_OLD_ARCADIAN
 		country_event = { id = 79079 days = 7 }
 	}
@@ -5017,7 +5017,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -5027,7 +5027,7 @@ country_event = {
 	    
     	
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    set_global_flag = NBG_NEW_ARCADIAN
 		set_country_flag = NBG_peaceful_unify
 		country_event = { id = 79080 days = 7 }
@@ -5084,7 +5084,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -5094,7 +5094,7 @@ country_event = {
 	    
     	
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    set_global_flag = NBG_BURGUNDIAN
 		country_event = { id = 79080 days = 7 }
 	}
@@ -5150,7 +5150,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -5160,7 +5160,7 @@ country_event = {
 	    
     	
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 	    set_global_flag = NBG_LIONS
 		country_event = { id = 79080 days = 7 }
 	}
@@ -5488,7 +5488,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -5576,7 +5576,7 @@ country_event = {
 	    clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	    
-	    clr_country_flag = merchantrepublic_gov
+	    
 	    
 	    
 	    
@@ -5586,7 +5586,7 @@ country_event = {
 	    
     	
 	    clr_country_flag = anarcho_liberal_gov
-	    clr_country_flag = socialist_republic_gov
+	    
 		set_country_flag = proletarian_dictatorship_gov
 	}
 }

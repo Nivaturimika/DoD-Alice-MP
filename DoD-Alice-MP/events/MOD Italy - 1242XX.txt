@@ -853,7 +853,7 @@ country_event = { #CRS choice : clans and liberalism
 	political_reform = underground_parties
 	political_reform = mandatory_service
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -863,7 +863,7 @@ country_event = { #CRS choice : clans and liberalism
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -1250,7 +1250,7 @@ country_event = { #Declaration of independence
 	political_reform = underground_parties
 	political_reform = mandatory_service
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -1260,7 +1260,7 @@ country_event = { #Declaration of independence
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -1743,7 +1743,7 @@ country_event = { #Moderate Victory -Commons Insurrection
 	government = democracy 
 	political_reform = universal_voting
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -1753,7 +1753,7 @@ country_event = { #Moderate Victory -Commons Insurrection
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -1916,7 +1916,7 @@ country_event = { #Republican Victory -Conservative Coup
 	}
 	set_country_flag = REV_TUS
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -1926,7 +1926,7 @@ country_event = { #Republican Victory -Conservative Coup
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	clr_country_flag = election_started
 	clr_country_flag = tory_election_win
@@ -2659,7 +2659,7 @@ country_event = {
 	clr_country_flag = market_liberal_election_win		
 		clr_country_flag = paternal_election_win
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -2669,7 +2669,7 @@ country_event = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 	
 	country_event = { id = 110660 days = 1 }
 	capital = 749
@@ -3022,7 +3022,7 @@ any_country = {
 	political_reform = first_past_the_post
 	political_reform = gerrymandering
 	
-	clr_country_flag = merchantrepublic_gov
+	
 	
 	
 	
@@ -3032,7 +3032,7 @@ any_country = {
 	
 	
 	clr_country_flag = anarcho_liberal_gov
-	clr_country_flag = socialist_republic_gov
+	
 		
 	set_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
@@ -7069,7 +7069,7 @@ country_event = {
 		political_reform = all_trade_unions
 		political_reform = secret_ballots
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -7078,7 +7078,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		
 		clr_country_flag = election_started
@@ -7181,7 +7181,7 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = underground_parties 	
 		
-		clr_country_flag = merchantrepublic_gov
+		
 		
 		
 		
@@ -7191,7 +7191,7 @@ country_event = {
 		
 		
 		clr_country_flag = anarcho_liberal_gov
-		clr_country_flag = socialist_republic_gov
+		
 		
 		clr_country_flag = conservative_party_in_power
 		clr_global_flag = ITA_revolutionary_war
