@@ -1308,16 +1308,8 @@ country_event = {
 	option = {
 		name = "DODFFP14.A"
 		prestige_factor = -0.99
-		any_pop = {
-		consciousness = -5
-		}
-		any_pop = {
-		militancy = -5
-		}
-		add_country_modifier = {
-		name = autonomous_dependency_modifier
-		duration = -1
-		}
+		any_pop = { consciousness = -5 }
+		any_pop = { militancy = -5 }
 	}
 }
 
@@ -1341,32 +1333,12 @@ country_event = {
 
 	option = {
 		name = "DODFFP15.A"
-		remove_country_modifier = autonomous_dependency_modifier
-
-		
-
-
-
-
-
-
-
-
 		clr_country_flag = anarcho_liberal_gov
-		
-
-
-		random_owned = {
-		limit = {
-			owner = { NOT = { tag = PRV } }
-		}
-		owner = { government = presidential_dictatorship }
-		}
-		random_owned = {
-		limit = {
-			owner = { tag = PRV }
-		}
-		owner = { government = absolute_monarchy }
+		if = {
+			limit = { tag = PRV }
+			government = absolute_monarchy
+		} else = {
+			government = presidential_dictatorship
 		}
 	}
 }

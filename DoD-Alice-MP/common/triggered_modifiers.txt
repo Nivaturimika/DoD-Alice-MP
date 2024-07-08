@@ -554,3 +554,18 @@ feudal = {
 	tax_efficiency = -0.1
 	icon = 16
 }
+
+autonomous_dependency_modifier = {
+	trigger = { government = autonomous_dependency is_vasal = yes }
+    prestige = -8
+    administrative_efficiency_modifier = 0.1
+	tariff_efficiency_modifier = -0.1
+	import_cost = -0.2
+    diplomatic_points_modifier = -0.5  
+	global_pop_consciousness_modifier = -0.02
+	global_pop_militancy_modifier = -0.02
+	political_reform_desire = -0.1
+	ruling_party_support = 1
+	suppression_points_modifier = 1	
+}
+

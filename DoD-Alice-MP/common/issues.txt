@@ -711,11 +711,21 @@ political_reforms = {
 				NOT = { has_country_flag = government_busy_with_something }
 				NOT = { has_country_flag = serfdom_not_abolished }
 			}
+			on_execute = {
+				effect = {
+					serfs = { pop_type = farmers money = 1000 }
+				}
+			}
 		}
 		
 		debtors_prisons = {
 			allow = {
 				NOT = { has_country_flag = government_busy_with_something }
+			}
+			on_execute = {
+				effect = {
+					serfs = { pop_type = farmers money = 1000 }
+				}
 			}
 		}
 		
@@ -726,6 +736,11 @@ political_reforms = {
 			allow = {
 				modern_central_bank_system = 1
 				NOT = { has_country_flag = government_busy_with_something }
+			}
+			on_execute = {
+				effect = {
+					serfs = { pop_type = farmers money = 1000 }
+				}
 			}
 		}
 	}

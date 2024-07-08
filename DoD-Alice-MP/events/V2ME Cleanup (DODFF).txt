@@ -35,24 +35,6 @@ country_event = {
 	option = {
 		name = "Checking..."
 
-		any_country = {
-            limit = {
-				exists = yes
-                civilized = yes
-				has_country_modifier = western_presence
-            }
-            remove_country_modifier = western_presence
-        }
-
-		any_country = {
-            limit = {
-				exists = yes
-				is_vassal = no
-				has_country_modifier = autonomous_dependency_modifier
-            }
-            remove_country_modifier = autonomous_dependency_modifier
-        }
-
 		#remove sanctions
 		any_country = {
 			limit = {
@@ -67,37 +49,7 @@ country_event = {
 			remove_country_modifier = kinda_bad_badboy
             remove_country_modifier = bad_badboy
 		}
-
-		#abolishing serfdom
-		any_country = {
-            limit = {
-				exists = yes
-                any_owned_province = { has_pop_type = serfs }
-                NOT = { debt_law = serfdom }
-            }
-            any_owned = {
-                limit = {
-                    has_pop_type = serfs
-                    has_pop_type = labourers
-                }
-                any_pop = { limit = { type = serfs } pop_type = labourers money = 1000 }
-            }
-            any_owned = {
-                limit = {
-                    has_pop_type = serfs
-                    has_pop_type = farmers
-                }
-                any_pop = { limit = { type = serfs } pop_type = farmers money = 1000 }
-            }
-            any_owned = {
-                limit = {
-                    has_pop_type = serfs
-                    NOT = { has_pop_type = farmers has_pop_type = labourers }
-                }
-                any_pop = { limit = { type = serfs } pop_type = farmers money = 1000 }
-            }
-        }
-
+		
 		#updating missing flags
 		any_country = {
 			limit = {

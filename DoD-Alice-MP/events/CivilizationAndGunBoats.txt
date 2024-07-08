@@ -3856,6 +3856,7 @@ country_event = {
 
 	option = {				
 		name = "EVTOPTA90910"
+		remove_country_modifier = western_presence
 		prestige = 10
 		random_list = {
 			34 = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
