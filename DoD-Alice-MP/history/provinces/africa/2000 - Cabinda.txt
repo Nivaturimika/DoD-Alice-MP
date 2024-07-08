@@ -1,5 +1,5 @@
-owner = KON
-controller = KON
+owner = SPA
+controller = SPA
 add_core = KON
 trade_goods = fruit
 life_rating = 35
