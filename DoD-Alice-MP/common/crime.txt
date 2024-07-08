@@ -71,6 +71,10 @@ rotten_boroughs = {
     icon = 7
 
     trigger = {
+        #Anglois nerf
+        continent = europe
+        owner = { primary_culture = anglois }
+        #
         NOT = { owner = { vote_franschise = none_voting } }
         is_colonial = no
         OR = {

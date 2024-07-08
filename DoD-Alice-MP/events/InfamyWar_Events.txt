@@ -19,7 +19,6 @@ country_event = {
 	picture = "greatpowers"
 
 	trigger = {
-		ai = no
 		badboy = 1.5
 		is_disarmed = no
 		NOT = {

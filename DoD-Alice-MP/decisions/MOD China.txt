@@ -54,7 +54,7 @@ political_decisions = {
 						primary_culture = uighur
 						primary_culture = tibetan
   					}
-  					in_sphere = THIS
+  					test = can_annex_to_this_sphere_criteria
   					tag != THIS
   				}
   				annex_to = THIS

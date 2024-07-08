@@ -1946,7 +1946,7 @@ province_event = {
 	allow_multiple_instances = no
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 		modifier = {
 			factor = 0.9
 			owner = { colonial_nation = yes }
