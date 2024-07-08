@@ -1,0 +1,37 @@
+is_fighting_for_hegemony_with_this = {
+	main_parameter = nation
+	this_parameter = nation
+	AND = {
+		any_owned_province = {
+			any_core = {
+				is_cultural_union = yes
+				this_culture_union = this_union
+			}
+		}	
+		any_greater_power = {
+			war_with = THIS
+			culture_has_union_tag = yes
+			is_culture_group = THIS
+			cultural_union = { exists = no }
+		}
+		THIS = { is_greater_power = yes }
+	}
+}
+
+is_coastal_or_coastal_gp = {
+	main_parameter = nation
+	this_parameter = nation
+	OR = {
+		any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+		AND = {
+			any_owned_province = { port = yes }
+			THIS = {
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+				}
+				any_owned_province = { port = yes }
+			}
+		}
+	}
+}

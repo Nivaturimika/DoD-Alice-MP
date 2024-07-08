@@ -43,6 +43,15 @@ is_monarchy_government = {
 	}
 }
 
+is_dictatorship_government = {
+	main_parameter = nation
+	OR = {
+		government = proletarian_dictatorship
+		government = fascist_dictatorship
+		government = fascist_monarchy
+	}
+}
+
 #Equivalent to controlled_by = this
 any_owned_not_controlled_by_this = {
 	main_parameter = nation
