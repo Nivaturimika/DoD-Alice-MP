@@ -1314,10 +1314,9 @@ country_event = {
 	title = "Our New Puppet"
 	desc = "Our previous war has given us a new satellite!"
 	picture = "Celebration"
-
 	is_triggered_only = yes
-	
-	immediate = {
+	option = {
+		name = "Good"
 		any_country = {
 			limit = {
 				exists = yes
@@ -1327,10 +1326,6 @@ country_event = {
 			country_event = 19370
 		}
 	}
-
-	option = {
-		name = "Good"
-	}
 }
 
 #Event for a country that has been puppeted by CB
@@ -1338,10 +1333,6 @@ country_event = {
 	id = 19370
 	title = "EVTNAME19370" #The $FROMCOUNTRY$ Overlords
 	desc = "EVTDESC19370"
-	news = yes
-	news_desc_long = "EVTDESC19370_NEWS_LONG"
-	news_desc_medium = "EVTDESC19370_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC19370_NEWS_SHORT"
 	picture = "Celebration"
 	
 	is_triggered_only = yes
@@ -1349,52 +1340,45 @@ country_event = {
 	option = {
 		name = "A sad day for $COUNTRY$."
 		FROM = { create_vassal = THIS }
-		random_owned = {
+		if = {
 			limit = {
 				FROM = { government = fascist_dictatorship }
-				owner = {
-					civilized = yes
-					NOT = { government = fascist_dictatorship }
-				}
+				civilized = yes
+				NOT = { government = fascist_dictatorship }
 			}
-			owner = {
-				ruling_party_ideology = fascist
-				government = fascist_dictatorship
-				political_reform = none_voting
-				political_reform = party_appointed
-				political_reform = no_meeting
-				political_reform = state_press
-				political_reform = state_controlled
-				political_reform = underground_parties
-				clr_country_flag = election_started
-				clr_country_flag = conservative_party_in_power
-				clr_country_flag = liberal_party_in_power
-				clr_country_flag = reactionary_party_in_power
-				clr_country_flag = socialist_party_in_power
-				clr_country_flag = communist_party_in_power
-				clr_country_flag = fascist_party_in_power
-				clr_country_flag = paternal_party_in_power
-				clr_country_flag = anarcho_liberal_party_in_power
-				clr_country_flag = market_liberal_party_in_power
-				clr_country_flag = tory_election_win
-				clr_country_flag = socialist_election_win
-				clr_country_flag = liberal_election_win
-				clr_country_flag = communist_election_win
-				clr_country_flag = fascist_election_win
-				clr_country_flag = reactionary_election_win
-				clr_country_flag = anarcho_liberal_election_win
-				clr_country_flag = social_liberal_election_win
-				clr_country_flag = market_liberal_election_win
-				clr_country_flag = paternal_election_win				
-				clr_country_flag = fascist_purge
-				random_owned = {
-				limit = { owner = { has_country_modifier = the_brown_scare } }
-				owner = { remove_country_modifier = the_brown_scare }
-				}
-				add_country_modifier = {
-					name = national_confusion
-					duration = 365
-				}
+			ruling_party_ideology = fascist
+			government = fascist_dictatorship
+			political_reform = none_voting
+			political_reform = party_appointed
+			political_reform = no_meeting
+			political_reform = state_press
+			political_reform = state_controlled
+			political_reform = underground_parties
+			clr_country_flag = election_started
+			clr_country_flag = conservative_party_in_power
+			clr_country_flag = liberal_party_in_power
+			clr_country_flag = reactionary_party_in_power
+			clr_country_flag = socialist_party_in_power
+			clr_country_flag = communist_party_in_power
+			clr_country_flag = fascist_party_in_power
+			clr_country_flag = paternal_party_in_power
+			clr_country_flag = anarcho_liberal_party_in_power
+			clr_country_flag = market_liberal_party_in_power
+			clr_country_flag = tory_election_win
+			clr_country_flag = socialist_election_win
+			clr_country_flag = liberal_election_win
+			clr_country_flag = communist_election_win
+			clr_country_flag = fascist_election_win
+			clr_country_flag = reactionary_election_win
+			clr_country_flag = anarcho_liberal_election_win
+			clr_country_flag = social_liberal_election_win
+			clr_country_flag = market_liberal_election_win
+			clr_country_flag = paternal_election_win				
+			clr_country_flag = fascist_purge
+			remove_country_modifier = the_brown_scare
+			add_country_modifier = {
+				name = national_confusion
+				duration = 365
 			}
 		}
 		random_owned = {

@@ -1800,11 +1800,6 @@ socrep_failure = {
 	icon = 6
 }
 
-fort_constructions = {
-	tax_efficiency = -0.05
-	icon = 10
-}
-
 colonial_maintenance = {
 	icon = 9
 }
