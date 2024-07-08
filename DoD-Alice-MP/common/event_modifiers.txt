@@ -5559,17 +5559,17 @@ unstable_federation_SGF = {
 
 #country modifiers 
 Not_Roman_nor_German_HRE = { 
-	education_efficiency_modifier = -0.5 
-	research_points_modifier = -0.1 
+	education_efficiency_modifier = -0.35
+	research_points_modifier = -0.075
 	icon = 4 
 }
 
 Reichsarmee_HRE = { 
-	mobilisation_size = -0.5
-	leadership_modifier = -0.25
-	org_regain = -0.45
-	land_organisation = -0.2
-	land_unit_start_experience = -1
+	mobilisation_size = -0.45
+	leadership_modifier = -0.21
+	org_regain = -0.42
+	land_organisation = -0.18
+	land_unit_start_experience = -0.9
 	war_exhaustion = 0.1 
 	icon = 16
 }

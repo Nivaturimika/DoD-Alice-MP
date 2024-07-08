@@ -296,7 +296,7 @@ country_event = {
 		tag = HLR 
 		has_country_flag = HRE_COMPROMISE
 		OR = { 
-			has_country_flag = New_Reichsarmee_HRE
+			NOT = { has_country_modifier = Reichsarmee_HRE }
 			has_country_flag = Cultural_Reform_HRE
 			has_country_flag = First_Eco_reform_HRE
 		}

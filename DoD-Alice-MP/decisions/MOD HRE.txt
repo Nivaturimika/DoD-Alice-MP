@@ -245,25 +245,23 @@ political_decisions = {
 	Reform_Reichsarmee_HRE = { 
 		
 		potential = { 
-		tag = HLR 
-		has_country_flag = HRE_COMPROMISE 
-		has_country_modifier = Reichsarmee_HRE
-		NOT = { has_country_flag = New_Reichsarmee_HRE }
+			tag = HLR 
+			has_country_flag = HRE_COMPROMISE 
+			has_country_modifier = Reichsarmee_HRE
 		}
 		
 		allow = { 
-		breech_loaded_rifles = 1 
-		army_decision_making = 1 
-		military_score = 150 
-		OR = { 
-			war_policy = jingoism
-			war_policy = pro_military 
+			breech_loaded_rifles = 1 
+			army_decision_making = 1 
+			military_score = 150 
+			OR = { 
+				war_policy = jingoism
+				war_policy = pro_military 
 			}
 		}
 		
 		effect = { 
-		remove_country_modifier = Reichsarmee_HRE
-		set_country_flag = New_Reichsarmee_HRE
+			remove_country_modifier = Reichsarmee_HRE
 		}
 		
 		ai_will_do = {
@@ -762,11 +760,10 @@ political_decisions = {
 	Reform_Reichsarmee_HRE_Abso = { 
 		
 		potential = { 
-		tag = HLR
-		has_country_flag = HRE_unified
-		has_country_flag = HRE_manifesto
-		has_country_modifier = Reichsarmee_HRE
-		NOT = { has_country_flag = New_Reichsarmee_HRE }
+			tag = HLR
+			has_country_flag = HRE_unified
+			has_country_flag = HRE_manifesto
+			has_country_modifier = Reichsarmee_HRE
 		}
 		
 		allow = { 
@@ -778,12 +775,11 @@ political_decisions = {
 			OR = { 
 				war_policy = jingoism
 				war_policy = pro_military 
-				}
+			}
 		}
 		
 		effect = { 
-		remove_country_modifier = Reichsarmee_HRE
-		set_country_flag = New_Reichsarmee_HRE
+			remove_country_modifier = Reichsarmee_HRE
 		}
 	}
 	
