@@ -2967,8 +2967,7 @@ place_in_the_sun = {
 				THIS = {
 					any_owned_province = { port = yes }
 					OR = {
-						is_greater_power = yes
-						is_secondary_power = yes
+						test = is_colonial_power
 						ai = no
 					}
 				}
@@ -3663,8 +3662,7 @@ acquire_state_late = {
 				THIS = {
 					any_owned_province = { port = yes }
 					OR = {
-						is_greater_power = yes
-						is_secondary_power = yes
+						test = is_colonial_power
 						ai = no
 					}
 				}
@@ -4981,10 +4979,7 @@ annex_africa = {
 			NOT = { tag = RUS }
 			NOT = { tag = TUR }
 			slavery = no_slavery
-			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
-			}
+			test = is_colonial_power
 			NOT = { has_country_modifier = neutrality }
 			NOT = { has_country_modifier = war_justification_blocked }
 			NOT = { has_country_flag = congo_award }
@@ -5088,10 +5083,7 @@ annex_africa_full = {
 			NOT = { tag = RUS }
 			NOT = { tag = TUR }
 			slavery = no_slavery
-			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
-			}
+			test = is_colonial_power
 			NOT = { has_country_modifier = neutrality }
 			NOT = { has_country_modifier = war_justification_blocked }
 			NOT = { has_country_flag = congo_award }
@@ -7482,14 +7474,11 @@ annex_india_AI = {
 				ai = no
 			}
 			NOT = { tag = TUR }
-			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
-			}
-		NOT = { has_country_modifier = neutrality }
-		NOT = { has_country_modifier = war_justification_blocked }
-		civilized = yes
-		has_global_flag = selon_treaty
+			test = is_colonial_power
+			NOT = { has_country_modifier = neutrality }
+			NOT = { has_country_modifier = war_justification_blocked }
+			civilized = yes
+			has_global_flag = selon_treaty
 		}
 		OR = {
 	tag = MDR

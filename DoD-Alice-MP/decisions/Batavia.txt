@@ -325,11 +325,8 @@ political_decisions = {
 	}
 
 	allow = {
-	OR = {	
-	is_greater_power = yes
-	is_secondary_power = yes
-	}
-	owns = 2087 
+		test = is_colonial_power
+		owns = 2087 
 	}
 	
 	effect = { 

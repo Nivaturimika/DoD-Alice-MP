@@ -1870,8 +1870,8 @@ political_decisions = {
 		2338 = { owned_by = THIS } 
 		state_n_government = 1 
 		}
-		is_secondary_power = yes
-		} 
+		test = is_colonial_power
+		}
 		
 		effect = { 
 		SA_5 = { add_core =  LOT } 

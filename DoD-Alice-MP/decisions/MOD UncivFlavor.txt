@@ -1,14 +1,14 @@
 political_decisions = {
 
-    # Maghreb Nonsense
+	# Maghreb Nonsense
 	
 	# Aragon
 	
 	pacifing_the_berbers = {
 		potential = {
 			OR = { 
-			  tag = ARN
-			  tag = ARI
+			tag = ARN
+			tag = ARI
 			}
 			civilized = yes
 			NOT = { exists = KBL }
@@ -20,13 +20,10 @@ political_decisions = {
 			war = no
 			is_disarmed = no
 			OR = {
-			  state_n_government = 1
-			  year = 1860
+			state_n_government = 1
+			year = 1860
 			}
-			OR = { 
-			  is_secondary_power = yes
-			  is_greater_power = yes
-			}
+			test = is_colonial_power
 			KBL = { has_unclaimed_cores = no }
 		}
 		
@@ -44,18 +41,18 @@ political_decisions = {
 		
 		ai_will_do = { 
 			factor = 1 		
-	        modifier = {
-	           factor = 0
-	           badboy = 0.9
-		    }
-        }
+			modifier = {
+			factor = 0
+			badboy = 0.9
+			}
+		}
 	}
 	
 	southern_algerian_expedition = {
 		potential = {
 			OR = { 
-			  tag = ARN
-			  tag = ARI
+			tag = ARN
+			tag = ARI
 			}
 			civilized = yes
 			NOT = { exists = KBL }
@@ -69,13 +66,13 @@ political_decisions = {
 			war = no
 			is_disarmed = no
 			OR = {
-			  nationalism_n_imperialism = 1
-			  year = 1870
-			  tag = ARI
+			nationalism_n_imperialism = 1
+			year = 1870
+			tag = ARI
 			}
 			OR = { 
-			  is_secondary_power = yes
-			  is_greater_power = yes
+			is_secondary_power = yes
+			is_greater_power = yes
 			}
 			owns = 1707
 			owns = 1703
@@ -85,7 +82,7 @@ political_decisions = {
 			prestige = 5
 			badboy = 1
 			set_country_flag = going_south_ARA
-            country_event = { id = 22203 days = 60 } 			
+			country_event = { id = 22203 days = 60 } 			
 			relation = { who = ALJ value = -400 }
 			diplomatic_influence = { who = ALJ value = -400 }
 			leave_alliance = ALJ		
@@ -93,11 +90,11 @@ political_decisions = {
 		
 		ai_will_do = { 
 			factor = 1 		
-	        modifier = {
-	           factor = 0
-	           badboy = 0.8
-		    }
-        }
+			modifier = {
+			factor = 0
+			badboy = 0.8
+			}
+		}
 	}	
 	
 	this_is_very_sus = {
@@ -114,12 +111,12 @@ political_decisions = {
 			war = no
 			is_disarmed = no
 			OR = {
-			  state_n_government = 1
-			  year = 1860
+			state_n_government = 1
+			year = 1860
 			}
 			OR = { 
-			  is_secondary_power = yes
-			  is_greater_power = yes
+			is_secondary_power = yes
+			is_greater_power = yes
 			}
 			owns = 3284
 			owns = 3283
@@ -132,34 +129,34 @@ political_decisions = {
 			relation = { who = SUS value = -400 }
 			diplomatic_influence = { who = SUS value = -400 }
 			leave_alliance = SUS
-	        casus_belli = {
-			   target = SUS
-			   type = establish_protectorate_casus_belli
-			   months = 60
-	        }
-	        war = {
-	 	      target = SUS
-		       attacker_goal = {
-		          casus_belli = establish_protectorate_casus_belli
-		       }
-		       defender_goal = {
-		          casus_belli = status_quo
-			   }
-	        }		
+			casus_belli = {
+			target = SUS
+			type = establish_protectorate_casus_belli
+			months = 60
+			}
+			war = {
+			target = SUS
+			attacker_goal = {
+				casus_belli = establish_protectorate_casus_belli
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			}		
 		}
 		
 		ai_will_do = { 
 			factor = 1 		
-	        modifier = {
-	           factor = 0
-	           badboy = 0.8
-		    }
-        }
+			modifier = {
+			factor = 0
+			badboy = 0.8
+			}
+		}
 	}
 	
 	# Fez has somehow broke free.
 	
-    killing_the_fez = {
+	killing_the_fez = {
 		potential = {
 			tag = SPA
 			civilized = yes
@@ -175,12 +172,12 @@ political_decisions = {
 			war = no
 			is_disarmed = no
 			OR = {
-			  nationalism_n_imperialism = 1
-			  year = 1870
+			nationalism_n_imperialism = 1
+			year = 1870
 			}
 			OR = { 
-			  is_secondary_power = yes 
-			  is_greater_power = yes
+			is_secondary_power = yes 
+			is_greater_power = yes
 			}
 			owns = 1686
 			owns = 1687		
@@ -191,48 +188,48 @@ political_decisions = {
 			badboy = 3
 			set_country_flag = MOR_full_integration
 			set_country_flag = kill_fez
-            country_event = { id = 22203 days = 60 } 			
+			country_event = { id = 22203 days = 60 } 			
 			relation = { who = FEZ value = -400 }
 			diplomatic_influence = { who = FEZ value = -400 }
 			SUS = { all_core = { add_core = FEZ } }
-		    any_owned = {
-			   limit = {
-			      is_core = SUS
-				  NOT = { province_id = 3284 }
-				  NOT = { province_id = 3283 }
-				  NOT = { province_id = 1695 }
-			   }
-			   secede_province = FEZ
-		    }
+			any_owned = {
+			limit = {
+				is_core = SUS
+				NOT = { province_id = 3284 }
+				NOT = { province_id = 3283 }
+				NOT = { province_id = 1695 }
+			}
+			secede_province = FEZ
+			}
 			leave_alliance = FEZ
-	        casus_belli = {
-			   target = FEZ
-			   type = establish_protectorate_casus_belli
-			   months = 60
-	        }
-	        war = {
-	 	      target = FEZ
-		       attacker_goal = {
-		          casus_belli = establish_protectorate_casus_belli
-		       }
-		       defender_goal = {
-		          casus_belli = status_quo
-			   }
-	        }		
+			casus_belli = {
+			target = FEZ
+			type = establish_protectorate_casus_belli
+			months = 60
+			}
+			war = {
+			target = FEZ
+			attacker_goal = {
+				casus_belli = establish_protectorate_casus_belli
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			}		
 		}
 		
 		ai_will_do = { 
 			factor = 1 		
-	        modifier = {
-	           factor = 0
-	           badboy = 0.8
-		    }
-        }	
+			modifier = {
+			factor = 0
+			badboy = 0.8
+			}
+		}	
 	}
 	
 	# Triggers Fez Chain
 	
-    offering_fez_protection = {
+	offering_fez_protection = {
 		potential = {
 			tag = SPA
 			civilized = yes
@@ -248,12 +245,12 @@ political_decisions = {
 			war = no
 			is_disarmed = no
 			OR = {
-			  nationalism_n_imperialism = 1
-			  year = 1870
+			nationalism_n_imperialism = 1
+			year = 1870
 			}
 			OR = { 
-			  is_secondary_power = yes 
-			  is_greater_power = yes
+			is_secondary_power = yes 
+			is_greater_power = yes
 			}
 			owns = 1686
 			owns = 1687			
@@ -267,11 +264,11 @@ political_decisions = {
 		
 		ai_will_do = { 
 			factor = 1 		
-	        modifier = {
-	           factor = 0
-	           badboy = 0.8
-		    }
-        }
+			modifier = {
+			factor = 0
+			badboy = 0.8
+			}
+		}
 	}	
 	
 	# Spain
@@ -279,7 +276,7 @@ political_decisions = {
 	# Organize Africa
 	
 	organize_numidia = {
-	    picture = map_algeria
+		picture = map_algeria
 		potential = {
 			civilized = yes
 			NOT = { tag = SPA }
@@ -335,7 +332,7 @@ political_decisions = {
 	# This decision is pretty sus
 
 	organize_mauretania = {
-	    picture = map_morocco
+		picture = map_morocco
 		potential = {
 			NOT = { tag = ARN }
 			NOT = { tag = ARI }
@@ -358,10 +355,10 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			random_owned = {
-			   limit = {
-			     owner = { OR = { tag = SPA tag = SPC } }
-			   }
-			   owner = { set_country_flag = rif_war_can_trigger }
+			limit = {
+				owner = { OR = { tag = SPA tag = SPC } }
+			}
+			owner = { set_country_flag = rif_war_can_trigger }
 			}
 			set_global_flag = org_mor
 			MOR_1688  = { add_core = MOR }

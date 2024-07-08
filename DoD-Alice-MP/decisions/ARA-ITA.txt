@@ -233,10 +233,7 @@ political_decisions = {
 		}
 		
 		allow = {    
-			OR = {
-			is_secondary_power = yes
-			is_greater_power = yes
-			}
+			test = is_colonial_power
 			revolution_n_counterrevolution = 1
 		}
 		
@@ -263,10 +260,7 @@ political_decisions = {
 		}
 		
 		allow = {    
-			OR = {
-			is_secondary_power = yes
-			is_greater_power = yes
-			}
+			test = is_colonial_power
 			revolution_n_counterrevolution = 1
 		}
 		

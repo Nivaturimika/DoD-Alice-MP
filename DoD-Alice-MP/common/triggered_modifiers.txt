@@ -556,7 +556,7 @@ feudal = {
 }
 
 autonomous_dependency_modifier = {
-	trigger = { government = autonomous_dependency is_vasal = yes }
+	trigger = { government = autonomous_dependency is_independant = no }
     prestige = -8
     administrative_efficiency_modifier = 0.1
 	tariff_efficiency_modifier = -0.1

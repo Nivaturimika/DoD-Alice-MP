@@ -139,10 +139,7 @@ political_decisions = {
 		}
 		
 		allow = {		    
-			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
-			}
+			test = is_colonial_power
             nationalism_n_imperialism = 1			
 			invention = vaccination
 			invention = prophylaxis_against_malaria
@@ -308,10 +305,7 @@ political_decisions = {
 		}
 		
 		allow = {		    
-			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
-			}	
+			test = is_colonial_power
             revolution_n_counterrevolution = 1			
 			functionalism = 1
 			OR = {

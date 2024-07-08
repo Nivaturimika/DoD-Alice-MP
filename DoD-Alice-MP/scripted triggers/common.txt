@@ -30,6 +30,15 @@ in_influence_of_this = {
 	}
 }
 
+in_influence_of_this_or_empty = {
+	main_parameter = province
+	this_parameter = nation
+	OR = {
+		empty = yes
+		test = in_influence_of_this
+	}
+}
+
 is_monarchy_government = {
 	main_parameter = nation
 	OR = {
@@ -49,6 +58,25 @@ is_dictatorship_government = {
 		government = proletarian_dictatorship
 		government = fascist_dictatorship
 		government = fascist_monarchy
+		AND = { 
+			government = presidential_dictatorship
+			has_country_modifier = NBG_THE_PROTO_FASCIST_STATE
+		}
+	}
+}
+
+is_fascist_government = {
+	main_parameter = nation
+	OR = {
+		government = fascist_dictatorship
+		government = fascist_monarchy
+		AND = { 
+			OR = {
+				government = presidential_dictatorship
+				government = proletarian_dictatorship
+			}
+			has_country_modifier = NBG_THE_PROTO_FASCIST_STATE
+		}
 	}
 }
 

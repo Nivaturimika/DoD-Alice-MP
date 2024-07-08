@@ -661,7 +661,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			is_secondary_power = yes
+			test = is_colonial_power
 			nationalism_n_imperialism = 1
 			military_plans = 1
 		}

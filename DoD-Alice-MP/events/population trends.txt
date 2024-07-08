@@ -9,26 +9,26 @@ country_event = {
 	title = "Birth Rate Tumbles!"
 	desc = "Our population appear to have lost interest in raising families."
 	picture = "administration"
-	
+
 	trigger = {
 		NOT = {
-			has_country_modifier = point_five_children 
-			has_country_modifier = one_child			
-			has_country_modifier = two_children 			
+			has_country_modifier = point_five_children
+			has_country_modifier = one_child
+			has_country_modifier = two_children
 			has_country_modifier = three_children
 			has_country_modifier = four_children
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 		modifier = {
 			factor = 9
 			OR = {
-			   primary_culture = swabian
-			   primary_culture = north_german
-			   primary_culture = south_german
-			   primary_culture = rheinish
+				primary_culture = swabian
+				primary_culture = north_german
+				primary_culture = south_german
+				primary_culture = rheinish
 			}
 			year = 1850
 			NOT = { year = 1890 }
@@ -51,23 +51,23 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			literacy = 1 
+			literacy = 1
 		}
 		modifier = {
 			factor = 0.9
-			literacy = 0.95 
+			literacy = 0.95
 		}
 		modifier = {
 			factor = 0.9
-			literacy = 0.9 
+			literacy = 0.9
 		}
 		modifier = {
 			factor = 0.9
-			literacy = 0.85 
+			literacy = 0.85
 		}
 		modifier = {
 			factor = 0.9
-			literacy = 0.8 
+			literacy = 0.8
 		}
 		modifier = {
 			factor = 0.9
@@ -98,12 +98,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Then every child is precious."
-		remove_country_modifier = point_five_children 
+		remove_country_modifier = point_five_children
 		remove_country_modifier = one_child
-		remove_country_modifier = two_children 		
+		remove_country_modifier = two_children
 		remove_country_modifier = three_children
 		remove_country_modifier = four_children
 		add_country_modifier = {
@@ -117,26 +117,26 @@ country_event = {
 	title = "Birth Rate Very Low!"
 	desc = "Our population seem to be breeding less."
 	picture = "administration"
-	
+
 	trigger = {
 		NOT = {
-			has_country_modifier = point_five_children 
-			has_country_modifier = one_child		
-			has_country_modifier = two_children 			
+			has_country_modifier = point_five_children
+			has_country_modifier = one_child
+			has_country_modifier = two_children
 			has_country_modifier = three_children
 			has_country_modifier = four_children
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 		modifier = {
 			factor = 9
 			OR = {
-			   primary_culture = swabian
-			   primary_culture = north_german
-			   primary_culture = south_german
-			   primary_culture = rheinish
+			primary_culture = swabian
+			primary_culture = north_german
+			primary_culture = south_german
+			primary_culture = rheinish
 			}
 			year = 1850
 			NOT = { year = 1890 }
@@ -171,7 +171,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			literacy = 0.6 
+			literacy = 0.6
 		}
 		modifier = {
 			factor = 0.9
@@ -179,7 +179,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			literacy = 0.5 
+			literacy = 0.5
 		}
 		modifier = {
 			factor = 0.9
@@ -206,12 +206,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Then every child is precious."
-		remove_country_modifier = point_five_children 
+		remove_country_modifier = point_five_children
 		remove_country_modifier = one_child
-		remove_country_modifier = two_children 	
+		remove_country_modifier = two_children
 		remove_country_modifier = three_children
 		remove_country_modifier = four_children
 		add_country_modifier = {
@@ -226,26 +226,26 @@ country_event = {
 	title = "Birth Rate Stable!"
 	desc = "Our population appears to be stablizing."
 	picture = "administration"
-	
+
 	trigger = {
 		NOT = {
-			has_country_modifier = point_five_children 
-			has_country_modifier = one_child			
-			has_country_modifier = two_children 			
+			has_country_modifier = point_five_children
+			has_country_modifier = one_child
+			has_country_modifier = two_children
 			has_country_modifier = three_children
 			has_country_modifier = four_children
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 		modifier = {
 			factor = 9
 			OR = {
-			   primary_culture = swabian
-			   primary_culture = north_german
-			   primary_culture = south_german
-			   primary_culture = rheinish
+			primary_culture = swabian
+			primary_culture = north_german
+			primary_culture = south_german
+			primary_culture = rheinish
 			}
 			year = 1850
 			NOT = { year = 1890 }
@@ -296,11 +296,11 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			literacy = 0.5 
+			literacy = 0.5
 		}
 		modifier = {
 			factor = 0.9
-			literacy = 0.4 
+			literacy = 0.4
 		}
 		modifier = {
 			factor = 0.9
@@ -308,7 +308,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			literacy = 0.2 
+			literacy = 0.2
 		}
 		modifier = {
 			factor = 0.9
@@ -319,16 +319,16 @@ country_event = {
 			has_country_modifier = the_female_shortage
 		}
 	}
-	
+
 	option = {
 		name = "This is good news."
-		remove_country_modifier = point_five_children 
+		remove_country_modifier = point_five_children
 		remove_country_modifier = one_child
-		remove_country_modifier = two_children 		
+		remove_country_modifier = two_children
 		remove_country_modifier = three_children
 		remove_country_modifier = four_children
 		add_country_modifier = {
-			name = two_children 
+			name = two_children
 			duration = 3650
 		}
 	}
@@ -338,26 +338,26 @@ country_event = {
 	title = "Birth Rate Very High!"
 	desc = "Our population appears to be increasing rapidly."
 	picture = "administration"
-	
+
 	trigger = {
 		NOT = {
-			has_country_modifier = point_five_children 
-			has_country_modifier = one_child			
-			has_country_modifier = two_children 			
+			has_country_modifier = point_five_children
+			has_country_modifier = one_child
+			has_country_modifier = two_children
 			has_country_modifier = three_children
 			has_country_modifier = four_children
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 		modifier = {
 			factor = 9
 			OR = {
-			   primary_culture = swabian
-			   primary_culture = north_german
-			   primary_culture = south_german
-			   primary_culture = rheinish
+			primary_culture = swabian
+			primary_culture = north_german
+			primary_culture = south_german
+			primary_culture = rheinish
 			}
 			year = 1850
 			NOT = { year = 1890 }
@@ -427,12 +427,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "This is good news."
-		remove_country_modifier = point_five_children 
+		remove_country_modifier = point_five_children
 		remove_country_modifier = one_child
-		remove_country_modifier = two_children 		
+		remove_country_modifier = two_children
 		remove_country_modifier = three_children
 		remove_country_modifier = four_children
 		add_country_modifier = {
@@ -447,26 +447,26 @@ country_event = {
 	title = "Birth Rate Exploding!"
 	desc = "Our population appears to be breeding like rabbits!"
 	picture = "administration"
-	
+
 	trigger = {
 		NOT = {
-			has_country_modifier = point_five_children 
-			has_country_modifier = one_child			
-			has_country_modifier = two_children 			
+			has_country_modifier = point_five_children
+			has_country_modifier = one_child
+			has_country_modifier = two_children
 			has_country_modifier = three_children
 			has_country_modifier = four_children
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 		modifier = {
 			factor = 0.01
 			OR = {
-			   primary_culture = swabian
-			   primary_culture = north_german
-			   primary_culture = south_german
-			   primary_culture = rheinish
+			primary_culture = swabian
+			primary_culture = north_german
+			primary_culture = south_german
+			primary_culture = rheinish
 			}
 			year = 1850
 			NOT = { year = 1890 }
@@ -544,12 +544,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Must be something in the water."
-		remove_country_modifier = point_five_children 
+		remove_country_modifier = point_five_children
 		remove_country_modifier = one_child
-		remove_country_modifier = two_children 		
+		remove_country_modifier = two_children
 		remove_country_modifier = three_children
 		remove_country_modifier = four_children
 		add_country_modifier = {

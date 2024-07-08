@@ -12,7 +12,7 @@ country_event = {
 	desc = "We have discovered the Ninth Planet! Surely it will be recognized as such for eternity"
 	fire_only_once = yes
 	major = yes
-	
+
 	trigger = { anti__rationalism = 1 }
 	mean_time_to_happen = {
 		months = 50
@@ -31,7 +31,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "A bit small, isn't it?"
 		prestige = 5
@@ -62,7 +62,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "I said there was something massive exterior to Uranus."
 		prestige = 5
@@ -82,7 +82,7 @@ country_event = {
 	title = "$COUNTRY_ADJ$ Neutrality"
 	desc = "We have been pulled into an outside war, despite our dedication to neutrality."
 	picture = "deliberation"
-	
+
 	trigger = {
 		has_country_modifier = neutrality
 		NOT = {
@@ -97,11 +97,11 @@ country_event = {
 		}
 		war = yes
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		name = "We must remain Neutral!"
 		any_country = {
@@ -116,7 +116,7 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 	option = {
 		name = "We must discard our Neutrality."
 		set_country_flag = abandoned_neutrality
@@ -126,7 +126,7 @@ country_event = {
 			factor = 0
 		}
 	}
-}	
+}
 
 #################################################################################################################
 #																												#
@@ -135,7 +135,6 @@ country_event = {
 #################################################################################################################
 
 country_event = {
-
 	id = 1100132
 	title = "Workshop of the World!"
 	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
@@ -164,7 +163,6 @@ country_event = {
 }
 
 country_event = {
-
 	id = 1100133
 	title = "Workshop of the World!"
 	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
@@ -195,7 +193,6 @@ country_event = {
 }
 
 country_event = {
-
 	id = 1100134
 	title = "Workshop of the World!"
 	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
@@ -226,7 +223,6 @@ country_event = {
 }
 
 country_event = {
-
 	id = 1100135
 	title = "Workshop of the World!"
 	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
@@ -257,7 +253,6 @@ country_event = {
 }
 
 country_event = {
-
 	id = 1100136
 	title = "Workshop of the World!"
 	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
@@ -288,7 +283,6 @@ country_event = {
 }
 
 country_event = {
-
 	id = 1100137
 	title = "Workshop of the World!"
 	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
@@ -319,7 +313,6 @@ country_event = {
 }
 
 country_event = {
-
 	id = 1100138
 	title = "Workshop of the World!"
 	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
@@ -350,7 +343,6 @@ country_event = {
 }
 
 country_event = {
-
 	id = 1100139
 	title = "Workshop of the World!"
 	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
@@ -381,7 +373,6 @@ country_event = {
 }
 
 country_event = {
-
 	id = 1100140
 	title = "Workshop of the World!"
 	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
@@ -412,7 +403,6 @@ country_event = {
 }
 
 country_event = {
-
 	id = 1100141
 	title = "Workshop of the World!"
 	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
@@ -443,7 +433,6 @@ country_event = {
 }
 
 country_event = {
-
 	id = 1100142
 	title = "Workshop of the World!"
 	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
@@ -474,7 +463,6 @@ country_event = {
 }
 
 country_event = {
-
 	id = 1100143
 	title = "Workshop of the World!"
 	desc = "Sire, our powerful industries have made us the Workshop of the World! Long live $COUNTRY$!"
@@ -538,17 +526,17 @@ country_event = {
 	news_desc_medium = "EVTDESC11380020_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC11380020_NEWS_SHORT"
 	picture = "Bankruptcy"
-	
+
 	trigger = {
 		government = hms_government
 		ruling_party_ideology = communist
 		NOT = { has_country_flag = political_showdown }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 3
 	}
-	
+
 	immediate = {
 		random_owned = {
 			limit = {
@@ -557,7 +545,7 @@ country_event = {
 			owner = { set_country_flag = political_showdown }
 		}
 	}
-	
+
 	option = {
 		name = "This cannot be allowed. The Liberals shall rule instead."
 		clr_country_flag = political_showdown
@@ -581,7 +569,7 @@ country_event = {
 	    clr_country_flag = paternal_party_in_power
 		clr_country_flag = anarcho_liberal_party_in_power
 		clr_country_flag = market_liberal_party_in_power
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		any_pop = {
 			limit = {
@@ -619,7 +607,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "This cannot be allowed. The Conservatives shall rule instead."
 		clr_country_flag = political_showdown
@@ -643,7 +631,7 @@ country_event = {
 	    clr_country_flag = paternal_party_in_power
 		clr_country_flag = anarcho_liberal_party_in_power
 		clr_country_flag = market_liberal_party_in_power
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 
 		any_pop = {
@@ -682,7 +670,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "This cannot be allowed. The Socialists shall rule instead."
 		clr_country_flag = political_showdown
@@ -711,7 +699,7 @@ country_event = {
 	    clr_country_flag = paternal_party_in_power
 		clr_country_flag = anarcho_liberal_party_in_power
 		clr_country_flag = market_liberal_party_in_power
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		any_pop = {
 			limit = {
@@ -746,7 +734,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "The people have spoken. It is time for the monarchy to end."
 		clr_country_flag = political_showdown
@@ -754,17 +742,17 @@ country_event = {
 		prestige = -15
 		government = democracy
 		clr_country_flag = election_started
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
 		clr_country_flag = anarcho_liberal_gov
-	    
-	    
-		
+
+
+
 		aristocrats = {
 			limit = { is_primary_culture = yes }
 			ideology = {
@@ -801,21 +789,21 @@ country_event = {
 	news_desc_medium = "EVTDESC11380021_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC11380021_NEWS_SHORT"
 	picture = "Bankruptcy"
-	
+
 	trigger = {
 		government = hms_government
 		ruling_party_ideology = anarcho_liberal
 		NOT = { has_country_flag = political_showdown }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 3
 	}
-	
+
 	immediate = {
 		set_country_flag = political_showdown
 	}
-	
+
 	option = {
 		name = "This cannot be allowed. The Liberals shall rule instead."
 		clr_country_flag = political_showdown
@@ -839,7 +827,7 @@ country_event = {
 	    clr_country_flag = paternal_party_in_power
 		clr_country_flag = anarcho_liberal_party_in_power
 		clr_country_flag = market_liberal_party_in_power
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		any_pop = {
 			limit = {
@@ -874,7 +862,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "This cannot be allowed. The Conservatives shall rule instead."
 		clr_country_flag = political_showdown
@@ -898,7 +886,7 @@ country_event = {
 	    clr_country_flag = paternal_party_in_power
 		clr_country_flag = anarcho_liberal_party_in_power
 		clr_country_flag = market_liberal_party_in_power
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		any_pop = {
 			limit = {
@@ -936,7 +924,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "The people have spoken. It is time for the monarchy to end."
 		clr_country_flag = political_showdown
@@ -944,17 +932,17 @@ country_event = {
 		prestige = -15
 		government = democracy
 		clr_country_flag = election_started
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
 		clr_country_flag = anarcho_liberal_gov
-	    
-	    
-		
+
+
+
 		aristocrats = {
 			limit = { is_primary_culture = yes }
 			ideology = {
@@ -991,17 +979,17 @@ country_event = {
 	news_desc_medium = "EVTDESC11380022_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC11380022_NEWS_SHORT"
 	picture = "Bankruptcy"
-	
+
 	trigger = {
 		government = prussian_constitutionalism
 		ruling_party_ideology = communist
 		NOT = { has_country_flag = political_showdown }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 3
 	}
-	
+
 	immediate = {
 		random_owned = {
 			limit = {
@@ -1010,7 +998,7 @@ country_event = {
 			owner = { set_country_flag = political_showdown }
 		}
 	}
-	
+
 	option = {
 		name = "This cannot be allowed. The Liberals shall rule instead."
 		clr_country_flag = political_showdown
@@ -1052,7 +1040,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "This cannot be allowed. The Conservatives shall rule instead."
 		clr_country_flag = political_showdown
@@ -1076,7 +1064,7 @@ country_event = {
 	    clr_country_flag = paternal_party_in_power
 		clr_country_flag = anarcho_liberal_party_in_power
 		clr_country_flag = market_liberal_party_in_power
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		any_pop = {
 			limit = {
@@ -1114,7 +1102,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "This cannot be allowed. The Socialists shall rule instead."
 		clr_country_flag = political_showdown
@@ -1143,7 +1131,7 @@ country_event = {
 	    clr_country_flag = paternal_party_in_power
 		clr_country_flag = anarcho_liberal_party_in_power
 		clr_country_flag = market_liberal_party_in_power
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		any_pop = {
 			limit = {
@@ -1178,7 +1166,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Enough is enough. The people clearly cannot be trusted to do what is best for $COUNTRY$."
 		clr_country_flag = political_showdown
@@ -1208,7 +1196,7 @@ country_event = {
 	    clr_country_flag = paternal_party_in_power
 		clr_country_flag = anarcho_liberal_party_in_power
 		clr_country_flag = market_liberal_party_in_power
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		random_owned = {
 			limit = {
@@ -1317,17 +1305,17 @@ country_event = {
 	news_desc_medium = "EVTDESC11380023_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC11380023_NEWS_SHORT"
 	picture = "Bankruptcy"
-	
+
 	trigger = {
 		government = prussian_constitutionalism
 		ruling_party_ideology = anarcho_liberal
 		NOT = { has_country_flag = political_showdown }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 3
 	}
-	
+
 	immediate = {
 		random_owned = {
 			limit = {
@@ -1336,7 +1324,7 @@ country_event = {
 			owner = { set_country_flag = political_showdown }
 		}
 	}
-	
+
 	option = {
 		name = "This cannot be allowed. The Liberals shall rule instead."
 		clr_country_flag = political_showdown
@@ -1361,7 +1349,7 @@ country_event = {
 	    clr_country_flag = paternal_party_in_power
 		clr_country_flag = anarcho_liberal_party_in_power
 		clr_country_flag = market_liberal_party_in_power
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		random_owned = {
 			limit = {
@@ -1409,7 +1397,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "This cannot be allowed. The Conservatives shall rule instead."
 		clr_country_flag = political_showdown
@@ -1434,7 +1422,7 @@ country_event = {
 	    clr_country_flag = paternal_party_in_power
 		clr_country_flag = anarcho_liberal_party_in_power
 		clr_country_flag = market_liberal_party_in_power
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		random_owned = {
 			limit = {
@@ -1485,7 +1473,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "Enough is enough. The people clearly cannot be trusted to do what is best for $COUNTRY$."
 		clr_country_flag = political_showdown
@@ -1515,7 +1503,7 @@ country_event = {
 	    clr_country_flag = paternal_party_in_power
 		clr_country_flag = anarcho_liberal_party_in_power
 		clr_country_flag = market_liberal_party_in_power
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		random_owned = {
 			limit = {
@@ -1620,12 +1608,12 @@ country_event = {
 	title = "Surge of Patriotism"
 	desc = "Our people have been overcome with belligerence for the hated enemy."
 	picture = "Riot"
-	
+
 	trigger = {
 		war = yes
 		civilized = yes
 	}
-	
+
 	mean_time_to_happen = {
 		months = 150
 		modifier = {
@@ -1707,7 +1695,7 @@ country_event = {
 			nationalvalue = nv_supremacy
 		}
 	}
-	
+
 	option = {
 		name = "Capital!"
 		random_state = {
@@ -1720,7 +1708,7 @@ country_event = {
 					issue = pacifism
 					factor = 3
 				}
-			}				
+			}
 		}
 	}
 }
@@ -1732,7 +1720,7 @@ country_event = {
 	title = "EVTNAME152009872" #$COUNTRY_ADJ$ Coup?
 	desc = "EVTDESC152009872"
 	picture = "Military_reform"
-	
+
 	trigger = {
 		civilized = yes
 		war = no
@@ -1760,11 +1748,11 @@ country_event = {
 			militancy = 7
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 50
 	}
-	
+
 	option = {
 		name = "This could mean trouble down the line."
 		add_country_modifier = {
@@ -1824,7 +1812,7 @@ country_event = {
 		}
 	}
 }
-		
+
 country_event = {
 	id = 152009873
 	title = "EVTNAME152009873" #The $COUNTRY_ADJ$ Military Coup
@@ -1835,7 +1823,7 @@ country_event = {
 	news_desc_short = "EVTDESC152009873_NEWS_SHORT"
 	picture = "Military_reform"
 	major = yes
-	
+
 	trigger = {
 		civilized = yes
 		war = no
@@ -1868,9 +1856,9 @@ country_event = {
 			is_culture_group = burgundian_american
 			is_culture_group = anglois_american
 			literacy = 0.50
-		}	
+		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 200
 		modifier = {
@@ -1915,7 +1903,7 @@ country_event = {
 			revolt_percentage = 0.75
 		}
 	}
-	
+
 	option = {
 		name = "152009873.A"
 		remove_country_modifier = coup_risk
@@ -1941,17 +1929,17 @@ country_event = {
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		
-		
-		
-		
-			
-		
-		
+
+
+
+
+
+
+
 		clr_country_flag = anarcho_liberal_gov
-	    
-	    
-		
+
+
+
 		clr_country_flag = election_started
 		clr_country_flag = conservative_party_in_power
 		clr_country_flag = liberal_party_in_power
@@ -1970,7 +1958,7 @@ country_event = {
 		clr_country_flag = reactionary_election_win
 		clr_country_flag = anarcho_liberal_election_win
 		clr_country_flag = social_liberal_election_win
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		random_owned = {
 			limit = { owner = { has_country_modifier = the_brown_scare } }
@@ -1996,7 +1984,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "152009873.B"
 		prestige = -10
@@ -2063,7 +2051,7 @@ country_event = {
 	news_desc_short = "EVTDESC152009873_NEWS_SHORT"
 	picture = "Military_reform"
 	major = yes
-	
+
 	trigger = {
 		civilized = yes
 		war = no
@@ -2095,9 +2083,9 @@ country_event = {
 			is_culture_group = burgundian_american
 			is_culture_group = anglois_american
 			literacy = 0.50
-		}	
+		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 200
 		modifier = {
@@ -2142,7 +2130,7 @@ country_event = {
 			revolt_percentage = 0.75
 		}
 	}
-	
+
 	option = {
 		name = "152009874.A"
 		remove_country_modifier = coup_risk
@@ -2168,17 +2156,17 @@ country_event = {
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		
-		
-		
-		
-			
-		
-		
+
+
+
+
+
+
+
 		clr_country_flag = anarcho_liberal_gov
-	    
-	    
-		
+
+
+
 		clr_country_flag = election_started
 		clr_country_flag = conservative_party_in_power
 		clr_country_flag = liberal_party_in_power
@@ -2197,7 +2185,7 @@ country_event = {
 		clr_country_flag = reactionary_election_win
 		clr_country_flag = anarcho_liberal_election_win
 		clr_country_flag = social_liberal_election_win
-		clr_country_flag = market_liberal_election_win		
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
 		plurality = -25
 		random_owned = {
@@ -2223,7 +2211,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "152009874.B"
 		prestige = -10
@@ -2285,7 +2273,7 @@ country_event = {
 	title = "Down with the Secret Police!"
 	desc = "With the end of the dictatorship, the secret police service must be disbanded."
 	picture = "Policeaction"
-	
+
 	trigger = {
 		police_reform = secret_police
 		NOT = {
@@ -2303,11 +2291,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 6
 	}
-	
+
 	option = {
 		name = "A blanket amnesty seems the fairest way"
 		social_reform = national_police
@@ -2327,7 +2315,7 @@ country_event = {
 		}
 		any_pop = {
 			limit = {
-				NOT = { 
+				NOT = {
 					type = soldiers
 					type = bureaucrats
 				}
@@ -2347,7 +2335,7 @@ country_event = {
 		}
 		any_pop = {
 			limit = {
-				NOT = { 
+				NOT = {
 					type = soldiers
 					type = bureaucrats
 				}
@@ -2370,7 +2358,7 @@ country_event = {
 		}
 		any_pop = {
 			limit = {
-				NOT = { 
+				NOT = {
 					type = soldiers
 					type = bureaucrats
 				}
@@ -2386,11 +2374,11 @@ country_event = {
 	title = "Immigrant Surge!"
 	desc = "A sudden surge in immigration to $COUNTRY$ has occurred."
 	picture = "emigration"
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
-		OR = { 
+		OR = {
 			continent = north_america
 			continent = south_america
 			continent = oceania
@@ -2398,11 +2386,11 @@ country_event = {
 		NOT = { has_country_modifier = land_of_opportunity }
 		NOT = { has_country_flag = immigration_surge }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 	}
-	
+
 	option = {
 		name = "A great day!"
 		set_country_flag = immigration_surge
@@ -2445,8 +2433,8 @@ country_event = {
 	title = "General Strike!"
 	desc = "Our industry has been crippled by a general strike!"
 	picture = "communist_congress"
-	
-	trigger = {	
+
+	trigger = {
 		exists = yes
 		is_ideology_enabled = socialist
 		civilized = yes
@@ -2484,10 +2472,10 @@ country_event = {
 		}
 		invention = general_strikes
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
-		
+
 		modifier = {
 			factor = 0.9
 			communist = 15
@@ -2550,17 +2538,17 @@ country_event = {
 		}
 		modifier = {
 		    factor = 0.75
-			war_exhaustion = 4	
+			war_exhaustion = 4
 		}
-		
+
 		modifier = {
 		    factor = 0.75
-			war_exhaustion = 6		
+			war_exhaustion = 6
 		}
-		
+
 		modifier = {
 		    factor = 0.75
-			war_exhaustion = 8	
+			war_exhaustion = 8
 		}
 		modifier = {
 			factor = 0.9
@@ -2603,12 +2591,12 @@ country_event = {
 			NOT = { average_consciousness = 3 }
 		}
 	}
-	
+
 	option = {
 		name = "Oh no!"
 		any_pop = {
 			militancy = 1
-			consciousness = 4			
+			consciousness = 4
 		}
 		random_owned = {
 			limit = {
@@ -2626,7 +2614,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					war_exhaustion = 4	
+					war_exhaustion = 4
 					NOT = { war_exhaustion = 6 }
 				}
 			}
@@ -2640,7 +2628,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					war_exhaustion = 6	
+					war_exhaustion = 6
 					NOT = { war_exhaustion = 8 }
 				}
 			}
@@ -2654,7 +2642,7 @@ country_event = {
 		random_owned = {
 			limit = {
 				owner = {
-					war_exhaustion = 8	
+					war_exhaustion = 8
 				}
 			}
 			owner = {
