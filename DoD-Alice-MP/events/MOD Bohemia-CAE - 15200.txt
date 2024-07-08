@@ -2717,7 +2717,7 @@ country_event = {
 	id = 152021
 	title = "CAEBOH22.T"
 	desc = "CAEBOH22.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	major = yes
 
@@ -2809,7 +2809,7 @@ country_event = {
 	id = 152022
 	title = "CAEBOH23.T"
 	desc = "CAEBOH23.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	major = yes
 
@@ -2850,7 +2850,7 @@ country_event = {
 	id = 152023
 	title = "CAEBOH24.T"
 	desc = "CAEBOH24.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	fire_only_once = yes
 	major = yes
@@ -2955,7 +2955,7 @@ country_event = {
 	id = 152024
 	title = "CAEBOH25.T"
 	desc = "CAEBOH25.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	fire_only_once = yes
 	major = yes
@@ -4222,7 +4222,7 @@ country_event = {
 	id = 152032
 	title = "CAEBOH34.T"
 	desc = "CAEBOH34.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	major = yes
 
@@ -4292,7 +4292,7 @@ country_event = {
 	id = 152033
 	title = "CAEBOH35.T"
 	desc = "CAEBOH35.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	major = yes
 
@@ -4514,7 +4514,7 @@ country_event = {
 	id = 152035
 	title = "CAEBOH37.T"
 	desc = "CAEBOH37.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	major = yes
 
@@ -4779,7 +4779,7 @@ country_event = {
 	id = 152040
 	title = "CAESCA1.T"
 	desc = "CAESCA1.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -4802,7 +4802,7 @@ country_event = {
 	id = 152041
 	title = "CAESCA2.T"
 	desc = "CAESCA2.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -4825,7 +4825,7 @@ country_event = {
 	id = 152042
 	title = "CAESCA3.T"
 	desc = "CAESCA3.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -5093,7 +5093,7 @@ country_event = {
 	id = 152050
 	title = "CAESCA11.T"
 	desc = "CAESCA11.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -5144,7 +5144,7 @@ country_event = {
 	id = 152051
 	title = "CAESCA12.T"
 	desc = "CAESCA12.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -5281,7 +5281,7 @@ country_event = {
 	id = 152054
 	title = "CAESCA15.T"
 	desc = "CAESCA15.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -5299,7 +5299,7 @@ country_event = {
 	id = 152055
 	title = "CAESCA16.T"
 	desc = "CAESCA16.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -5317,7 +5317,7 @@ country_event = {
 	id = 152056
 	title = "CAESCA17.T"
 	desc = "CAESCA17.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = NGF
@@ -5368,7 +5368,7 @@ country_event = {
 	id = 152057
 	title = "CAESCA18.T"
 	desc = "CAESCA18.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -5395,7 +5395,7 @@ country_event = {
 	id = 152058
 	title = "CAESCA19.T"
 	desc = "CAESCA19.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -5416,7 +5416,7 @@ country_event = {
 	id = 152059
 	title = "CAESCA20.T"
 	desc = "CAESCA20.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -5440,7 +5440,7 @@ country_event = {
 	id = 152060
 	title = "CAESCA21.T"
 	desc = "CAESCA21.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -5495,7 +5495,7 @@ country_event = {
 	id = 152061
 	title = "CAESCA22.T"
 	desc = "CAESCA22.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = SCA
@@ -5525,7 +5525,7 @@ country_event = {
 	id = 152062
 	title = "CAESCA23.T"
 	desc = "CAESCA23.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = SAX
@@ -6282,7 +6282,7 @@ country_event = {
 	id = 152067
 	title = "This is a dummy event"
 	desc = "Players should never see this"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = NGF
@@ -6313,7 +6313,7 @@ country_event = {
 	id = 152068
 	title = "This is a dummy event"
 	desc = "Players should never see this"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = BRN
@@ -6341,7 +6341,7 @@ country_event = {
 	id = 152069
 	title = "CAESCA28.T"
 	desc = "CAESCA28.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = NGF
@@ -6369,7 +6369,7 @@ country_event = {
 	id = 152070
 	title = "CAESCA29.T"
 	desc = "CAESCA29.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = NGF
@@ -6400,7 +6400,7 @@ country_event = {
 	id = 152071
 	title = "CAESCA30.T"
 	desc = "CAESCA30.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = NGF
@@ -6431,7 +6431,7 @@ country_event = {
 	id = 152072
 	title = "CAESCA31.T"
 	desc = "CAESCA31.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = NGF
@@ -6467,7 +6467,7 @@ country_event = {
 	id = 152073
 	title = "CAESCA32.T"
 	desc = "CAESCA32.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 
@@ -6487,7 +6487,7 @@ country_event = {
 	id = 1520730
 	title = "CAESCA33.T"
 	desc = "CAESCA33.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = NGF
@@ -6547,7 +6547,7 @@ country_event = {
 	id = 152074
 	title = "CAESCA34.T"
 	desc = "CAESCA34.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	major = yes
@@ -6574,7 +6574,7 @@ country_event = {
 	id = 152075
 	title = "CAESCA35.T"
 	desc = "CAESCA35.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = NGF
@@ -6662,7 +6662,7 @@ country_event = {
 	id = 152076
 	title = "CAESCA36.T"
 	desc = "CAESCA36.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	major = yes
@@ -6855,7 +6855,7 @@ country_event = {
 	id = 152079
 	title = "CAESCA39.T"
 	desc = "CAESCA39.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 
@@ -6872,7 +6872,7 @@ country_event = {
 	id = 152080
 	title = "CAESCA40.T"
 	desc = "CAESCA40.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 
@@ -6891,7 +6891,7 @@ country_event = {
 	id = 152081
 	title = "CAESCA41.T"
 	desc = "CAESCA41.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 
@@ -7023,7 +7023,7 @@ country_event = {
 	id = 152083
 	title = "ITS A TRAP"
 	desc = "You thought it would be funny to try and skip the GNW. Smart"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = SAX
@@ -7153,7 +7153,7 @@ country_event = {
 	id = 152085
 	title = "CAESCA44.T"
 	desc = "CAESCA44.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	major = yes
@@ -7191,7 +7191,7 @@ country_event = {
 	id = 152086
 	title = "CAESCA45.T"
 	desc = "CAESCA45.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = SAX
@@ -7240,7 +7240,7 @@ country_event = {
 	id = 152087
 	title = "CAESCA46.T"
 	desc = "CAESCA46.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	major = yes
@@ -7416,7 +7416,7 @@ country_event = {
 	id = 1520880
 	title = "CAESCA470.T"
 	desc = "CAESCA470.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	major = yes
 
@@ -7530,7 +7530,7 @@ country_event = {
 	id = 152088
 	title = "CAESCA47.T"
 	desc = "CAESCA47.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	major = yes
 
@@ -7601,7 +7601,7 @@ country_event = {
 	id = 1520890
 	title = "CAESCA471.T"
 	desc = "CAESCA471.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	major = yes
 
@@ -7818,7 +7818,7 @@ country_event = {
 	id = 152092
 	title = "CAESCA51.T"
 	desc = "CAESCA51.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	major = yes
@@ -8001,7 +8001,7 @@ country_event = {
 	id = 152094
 	title = "CAESCA53.T"
 	desc = "CAESCA53.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	major = yes
 
@@ -9010,7 +9010,7 @@ country_event = {
 	id = 152104
 	title = "CZE2.T"
 	desc = "CZE2.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	fire_only_once = yes
 
@@ -9534,7 +9534,7 @@ country_event = {
 	id = 152114
 	title = "CZE12.T"
 	desc = "CZE12.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 
@@ -9740,7 +9740,7 @@ country_event = {
 	id = 152117
 	title = "CZE15.T"
 	desc = "CZE15.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 
@@ -10178,7 +10178,7 @@ country_event = {
 	id = 152125
 	title = "CZE23.T"
 	desc = "CZE23.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	major = yes
 	is_triggered_only = yes

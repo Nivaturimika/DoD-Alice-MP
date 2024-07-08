@@ -602,7 +602,7 @@ rename_apacheria = {
 	### If Dual Monarchy and Burgundy don't exist then use this
 	
     PLA_DIPLOMACY_REFORM_IMMEDIATE = { 
-	    #picture = SevenRep
+	    picture = SevenRep
         potential = { 
 		     tag = PLA
              has_country_flag = PLA_trigger_diplomatic_decision
@@ -804,7 +804,7 @@ rename_apacheria = {
     }
 	
     PLA_native_cultures_act_NONLOU = { 
-	    #picture = SevenRep
+	    picture = SevenRep
         potential = { 
 		     OR = {
 		        tag = PLA
@@ -836,7 +836,7 @@ rename_apacheria = {
 	## The Cherokee are not real in LOUPLA
 	
     PLA_native_cultures_act_LOU = { 
-	    #picture = SevenRep
+	    picture = SevenRep
         potential = { 
 		     OR = {
 		        tag = PLA

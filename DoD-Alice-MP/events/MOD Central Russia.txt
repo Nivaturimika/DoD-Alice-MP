@@ -4403,7 +4403,7 @@ country_event = {
 	id = 222579
 	title = "CRUS79.T"
 	desc = "CRUS79.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 

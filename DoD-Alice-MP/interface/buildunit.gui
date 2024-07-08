@@ -620,7 +620,7 @@ guiTypes = {
 			position = { x= 384 y =31}
 			quadTextureSprite ="GFX_unit_folder_army_12_soldier"
 		}
-	
+		
 		# navy.
 		
 		guiButtonType = {

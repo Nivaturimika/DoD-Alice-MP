@@ -14,7 +14,7 @@ country_event = {
 	id = 46401
 	title = "NCLM1.T"
 	desc = "NCLM1.D"
-	#picture = "sunset"
+	picture = "sunset"
 
 	is_triggered_only = yes
 
@@ -38,7 +38,7 @@ country_event = {
 	id = 46402
 	title = "NCLM2.T"
 	desc = "NCLM2.D"
-	#picture = "sunset"
+	picture = "sunset"
 
 	trigger = {
 	    tag = SPA
@@ -114,7 +114,7 @@ country_event = {
 	id = 46403
 	title = "NCLM3.T"
 	desc = "NCLM3.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
 
@@ -225,7 +225,7 @@ country_event = {
 	id = 46406
 	title = "NCLM6.T"
 	desc = "NCLM6.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes	
 
@@ -255,7 +255,7 @@ country_event = {
 	id = 46407
 	title = "NCLM7.T"
 	desc = "NCLM7.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes	
 
@@ -313,7 +313,7 @@ country_event = {
 	id = 46408
 	title = "NCLM8.T"
 	desc = "NCLM8.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 
@@ -762,7 +762,7 @@ country_event = {
 	id = 464111
 	title = "NCLM110.T"
 	desc = "NCLM110.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes	
 
@@ -799,7 +799,7 @@ country_event = {
 	id = 46412
 	title = "NCLM12.T"
 	desc = "NCLM12.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     is_triggered_only = yes
 
@@ -827,7 +827,7 @@ country_event = {
 	id = 46413
 	title = "NCLM13.T"
 	desc = "NCLM13.D"
-	#picture = "sunset"
+	picture = "sunset"
 
 	is_triggered_only = yes
 
@@ -869,7 +869,7 @@ country_event = {
 	id = 46414
 	title = "NCLM14.T"
 	desc = "NCLM14.D"
-	#picture = "sunset"
+	picture = "sunset"
 
 	is_triggered_only = yes
 
@@ -1350,7 +1350,7 @@ country_event = {
 	id = 464190
 	title = "NCLM190.T"
 	desc = "NCLM190.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     is_triggered_only = yes
 	
@@ -1424,7 +1424,7 @@ country_event = {
 	id = 46421
 	title = "NCLM21.T"
 	desc = "NCLM21.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
 
@@ -1463,7 +1463,7 @@ country_event = {
 	id = 46422
 	title = "NCLM22.T"
 	desc = "NCLM22.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes	
 
@@ -1632,7 +1632,7 @@ country_event = {
 	id = 46423
 	title = "NCLM23.T"
 	desc = "NCLM23.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes	
 
@@ -1868,7 +1868,7 @@ country_event = {
 	id = 46424
 	title = "NCLM24.T"
 	desc = "NCLM24.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes	
 
@@ -2023,7 +2023,7 @@ country_event = {
 	id = 46425
 	title = "NCLM25.T"
 	desc = "NCLM25.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes	
 
@@ -2114,7 +2114,7 @@ country_event = {
 	id = 46426
 	title = "NCLM26.T"
 	desc = "NCLM26.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes	
 
@@ -2210,7 +2210,7 @@ country_event = {
 	id = 46427
 	title = "NCLM27.T"
 	desc = "NCLM27.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes	
 
@@ -2274,7 +2274,7 @@ country_event = {
 	id = 46428
 	title = "NCLM28.T"
 	desc = "NCLM28.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 
@@ -2311,7 +2311,7 @@ country_event = {
 	id = 46429
 	title = "NCLM29.T"
 	desc = "NCLM29.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
 	
@@ -2376,7 +2376,7 @@ country_event = {
 	id = 46430
 	title = "NCLM30.T"
 	desc = "NCLM30.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
 	
@@ -2482,7 +2482,7 @@ country_event = {
 	id = 46431
 	title = "NCLM31.T"
 	desc = "NCLM31.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes	
 
@@ -2527,7 +2527,7 @@ country_event = {
 	id = 46432
 	title = "NCLM32.T"
 	desc = "NCLM32.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 
@@ -2546,7 +2546,7 @@ country_event = {
 	id = 46433
 	title = "NCLM33.T"
 	desc = "NCLM33.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
 	
@@ -2691,7 +2691,7 @@ country_event = {
 	id = 46434
 	title = "NCLM34.T"
 	desc = "NCLM34.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 
@@ -2740,7 +2740,7 @@ country_event = {
 	id = 46435
 	title = "NCLM35.T"
 	desc = "NCLM35.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	trigger = {
 	    tag = CLM
@@ -2784,7 +2784,7 @@ country_event = {
 	id = 46436
 	title = "NCLM36.T"
 	desc = "NCLM36.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	trigger = {
 	    tag = CLM
@@ -2812,7 +2812,7 @@ country_event = {
 	id = 46437
 	title = "NCLM37.T"
 	desc = "NCLM37.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
 	
@@ -2887,7 +2887,7 @@ country_event = {
 	id = 46438
 	title = "NCLM38.T"
 	desc = "NCLM38.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
 	
@@ -2970,7 +2970,7 @@ country_event = {
 	id = 46439
 	title = "NCLM39.T"
 	desc = "NCLM39.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	trigger = {
 	    tag = CLM
@@ -3031,7 +3031,7 @@ country_event = {
 	id = 46440
 	title = "NCLM40.T"
 	desc = "NCLM40.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes	
 	is_triggered_only = yes	
@@ -3123,7 +3123,7 @@ country_event = {
 	id = 46441
 	title = "NCLM41.T"
 	desc = "NCLM41.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	trigger = {
 	    tag = CLM
@@ -3183,7 +3183,7 @@ country_event = {
 	id = 46442
 	title = "NCLM42.T"
 	desc = "NCLM42.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 
@@ -3228,7 +3228,7 @@ country_event = {
 	id = 46443
 	title = "NCLM43.T"
 	desc = "NCLM43.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 
@@ -3246,7 +3246,7 @@ country_event = {
 	id = 46444
 	title = "NCLM44.T"
 	desc = "NCLM44.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 	
@@ -3295,7 +3295,7 @@ country_event = {
 	id = 46445
 	title = "NCLM45.T"
 	desc = "NCLM45.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 
@@ -3334,7 +3334,7 @@ country_event = {
 	id = 46446
 	title = "NCLM46.T"
 	desc = "NCLM46.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 
@@ -3379,7 +3379,7 @@ country_event = {
 	id = 464460
 	title = "NCLM460.T"
 	desc = "NCLM460.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 
@@ -3469,7 +3469,7 @@ country_event = {
 	id = 46447
 	title = "NCLM47.T"
 	desc = "NCLM47.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 
@@ -3508,7 +3508,7 @@ country_event = {
 	id = 46448
 	title = "NCLM48.T"
 	desc = "NCLM48.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -3567,7 +3567,7 @@ country_event = {
 	id = 46449
 	title = "NCLM49.T"
 	desc = "NCLM49.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -3629,7 +3629,7 @@ country_event = {
 	id = 46450
 	title = "NCLM50.T"
 	desc = "NCLM50.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 	
@@ -3746,7 +3746,7 @@ country_event = {
 	id = 46451
 	title = "NCLM51.T"
 	desc = "NCLM51.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
 	
@@ -3825,7 +3825,7 @@ country_event = {
 	id = 464510
 	title = "NCLM52.T"
 	desc = "NCLM52.D"
-	#picture = "sunset"
+	picture = "sunset"
 
     is_triggered_only = yes
 	
@@ -3841,7 +3841,7 @@ country_event = {
 	id = 46452
 	title = "NCLM520.T"
 	desc = "NCLM520.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
 	fire_only_once = yes
@@ -3888,7 +3888,7 @@ country_event = {
 	id = 46453
 	title = "NCLM53.T"
 	desc = "NCLM53.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -3934,7 +3934,7 @@ country_event = {
 	id = 46454
 	title = "NCLM54.T"
 	desc = "NCLM54.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -4066,7 +4066,7 @@ country_event = {
 	id = 46455
 	title = "NCLM55.T"
 	desc = "NCLM55.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	major = yes
@@ -4163,7 +4163,7 @@ country_event = {
 	id = 46456
 	title = "NCLM56.T"
 	desc = "NCLM56.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 	
@@ -4255,7 +4255,7 @@ country_event = {
 	id = 46457
 	title = "NCLM57.T"
 	desc = "NCLM57.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
 	
@@ -4341,7 +4341,7 @@ country_event = {
 	id = 46458
 	title = "NCLM58.T"
 	desc = "NCLM58.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -4418,7 +4418,7 @@ country_event = {
 	id = 46459
 	title = "NCLM59.T"
 	desc = "NCLM59.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -4487,7 +4487,7 @@ country_event = {
 	id = 46460
 	title = "NCLM60.T"
 	desc = "NCLM60.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -4557,7 +4557,7 @@ country_event = {
 	id = 46461
 	title = "NCLM61.T"
 	desc = "NCLM61.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -4636,7 +4636,7 @@ country_event = {
 	id = 464611
 	title = "NCLM611.T"
 	desc = "NCLM611.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     is_triggered_only = yes
 	
@@ -4705,7 +4705,7 @@ country_event = {
 	id = 46462
 	title = "NCLM62.T"
 	desc = "NCLM62.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
 	
@@ -4839,7 +4839,7 @@ country_event = {
 	id = 46463
 	title = "NCLM63.T"
 	desc = "NCLM63.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -4889,7 +4889,7 @@ country_event = {
 	id = 46464
 	title = "NCLM64.T"
 	desc = "NCLM64.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 	
@@ -4927,7 +4927,7 @@ country_event = {
 	id = 46465
 	title = "NCLM65.T"
 	desc = "NCLM65.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 	
@@ -5074,7 +5074,7 @@ country_event = {
 	id = 46466
 	title = "NCLM66.T"
 	desc = "NCLM66.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 	
@@ -5101,7 +5101,7 @@ country_event = {
 	id = 46467
 	title = "NCLM67.T"
 	desc = "NCLM67.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5133,7 +5133,7 @@ country_event = {
 	id = 46468
 	title = "NCLM68.T"
 	desc = "NCLM68.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5168,7 +5168,7 @@ country_event = {
 	id = 46469
 	title = "NCLM69.T"
 	desc = "NCLM69.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5237,7 +5237,7 @@ country_event = {
 	id = 46470
 	title = "NCLM70.T"
 	desc = "NCLM70.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 	
@@ -5296,7 +5296,7 @@ country_event = {
 	id = 46471
 	title = "NCLM71.T"
 	desc = "NCLM71.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5358,7 +5358,7 @@ country_event = {
 	id = 46472
 	title = "NCLM72.T"
 	desc = "NCLM72.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5400,7 +5400,7 @@ country_event = {
 	id = 46473
 	title = "NCLM73.T"
 	desc = "NCLM73.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5423,7 +5423,7 @@ country_event = {
 	id = 46474
 	title = "NCLM74.T"
 	desc = "NCLM74.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5442,7 +5442,7 @@ country_event = {
 	id = 46475
 	title = "NCLM75.T"
 	desc = "NCLM75.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5485,7 +5485,7 @@ country_event = {
 	id = 46476
 	title = "NCLM76.T"
 	desc = "NCLM76.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes
 	
@@ -5513,7 +5513,7 @@ country_event = {
 	id = 46477
 	title = "NCLM77.T"
 	desc = "NCLM77.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5550,7 +5550,7 @@ country_event = {
 	id = 46478
 	title = "NCLM78.T"
 	desc = "NCLM78.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5607,7 +5607,7 @@ country_event = {
 	id = 46479
 	title = "NCLM79.T"
 	desc = "NCLM79.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5645,7 +5645,7 @@ country_event = {
 	id = 464791
 	title = "NCLM791.T"
 	desc = "NCLM791.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5681,7 +5681,7 @@ country_event = {
 	id = 46480
 	title = "NCLM80.T"
 	desc = "NCLM80.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5736,7 +5736,7 @@ country_event = {
 	id = 46481
 	title = "NCLM81.T"
 	desc = "NCLM81.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	
@@ -5791,7 +5791,7 @@ country_event = {
 	id = 46482
 	title = "NCLM82.T"
 	desc = "NCLM82.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	fire_only_once = yes
 	

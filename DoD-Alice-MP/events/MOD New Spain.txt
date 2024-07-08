@@ -94,7 +94,7 @@ country_event = {
 	id = 470022
 	title = "SPAN3.T"
 	desc = "SPAN3.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -202,7 +202,7 @@ country_event = {
 	id = 470023
 	title = "SPAN4.T"
 	desc = "SPAN4.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	major = yes
@@ -278,7 +278,7 @@ country_event = {
 	id = 470024
 	title = "SPAN5.T"
 	desc = "SPAN5.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -338,7 +338,7 @@ country_event = {
 	id = 470025
 	title = "SPAN6.T"
 	desc = "SPAN6.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -368,7 +368,7 @@ country_event = {
 	id = 470026
 	title = "SPAN7.T"
 	desc = "SPAN7.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -390,7 +390,7 @@ country_event = {
 	id = 470027
 	title = "SPAN8.T"
 	desc = "SPAN8.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -441,7 +441,7 @@ country_event = {
 	id = 470028
 	title = "SPAN9.T"
 	desc = "SPAN9.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -544,7 +544,7 @@ country_event = {
 	id = 470029
 	title = "SPAN10.T"
 	desc = "SPAN10.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -632,7 +632,7 @@ country_event = {
 	id = 470030
 	title = "SPAN11.T"
 	desc = "SPAN11.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -701,7 +701,7 @@ country_event = {
 	id = 470031
 	title = "SPAN12.T"
 	desc = "SPAN12.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -783,7 +783,7 @@ country_event = {
 	id = 470032
 	title = "SPAN13.T"
 	desc = "SPAN13.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	major = yes
 	is_triggered_only = yes
@@ -838,7 +838,7 @@ country_event = {
 				id = 470034
 				title = "SPAN15.T"
 				desc = "SPAN15.D"
-				#picture = "ambush_army"
+				picture = "ambush_army"
 				option = {
 					name = "SPAN15.A"
 					prestige = 10
@@ -1148,7 +1148,7 @@ country_event = {
 	id = 470033
 	title = "SPAN14.T"
 	desc = "SPAN14.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1249,7 +1249,7 @@ country_event = {
 	id = 470037
 	title = "SPAN18.T"
 	desc = "SPAN18.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -1540,7 +1540,7 @@ country_event = {
 	id = 470041
 	title = "SPAN22.T"
 	desc = "SPAN22.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -1612,7 +1612,7 @@ country_event = {
 	id = 470042
 	title = "SPAN23.T"
 	desc = "SPAN23.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -1653,7 +1653,7 @@ country_event = {
 	id = 470043
 	title = "SPAN24.T"
 	desc = "SPAN24.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -1710,7 +1710,7 @@ country_event = {
 	id = 470044
 	title = "SPAN25.T"
 	desc = "SPAN25.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -1822,7 +1822,7 @@ country_event = {
 	id = 470045
 	title = "SPAN26.T"
 	desc = "SPAN26.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1913,7 +1913,7 @@ country_event = {
 	id = 470046
 	title = "SPAN27.T"
 	desc = "SPAN27.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1980,7 +1980,7 @@ country_event = {
 	id = 470047
 	title = "SPAN28.T"
 	desc = "SPAN28.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2072,7 +2072,7 @@ country_event = {
 	id = 470048
 	title = "SPAN29.T"
 	desc = "SPAN29.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2143,7 +2143,7 @@ country_event = {
 	id = 4700480
 	title = "SPAN290.T"
 	desc = "SPAN290.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2189,7 +2189,7 @@ country_event = {
 	id = 470049
 	title = "SPAN30.T"
 	desc = "SPAN30.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -2326,7 +2326,7 @@ country_event = {
 	id = 470050
 	title = "SPAN31.T"
 	desc = "SPAN31.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -2392,7 +2392,7 @@ country_event = {
 	id = 470051
 	title = "SPAN32.T"
 	desc = "SPAN32.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -2506,7 +2506,7 @@ country_event = {
 	id = 470052
 	title = "SPAN33.T"
 	desc = "SPAN33.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2627,7 +2627,7 @@ country_event = {
 	id = 470053
 	title = "SPAN330.T"
 	desc = "SPAN330.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -2732,7 +2732,7 @@ country_event = {
 	id = 470054
 	title = "SPAN34.T"
 	desc = "SPAN34.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -2844,7 +2844,7 @@ country_event = {
 	id = 470055
 	title = "SPAN35.T"
 	desc = "SPAN35.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -2929,7 +2929,7 @@ country_event = {
 	id = 470056
 	title = "SPAN36.T"
 	desc = "SPAN36.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -2968,7 +2968,7 @@ country_event = {
 	id = 470057
 	title = "SPAN37.T"
 	desc = "SPAN37.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3007,7 +3007,7 @@ country_event = {
 	id = 470058
 	title = "SPAN38.T"
 	desc = "SPAN38.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3046,7 +3046,7 @@ country_event = {
 	id = 470059
 	title = "SPAN39.T"
 	desc = "SPAN39.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3086,7 +3086,7 @@ country_event = {
 	id = 470060
 	title = "SPAN40.T"
 	desc = "SPAN40.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3129,7 +3129,7 @@ country_event = {
 	id = 470061
 	title = "SPAN41.T"
 	desc = "SPAN41.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3175,7 +3175,7 @@ country_event = {
 	id = 470062
 	title = "SPAN42.T"
 	desc = "SPAN42.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3237,7 +3237,7 @@ country_event = {
 	id = 470063
 	title = "SPAN43.T"
 	desc = "SPAN43.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3369,7 +3369,7 @@ country_event = {
 	id = 470064
 	title = "SPAN44.T"
 	desc = "SPAN44.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3501,7 +3501,7 @@ country_event = {
 	id = 470065
 	title = "SPAN45.T"
 	desc = "SPAN45.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3563,7 +3563,7 @@ country_event = {
 	id = 470066
 	title = "SPAN46.T"
 	desc = "SPAN46.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3608,7 +3608,7 @@ country_event = {
 	id = 4700660
 	title = "SPAN460.T"
 	desc = "SPAN460.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3649,7 +3649,7 @@ country_event = {
 	id = 470067
 	title = "SPAN47.T"
 	desc = "SPAN47.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3692,7 +3692,7 @@ country_event = {
 	id = 470068
 	title = "SPAN48.T"
 	desc = "SPAN48.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -3816,7 +3816,7 @@ country_event = {
 	id = 470069
 	title = "SPAN49.T"
 	desc = "SPAN49.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3865,7 +3865,7 @@ country_event = {
 	id = 470070
 	title = "SPAN50.T"
 	desc = "SPAN50.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -3929,7 +3929,7 @@ country_event = {
 	id = 470071
 	title = "SPAN51.T"
 	desc = "SPAN51.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4123,7 +4123,7 @@ country_event = {
 	id = 470072
 	title = "SPAN52.T"
 	desc = "SPAN52.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4176,7 +4176,7 @@ country_event = {
 	id = 470073
 	title = "SPAN53.T"
 	desc = "SPAN53.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4230,7 +4230,7 @@ country_event = {
 	id = 470074
 	title = "SPAN54.T"
 	desc = "SPAN54.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4265,7 +4265,7 @@ country_event = {
 	id = 470075
 	title = "SPAN55.T"
 	desc = "SPAN55.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4301,7 +4301,7 @@ country_event = {
 	id = 470076
 	title = "SPAN56.T"
 	desc = "SPAN56.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4418,7 +4418,7 @@ country_event = {
 	id = 470077
 	title = "SPAN57.T"
 	desc = "SPAN57.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -4449,7 +4449,7 @@ country_event = {
 	id = 470078
 	title = "SPAN58.T"
 	desc = "SPAN58.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -4506,7 +4506,7 @@ country_event = {
 	id = 470079
 	title = "SPAN59.T"
 	desc = "SPAN59.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4662,7 +4662,7 @@ country_event = {
 	id = 470080
 	title = "SPAN590.T"
 	desc = "SPAN590.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4689,7 +4689,7 @@ country_event = {
 	id = 470081
 	title = "SPAN60.T"
 	desc = "SPAN60.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4716,7 +4716,7 @@ country_event = {
 	id = 470082
 	title = "SPAN61.T"
 	desc = "SPAN61.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4763,7 +4763,7 @@ country_event = {
 	id = 470083
 	title = "SPAN62.T"
 	desc = "SPAN62.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4830,7 +4830,7 @@ country_event = {
 	id = 470084
 	title = "SPAN63.T"
 	desc = "SPAN63.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4857,7 +4857,7 @@ country_event = {
 	id = 470085
 	title = "SPAN64.T"
 	desc = "SPAN64.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4899,7 +4899,7 @@ country_event = {
 	id = 470086
 	title = "SPAN65.T"
 	desc = "SPAN65.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4927,7 +4927,7 @@ country_event = {
 	id = 470087
 	title = "SPAN66.T"
 	desc = "SPAN66.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -5039,7 +5039,7 @@ country_event = {
 	id = 470088
 	title = "SPAN67.T"
 	desc = "SPAN67.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -5106,7 +5106,7 @@ country_event = {
 	id = 470089
 	title = "SPAN68.T"
 	desc = "SPAN68.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -5131,7 +5131,7 @@ country_event = {
 	id = 470090
 	title = "SPAN69.T"
 	desc = "SPAN69.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -5156,7 +5156,7 @@ country_event = {
 	id = 470091
 	title = "SPAN70.T"
 	desc = "SPAN70.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -5194,7 +5194,7 @@ country_event = {
 	id = 470092
 	title = "SPAN71.T"
 	desc = "SPAN71.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -5241,7 +5241,7 @@ country_event = {
 	id = 470093
 	title = "SPAN72.T"
 	desc = "SPAN72.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	major = yes
@@ -5306,7 +5306,7 @@ country_event = {
 	id = 470094
 	title = "SPAN73.T"
 	desc = "SPAN73.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	major = yes
@@ -5366,7 +5366,7 @@ country_event = {
 	id = 470095
 	title = "SPAN74.T"
 	desc = "SPAN74.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	major = yes
@@ -5499,7 +5499,7 @@ country_event = {
 	id = 470096
 	title = "SPAN75.T"
 	desc = "SPAN75.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -5551,7 +5551,7 @@ country_event = {
 	id = 470097
 	title = "SPAN76.T"
 	desc = "SPAN76.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	major = yes
@@ -5643,7 +5643,7 @@ country_event = {
 	id = 470098
 	title = "SPAN77.T"
 	desc = "SPAN77.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -5697,7 +5697,7 @@ country_event = {
 	id = 470099
 	title = "SPAN78.T"
 	desc = "SPAN78.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -5758,7 +5758,7 @@ country_event = {
 	id = 470100
 	title = "SPAN79.T"
 	desc = "SPAN79.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	major = yes
@@ -5865,7 +5865,7 @@ country_event = {
 	id = 470101
 	title = "SPAN80.T"
 	desc = "SPAN80.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -5919,7 +5919,7 @@ country_event = {
 	id = 470102
 	title = "SPAN81.T"
 	desc = "SPAN81.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -5981,7 +5981,7 @@ country_event = {
 	id = 470103
 	title = "SPAN82.T"
 	desc = "SPAN82.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	major = yes
@@ -6075,7 +6075,7 @@ country_event = {
 	id = 4701030
 	title = "SPAN820.T"
 	desc = "SPAN820.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -6236,7 +6236,7 @@ country_event = {
 	id = 470107
 	title = "SPAN120.T"
 	desc = "SPAN120.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -6368,7 +6368,7 @@ country_event = {
 	id = 4701090
 	title = "SPAN122.T"
 	desc = "SPAN122.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -6396,7 +6396,7 @@ country_event = {
 	id = 470109
 	title = "SPAN123.T"
 	desc = "SPAN123.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 
@@ -6477,7 +6477,7 @@ country_event = {
 	id = 470110
 	title = "SPAN124.T"
 	desc = "SPAN124.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -6508,7 +6508,7 @@ country_event = {
 	id = 470111
 	title = "SPAN125.T"
 	desc = "SPAN125.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -6759,7 +6759,7 @@ country_event = {
 	id = 4701130
 	title = "SPAN127.T"
 	desc = "SPAN127.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -6786,7 +6786,7 @@ country_event = {
 	id = 4701140
 	title = "SPAN128.T"
 	desc = "SPAN128.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -6800,7 +6800,7 @@ country_event = {
 	id = 4701150
 	title = "SPAN129.T"
 	desc = "SPAN129.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	trigger = {
 		OR = { tag = SPA tag = SPC }
@@ -6829,7 +6829,7 @@ country_event = {
 	id = 4701160
 	title = "SPAN130.T"
 	desc = "SPAN130.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	trigger = {
 		tag = INC

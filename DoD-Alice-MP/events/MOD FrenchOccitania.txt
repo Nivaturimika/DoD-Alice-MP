@@ -564,7 +564,7 @@ country_event = {
 	id = 48318
 	title = "ENLFRA35.T"
 	desc = "ENLFRA35.D"
-	#picture = "DUAestates"
+	picture = "DUAestates"
 
 	trigger = {
 		tag = FRA
@@ -610,7 +610,7 @@ country_event = {
 	id = 48319
 	title = "ENLFRA36.T"
 	desc = "ENLFRA36.D"
-	#picture = "DUAestates"
+	picture = "DUAestates"
 
 	trigger = {
 		tag = FRA
@@ -671,7 +671,7 @@ country_event = {
 	id = 48320
 	title = "ENLFRA38.T"
 	desc = "ENLFRA38.D"
-	#picture = "DUAestates"
+	picture = "DUAestates"
 
 	is_triggered_only = yes
 
@@ -716,7 +716,7 @@ country_event = {
 	id = 48321
 	title = "ENLFRA39.T"
 	desc = "ENLFRA39.D"
-	#picture = "DUAestates"
+	picture = "DUAestates"
 
 	is_triggered_only = yes
 	major = yes
@@ -1477,7 +1477,7 @@ country_event = {
 	id = 48337
 	title = "ENLFRA53.T"
 	desc = "ENLFRA53.D"
-	#picture = "sinn_fein_demand"
+	picture = "sinn_fein_demand"
 
 	major = yes
 	is_triggered_only = yes

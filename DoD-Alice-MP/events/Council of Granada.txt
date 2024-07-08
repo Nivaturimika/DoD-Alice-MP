@@ -142,7 +142,7 @@ country_event = {
 	id = 46508
 	title = "GRA8.T" #Rocafuerte proclaims the New Granadan empire
 	desc = "GRA8.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	is_triggered_only = yes 
 	

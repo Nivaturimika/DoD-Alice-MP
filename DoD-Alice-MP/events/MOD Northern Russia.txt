@@ -3092,7 +3092,7 @@ country_event = {
 	id = 232557
 	title = "NRUS57.T"
 	desc = "NRUS57.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	major = yes
 
@@ -3319,7 +3319,7 @@ country_event = {
 	id = 232558
 	title = "NRUS58.T"
 	desc = "NRUS58.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -3389,7 +3389,7 @@ country_event = {
 	id = 232559
 	title = "NRUS59.T"
 	desc = "NRUS59.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -3462,7 +3462,7 @@ country_event = {
 	id = 232560
 	title = "NRUS60.T"
 	desc = "NRUS60.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -3537,7 +3537,7 @@ country_event = {
 	id = 232561
 	title = "NRUS61.T"
 	desc = "NRUS61.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -3625,7 +3625,7 @@ country_event = {
 	id = 2325611
 	title = "NRUS611.T"
 	desc = "NRUS611.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -3664,7 +3664,7 @@ country_event = {
 	id = 232562
 	title = "NRUS62.T"
 	desc = "NRUS62.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	major = yes
 
@@ -3742,7 +3742,7 @@ country_event = {
 	id = 232563
 	title = "NRUS63.T"
 	desc = "NRUS63.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 	
 	major = yes
 
@@ -3863,7 +3863,7 @@ country_event = {
 	id = 232564
 	title = "NRUS64.T"
 	desc = "NRUS64.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -3954,7 +3954,7 @@ country_event = {
 	id = 232565
 	title = "NRUS65.T"
 	desc = "NRUS65.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -3987,7 +3987,7 @@ country_event = {
 	id = 232566
 	title = "NRUS66.T"
 	desc = "NRUS66.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	major = yes
 
@@ -4180,7 +4180,7 @@ country_event = {
 	id = 232567
 	title = "NRUS67.T"
 	desc = "NRUS67.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	major = yes
 
@@ -4411,7 +4411,7 @@ country_event = {
 	id = 232568
 	title = "NRUS68.T"
 	desc = "NRUS68.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4524,7 +4524,7 @@ country_event = {
 	id = 232569
 	title = "NRUS69.T"
 	desc = "NRUS69.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -4629,7 +4629,7 @@ country_event = {
 	id = 232570
 	title = "NRUS70.T"
 	desc = "NRUS70.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4676,7 +4676,7 @@ country_event = {
 	id = 232571
 	title = "NRUS71.T"
 	desc = "NRUS71.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4839,7 +4839,7 @@ country_event = {
 	id = 232572
 	title = "NRUS72.T"
 	desc = "NRUS72.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4856,7 +4856,7 @@ country_event = {
 	id = 232573
 	title = "NRUS73.T"
 	desc = "NRUS73.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -4892,7 +4892,7 @@ country_event = {
 	id = 232574
 	title = "NRUS74.T"
 	desc = "NRUS74.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -4975,7 +4975,7 @@ country_event = {
 	id = 232575
 	title = "NRUS75.T"
 	desc = "NRUS75.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -5044,7 +5044,7 @@ country_event = {
 	id = 232576
 	title = "NRUS76.T"
 	desc = "NRUS76.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -5062,7 +5062,7 @@ country_event = {
 	id = 232577
 	title = "NRUS77.T"
 	desc = "NRUS77.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	major = yes
 
@@ -5224,7 +5224,7 @@ country_event = {
 	id = 232578
 	title = "NRUS78.T"
 	desc = "NRUS78.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -5380,7 +5380,7 @@ country_event = {
 	id = 232579
 	title = "NRUS79.T"
 	desc = "NRUS79.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -5416,7 +5416,7 @@ country_event = {
 	id = 232580
 	title = "NRUS80.T"
 	desc = "NRUS80.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -5471,7 +5471,7 @@ country_event = {
 	id = 232581
 	title = "NRUS81.T"
 	desc = "NRUS81.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -5507,7 +5507,7 @@ country_event = {
 	id = 232582
 	title = "NRUS82.T"
 	desc = "NRUS82.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -5549,7 +5549,7 @@ country_event = {
 	id = 232583
 	title = "NRUS83.T"
 	desc = "NRUS83.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -5615,7 +5615,7 @@ country_event = {
 	id = 232584
 	title = "NRUS84.T"
 	desc = "NRUS84.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -5631,7 +5631,7 @@ country_event = {
 	id = 2325840
 	title = "NRUS840.T"
 	desc = "NRUS840.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -5683,7 +5683,7 @@ country_event = {
 	id = 232585
 	title = "NRUS85.T"
 	desc = "NRUS85.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	major = yes
 
@@ -5846,7 +5846,7 @@ country_event = {
 	id = 232586
 	title = "NRUS86.T"
 	desc = "NRUS86.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -5959,7 +5959,7 @@ country_event = {
 	id = 232587
 	title = "NRUS87.T"
 	desc = "NRUS87.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -5995,7 +5995,7 @@ country_event = {
 	id = 232588
 	title = "NRUS88.T"
 	desc = "NRUS88.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -6045,7 +6045,7 @@ country_event = {
 #	id = 2325890
 #	title = "NRUS890.T"
 #	desc = "NRUS890.D"
-#   #picture = "ambush_army"
+#   picture = "ambush_army"
 #
 #	is_triggered_only = yes
 #
@@ -6081,7 +6081,7 @@ country_event = {
 	id = 2325888
 	title = "NRUS888.T"
 	desc = "NRUS888.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -6173,7 +6173,7 @@ country_event = {
 	id = 232589
 	title = "NRUS89.T"
 	desc = "NRUS89.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -6223,7 +6223,7 @@ country_event = {
 	id = 232590
 	title = "NRUS90.T"
 	desc = "NRUS90.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	major = yes
 
@@ -6388,7 +6388,7 @@ country_event = {
 	id = 232591
 	title = "NRUS91.T"
 	desc = "NRUS91.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -6489,7 +6489,7 @@ country_event = {
 	id = 232592
 	title = "NRUS92.T"
 	desc = "NRUS92.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -6543,7 +6543,7 @@ country_event = {
 	id = 232593
 	title = "NRUS93.T"
 	desc = "NRUS93.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -6572,7 +6572,7 @@ country_event = {
 	id = 232594
 	title = "NRUS94.T"
 	desc = "NRUS94.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -6619,7 +6619,7 @@ country_event = {
 	id = 232595
 	title = "NRUS95.T"
 	desc = "NRUS95.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -6677,7 +6677,7 @@ country_event = {
 	id = 232596
 	title = "NRUS96.T"
 	desc = "NRUS96.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -6783,7 +6783,7 @@ country_event = {
 	id = 2325970
 	title = "NRUS970.T"
 	desc = "NRUS970.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -6843,7 +6843,7 @@ country_event = {
 	id = 232597
 	title = "NRUS97.T"
 	desc = "NRUS97.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -6944,7 +6944,7 @@ country_event = {
 	id = 232598
 	title = "NRUS98.T"
 	desc = "NRUS98.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -6983,7 +6983,7 @@ country_event = {
 	id = 232599
 	title = "NRUS99.T"
 	desc = "NRUS99.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7015,7 +7015,7 @@ country_event = {
 	id = 232600
 	title = "NRUS100.T"
 	desc = "NRUS100.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7097,7 +7097,7 @@ country_event = {
 	id = 232601
 	title = "NRUS101.T"
 	desc = "NRUS101.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7129,7 +7129,7 @@ country_event = {
 	id = 232602
 	title = "NRUS102.T"
 	desc = "NRUS102.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7246,7 +7246,7 @@ country_event = {
 	id = 232603
 	title = "NRUS103.T"
 	desc = "NRUS103.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7342,7 +7342,7 @@ country_event = {
 	id = 232604
 	title = "NRUS104.T"
 	desc = "NRUS104.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	trigger = {
 	exists = yes
@@ -7441,7 +7441,7 @@ country_event = {
 	id = 232605
 	title = "NRUS105.T"
 	desc = "NRUS105.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7476,7 +7476,7 @@ country_event = {
 	id = 232606
 	title = "NRUS106.T"
 	desc = "NRUS106.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7545,7 +7545,7 @@ country_event = {
 	id = 232607
 	title = "NRUS107.T"
 	desc = "NRUS107.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7616,7 +7616,7 @@ country_event = {
 	id = 232608
 	title = "NRUS108.T"
 	desc = "NRUS108.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7692,7 +7692,7 @@ country_event = {
 	id = 232609
 	title = "NRUS109.T"
 	desc = "NRUS109.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7721,7 +7721,7 @@ country_event = {
 	id = 232610
 	title = "NRUS110.T"
 	desc = "NRUS110.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7746,7 +7746,7 @@ country_event = {
 	id = 232611
 	title = "NRUS111.T"
 	desc = "NRUS111.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7763,7 +7763,7 @@ country_event = {
 	id = 232612
 	title = "NRUS112.T"
 	desc = "NRUS112.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7850,7 +7850,7 @@ country_event = {
 	id = 232613
 	title = "NRUS112.T"
 	desc = "NRUS112.D"
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 
@@ -7892,7 +7892,7 @@ country_event = {
 	id = 232614
 	title = "Scandinavia wants to eat us"
 	desc = "oh no. not the pomors."
-    #picture = "ambush_army"
+    picture = "ambush_army"
 
 	is_triggered_only = yes
 

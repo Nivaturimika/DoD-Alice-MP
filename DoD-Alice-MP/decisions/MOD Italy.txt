@@ -942,7 +942,7 @@ political_decisions = {
 	}
 	
 	#help_germany = { 
-	#picture = Germania
+	picture = Germania
 	#potential = { 
 	#tag = ITA 
 	#OR = {

@@ -154,7 +154,7 @@ country_event = {
 	id = 124106
 	title = "LATIN1.T"
 	desc = "LATIN1.D"
-	#picture = "maria_borja"
+	picture = "maria_borja"
 
 	trigger = {
 	tag = ARI
@@ -211,7 +211,7 @@ country_event = {
 	id = 124107
 	title = "LATIN2.T"
 	desc = "LATIN2.D"
-	#picture = "maria_borja"
+	picture = "maria_borja"
 
 	trigger = {
 	tag = ARI
@@ -302,7 +302,7 @@ country_event = {
 	id = 124108
 	title = "LATIN3.T"
 	desc = "LATIN3.D"
-	#picture = "maria_borja"
+	picture = "maria_borja"
 
 	trigger = {
 	tag = ARI
@@ -384,7 +384,7 @@ country_event = {
 	id = 124109
 	title = "LATIN4.T"
 	desc = "LATIN4.D"
-	#picture = "maria_borja"
+	picture = "maria_borja"
 
 	trigger = {
 	tag = ARI
@@ -466,7 +466,7 @@ country_event = {
 	id = 124110
 	title = "LATIN5.T"
 	desc = "LATIN5.D"
-	#picture = "maria_borja"
+	picture = "maria_borja"
 
 	trigger = {
 	tag = ARI
@@ -557,7 +557,7 @@ country_event = {
 	id = 124111
 	title = "LATIN6.T"
 	desc = "LATIN6.D"
-	#picture = "maria_borja"
+	picture = "maria_borja"
 
 	trigger = {
 	tag = ARI
@@ -634,7 +634,7 @@ country_event = {
 	id = 124112
 	title = "LATIN7.T"
 	desc = "LATIN7.D"
-	#picture = "maria_borja"
+	picture = "maria_borja"
 
 	major = yes
 
@@ -6044,7 +6044,7 @@ country_event = {
 	id = 124170
 	title = "LATIN66.T"
 	desc = "LATIN66.D"
-	#picture = "maria_borja"
+	picture = "maria_borja"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -6485,7 +6485,7 @@ country_event = {
 	id = 124178
 	title = "LATIN74.T"
 	desc = "LATIN74.D"
-	#picture = "maria_borja"
+	picture = "maria_borja"
 
 	fire_only_once = yes
 
@@ -6737,7 +6737,7 @@ country_event = {
 	id = 124181
 	title = "LATIN77.T"
 	desc = "LATIN77.D"
-	#picture = "maria_borja"
+	picture = "maria_borja"
 
 	fire_only_once = yes
 

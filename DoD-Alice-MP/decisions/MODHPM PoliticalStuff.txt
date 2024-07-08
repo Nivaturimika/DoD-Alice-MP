@@ -2003,7 +2003,7 @@ political_decisions = {
 
 	army_reform_to_restricted = {
 		alert = yes
-		#picture = secret_police
+		picture = secret_police
 		potential = {	
 			recruitment_reform = peasant_levys	 	
 			OR = {
@@ -2040,7 +2040,7 @@ political_decisions = {
 	
 	army_reform_to_cantonist = {
 		alert = yes
-		#picture = secret_police
+		picture = secret_police
 		potential = {	
 			recruitment_reform = peasant_levys	 	
 			has_country_flag = government_decisions
@@ -2067,7 +2067,7 @@ political_decisions = {
 	
 	army_reform_to_normal = {
 		alert = yes
-		#picture = secret_police
+		picture = secret_police
 		potential = {	
 			recruitment_reform = peasant_levys	 	
 			OR = {
@@ -2105,7 +2105,7 @@ political_decisions = {
 
 	army_reform_to_restricted_anglois = {
 		alert = yes
-		#picture = secret_police
+		picture = secret_police
 		potential = {	
 			recruitment_reform = peasant_levys	 	
 			primary_culture = anglois
@@ -2140,7 +2140,7 @@ political_decisions = {
 	
 	restrict_army_recruitment = {
 		alert = yes
-		#picture = secret_police
+		picture = secret_police
 		potential = {	
 			recruitment_reform = normal_recruitment	
 			OR = {				
@@ -2205,7 +2205,7 @@ political_decisions = {
 	
 	restore_normal_recruitment = {
 		alert = yes
-		#picture = secret_police
+		picture = secret_police
 		potential = {	
 			recruitment_reform = restricted_recruitment	
 			OR = {

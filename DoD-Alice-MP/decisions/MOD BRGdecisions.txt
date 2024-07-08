@@ -1822,7 +1822,7 @@ political_decisions = {
 	}
 
 	force_swabia = {
-		#picture = Triglav
+		picture = Triglav
 		potential = {
 			OR = {
 				tag = PBG
@@ -1899,7 +1899,7 @@ political_decisions = {
 	# BURN PARIS BURN
 
 	occupation_of_paris = {
-	#picture = Incas
+	picture = Incas
 		potential = {
 			tag = BRG
 			war_with = DUA
@@ -1932,7 +1932,7 @@ political_decisions = {
 	## Due to the importance of this decision the AI will do it regardless of Infamy
 
 	occupation_of_london = {
-	#picture = Incas
+	picture = Incas
 		potential = {
 			tag = BRG
 			war_with = DUA
@@ -1959,7 +1959,7 @@ political_decisions = {
 	# BURN ANVERS BURN
 
 	occupation_of_anvers = {
-	#picture = Incas
+	picture = Incas
 		potential = {
 			tag = DUA
 			war_with = BRG
@@ -1990,7 +1990,7 @@ political_decisions = {
 	# BURN AMSTERDAM BURN
 
 	occupation_of_amsterdam = {
-	#picture = Incas
+	picture = Incas
 		potential = {
 			tag = DUA
 			war_with = BRG
@@ -2021,7 +2021,7 @@ political_decisions = {
 	# Burgundian Decisions in relation to Germany
 
 	restore_order_CFR = {
-		#picture = Triglav
+		picture = Triglav
 		potential = {
 			OR = {
 				tag = PBG
@@ -2085,7 +2085,7 @@ political_decisions = {
 	}
 
 	restore_order_SWA = {
-		#picture = Triglav
+		picture = Triglav
 		potential = {
 			OR = {
 				tag = PBG
@@ -2429,7 +2429,7 @@ executing_the_anglois = {
 # If CAE or GCF owns this land then you'll need to dismantle them first.
 
 our_rhineland = {
-		#picture = treaty_signing
+		picture = treaty_signing
 
 		potential = {
 			tag = FRK
@@ -2480,7 +2480,7 @@ our_rhineland = {
 # The best thing you can do here as as Democratic or Communist is externally unify Swabia via Decision and then annex it.
 
 the_forests_of_swabia = {
-		#picture = treaty_signing
+		picture = treaty_signing
 
 		potential = {
 			tag = FRK
@@ -2550,7 +2550,7 @@ the_forests_of_swabia = {
 # Taming Occitania
 
 taming_occitania = {
-		#picture = treaty_signing
+		picture = treaty_signing
 
 		potential = {
 			tag = FRK
@@ -2599,7 +2599,7 @@ taming_occitania = {
 # This would be the Grand Duchy that Burgundy can form in the South under the Normal Treaty
 
 served_his_purpose = {
-		#picture = treaty_signing
+		picture = treaty_signing
 
 		potential = {
 			tag = FRK
@@ -2645,7 +2645,7 @@ served_his_purpose = {
 ### Super Secret Frankish Decision ###
 
 secret_franconia_annexation = {
-		#picture = treaty_signing
+		picture = treaty_signing
 		potential = {
 			tag = FRK
 			FRW = {
@@ -2670,7 +2670,7 @@ secret_franconia_annexation = {
 
 
 integrating_france = {
-		#picture = treaty_signing
+		picture = treaty_signing
 
 		potential = {
 			tag = FRK
@@ -2895,7 +2895,7 @@ commie_destroy_DUA = {
 ### Swabia Preparation Work ###
 
 baden_is_clearly_rogue = {
-		#picture = kill_dua
+		picture = kill_dua
 
 		potential = {
 			tag = PBG
@@ -2949,7 +2949,7 @@ baden_is_clearly_rogue = {
 }
 
 destroy_the_swiss = {
-		#picture = kill_dua
+		picture = kill_dua
 
 		potential = {
 			tag = PBG
@@ -3010,7 +3010,7 @@ destroy_the_swiss = {
 #### I guess this is the easy version of killing off Swabia since SGF does not own it ####
 
 take_over_swabia = {
-		#picture = kill_dua
+		picture = kill_dua
 
 		potential = {
 			tag = PBG
@@ -3077,7 +3077,7 @@ take_over_swabia = {
 #### This of course is the hard way and triggers a Swabian War ####
 
 conquer_swabia_vsSGF = {
-		#picture = kill_dua
+		picture = kill_dua
 
 		potential = {
 			tag = PBG
@@ -3181,7 +3181,7 @@ conquer_swabia_vsSGF = {
 ### Seriously AI. You lost control of BERG ###
 
 take_over_berg = {
-		#picture = kill_dua
+		picture = kill_dua
 
 		potential = {
 			tag = PBG
@@ -3236,7 +3236,7 @@ take_over_berg = {
 }
 
 take_over_confederation = {
-		#picture = kill_dua
+		picture = kill_dua
 
 		potential = {
 			tag = PBG
@@ -3296,7 +3296,7 @@ take_over_confederation = {
 }
 
 war_against_elbians = {
-		#picture = kill_dua
+		picture = kill_dua
 
 		potential = {
 			tag = PBG
@@ -3824,7 +3824,7 @@ the_problem_of_france_dem = {
 	#### Democratic or Communist Frankish Empire Cultural Decisions
 
 	accept_the_french = {
-		#picture = oriflamme
+		picture = oriflamme
 
 		potential = {
 			tag = FRK
@@ -3854,7 +3854,7 @@ the_problem_of_france_dem = {
 }
 
 	accept_the_provencals = {
-		#picture = oriflamme
+		picture = oriflamme
 
 		potential = {
 			tag = FRK
@@ -3886,7 +3886,7 @@ the_problem_of_france_dem = {
 }
 
 	accept_the_swabians = {
-		#picture = oriflamme
+		picture = oriflamme
 
 		potential = {
 			tag = FRK
@@ -3954,7 +3954,7 @@ the_problem_of_france_dem = {
 }
 
 	accept_the_frisian = {
-		#picture = rhineland
+		picture = rhineland
 
 		potential = {
 			tag = FRK
@@ -3984,7 +3984,7 @@ the_problem_of_france_dem = {
 #### This is practically the ultimate achivement for Democratic Burgundy
 
 	the_unthinkable_acceptance = {
-		#picture = oriflamme
+		picture = oriflamme
 
 		potential = {
 			tag = FRK
@@ -4065,7 +4065,7 @@ the_problem_of_france_dem = {
 }
 
 	forgive_the_dutch = {
-		#picture = oriflamme
+		picture = oriflamme
 
 		potential = {
 			OR = {
@@ -4109,7 +4109,7 @@ the_problem_of_france_dem = {
 # Perhapse we should have given this irrelevent minority some attention earlier.
 
 	forgive_the_frisians = {
-		#picture = oriflamme
+		picture = oriflamme
 
 		potential = {
 			OR = {

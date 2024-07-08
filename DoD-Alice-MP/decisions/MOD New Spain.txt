@@ -494,7 +494,7 @@ political_decisions = {
 	}
 	
 	conquer_galicia_CST = {
-	#picture = french_catalonia
+	picture = french_catalonia
 		potential = {
 			tag = CST
 			has_global_flag = SPA_COLLAPSED
@@ -521,7 +521,7 @@ political_decisions = {
 	}
 	
 	conquer_navarre_CST = {
-	#picture = french_catalonia
+	picture = french_catalonia
 		potential = {
 			tag = CST
 			has_global_flag = SPA_COLLAPSED
@@ -551,7 +551,7 @@ political_decisions = {
 	}
 	
 	protector_of_the_aragonese = {
-	#picture = french_catalonia
+	picture = french_catalonia
 		potential = {
 			tag = CST
 			has_global_flag = SPA_COLLAPSED

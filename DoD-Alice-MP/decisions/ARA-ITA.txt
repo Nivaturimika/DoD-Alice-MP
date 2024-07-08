@@ -401,7 +401,7 @@ political_decisions = {
 	}
 		
 	ARI_reconquest_of_africa = {
-		#picture = treaty_signing
+		picture = treaty_signing
 		potential = {
 			tag = ARI
 			has_country_flag = ARI_PERMITTED_TO_LARP
@@ -424,7 +424,7 @@ political_decisions = {
 	}
 	
 	ARI_catholic_education = {
-		#picture = treaty_signing
+		picture = treaty_signing
 		potential = {
 			tag = ARI
 			has_country_flag = ARI_CATHOLIC_ENABLED

@@ -435,7 +435,7 @@ political_decisions = {
 	}
 	
 	AEN_accept_welsh = { 
-	#picture = British_islands
+	picture = British_islands
 		potential = {
 			tag = AEN
 			OR = {

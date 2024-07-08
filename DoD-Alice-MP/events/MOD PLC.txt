@@ -12841,7 +12841,7 @@ country_event = {
 	id = 223021
 	title = "PLCN89.T" 
 	desc = "PLCN89.D" 
-	#picture = "circassian_exodus"	
+	picture = "circassian_exodus"	
 
 	is_triggered_only = yes
 	
@@ -12857,7 +12857,7 @@ country_event = {
 	id = 223022
 	title = "Commonwealth Cores" 
 	desc = "With the successful centralization of the Commonwealth they have come asking for their newly claimed core provinces." 
-	#picture = "circassian_exodus"	
+	picture = "circassian_exodus"	
 
 	is_triggered_only = yes
 	

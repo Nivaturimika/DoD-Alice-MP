@@ -1019,7 +1019,7 @@ country_event = {
 	id = 191992
 	title = "SCALAT15.T"
 	desc = "SCALAT15.D"
-	#picture = "adminstration"
+	picture = "adminstration"
 	
 	fire_only_once = yes	
 	is_triggered_only = yes

@@ -38,7 +38,7 @@ country_event = {
 	id = 150001
 	title = "HUNC2.T"
 	desc = "HUNC2.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
     trigger = {
         tag = DSX
@@ -137,7 +137,7 @@ country_event = {
 	id = 150003
 	title = "HUNC4.T"
 	desc = "HUNC4.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes
 	
@@ -182,7 +182,7 @@ country_event = {
 	id = 150004
 	title = "HUNC5.T"
 	desc = "HUNC5.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes
 	
@@ -241,7 +241,7 @@ country_event = {
 	id = 150005
 	title = "HUNC6.T"
 	desc = "HUNC6.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -336,7 +336,7 @@ country_event = {
 	id = 150008
 	title = "HUNC9.T"
 	desc = "HUNC9.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes
 	
@@ -370,7 +370,7 @@ country_event = {
 	id = 150009
 	title = "HUNC10.T"
 	desc = "HUNC10.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes
 	
@@ -405,7 +405,7 @@ country_event = {
 	id = 150010
 	title = "HUNC11.T"
 	desc = "HUNC11.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes
 	
@@ -461,7 +461,7 @@ country_event = {
 	id = 150012
 	title = "HUNC13.T"
 	desc = "HUNC13.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes
 	
@@ -549,7 +549,7 @@ country_event = {
 	id = 150014
 	title = "HUNC15.T"
 	desc = "HUNC15.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -669,7 +669,7 @@ country_event = {
 	id = 150017
 	title = "HUNC18.T"
 	desc = "HUNC18.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -807,7 +807,7 @@ country_event = {
 	id = 150021
 	title = "HUNC22.T"
 	desc = "HUNC22.D"
-	#picture = "congress_venice"
+	picture = "congress_venice"
 	
 	is_triggered_only = yes
 
@@ -838,7 +838,7 @@ country_event = {
 	id = 150022
 	title = "HUNC23.T"
 	desc = "HUNC23.D"
-	#picture = "congress_venice"
+	picture = "congress_venice"
 	
 	is_triggered_only = yes
 
@@ -960,7 +960,7 @@ country_event = {
 	id = 150027
 	title = "HUNC28.T"
 	desc = "HUNC28.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	major = yes
 	is_triggered_only = yes
@@ -1357,7 +1357,7 @@ country_event = {
 	id = 150037
 	title = "HUNC38.T"
 	desc = "HUNC38.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -1598,7 +1598,7 @@ country_event = {
 	id = 150041
 	title = "HUNC42.T"
 	desc = "HUNC42.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1631,7 +1631,7 @@ country_event = {
 	id = 150042
 	title = "HUNC43.T"
 	desc = "HUNC43.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	major = yes
 	fire_only_once = yes
@@ -1689,7 +1689,7 @@ country_event = {
 	id = 150043
 	title = "HUNC44.T"
 	desc = "HUNC44.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	major = yes
 	fire_only_once = yes
@@ -2214,7 +2214,7 @@ country_event = {
 	id = 150054
 	title = "HUNC55.T"
 	desc = "HUNC55.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2471,7 +2471,7 @@ country_event = {
 	id = 150058
 	title = "HUNC59.T"
 	desc = "HUNC59.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -3219,7 +3219,7 @@ country_event = {
 	id = 150071
 	title = "HUNC72.T"
 	desc = "HUNC72.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	major = yes
 	fire_only_once = yes

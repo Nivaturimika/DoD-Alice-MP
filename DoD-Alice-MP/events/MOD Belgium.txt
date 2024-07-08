@@ -9,7 +9,7 @@ country_event = {
 	id = 79000
 	title = "NBG1.T"
 	desc = "NBG1.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   primary_culture = septiman
@@ -39,7 +39,7 @@ country_event = {
 	id = 79001
 	title = "NBG2.T"
 	desc = "NBG2.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
     is_triggered_only = yes
 	
@@ -56,7 +56,7 @@ country_event = {
 	id = 79002
 	title = "NBG3.T"
 	desc = "NBG3.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = CNF
@@ -91,7 +91,7 @@ country_event = {
 	id = 79003
 	title = "NBG4.T"
 	desc = "NBG4.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = CNF
@@ -135,7 +135,7 @@ country_event = {
 	id = 79004
 	title = "NBG5.T"
 	desc = "NBG5.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = CNF
@@ -237,7 +237,7 @@ country_event = {
 	id = 79005
 	title = "NBG6.T"
 	desc = "NBG6.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -260,7 +260,7 @@ country_event = {
 	id = 79006
 	title = "NBG7.T"
 	desc = "NBG7.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	major = yes
 	
@@ -315,7 +315,7 @@ country_event = {
 	id = 79007
 	title = "NBG8.T"
 	desc = "NBG8.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -336,7 +336,7 @@ country_event = {
 	id = 79008
 	title = "NBG9.T"
 	desc = "NBG9.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -385,7 +385,7 @@ country_event = {
 	id = 79009
 	title = "NBG10.T"
 	desc = "NBG10.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -467,7 +467,7 @@ country_event = {
 	id = 79010
 	title = "NBG11.T"
 	desc = "NBG11.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -527,7 +527,7 @@ country_event = {
 	id = 79011
 	title = "NBG12.T"
 	desc = "NBG12.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -589,7 +589,7 @@ country_event = {
 	id = 79012
 	title = "NBG13.T"
 	desc = "NBG13.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -664,7 +664,7 @@ country_event = {
 	id = 79013
 	title = "NBG14.T"
 	desc = "NBG14.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -783,7 +783,7 @@ country_event = {
 	id = 79014
 	title = "NBG15.T"
 	desc = "NBG15.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -880,7 +880,7 @@ country_event = {
 	id = 79015
 	title = "NBG16.T"
 	desc = "NBG16.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -910,7 +910,7 @@ country_event = {
 	id = 79016
 	title = "NBG17.T"
 	desc = "NBG17.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -972,7 +972,7 @@ country_event = {
 	id = 79017
 	title = "NBG18.T"
 	desc = "NBG18.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -1063,7 +1063,7 @@ country_event = {
 	id = 79018
 	title = "NBG19.T"
 	desc = "NBG19.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = PLA
@@ -1108,7 +1108,7 @@ country_event = {
 	id = 79019
 	title = "NBG20.T"
 	desc = "NBG20.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 
@@ -1165,7 +1165,7 @@ country_event = {
 	id = 79020
 	title = "NBG21.T"
 	desc = "NBG21.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 
@@ -1191,7 +1191,7 @@ country_event = {
 	id = 79021
 	title = "NBG22.T"
 	desc = "NBG22.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 
@@ -1252,7 +1252,7 @@ country_event = {
 	id = 79022
 	title = "NBG23.T"
 	desc = "NBG23.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 
@@ -1311,7 +1311,7 @@ country_event = {
 	id = 79023
 	title = "NBG24.T"
 	desc = "NBG24.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -1425,7 +1425,7 @@ country_event = {
 	id = 79024
 	title = "NBG25.T"
 	desc = "NBG25.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 
@@ -1530,7 +1530,7 @@ country_event = {
 	id = 79025
 	title = "NBG26.T"
 	desc = "NBG26.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 
@@ -1631,7 +1631,7 @@ country_event = {
 	id = 79026
 	title = "NBG27.T"
 	desc = "NBG27.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	major = yes
 	is_triggered_only = yes
@@ -1668,7 +1668,7 @@ country_event = {
 	id = 79027
 	title = "NBG28.T"
 	desc = "NBG28.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = VIN
@@ -1732,7 +1732,7 @@ country_event = {
 	id = 79028
 	title = "NBG29.T"
 	desc = "NBG29.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = VIN
@@ -1789,7 +1789,7 @@ country_event = {
 	id = 79029
 	title = "NBG30.T"
 	desc = "NBG30.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
  
@@ -1808,7 +1808,7 @@ country_event = {
 	id = 79030
 	title = "NBG31.T"
 	desc = "NBG31.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = PLA
@@ -1889,7 +1889,7 @@ country_event = {
 	id = 79031
 	title = "NBG32.T"
 	desc = "NBG32.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -1970,7 +1970,7 @@ country_event = {
 	id = 79032
 	title = "NBG33.T"
 	desc = "NBG33.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -2067,7 +2067,7 @@ country_event = {
 	id = 79033
 	title = "NBG34.T"
 	desc = "NBG34.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -2147,7 +2147,7 @@ country_event = {
 	id = 79034
 	title = "NBG35.T"
 	desc = "NBG35.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = PLA
@@ -2229,7 +2229,7 @@ country_event = {
 	id = 79035
 	title = "NBG36.T"
 	desc = "NBG36.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
  
@@ -2264,7 +2264,7 @@ country_event = {
 	id = 79036
 	title = "NBG37.T"
 	desc = "NBG37.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -2310,7 +2310,7 @@ country_event = {
 	id = 790360
 	title = "NBG370.T"
 	desc = "NBG370.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -2354,7 +2354,7 @@ country_event = {
 	id = 79037
 	title = "NBG38.T"
 	desc = "NBG38.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -2404,7 +2404,7 @@ country_event = {
 	id = 79038
 	title = "NBG39.T"
 	desc = "NBG39.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -2455,7 +2455,7 @@ country_event = {
 	id = 79039
 	title = "NBG40.T"
 	desc = "NBG40.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -2536,7 +2536,7 @@ country_event = {
 	id = 79040
 	title = "NBG41.T"
 	desc = "NBG41.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 
@@ -2607,7 +2607,7 @@ country_event = {
 	id = 79041
 	title = "NBG42.T"
 	desc = "NBG42.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -2679,7 +2679,7 @@ country_event = {
 	id = 79042
 	title = "NBG43.T"
 	desc = "NBG43.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -2735,7 +2735,7 @@ country_event = {
 	id = 79043
 	title = "NBG44.T"
 	desc = "NBG44.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -2764,7 +2764,7 @@ country_event = {
 	id = 79044
 	title = "NBG45.T"
 	desc = "NBG45.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -2808,7 +2808,7 @@ country_event = {
 	id = 79045
 	title = "NBG46.T"
 	desc = "NBG46.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -2895,7 +2895,7 @@ country_event = {
 	id = 79046
 	title = "NBG47.T"
 	desc = "NBG47.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 
@@ -2932,7 +2932,7 @@ country_event = {
 	id = 79047
 	title = "NBG48.T"
 	desc = "NBG48.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -2966,7 +2966,7 @@ country_event = {
 	id = 79048
 	title = "NBG49.T"
 	desc = "NBG49.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -3069,7 +3069,7 @@ country_event = {
 	id = 79049
 	title = "NBG50.T"
 	desc = "NBG50.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -3177,7 +3177,7 @@ country_event = {
 	id = 79050
 	title = "NBG51.T"
 	desc = "NBG51.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -3215,7 +3215,7 @@ country_event = {
 	id = 79051
 	title = "NBG52.T"
 	desc = "NBG52.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -3273,7 +3273,7 @@ country_event = {
 	id = 79052
 	title = "NBG53.T"
 	desc = "NBG53.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -3341,7 +3341,7 @@ country_event = {
 	id = 79053
 	title = "NBG54.T"
 	desc = "NBG54.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -3387,7 +3387,7 @@ country_event = {
 	id = 79054
 	title = "NBG55.T"
 	desc = "NBG55.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
     is_triggered_only = yes
 	
@@ -3419,7 +3419,7 @@ country_event = {
 	id = 79055
 	title = "NBG56.T"
 	desc = "NBG56.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -3494,7 +3494,7 @@ country_event = {
 	id = 79056
 	title = "NBG57.T"
 	desc = "NBG57.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -3584,7 +3584,7 @@ country_event = {
 	id = 79057
 	title = "NBG58.T"
 	desc = "NBG58.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -3682,7 +3682,7 @@ country_event = {
 	id = 79059
 	title = "NBG60.T"
 	desc = "NBG60.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -3808,7 +3808,7 @@ country_event = {
 	id = 79060
 	title = "NBG61.T"
 	desc = "NBG61.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -3896,7 +3896,7 @@ country_event = {
 	id = 79061
 	title = "NBG62.T"
 	desc = "NBG62.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 
@@ -3989,7 +3989,7 @@ country_event = {
 	id = 79062
 	title = "NBG63.T"
 	desc = "NBG63.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	major = yes
 	is_triggered_only = yes
@@ -4053,7 +4053,7 @@ country_event = {
 	id = 79063
 	title = "NBG64.T"
 	desc = "NBG64.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -4156,7 +4156,7 @@ country_event = {
 	id = 79065
 	title = "NBG66.T"
 	desc = "NBG66.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -4223,7 +4223,7 @@ country_event = {
 	id = 79066
 	title = "NBG67.T"
 	desc = "NBG67.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -4298,7 +4298,7 @@ country_event = {
 	id = 79067
 	title = "NBG68.T"
 	desc = "NBG68.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -4350,7 +4350,7 @@ country_event = {
 	id = 79068
 	title = "NBG69.T"
 	desc = "NBG69.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -4402,7 +4402,7 @@ country_event = {
 	id = 79069
 	title = "NBG70.T"
 	desc = "NBG70.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -4526,7 +4526,7 @@ country_event = {
 	id = 79070
 	title = "NBG71.T"
 	desc = "NBG71.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -4574,7 +4574,7 @@ country_event = {
 	id = 79071
 	title = "NBG72.T"
 	desc = "NBG72.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -4618,7 +4618,7 @@ country_event = {
 	id = 79072
 	title = "NBG73.T"
 	desc = "NBG73.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -4776,7 +4776,7 @@ country_event = {
 	id = 79073
 	title = "NBG74.T"
 	desc = "NBG74.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -4842,7 +4842,7 @@ country_event = {
 	id = 79074
 	title = "NBG75.T"
 	desc = "NBG75.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -4908,7 +4908,7 @@ country_event = {
 	id = 79075
 	title = "NBG76.T"
 	desc = "NBG76.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -4974,7 +4974,7 @@ country_event = {
 	id = 79076
 	title = "NBG77.T"
 	desc = "NBG77.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -5041,7 +5041,7 @@ country_event = {
 	id = 79077
 	title = "NBG78.T"
 	desc = "NBG78.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -5107,7 +5107,7 @@ country_event = {
 	id = 79078
 	title = "NBG79.T"
 	desc = "NBG79.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = NBG
@@ -5175,7 +5175,7 @@ country_event = {
 	id = 79079
 	title = "NBG80.T"
 	desc = "NBG80.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	major = yes
 	is_triggered_only = yes
@@ -5219,7 +5219,7 @@ country_event = {
 	id = 79080
 	title = "NBG81.T"
 	desc = "NBG81.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	major = yes
 	is_triggered_only = yes

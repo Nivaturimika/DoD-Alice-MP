@@ -4231,7 +4231,7 @@ country_event = {
 	id = 67003
 	title = "AND103.T"
 	desc = "AND103.D" 
-	#picture = "treaty"
+	picture = "treaty"
 
 	is_triggered_only = yes
 	

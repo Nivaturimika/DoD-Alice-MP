@@ -4920,7 +4920,7 @@ country_event = {
 	id = 124350
 	title = "PAPAL1.T" 
 	desc = "PAPAL1.D" 
-	#picture = "ARI_throne"
+	picture = "ARI_throne"
 	
 	trigger = { 
 	tag = ITA
@@ -4971,7 +4971,7 @@ country_event = {
 	id = 124351
 	title = "PAPAL2.T" 
 	desc = "PAPAL2.D" 
-	#picture = "ARI_throne"
+	picture = "ARI_throne"
 	
 	trigger = { 
 	tag = ITA
@@ -5022,7 +5022,7 @@ country_event = {
 	id = 1243510
 	title = "PAPAL20.T" 
 	desc = "PAPAL20.D" 
-	#picture = "ARI_throne"
+	picture = "ARI_throne"
 	
 	is_triggered_only = yes
 	
@@ -5058,7 +5058,7 @@ country_event = {
 	id = 124352
 	title = "PAPAL3.T" 
 	desc = "PAPAL3.D" 
-	#picture = "ARI_throne"
+	picture = "ARI_throne"
 	
 	trigger = { 
 	tag = ITA
@@ -5107,7 +5107,7 @@ country_event = {
 	id = 124353
 	title = "PAPAL4.T" 
 	desc = "PAPAL4.D"
-	#picture = "ARI_throne"
+	picture = "ARI_throne"
 		
 	is_triggered_only = yes
 	
@@ -5227,7 +5227,7 @@ country_event = {
 	id = 124354
 	title = "PAPAL5.T" 
 	desc = "PAPAL5.D"
-	#picture = "ARI_throne"
+	picture = "ARI_throne"
 		
 	is_triggered_only = yes
 
@@ -5254,7 +5254,7 @@ country_event = {
 	id = 124355
 	title = "PAPAL6.T" 
 	desc = "PAPAL6.D" 
-	#picture = "ARI_throne"
+	picture = "ARI_throne"
 		
 	is_triggered_only = yes
 
@@ -5282,7 +5282,7 @@ country_event = {
 	id = 124356
 	title = "PAPAL7.T" 
 	desc = "PAPAL7.D" 
-	#picture = "ARI_throne"
+	picture = "ARI_throne"
 		
 	is_triggered_only = yes
 

@@ -1079,7 +1079,7 @@ country_event = {
 	id = 280020
 	title = "GEP21.T"
 	desc = "GEP21.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	major = yes
 	
@@ -1123,7 +1123,7 @@ country_event = {
 	id = 280021
 	title = "GEP22.T"
 	desc = "GEP22.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	major = yes	
 	fire_only_once = yes 	
@@ -3283,7 +3283,7 @@ country_event = {
 	id = 280041
 	title = "GEP42.T"
 	desc = "GEP42.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	fire_only_once = yes 	
 	is_triggered_only = yes
@@ -3557,7 +3557,7 @@ country_event = {
 	id = 280044
 	title = "GEP45.T"
 	desc = "GEP45.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	major = yes
 	fire_only_once = yes 	
@@ -3593,7 +3593,7 @@ country_event = {
 	id = 280045
 	title = "GEP46.T"
 	desc = "GEP46.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	major = yes
 	fire_only_once = yes 	
@@ -4044,7 +4044,7 @@ country_event = {
 	id = 280050
 	title = "GEP51.T"
 	desc = "GEP51.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	fire_only_once = yes
 	
@@ -4125,7 +4125,7 @@ country_event = {
 	id = 280051
 	title = "GEP52.T"
 	desc = "GEP52.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	is_triggered_only = yes
 	major = yes
@@ -4472,7 +4472,7 @@ country_event = {
 	id = 2800550
 	title = "GEP57.T"
 	desc = "GEP57.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	major = yes
 	is_triggered_only = yes
@@ -4928,7 +4928,7 @@ country_event = {
 	id = 2800610
 	title = "GEP62.T"
 	desc = "GEP62.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	major = yes
 	
@@ -5002,7 +5002,7 @@ country_event = {
 	id = 280061
 	title = "GEP620.T"
 	desc = "GEP620.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	major = yes
 	
@@ -6329,7 +6329,7 @@ country_event = {
 	id = 280072
 	title = "GEP73.T"
 	desc = "GEP73.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	major = yes
 	
@@ -6506,7 +6506,7 @@ country_event = {
 	id = 280073
 	title = "GEP74.T"
 	desc = "GEP74.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	major = yes
 	
@@ -6600,7 +6600,7 @@ country_event = {
 	id = 280074
 	title = "GEP75.T"
 	desc = "GEP75.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	major = yes
 	
@@ -6695,7 +6695,7 @@ country_event = {
 	id = 280075
 	title = "GEP76.T"
 	desc = "GEP76.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	major = yes
 	
@@ -6760,7 +6760,7 @@ country_event = {
 	id = 280076
 	title = "GEP77.T"
 	desc = "GEP77.D"
-	#picture = "fascist_march"
+	picture = "fascist_march"
 	
 	major = yes
 	
@@ -7279,7 +7279,7 @@ country_event = {
 	id = 280082
 	title = "GEP83.T"
 	desc = "GEP83.D"
-	#picture = "meeting_german_princes"
+	picture = "meeting_german_princes"
 	
 	is_triggered_only = yes
 	major = yes
@@ -7349,7 +7349,7 @@ country_event = {
 	id = 280083
 	title = "GEP84.T"
 	desc = "GEP84.D"
-	#picture = "meeting_german_princes"
+	picture = "meeting_german_princes"
 	
 	is_triggered_only = yes
 	major = yes
@@ -7421,7 +7421,7 @@ country_event = {
 	id = 2800820
 	title = "GEP830.T"
 	desc = "GEP830.D"
-	#picture = "meeting_german_princes"
+	picture = "meeting_german_princes"
 	
 	trigger = {	
 		exists = yes
@@ -7506,7 +7506,7 @@ country_event = {
 	id = 2800830
 	title = "GEP8400.T"
 	desc = "GEP8400.D"
-	#picture = "meeting_german_princes"
+	picture = "meeting_german_princes"
 	
 	trigger = {	
 		exists = yes
@@ -10229,7 +10229,7 @@ country_event = {
 	id = 280114
 	title = "ANCP15.T"
 	desc = "ANCP15.D"
-	#picture = "conscription_marching"
+	picture = "conscription_marching"
 	
 	fire_only_once = yes
 	
@@ -10372,7 +10372,7 @@ country_event = {
 	id = 280115
 	title = "ANCP16.T"
 	desc = "ANCP16.D"
-	#picture = "conscription_marching"
+	picture = "conscription_marching"
 	
 	fire_only_once = yes
 	
@@ -10517,7 +10517,7 @@ country_event = {
 	id = 280116
 	title = "ANCP17.T"
 	desc = "ANCP17.D"
-	#picture = "conscription_marching"
+	picture = "conscription_marching"
 	
 	fire_only_once = yes
 	major = yes
@@ -10640,7 +10640,7 @@ country_event = {
 	id = 280125
 	title = "ANCP201.T"
 	desc = "ANCP201.D"
-	#picture = "conscription_marching"
+	picture = "conscription_marching"
 	
 	fire_only_once = yes	
 	is_triggered_only = yes
@@ -10666,7 +10666,7 @@ country_event = {
 	id = 280120
 	title = "ANCP21.T"
 	desc = "ANCP21.D"
-	#picture = "conscription_marching"
+	picture = "conscription_marching"
 	
 	fire_only_once = yes	
 	is_triggered_only = yes

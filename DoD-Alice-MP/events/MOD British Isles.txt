@@ -697,7 +697,7 @@ country_event = {
 	id = 48285
 	title = "ENLFRA1.T"
 	desc = "ENLFRA1.D"
-	#picture = "spanish_glorious_revolution"
+	picture = "spanish_glorious_revolution"
 
 	is_triggered_only = yes
 
@@ -1189,7 +1189,7 @@ country_event = {
 	id = 48292
 	title = "ENLFRA8.T"
 	desc = "ENLFRA8.D"
-	#picture = "DUAestates"
+	picture = "DUAestates"
 
 	fire_only_once = yes
 
@@ -1230,7 +1230,7 @@ country_event = {
 	id = 48293
 	title = "ENLFRA9.T"
 	desc = "ENLFRA9.D"
-	#picture = "DUAestates"
+	picture = "DUAestates"
 
 	fire_only_once = yes
 
@@ -1313,7 +1313,7 @@ country_event = {
 	id = 48294
 	title = "ENLFRA10.T"
 	desc = "ENLFRA10.D"
-	#picture = "DUAestates"
+	picture = "DUAestates"
 
 	fire_only_once = yes
 
@@ -1399,7 +1399,7 @@ country_event = {
 	id = 48295
 	title = "ENLFRA11.T"
 	desc = "ENLFRA11.D"
-	#picture = "DUAestates"
+	picture = "DUAestates"
 
 	major = yes
 
@@ -1451,7 +1451,7 @@ country_event = {
 	id = 48296
 	title = "ENLFRA12.T"
 	desc = "ENLFRA12.D"
-	#picture = "DUAestates"
+	picture = "DUAestates"
 
 	fire_only_once = yes
 
@@ -1501,7 +1501,7 @@ country_event = {
 	id = 48297
 	title = "ENLFRA13.T"
 	desc = "ENLFRA13.D"
-	#picture = "DUAestates"
+	picture = "DUAestates"
 
 	fire_only_once = yes
 
@@ -1560,7 +1560,7 @@ country_event = {
 	id = 48298
 	title = "ENLFRA14.T"
 	desc = "ENLFRA14.D"
-	#picture = "DUAestates"
+	picture = "DUAestates"
 
 	fire_only_once = yes
 
@@ -1811,7 +1811,7 @@ country_event = {
 	id = 48303
 	title = "ENLFRA19.T"
 	desc = "ENLFRA19.D"
-	#picture = "news"
+	picture = "news"
 
 	fire_only_once = yes
 
@@ -1875,7 +1875,7 @@ country_event = {
 	id = 48304
 	title = "ENLFRA20.T"
 	desc = "ENLFRA20.D"
-	#picture = "news"
+	picture = "news"
 
 	fire_only_once = yes
 
@@ -1944,7 +1944,7 @@ country_event = {
 	id = 48305
 	title = "ENLFRA21.T"
 	desc = "ENLFRA21.D"
-	#picture = "news"
+	picture = "news"
 
 	major = yes
 
@@ -1978,7 +1978,7 @@ country_event = {
 	id = 48306
 	title = "ENLFRA22.T"
 	desc = "ENLFRA22.D"
-	#picture = "news"
+	picture = "news"
 
 	trigger = {
 		tag = AEN
@@ -2176,7 +2176,7 @@ country_event = {
 	id = 48307
 	title = "ENLFRA24.T"
 	desc = "ENLFRA24.D"
-	#picture = "news"
+	picture = "news"
 
 	trigger = {
 		tag = ENL
@@ -2231,7 +2231,7 @@ country_event = {
 	id = 48308
 	title = "ENLFRA25.T"
 	desc = "ENLFRA25.D"
-	#picture = "news"
+	picture = "news"
 
 	trigger = {
 		tag = ENL

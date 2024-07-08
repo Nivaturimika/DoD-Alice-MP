@@ -542,7 +542,7 @@ country_event = {
 	id = 6530090
 	title = "BRG990.T"
 	desc = "BRG990.D"
-	#picture = "PBGvictory"
+	picture = "PBGvictory"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -664,7 +664,7 @@ country_event = {
 	id = 6530094
 	title = "BRG994.T"
 	desc = "BRG994.D"
-	#picture = "colonge"
+	picture = "colonge"
 
 	fire_only_once = yes
 

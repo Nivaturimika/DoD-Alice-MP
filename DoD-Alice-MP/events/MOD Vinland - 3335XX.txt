@@ -202,7 +202,7 @@ country_event = {
 	id = 333505
 	title = "VIN5.T"
 	desc = "VIN5.D"
-	#picture = "vinlandrebel"
+	picture = "vinlandrebel"
 	
 	fire_only_once = yes
 	
@@ -345,7 +345,7 @@ country_event = {
 	id = 333509
 	title = "VIN9.T"
 	desc = "VIN9.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 	
 	fire_only_once = yes
 	
@@ -529,7 +529,7 @@ country_event = {
 	id = 333512
 	title = "VIN12.T"
 	desc = "VIN12.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 	
 	major = yes
 	fire_only_once = yes
@@ -663,7 +663,7 @@ country_event = {
 	id = 333514
 	title = "VIN14.T"
 	desc = "VIN14.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 	
 	major = yes
 	fire_only_once = yes
@@ -831,7 +831,7 @@ country_event = {
 	id = 333517
 	title = "VIN17.T"
 	desc = "VIN17.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 	
 	major = yes
 	fire_only_once = yes
@@ -924,7 +924,7 @@ country_event = {
 	id = 333518
 	title = "VIN18.T"
 	desc = "VIN18.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 	
 	major = yes
 	fire_only_once = yes
@@ -1136,7 +1136,7 @@ country_event = {
 	id = 333521
 	title = "VIN21.T"
 	desc = "VIN21.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 	major = yes
 	
     is_triggered_only = yes
@@ -1156,7 +1156,7 @@ country_event = {
 	id = 3335210
 	title = "VIN21.T"
 	desc = "VIN21.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 	
     is_triggered_only = yes
 	
@@ -1272,7 +1272,7 @@ country_event = {
 	id = 333524
 	title = "VIN24.T"
 	desc = "VIN24.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1472,7 +1472,7 @@ country_event = {
 	id = 333526
 	title = "VIN26.T"
 	desc = "VIN26.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 	
 	major = yes
 	fire_only_once = yes
@@ -3452,7 +3452,7 @@ country_event = {
 	id = 333549
 	title = "VIN49.T"
 	desc = "VIN49.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 	
 	major = yes
 	fire_only_once = yes	
@@ -4296,7 +4296,7 @@ country_event = {
 	id = 333566
 	title = "VIN67.T"
 	desc = "VIN67.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = SCA
@@ -4394,7 +4394,7 @@ country_event = {
 	id = 333567
 	title = "VIN68.T"
 	desc = "VIN68.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	major = yes
 	fire_only_once = yes
@@ -4570,7 +4570,7 @@ country_event = {
 	id = 333570
 	title = "VIN71.T"
 	desc = "VIN71.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
     fire_only_once = yes
 	
@@ -5165,7 +5165,7 @@ country_event = {
 	id = 333580
 	title = "VIN81.T"
 	desc = "VIN81.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
     major = yes
 	is_triggered_only = yes
@@ -5197,7 +5197,7 @@ country_event = {
 	id = 333581
 	title = "VIN82.T"
 	desc = "VIN82.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
     major = yes
 
@@ -5291,7 +5291,7 @@ country_event = {
 	id = 333582
 	title = "VIN83.T"
 	desc = "VIN83.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
     major = yes
  
@@ -5394,7 +5394,7 @@ country_event = {
 	id = 333583
 	title = "VIN84.T"
 	desc = "VIN84.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
     major = yes
  
@@ -5468,7 +5468,7 @@ country_event = {
 	id = 333585
 	title = "VIN86.T"
 	desc = "VIN86.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
     major = yes
  
@@ -5547,7 +5547,7 @@ country_event = {
 	id = 333586
 	title = "VIN87.T"
 	desc = "VIN87.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
     major = yes
  

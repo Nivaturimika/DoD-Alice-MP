@@ -12,7 +12,7 @@ country_event = {
 	id = 270000
 	title = "MGER1.T"
 	desc = "MGER1.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -48,7 +48,7 @@ country_event = {
 	id = 270001
 	title = "MGER2.T"
 	desc = "MGER2.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -80,7 +80,7 @@ country_event = {
 	id = 270002
 	title = "MGER3.T"
 	desc = "MGER3.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes	
@@ -115,7 +115,7 @@ country_event = {
 	id = 270003
 	title = "MGER4.T"
 	desc = "MGER4.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes	
@@ -140,7 +140,7 @@ country_event = {
 	id = 270004
 	title = "MGER5.T"
 	desc = "MGER5.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes	
@@ -196,7 +196,7 @@ country_event = {
 	id = 270005
 	title = "MGER6.T"
 	desc = "MGER6.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes	
@@ -213,7 +213,7 @@ country_event = {
 	id = 270006
 	title = "MGER7.T"
 	desc = "MGER7.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes	
@@ -255,7 +255,7 @@ country_event = {
 	id = 270007
 	title = "MGER8.T"
 	desc = "MGER8.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes	
@@ -274,7 +274,7 @@ country_event = {
 	id = 270008
 	title = "MGER9.T"
 	desc = "MGER9.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		tag = SWI	
@@ -339,7 +339,7 @@ country_event = {
 	id = 270009
 	title = "MGER10.T"
 	desc = "MGER10.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes	
@@ -405,7 +405,7 @@ country_event = {
 	id = 270010
 	title = "MGER11.T"
 	desc = "MGER11.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes	
@@ -495,7 +495,7 @@ country_event = {
 	id = 270011
 	title = "MGER12.T"
 	desc = "MGER12.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes	
@@ -581,7 +581,7 @@ country_event = {
 	id = 260029
 	title = "SGF30.T"
 	desc = "SGF30.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes    
 	is_triggered_only = yes
@@ -627,7 +627,7 @@ country_event = {
 	id = 270012
 	title = "MGER13.T"
 	desc = "MGER13.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes    
 	is_triggered_only = yes
@@ -672,7 +672,7 @@ country_event = {
 	id = 270013
 	title = "MGER14.T"
 	desc = "MGER14.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes    
 	is_triggered_only = yes
@@ -737,7 +737,7 @@ country_event = {
 	id = 270014
 	title = "MGER15.T"
 	desc = "MGER15.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes    
 	is_triggered_only = yes
@@ -810,7 +810,7 @@ country_event = {
 	id = 270015
 	title = "MGER16.T"
 	desc = "MGER16.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -843,7 +843,7 @@ country_event = {
 	id = 2700160
 	title = "Graubund is Graudead"
 	desc = "lmao"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -881,7 +881,7 @@ country_event = {
 	id = 270016
 	title = "MGER17.T"
 	desc = "MGER17.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -968,7 +968,7 @@ country_event = {
 	id = 270017
 	title = "MGER18.T"
 	desc = "MGER18.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -999,7 +999,7 @@ country_event = {
 	id = 270018
 	title = "MGER19.T"
 	desc = "MGER19.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -1030,7 +1030,7 @@ country_event = {
 	id = 270019
 	title = "MGER20.T"
 	desc = "MGER20.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -1102,7 +1102,7 @@ country_event = {
 	id = 270020
 	title = "MGER21.T"
 	desc = "MGER21.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -1133,7 +1133,7 @@ country_event = {
 	id = 2700200
 	title = "MGER210.T"
 	desc = "MGER210.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -1188,7 +1188,7 @@ country_event = {
 	id = 270021
 	title = "MGER22.T"
 	desc = "MGER22.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -1250,7 +1250,7 @@ country_event = {
 	id = 2700210
 	title = "MGER220.T"
 	desc = "MGER220.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -1352,7 +1352,7 @@ country_event = {
 	id = 270022
 	title = "MGER23.T"
 	desc = "MGER23.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -1414,7 +1414,7 @@ country_event = {
 	id = 270023
 	title = "MGER24.T"
 	desc = "MGER24.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -1448,7 +1448,7 @@ country_event = {
 	id = 270024
 	title = "MGER25.T"
 	desc = "MGER25.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -1477,7 +1477,7 @@ country_event = {
 	id = 270025
 	title = "MGER26.T"
 	desc = "MGER26.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	major = yes
 	fire_only_once = yes 
@@ -1533,7 +1533,7 @@ country_event = {
 	id = 270026
 	title = "MGER27.T"
 	desc = "MGER27.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -1625,7 +1625,7 @@ country_event = {
 	id = 270027
 	title = "MGER28.T"
 	desc = "MGER28.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -1714,7 +1714,7 @@ country_event = {
 	id = 270028
 	title = "MGER29.T"
 	desc = "MGER29.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	
@@ -1765,7 +1765,7 @@ country_event = {
 	id = 270029
 	title = "MGER30.T"
 	desc = "MGER30.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -1790,7 +1790,7 @@ country_event = {
 	id = 270030
 	title = "MGER31.T"
 	desc = "MGER31.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -1847,7 +1847,7 @@ country_event = {
 	id = 270031
 	title = "MGER32.T"
 	desc = "MGER32.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -1912,7 +1912,7 @@ country_event = {
 	id = 270032
 	title = "MGER33.T"
 	desc = "MGER33.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -1974,7 +1974,7 @@ country_event = {
 	id = 270033
 	title = "MGER34.T"
 	desc = "MGER34.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -2037,7 +2037,7 @@ country_event = {
 	id = 2700333
 	title = "MGER340.T"
 	desc = "MGER340.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -2081,7 +2081,7 @@ country_event = {
 	id = 270034
 	title = "MGER35.T"
 	desc = "MGER35.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	
@@ -2150,7 +2150,7 @@ country_event = {
 	id = 270035
 	title = "MGER36.T"
 	desc = "MGER36.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	
@@ -2218,7 +2218,7 @@ country_event = {
 	id = 270036
 	title = "MGER37.T"
 	desc = "MGER37.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -2326,7 +2326,7 @@ country_event = {
 	id = 270037
 	title = "MGER38.T"
 	desc = "MGER38.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -2363,7 +2363,7 @@ country_event = {
 	id = 270038
 	title = "MGER39.T"
 	desc = "MGER39.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -2552,7 +2552,7 @@ country_event = {
 	id = 270042
 	title = "MGER43.T"
 	desc = "MGER43.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -2588,7 +2588,7 @@ country_event = {
 	id = 270043
 	title = "MGER44.T"
 	desc = "MGER44.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -2644,7 +2644,7 @@ country_event = {
 	id = 270044
 	title = "MGER45.T"
 	desc = "MGER45.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -2687,7 +2687,7 @@ country_event = {
 	id = 270045
 	title = "MGER46.T"
 	desc = "MGER46.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	
@@ -2741,7 +2741,7 @@ country_event = {
 	id = 270046
 	title = "MGER29.T"
 	desc = "MGER29.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	
@@ -2921,7 +2921,7 @@ country_event = {
 	id = 270050
 	title = "MGER392.T"
 	desc = "MGER392.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	
@@ -2976,7 +2976,7 @@ country_event = {
 	id = 270051
 	title = "MGER393.T"
 	desc = "MGER393.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	
@@ -3040,7 +3040,7 @@ country_event = {
 	id = 270052
 	title = "MGER394.T"
 	desc = "MGER394.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -3103,7 +3103,7 @@ country_event = {
 	id = 270053
 	title = "MGER395.T"
 	desc = "MGER395.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -3136,7 +3136,7 @@ country_event = {
 	id = 270054
 	title = "MGER396.T"
 	desc = "MGER396.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -3186,7 +3186,7 @@ country_event = {
 	id = 270055
 	title = "MGER397.T"
 	desc = "MGER397.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -3293,7 +3293,7 @@ country_event = {
 	id = 270056
 	title = "MGER398.T"
 	desc = "MGER398.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -3326,7 +3326,7 @@ country_event = {
 	id = 270057
 	title = "MGER399.T"
 	desc = "MGER399.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -3395,7 +3395,7 @@ country_event = {
 	id = 270058
 	title = "MGER400.T"
 	desc = "MGER400.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -3450,7 +3450,7 @@ country_event = {
 	id = 270059
 	title = "MGER401.T"
 	desc = "MGER401.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -3507,7 +3507,7 @@ country_event = {
 	id = 270060
 	title = "MGER402.T"
 	desc = "MGER402.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -3592,7 +3592,7 @@ country_event = {
 	id = 270061
 	title = "MGER403.T"
 	desc = "MGER403.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -3641,7 +3641,7 @@ country_event = {
 	id = 270062
 	title = "MGER404.T"
 	desc = "MGER404.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -3677,7 +3677,7 @@ country_event = {
 	id = 270063
 	title = "MGER405.T"
 	desc = "MGER405.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -3729,7 +3729,7 @@ country_event = {
 	id = 270064
 	title = "MGER406.T"
 	desc = "MGER406.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -3785,7 +3785,7 @@ country_event = {
 	id = 270065
 	title = "MGER407.T"
 	desc = "MGER407.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -3835,7 +3835,7 @@ country_event = {
 	id = 2700650
 	title = "MGER408.T"
 	desc = "MGER408.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -5222,7 +5222,7 @@ country_event = {
 	id = 270095
 	title = "MGER77.T"
 	desc = "MGER77.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -5254,7 +5254,7 @@ country_event = {
 	id = 270096
 	title = "MGER78.T"
 	desc = "MGER78.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -5288,7 +5288,7 @@ country_event = {
 	id = 270097
 	title = "MGER79.T"
 	desc = "MGER79.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -5314,7 +5314,7 @@ country_event = {
 			lambda_country_event = {
 				title = "MGER80.T"
 				desc = "MGER80.D"
-				#picture = "german_rhine"
+				picture = "german_rhine"
 				is_triggered_only = yes
 				### Oh there will be a war allright...
 				option = { 
@@ -5336,7 +5336,7 @@ country_event = {
 	id = 270099
 	title = "MGER81.T"
 	desc = "MGER81.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -5389,7 +5389,7 @@ country_event = {
 	id = 270100
 	title = "MGER82.T"
 	desc = "MGER82.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -5413,7 +5413,7 @@ country_event = {
 	id = 270101
 	title = "MGER820.T"
 	desc = "MGER820.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -5447,7 +5447,7 @@ country_event = {
 	id = 270102
 	title = "MGER83.T"
 	desc = "MGER83.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -5557,7 +5557,7 @@ country_event = {
 	id = 270103
 	title = "MGER84.T"
 	desc = "MGER84.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -5586,7 +5586,7 @@ country_event = {
 	id = 270104
 	title = "MGER85.T"
 	desc = "MGER85.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -5622,7 +5622,7 @@ country_event = {
 	id = 2701040
 	title = "MGER850.T"
 	desc = "MGER850.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -5643,7 +5643,7 @@ country_event = {
 	id = 270105
 	title = "MGER86.T"
 	desc = "MGER86.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -5682,7 +5682,7 @@ country_event = {
 	id = 270106
 	title = "MGER87.T"
 	desc = "MGER87.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -5706,7 +5706,7 @@ country_event = {
 	id = 270107
 	title = "MGER87.T"
 	desc = "MGER87.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -5731,7 +5731,7 @@ country_event = {
 	id = 270108
 	title = "MGER87.T"
 	desc = "MGER87.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 
@@ -5757,7 +5757,7 @@ country_event = {
 	id = 270109
 	title = "MGER670.T"
 	desc = "MGER670.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -5793,7 +5793,7 @@ country_event = {
 	id = 270110
 	title = "MGER89.T"
 	desc = "MGER89.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -5826,7 +5826,7 @@ country_event = {
 	id = 270111
 	title = "MGER90.T"
 	desc = "MGER90.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -5858,7 +5858,7 @@ country_event = {
 	id = 270112
 	title = "MGER91.T"
 	desc = "MGER91.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -5916,7 +5916,7 @@ country_event = {
 	id = 270113
 	title = "MGER92.T"
 	desc = "MGER92.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -5976,7 +5976,7 @@ country_event = {
 	id = 270114
 	title = "MGER93.T"
 	desc = "MGER93.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	
@@ -6022,7 +6022,7 @@ country_event = {
 	id = 270115
 	title = "MGER94.T"
 	desc = "MGER94.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -6062,7 +6062,7 @@ country_event = {
 	id = 270116
 	title = "MGER95.T"
 	desc = "MGER95.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -6102,7 +6102,7 @@ country_event = {
 	id = 270117
 	title = "MGER96.T"
 	desc = "MGER96.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -6161,7 +6161,7 @@ country_event = {
 	id = 270118
 	title = "MGER97.T"
 	desc = "MGER97.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	
@@ -6234,7 +6234,7 @@ country_event = {
 	id = 270119
 	title = "MGER98.T"
 	desc = "MGER98.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	
@@ -6302,7 +6302,7 @@ country_event = {
 	id = 2701190
 	title = "MGER98.T"
 	desc = "MGER98.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -6332,7 +6332,7 @@ country_event = {
 	id = 270120
 	title = "MGER99.T"
 	desc = "MGER99.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	
@@ -6383,7 +6383,7 @@ country_event = {
 	id = 270121
 	title = "MGER100.T"
 	desc = "MGER100.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	
@@ -6433,7 +6433,7 @@ country_event = {
 	id = 270122
 	title = "MGER101.T"
 	desc = "MGER101.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	fire_only_once = yes 
 	
@@ -6464,7 +6464,7 @@ country_event = {
 	id = 270123
 	title = "MGER102.T"
 	desc = "MGER102.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	
@@ -6496,7 +6496,7 @@ country_event = {
 	id = 270124
 	title = "MGER103.T"
 	desc = "MGER103.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	trigger = {	
 		exists = yes
@@ -6524,7 +6524,7 @@ country_event = {
 	id = 270125
 	title = "MGER104.T"
 	desc = "MGER104.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	is_triggered_only = yes
 	

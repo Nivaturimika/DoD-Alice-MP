@@ -3585,7 +3585,7 @@ political_decisions = {
 	}
 
 	serbian_relations = {
-			#picture = romanians_marching
+			picture = romanians_marching
 
 			potential = {
 			tag = RUS
@@ -3638,7 +3638,7 @@ political_decisions = {
 	}
 
 	illyrian_relations = {
-			#picture = romanians_marching
+			picture = romanians_marching
 
 			potential = {
 			tag = RUS
@@ -3672,7 +3672,7 @@ political_decisions = {
 	}
 
 	bulgarian_relations = {
-			#picture = romanians_marching
+			picture = romanians_marching
 
 			potential = {
 			tag = RUS
@@ -4297,7 +4297,7 @@ political_decisions = {
 	# Formation of KUG
 
 	create_KUG_gov = {
-			#picture = siberiatime
+			picture = siberiatime
 
 			potential = {
 			tag = RUS
@@ -4335,7 +4335,7 @@ political_decisions = {
 	# Formation of KZG
 
 	create_KZG_gov = {
-			#picture = siberiatime
+			picture = siberiatime
 
 			potential = {
 			tag = RUS
@@ -4373,7 +4373,7 @@ political_decisions = {
 	# Formation of TRG
 
 	create_TRG_gov = {
-			#picture = siberiatime
+			picture = siberiatime
 
 			potential = {
 			tag = RUS
@@ -4411,7 +4411,7 @@ political_decisions = {
 	# Formation of TEG
 
 	create_TEG_gov = {
-			#picture = siberiatime
+			picture = siberiatime
 
 			potential = {
 			tag = RUS
@@ -4449,7 +4449,7 @@ political_decisions = {
 	# Formation of SMG
 
 	create_SMG_gov = {
-			#picture = siberiatime
+			picture = siberiatime
 
 			potential = {
 			tag = RUS
@@ -4487,7 +4487,7 @@ political_decisions = {
 	# Formation of RRG
 
 	create_RRG_gov = {
-			#picture = siberiatime
+			picture = siberiatime
 
 			potential = {
 			tag = RUS
@@ -4525,7 +4525,7 @@ political_decisions = {
 	# Formation of BLT
 
 	create_BLT_gov = {
-			#picture = siberiatime
+			picture = siberiatime
 
 			potential = {
 			tag = RUS
@@ -4564,7 +4564,7 @@ political_decisions = {
 	# Formation of YAG
 
 	create_YAG_gov = {
-			#picture = siberiatime
+			picture = siberiatime
 
 			potential = {
 			tag = RUS
@@ -4603,7 +4603,7 @@ political_decisions = {
 	# Formation of RUG
 
 	create_RUG_gov = {
-			#picture = siberiatime
+			picture = siberiatime
 
 			potential = {
 			tag = RUS
@@ -4646,7 +4646,7 @@ political_decisions = {
 	# Formation of CPL
 
 	create_CPL_gov = {
-			#picture = siberiatime
+			picture = siberiatime
 
 			potential = {
 			tag = RUS
@@ -4697,7 +4697,7 @@ political_decisions = {
 	# Formation of FIG
 
 	create_FIG_gov = {
-			#picture = siberiatime
+			picture = siberiatime
 
 			potential = {
 			tag = RUS
@@ -4736,7 +4736,7 @@ political_decisions = {
 	# Formation of TSG
 
 	create_TSG_gov = {
-		#picture = siberiatime
+		picture = siberiatime
 
 		potential = {
 		tag = RUS

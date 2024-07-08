@@ -70,7 +70,7 @@ country_event = {
 	id = 222701
 	title = "RUT2.T" 
 	desc = "RUT2.D"
-	#picture = "generalrada"
+	picture = "generalrada"
 	
 	is_triggered_only = yes	
 	fire_only_once = yes
@@ -219,7 +219,7 @@ country_event = {
 	id = 222704
 	title = "RUT5.T" 
 	desc = "RUT5.D"
-	#picture = "storming_palace_communists"
+	picture = "storming_palace_communists"
 	
 	trigger = { 
 	   tag = RUT
@@ -252,7 +252,7 @@ country_event = {
 	id = 222705
 	title = "RUT6.T" 
 	desc = "RUT6.D"
-	#picture = "storming_palace_communists"
+	picture = "storming_palace_communists"
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -565,7 +565,7 @@ country_event = {
 	id = 222706
 	title = "RUT9.T" 
 	desc = "RUT9.D"
-	#picture = "angry_cossack"
+	picture = "angry_cossack"
 	
 	major = yes
 	is_triggered_only = yes
@@ -590,7 +590,7 @@ country_event = {
 	id = 222707
 	title = "RUT10.T" 
 	desc = "RUT10.D"
-	#picture = "angry_cossack"
+	picture = "angry_cossack"
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1196,7 +1196,7 @@ country_event = {
 	id = 222716
 	title = "RUT17.T" 
 	desc = "RUT17.D"
-	#picture = "generalrada"
+	picture = "generalrada"
 	
 	is_triggered_only = yes	
 	fire_only_once = yes
@@ -1223,7 +1223,7 @@ country_event = {
 	id = 222717
 	title = "RUT18.T" 
 	desc = "RUT18.D"
-	#picture = "street_riot_2"
+	picture = "street_riot_2"
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1277,7 +1277,7 @@ country_event = {
 	id = 222718
 	title = "RUT19.T" 
 	desc = "RUT19.D"
-	#picture = "street_riot_2"
+	picture = "street_riot_2"
 	
 	major = yes
 	is_triggered_only = yes
@@ -1452,7 +1452,7 @@ country_event = {
 	id = 222723
 	title = "RUT24.T" 
 	desc = "RUT24.D"
-	#picture = "generalrada"
+	picture = "generalrada"
 	
 	is_triggered_only = yes	
 	fire_only_once = yes
@@ -1739,7 +1739,7 @@ country_event = {
 	id = 222728
 	title = "RUT27.T" 
 	desc = "RUT27.D"
-	#picture = "cossacks_soldiers"
+	picture = "cossacks_soldiers"
 	
 	is_triggered_only = yes	
 	fire_only_once = yes
@@ -1911,7 +1911,7 @@ country_event = {
 	id = 2227240
 	title = "RUT33.T" 
 	desc = "RUT33.D"
-	#picture = "street_riot_2"
+	picture = "street_riot_2"
 	
 	major = yes
 	is_triggered_only = yes

@@ -118,7 +118,7 @@ political_decisions = {
 
 
 	form_saxony = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			OR = {
 			tag = THU
@@ -157,7 +157,7 @@ political_decisions = {
 	# SGF is formed by event - This decision is just a dummy
 
 	FAKE_form_SGF = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			ai = no
 			primary_culture = south_german
@@ -192,7 +192,7 @@ political_decisions = {
 	###### POST-HOLY ROMAN EMPIRE COLLAPSE DECISIONS #####
 
 	end_the_occupation_BOH = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			tag = BOH
 			has_country_modifier = BOH_effectively_occupied
@@ -221,7 +221,7 @@ political_decisions = {
 	### Bohemia's Grand Reformation - I'm sure this will go well
 
 	the_grand_reformation_BOH = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			tag = BOH
 			NOT = { has_country_modifier = HOLY_ROMAN_EMPEROR }
@@ -371,7 +371,7 @@ political_decisions = {
 	# Its free real estate
 
 	delete_NGF = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			tag = BOH
 			NGF = { exists = yes NOT = { alliance_with = SCA in_sphere = SCA vassal_of = SCA } }
@@ -423,7 +423,7 @@ political_decisions = {
 	# Fishing for a Cassus Belli - Bring up the Hamburg Massacre
 
 	finding_massacre_BOH = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			tag = BOH
 			has_country_flag = CAE_enabled
@@ -484,7 +484,7 @@ political_decisions = {
 	}
 
 	invite_saxon_tags = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			tag = BOH
 			has_country_flag = CAE_enabled
@@ -539,7 +539,7 @@ political_decisions = {
 	# However, if Saxony had intervened in any form of northern war earlier this is replaced by a alternative decision which is a trap.
 
 	delete_saxony_BOH = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			tag = BOH
 			has_country_flag = CAE_enabled
@@ -586,7 +586,7 @@ political_decisions = {
 	# Kill Saxony - Bohemia gets trap-carded by Saxony that starts a revolt in POM and BRN
 
 	delete_saxony_BOH_fake = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			tag = BOH
 			has_country_flag = CAE_enabled
@@ -628,7 +628,7 @@ political_decisions = {
 	### Intergrating Pommerania if it exists for BOH
 
 	annex_POM_BOH = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			tag = BOH
 			has_country_flag = CAE_enabled
@@ -757,7 +757,7 @@ political_decisions = {
 	### Burgundy killed itself so now you can just conquer the west for free
 
 	conquer_the_west_SWA = {
-		#picture = german_confederation
+		picture = german_confederation
 		potential = {
 			tag = SGF
 			NOT = { has_country_flag = SGF_swabia }
@@ -806,7 +806,7 @@ political_decisions = {
 	}
 
 	conquer_the_west_CAE = {
-		#picture = german_confederation
+		picture = german_confederation
 		potential = {
 			tag = CAE
 			NOT = { has_country_flag = CAE_rhine }
@@ -862,7 +862,7 @@ political_decisions = {
 	}
 
 	conquer_the_west_NGF = {
-		#picture = german_confederation
+		picture = german_confederation
 		potential = {
 			tag = NGF
 			NOT = { has_country_flag = NGF_rhine }
@@ -920,7 +920,7 @@ political_decisions = {
 	### This gives NGF cores over the whole of the South ###
 
 	conquer_the_south_NGF = {
-		#picture = german_confederation
+		picture = german_confederation
 		potential = {
 			tag = NGF
 			has_country_flag = NGF_conquer_south
@@ -1524,7 +1524,7 @@ political_decisions = {
 	##### SCANDINAVIAN INTERGRATION DECISIONS #####
 
 	alleviate_the_hollowing = {
-		#picture = Triglav
+		picture = Triglav
 		potential = {
 			tag = SCA
 			NGF = {
@@ -1555,7 +1555,7 @@ political_decisions = {
 	}
 
 	develop_elbe_weser = {
-		#picture = Triglav
+		picture = Triglav
 		potential = {
 			tag = SCA
 			NGF = {
@@ -1588,7 +1588,7 @@ political_decisions = {
 	# This does nothing apart from make you look cool and give you one year of research
 
 	promote_nordism = {
-		#picture = Triglav
+		picture = Triglav
 		potential = {
 			tag = SCA
 			NGF = {
@@ -1618,7 +1618,7 @@ political_decisions = {
 	}
 
 	purge_junkers = {
-		#picture = Triglav
+		picture = Triglav
 		potential = {
 			tag = SCA
 			NGF = {
@@ -1696,7 +1696,7 @@ political_decisions = {
 
 
 	delete_POM = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			tag = SCA
 			POM = { exists = yes NOT = { alliance_with = SCA in_sphere = SCA vassal_of = SCA } }
@@ -1751,7 +1751,7 @@ political_decisions = {
 	## Annexing POM if it exists and NGF also exists.
 
 	annex_POM_SCA = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			tag = SCA
 			POM = { exists = yes OR = { alliance_with = SCA in_sphere = SCA vassal_of = SCA } }
@@ -1797,7 +1797,7 @@ political_decisions = {
 	# Purge Bohemian Loyalists in Pommerania
 
 	SCA_remove_BOH_cores = {
-		#picture = reichstag
+		picture = reichstag
 		potential = {
 			tag = SCA
 			any_owned_province = { is_core = BOH }
@@ -1826,7 +1826,7 @@ political_decisions = {
 	###### POST-BCW DECISIONS #####
 
 	the_swabian_affair = {
-		#picture = Triglav
+		picture = Triglav
 		potential = {
 			OR = {
 			tag = BRG
@@ -1888,7 +1888,7 @@ political_decisions = {
 	### The Burgundian Rhine - Burgundy deals with CFR
 
 	the_burgundian_rhine = {
-		#picture = Triglav
+		picture = Triglav
 		potential = {
 			OR = {
 			tag = BRG
@@ -1972,7 +1972,7 @@ political_decisions = {
 
 
 	nuke_westphalia = {
-		#picture = Triglav
+		picture = Triglav
 		potential = {
 			OR = {
 			tag = BRG
@@ -2022,7 +2022,7 @@ political_decisions = {
 
 	annex_the_free_state = {
 
-		#picture = reichstag
+		picture = reichstag
 
 		potential = {
 			OR = {
@@ -2057,7 +2057,7 @@ political_decisions = {
 
 	annex_oldenburg = {
 
-		#picture = reichstag
+		picture = reichstag
 
 		potential = {
 			OR = {
@@ -2099,7 +2099,7 @@ political_decisions = {
 
 	force_scandinavia_out_OLD = {
 
-		#picture = reichstag
+		picture = reichstag
 
 		potential = {
 			OR = {
@@ -2128,7 +2128,7 @@ political_decisions = {
 
 	annex_westphalia_post_phoenix = {
 
-		#picture = reichstag
+		picture = reichstag
 
 		potential = {
 			OR = {
@@ -2342,7 +2342,7 @@ political_decisions = {
 	## North Silesia - Free to All
 
 	ist_nord_silesia = {
-	#picture = Germania
+	picture = Germania
 		potential = {
 			tag = GER
 			has_country_flag = ubergrossdeutschland
@@ -2442,7 +2442,7 @@ political_decisions = {
 	## This is Germany Only - German Confederation is denied this.
 
 	ist_dietsland = {
-	#picture = czech_autonomy
+	picture = czech_autonomy
 		potential = {
 			tag = GER
 			has_country_flag = ubergrossdeutschland
@@ -2468,7 +2468,7 @@ political_decisions = {
 	}
 
 	ist_dietsland_radical = {
-	#picture = czech_autonomy
+	picture = czech_autonomy
 		potential = {
 			OR = {
 			tag = GER
@@ -2599,7 +2599,7 @@ political_decisions = {
 	}
 
 	GER_accepting_dutch = {
-	#picture = MarzBerlin
+	picture = MarzBerlin
 
 	potential = {
 	OR = {
@@ -2675,7 +2675,7 @@ political_decisions = {
 	#### Its time to go wear the Polish Crown ###
 
 	protector_take_out_krakow = {
-	#picture = czech_autonomy
+	picture = czech_autonomy
 
 	potential = {
 	has_country_flag = protector_of_poland
@@ -2724,7 +2724,7 @@ political_decisions = {
 	}
 
 	protector_take_out_warsaw = {
-	#picture = czech_autonomy
+	picture = czech_autonomy
 
 	potential = {
 	has_country_flag = protector_of_poland
@@ -2773,7 +2773,7 @@ political_decisions = {
 	}
 
 	protector_construct_poland = {
-	#picture = czech_autonomy
+	picture = czech_autonomy
 
 	potential = {
 	has_country_flag = protector_of_poland

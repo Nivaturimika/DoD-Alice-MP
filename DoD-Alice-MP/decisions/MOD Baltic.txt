@@ -2311,7 +2311,7 @@ political_decisions = {
 
 	PLC_KILL_KHK = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -2381,7 +2381,7 @@ political_decisions = {
 
 	PLC_KILL_ZAZ = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -2451,7 +2451,7 @@ political_decisions = {
 
 	PLC_KILL_CRI = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -2529,7 +2529,7 @@ political_decisions = {
 
 	PLC_KILL_VOR = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -2602,7 +2602,7 @@ political_decisions = {
 
 	PLC_KILL_DON = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -2674,7 +2674,7 @@ political_decisions = {
 
 	PLC_KILL_AKH = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -2750,7 +2750,7 @@ political_decisions = {
 
 	PLC_KILL_ASK = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -2825,7 +2825,7 @@ political_decisions = {
 
 	PLC_VOIVODESHIP_KHK = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -2870,7 +2870,7 @@ political_decisions = {
 
 	PLC_VOIVODESHIP_ZAZ = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -2914,7 +2914,7 @@ political_decisions = {
 
 	PLC_VOIVODESHIP_VOR = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -2959,7 +2959,7 @@ political_decisions = {
 
 	PLC_VOIVODESHIP_DON = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -3002,7 +3002,7 @@ political_decisions = {
 
 	PLC_PROTECTORATE_AKH = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -3132,7 +3132,7 @@ political_decisions = {
 
 	PLC_smolensk = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -3176,7 +3176,7 @@ political_decisions = {
 
 	PLC_lyapunov_claim = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC
@@ -3216,7 +3216,7 @@ political_decisions = {
 
 	PLC_build_shitty_muscovy = {
 
-		#picture = balticlake
+		picture = balticlake
 
 		potential = {
 			tag = PLC

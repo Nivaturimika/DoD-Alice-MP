@@ -13,7 +13,7 @@ country_event = {
 	id = 470152
 	title = "CUB3.T"
 	desc = "CUB3.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -56,7 +56,7 @@ country_event = {
 	id = 470153
 	title = "CUB30.T"
 	desc = "CUB30.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -93,7 +93,7 @@ country_event = {
 	id = 470154
 	title = "CUB4.T"
 	desc = "CUB4.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -207,7 +207,7 @@ country_event = {
 	id = 470155
 	title = "CUB5.T"
 	desc = "CUB5.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -257,7 +257,7 @@ country_event = {
 	id = 470156
 	title = "CUB6.T"
 	desc = "CUB6.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -296,7 +296,7 @@ country_event = {
 	id = 470157
 	title = "CUB7.T"
 	desc = "CUB7.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -338,7 +338,7 @@ country_event = {
 	id = 470158
 	title = "CUB8.T"
 	desc = "CUB8.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -378,7 +378,7 @@ country_event = {
 	id = 470159
 	title = "CUB9.T"
 	desc = "CUB9.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -424,7 +424,7 @@ country_event = {
 	id = 470160
 	title = "CUB10.T"
 	desc = "CUB10.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -460,7 +460,7 @@ country_event = {
 	id = 470161
 	title = "CUB11.T"
 	desc = "CUB11.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -509,7 +509,7 @@ country_event = {
 	id = 470162
 	title = "CUB110.T"
 	desc = "CUB110.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -558,7 +558,7 @@ country_event = {
 	id = 470163
 	title = "CUB111.T"
 	desc = "CUB111.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -600,7 +600,7 @@ country_event = {
 	id = 470164
 	title = "CUB12.T"
 	desc = "CUB12.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -647,7 +647,7 @@ country_event = {
 	id = 470165
 	title = "CUB13.T"
 	desc = "CUB13.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	is_triggered_only = yes
@@ -673,7 +673,7 @@ country_event = {
 	id = 470166
 	title = "CUB14.T"
 	desc = "CUB14.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	is_triggered_only = yes
@@ -699,7 +699,7 @@ country_event = {
 	id = 470167
 	title = "CUB15.T"
 	desc = "CUB15.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	is_triggered_only = yes
@@ -725,7 +725,7 @@ country_event = {
 	id = 470168
 	title = "CUB16.T"
 	desc = "CUB16.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -761,7 +761,7 @@ country_event = {
 	id = 470169
 	title = "CUB17.T"
 	desc = "CUB17.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	is_triggered_only = yes
@@ -782,7 +782,7 @@ country_event = {
 	id = 470170
 	title = "CUB18.T"
 	desc = "CUB18.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
     fire_only_once = yes 
@@ -809,7 +809,7 @@ country_event = {
 	id = 470171
 	title = "CUB19.T"
 	desc = "CUB19.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -839,7 +839,7 @@ country_event = {
 	id = 470172
 	title = "CUB20.T"
 	desc = "CUB20.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	is_triggered_only = yes
@@ -868,7 +868,7 @@ country_event = {
 	id = 470173
 	title = "CUB21.T"
 	desc = "CUB21.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -905,7 +905,7 @@ country_event = {
 	id = 470174
 	title = "CUB22.T"
 	desc = "CUB22.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	is_triggered_only = yes
@@ -927,7 +927,7 @@ country_event = {
 	id = 470175
 	title = "CUB220.T"
 	desc = "CUB220.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -975,7 +975,7 @@ country_event = {
 	id = 470176
 	title = "CUB221.T"
 	desc = "CUB221.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	is_triggered_only = yes
@@ -996,7 +996,7 @@ country_event = {
 	id = 470177
 	title = "CUB23.T"
 	desc = "CUB23.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
     fire_only_once = yes 
@@ -1024,7 +1024,7 @@ country_event = {
 	id = 470178
 	title = "CUB24.T"
 	desc = "CUB24.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -1078,7 +1078,7 @@ country_event = {
 	id = 470179
 	title = "CUB25.T"
 	desc = "CUB25.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	is_triggered_only = yes
@@ -1095,7 +1095,7 @@ country_event = {
 	id = 470180
 	title = "CUB26.T"
 	desc = "CUB26.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -1139,7 +1139,7 @@ country_event = {
 	id = 470181
 	title = "CUB27.T"
 	desc = "CUB27.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	is_triggered_only = yes
@@ -1156,7 +1156,7 @@ country_event = {
 	id = 470182
 	title = "CUB270.T"
 	desc = "CUB270.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	is_triggered_only = yes
@@ -1199,7 +1199,7 @@ country_event = {
 	id = 4701820
 	title = "CUB28.T"
 	desc = "CUB28.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -1250,7 +1250,7 @@ country_event = {
 	id = 470183
 	title = "CUB29.T"
 	desc = "CUB29.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -1303,7 +1303,7 @@ country_event = {
 	id = 470184
 	title = "CUB30.T"
 	desc = "CUB30.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
     fire_only_once = yes 
@@ -1332,7 +1332,7 @@ country_event = {
 	id = 470185
 	title = "CUB31.T"
 	desc = "CUB31.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
 	major = yes
     fire_only_once = yes 
@@ -1360,7 +1360,7 @@ country_event = {
 	id = 470186
 	title = "CUB32.T"
 	desc = "CUB32.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -1414,7 +1414,7 @@ country_event = {
 	id = 470187
 	title = "CUB33.T"
 	desc = "CUB33.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -1459,7 +1459,7 @@ country_event = {
 	id = 470188
 	title = "CUB34.T"
 	desc = "CUB34.D"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	
@@ -1523,7 +1523,7 @@ country_event = {
 	id = 470189
 	title = "Our government is being set"
 	desc = "The cuban revolution waits for nobody"
-	#picture = "sunset"
+	picture = "sunset"
 	
     fire_only_once = yes 
 	

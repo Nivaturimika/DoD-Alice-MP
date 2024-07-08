@@ -1351,7 +1351,7 @@ country_event = {
 	id = 150109
 	title = "HREBOH14.T"
 	desc = "HREBOH14.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = HEK
@@ -1397,7 +1397,7 @@ country_event = {
 	id = 150110
 	title = "HREBOH15.T"
 	desc = "HREBOH15.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1541,7 +1541,7 @@ country_event = {
 	id = 15011112
 	title = "lmao partition"
 	desc = "We have been partitioned"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 
@@ -1568,7 +1568,7 @@ country_event = {
 	id = 1501111
 	title = "HREBOHF16.T"
 	desc = "HREBOHF16.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 	
@@ -1607,7 +1607,7 @@ country_event = {
 	id = 150112
 	title = "HREBOH17.T"
 	desc = "HREBOH17.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = HAN
@@ -1677,7 +1677,7 @@ country_event = {
 	id = 150114
 	title = "HREBOH19.T"
 	desc = "HREBOH19.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 
@@ -2457,7 +2457,7 @@ country_event = {
 	id = 150123
 	title = "HREBOH28.T"
 	desc = "HREBOH28.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	fire_only_once = yes
 	
@@ -2632,7 +2632,7 @@ country_event = {
 	id = 1501251
 	title = "HREBOHF30.T"
 	desc = "HREBOHF30.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	is_triggered_only = yes
 
@@ -3031,7 +3031,7 @@ country_event = {
 	id = 150127
 	title = "HREBOH32.T"
 	desc = "HREBOH32.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 	
 	major = yes
 
@@ -3467,7 +3467,7 @@ country_event = {
 	id = 1501370
 	title = "HREBOH42.T"
 	desc = "HREBOH42.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		owns = 625
@@ -3864,7 +3864,7 @@ country_event = {
 	id = 1501391
 	title = "HREBOHF45.T"
 	desc = "HREBOHF45.D"
-	#picture = "german_rhine"
+	picture = "german_rhine"
 
 	trigger = {
 		tag = BOH
@@ -4376,7 +4376,7 @@ country_event = {
 	id = 150146
 	title = "HREBOH52.T"
 	desc = "HREBOH52.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	fire_only_once = yes
 	
@@ -4400,7 +4400,7 @@ country_event = {
 	id = 150147
 	title = "HREBOH53.T"
 	desc = "HREBOH53.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -4526,7 +4526,7 @@ country_event = {
 	id = 150149
 	title = "HREBOHF54.T"
 	desc = "HREBOHF54.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	major = yes 
 	fire_only_once = yes
@@ -5131,7 +5131,7 @@ country_event = {
 	id = 150156
 	title = "HREBOH61.T"
 	desc = "HREBOH61.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	major = yes
 	fire_only_once = yes
@@ -5228,7 +5228,7 @@ country_event = {
 	id = 1501561
 	title = "HREBOH61.T"
 	desc = "HREBOH61.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	major = yes
 	fire_only_once = yes
@@ -5327,7 +5327,7 @@ country_event = {
 	id = 1501560
 	title = "Great German War Check"
 	desc = "This is to ensure that the AI had joined 2GGW rather then refusing. If you are a player then ignore this."	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -5529,7 +5529,7 @@ country_event = {
 	id = 150160
 	title = "HREBOH65.T"
 	desc = "HREBOH65.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	major = yes
 	fire_only_once = yes
@@ -5713,7 +5713,7 @@ country_event = {
 	id = 150161
 	title = "HREBOH66.T"
 	desc = "HREBOH66.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	major = yes
 	fire_only_once = yes
@@ -5848,7 +5848,7 @@ country_event = {
 	id = 150162
 	title = "HREBOH67.T"
 	desc = "HREBOH67.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	major = yes
 	fire_only_once = yes
@@ -5988,7 +5988,7 @@ country_event = {
 	id = 6666662
 	title = "LMAOSGF1.T"
 	desc = "LMAOSGF1.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -6064,7 +6064,7 @@ country_event = {
 	id = 6666664
 	title = "LMAOSGF3.T"
 	desc = "LMAOSGF3.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -6089,7 +6089,7 @@ country_event = {
 	id = 150163
 	title = "HREBOH68.T"
 	desc = "HREBOH68.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -6368,7 +6368,7 @@ country_event = {
 	id = 150172
 	title = "HREBOH77.T"
 	desc = "HREBOH77.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	major = yes
 	fire_only_once = yes
@@ -6506,7 +6506,7 @@ country_event = {
 	id = 150173
 	title = "HREBOH78.T"
 	desc = "HREBOH78.D"	
-	#picture = "BOH_Nuremberg_Invasion"
+	picture = "BOH_Nuremberg_Invasion"
 	
 	major = yes
 

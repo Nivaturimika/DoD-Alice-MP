@@ -7288,7 +7288,7 @@ country_event = {
 	id = 78552
 	title = "PLANEW53.T"
 	desc = "PLANEW53.D" 
-	#picture = "victory_PLA"
+	picture = "victory_PLA"
 	
 	fire_only_once = yes 
 	
@@ -7319,7 +7319,7 @@ country_event = {
 	id = 78553
 	title = "PLANEW54.T"
 	desc = "PLANEW54.D" 
-	#picture = "victory_PLA"
+	picture = "victory_PLA"
 	
 	fire_only_once = yes 
 	is_triggered_only = yes
@@ -7337,7 +7337,7 @@ country_event = {
 	id = 78554
 	title = "PLANEW55.T"
 	desc = "PLANEW55.D" 
-	#picture = "victory_PLA"
+	picture = "victory_PLA"
 	
 	fire_only_once = yes 
 	
@@ -7368,7 +7368,7 @@ country_event = {
 	id = 78555
 	title = "PLANEW56.T"
 	desc = "PLANEW56.D" 
-	#picture = "victory_PLA"
+	picture = "victory_PLA"
 	
 	fire_only_once = yes 
 	
@@ -7396,7 +7396,7 @@ country_event = {
 	id = 78556
 	title = "Jesuit Land"
 	desc = "Its time for Jesus" 
-	#picture = "victory_PLA"
+	picture = "victory_PLA"
 	
 	fire_only_once = yes 
 	

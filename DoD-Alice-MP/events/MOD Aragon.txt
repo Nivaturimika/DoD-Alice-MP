@@ -553,7 +553,7 @@ country_event = {
 	id = 470117
 	title = "ARA7.T"
 	desc = "ARA7.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = ARN
@@ -715,7 +715,7 @@ country_event = {
 	id = 470118
 	title = "ARA8.T"
 	desc = "ARA8.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = ARN
@@ -1260,7 +1260,7 @@ country_event = {
 	id = 470121
 	title = "ARA11.T"
 	desc = "ARA11.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	tag = ARN
@@ -1400,7 +1400,7 @@ country_event = {
 	id = 470122
 	title = "ARA12.T"
 	desc = "ARA12.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	is_triggered_only = yes
 	
@@ -1461,7 +1461,7 @@ country_event = {
 	id = 470123
 	title = "ARA13.T"
 	desc = "ARA13.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
     is_triggered_only = yes
 	
@@ -1608,7 +1608,7 @@ country_event = {
 	id = 470124
 	title = "ARA14.T"
 	desc = "ARA14.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = ARN
@@ -1745,7 +1745,7 @@ country_event = {
 	id = 470125
 	title = "ARA15.T"
 	desc = "ARA15.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = ARN
@@ -1838,7 +1838,7 @@ country_event = {
 	id = 470126
 	title = "ARA16.T"
 	desc = "ARA16.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = ARN
@@ -1873,7 +1873,7 @@ country_event = {
 	id = 470127
 	title = "ARA17.T"
 	desc = "ARA17.D"
-	#picture = "war_ended"
+	picture = "war_ended"
 	
 	trigger = { 
 	   tag = ARN
@@ -2209,7 +2209,7 @@ country_event = {
 	id = 4701231
 	title = "ARA23.T"
 	desc = "ARA23.D"
-	#picture = "sicilian_revolution"
+	picture = "sicilian_revolution"
 	
 	trigger = { 
 	   tag = ARN
@@ -2290,7 +2290,7 @@ country_event = {
 	id = 4701241
 	title = "ARA24.T"
 	desc = "ARA24.D"
-	#picture = "sicilian_revolution"
+	picture = "sicilian_revolution"
 	
 	is_triggered_only = yes
 	
@@ -2383,7 +2383,7 @@ country_event = {
 	id = 4701251
 	title = "ARA25.T"
 	desc = "ARA25.D"
-	#picture = "sicilian_revolution"
+	picture = "sicilian_revolution"
 	
 	is_triggered_only = yes
 	
@@ -2466,7 +2466,7 @@ country_event = {
 	id = 4701261
 	title = "ARA26.T"
 	desc = "ARA26.D"
-	#picture = "sicilian_revolution"
+	picture = "sicilian_revolution"
 	
 	is_triggered_only = yes
 	
