@@ -162,7 +162,6 @@ country_event = {
 		political_reform = yes_meeting
 		political_reform = harassment
 
-		
 
 
 
@@ -170,8 +169,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 		any_pop = {
@@ -233,7 +233,6 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = gerrymandering
 
-		
 
 
 
@@ -241,8 +240,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 		change_variable = {
@@ -406,7 +406,6 @@ country_event = {
 		political_reform = yes_meeting
 		political_reform = harassment
 
-		
 
 
 
@@ -414,8 +413,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 		ai_chance = {
@@ -470,7 +470,6 @@ country_event = {
 		political_reform = jefferson_method
 		political_reform = gerrymandering
 
-		
 
 
 
@@ -478,8 +477,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 		change_variable = {
@@ -804,7 +804,6 @@ country_event = {
 		political_reform = jefferson_method
 		political_reform = gerrymandering
 
-		
 
 
 
@@ -812,8 +811,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 
@@ -862,33 +862,33 @@ country_event = {
 								#THIS=NAV,FROM=DUA
 								lambda_country_event = { # Navarran Independence Expansion - Spanish Republic has occurred and the Dual Monarchy has opted to try and break through Navarra.
 									title = "NAV111.T"
-									desc = "NAV111.D" 
+									desc = "NAV111.D"
 									# We will accept the claims of the Dual Monarchy
-									option = { 
-										name = "98740111.A" 
+									option = {
+										name = "98740111.A"
 										set_country_flag = independence_NAV
 										FROM = {
 											#THIS=(FROM=DUA),FROM=NAV
 											lambda_country_event = { #Dual-Monarchy's answer - Puppet is the only valid option
 												title = "NAV222.T"
 												desc = "NAV222.D"
-												option = { 
-													name = "98740222.A" 
+												option = {
+													name = "98740222.A"
 													diplomatic_influence = { who = FROM value = 200 }
 													relation = { who = FROM value = 50 }
 													#THIS=(FROM=NAV),FROM=DUA
 													FROM = { country_event = 987403 }
 												}
 											}
-										} 
+										}
 										ai_chance = { factor =  40 }
 									}
 									# We will remain forever loyal to Aragon
-									option = { 
+									option = {
 										name = "98740111.B"
 										set_country_flag = independence_NAV
 										country_event = 987417
-										FROM = { 
+										FROM = {
 											diplomatic_influence = { who = THIS value = -100 }
 											relation = { who = THIS value = -50 }
 										}
@@ -907,11 +907,11 @@ country_event = {
 								lambda_country_event = { # Navarran Independence Expansion - Spanish Republic has occurred and the Dual Monarchy has not opted to try and break through Navarra - THIS IS A FAILSAFE TO PREVENT SPANISH MONARCHY RELATED EVENTS FROM TRIGGERING
 									title = "NAV333.T"
 									desc = "NAV333.D"
-									option = { 
+									option = {
 										name = "98740333.A"
 										set_country_flag = independence_NAV
 										THIS = { country_event = 987417 }
-										DUA = { 
+										DUA = {
 											diplomatic_influence = { who = THIS value = -100 }
 											relation = { who = THIS value = -50 }
 										}
@@ -1050,7 +1050,7 @@ country_event = {
 									desc = "CUB2.D"
 									option = {
 										name = "CUB2.A"
-										any_pop = { limit = { culture = caribeno } consciousness = 1 militancy = 1 }		
+										any_pop = { limit = { culture = caribeno } consciousness = 1 militancy = 1 }
 									}
 								}
 								nationalvalue = nv_liberty
@@ -1068,11 +1068,11 @@ country_event = {
 									lambda_country_event = { # Navarran Independence Expansion - Spanish Republic has occurred and the Dual Monarchy has not opted to try and break through Navarra - THIS IS A FAILSAFE TO PREVENT SPANISH MONARCHY RELATED EVENTS FROM TRIGGERING
 										title = "NAV333.T"
 										desc = "NAV333.D"
-										option = { 
+										option = {
 											name = "98740333.A"
 											set_country_flag = independence_NAV
 											THIS = { country_event = 987417 }
-											DUA = { 
+											DUA = {
 												diplomatic_influence = { who = THIS value = -100 }
 												relation = { who = THIS value = -50 }
 											}
@@ -1329,77 +1329,69 @@ country_event = {
 				factor = -8
 		}
 		}
-		DUA = { country_event = { id = 470038 days = 7 } }
+		DUA = {
+			#### L'humiliation - Dual Monarchy is basically told that a bunch of Republicans just kicked their shit in. You idiot.
+			lambda_country_event = {
+				title = "SPAN19.T"
+				desc = "SPAN19.D"
+				picture = "ambush_army"
+				# Blame everyone
+				option = {
+					name = "SPAN19.A"
+					prestige = -20
+					any_pop = {
+						limit = {
+							has_pop_culture = anglois
+						}
+						ideology = { factor = 0.1 value = liberal }
+					}
+					any_pop = {
+						limit = {
+							has_pop_culture = french
+						}
+						ideology = { factor = 0.05 value = separatist }
+					}
+					any_pop = {
+						limit = {
+							has_pop_culture = english
+						}
+						ideology = { factor = 0.1 value = separatist }
+					}
+					any_pop = {
+						limit = {
+							has_pop_culture = provencal
+						}
+						ideology = { factor = 0.1 value = separatist }
+					}
+					change_variable = {
+					which = ENL_revolt
+					value = 1
+					}
+					change_variable = {
+					which = OCC_revolt
+					value = 1
+					}
+				}
+			}
+		}
 		#### Congrats on overthrowing the King and not being mowed down by the Dual Monarchy - The Caribenos still hate you and the local nobility still exists. ####
 		lambda_country_event = {
 			title = "CUB2.T"
 			desc = "CUB2.D"
 			option = {
 				name = "CUB2.A"
-				any_pop = { limit = { culture = caribeno } consciousness = 1 militancy = 1 }		
+				any_pop = { limit = { culture = caribeno } consciousness = 1 militancy = 1 }
 			}
-		}
-	}
-}
-
-#### L'humiliation - Dual Monarchy is basically told that a bunch of Republicans just kicked their shit in. You idiot.
-
-country_event = {
-	id = 470038
-	title = "SPAN19.T"
-	desc = "SPAN19.D"
-	#picture = "ambush_army"
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	# Blame everyone
-
-	option = {
-		name = "SPAN19.A"
-		prestige = -20
-		any_pop = {
-			limit = {
-				has_pop_culture = anglois
-			}
-			ideology = { factor = 0.1 value = liberal }
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = french
-			}
-			ideology = { factor = 0.05 value = separatist }
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = english
-			}
-			ideology = { factor = 0.1 value = separatist }
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = provencal
-			}
-			ideology = { factor = 0.1 value = separatist }
-		}
-		change_variable = {
-		which = ENL_revolt
-		value = 1
-		}
-		change_variable = {
-		which = OCC_revolt
-		value = 1
 		}
 	}
 }
 
 #### DUAL MONARCHY VICTORY - Dual Monarchy does a peninsular war and drags Spain back into 18th Century.
-
 country_event = {
 	id = 470039
 	title = "SPAN20.T"
 	desc = "SPAN20.D"
-	#picture = "ambush_army"
+	picture = "ambush_army"
 
 	fire_only_once = yes
 	major = yes
@@ -1431,18 +1423,6 @@ country_event = {
 		political_reform = no_trade_unions
 		political_reform = first_past_the_post
 		political_reform = underground_parties
-
-		
-
-
-
-
-
-
-
-		
-		
-
 
 		clr_country_flag = SPA_wait_DUA
 		clr_country_flag = custom_treaty_loser
@@ -1514,42 +1494,42 @@ country_event = {
 				random_list = { 50 = { reduce_pop = 0.85 } 50 = { reduce_pop = 0.65 } }
 		}
 		any_pop = {
-				limit = {
-					OR = {
-						social_movement = yes
-						political_movement = yes
-						}
-					}
-				militancy = -7
-				random_list = { 50 = { reduce_pop = 0.99 } 50 = { reduce_pop = 0.98 } }
+			limit = {
+				OR = {
+					social_movement = yes
+					political_movement = yes
+				}
+			}
+			militancy = -7
+			random_list = { 50 = { reduce_pop = 0.99 } 50 = { reduce_pop = 0.98 } }
 		}
 		any_pop = { ideology = { factor = -0.2 value = liberal } }
 		any_pop = { limit = { pop_majority_ideology = liberal } reduce_pop = 0.85 }
 		any_pop = {
-		scaled_militancy = {
-			factor = -10
-			ideology = reactionary
-		}
-		scaled_consciousness = {
-			factor = -10
-			ideology = reactionary
-		}
-		scaled_militancy = {
-			factor = -5
-			ideology = conservative
-		}
-		scaled_consciousness = {
-			factor = -5
-			ideology = conservative
-		}
-		scaled_militancy = {
-			factor = 5
-			ideology = liberal
-		}
-		scaled_consciousness = {
-			factor = 5
-			ideology = liberal
-		}
+			scaled_militancy = {
+				factor = -10
+				ideology = reactionary
+			}
+			scaled_consciousness = {
+				factor = -10
+				ideology = reactionary
+			}
+			scaled_militancy = {
+				factor = -5
+				ideology = conservative
+			}
+			scaled_consciousness = {
+				factor = -5
+				ideology = conservative
+			}
+			scaled_militancy = {
+				factor = 5
+				ideology = liberal
+			}
+			scaled_consciousness = {
+				factor = 5
+				ideology = liberal
+			}
 		}
 	}
 }
@@ -3984,7 +3964,6 @@ country_event = {
 		political_reform = gerrymandering
 		political_reform = four_year_draft
 
-		
 
 
 
@@ -3992,8 +3971,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 		money = 500000
@@ -4074,7 +4054,6 @@ country_event = {
 		political_reform = gerrymandering
 		political_reform = four_year_draft
 
-		
 
 
 
@@ -4082,8 +4061,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 		money = 500000
@@ -4544,7 +4524,6 @@ country_event = {
 		political_reform = gerrymandering
 		political_reform = four_year_draft
 
-		
 
 
 
@@ -4552,8 +4531,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 		clr_country_flag = CST_high_centralization
@@ -4595,7 +4575,6 @@ country_event = {
 		political_reform = underground_parties
 		political_reform = mandatory_service
 
-		
 
 
 
@@ -4603,8 +4582,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 		clr_country_flag = CST_high_centralization
@@ -4635,7 +4615,6 @@ country_event = {
 		political_reform = underground_parties
 		political_reform = four_year_draft
 
-		
 
 
 
@@ -4643,8 +4622,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 		clr_country_flag = CST_high_centralization
@@ -5594,7 +5574,6 @@ country_event = {
 		political_reform = underground_parties
 		political_reform = mandatory_service
 
-		
 
 
 
@@ -5602,8 +5581,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 		clr_country_flag = CST_SOLUTION
@@ -6025,7 +6005,6 @@ country_event = {
 		political_reform = proportional_representation
 		political_reform = secret_ballots
 
-		
 
 
 
@@ -6033,8 +6012,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 		election = yes
@@ -6316,7 +6296,6 @@ country_event = {
 		political_reform = yes_meeting
 		political_reform = harassment
 
-		
 
 
 
@@ -6324,8 +6303,9 @@ country_event = {
 
 
 
-		
-		
+
+
+
 
 
 		any_pop = {

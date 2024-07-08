@@ -53,25 +53,20 @@ political_decisions = {
 			has_country_modifier = liquor_prohibition
 		}
 		allow = {
-				OR = {
-					government = proletarian_dictatorship
-					government = fascist_dictatorship
-					government = fascist_monarchy
-					government = bourgeois_dictatorship
-					government = presidential_dictatorship
-					government = autonomous_dependency
-					NOT = {	
-						liberal = 50 
-					}
-					NOT = { 
-						moralism = 20
-					}
-				}
+			OR = {
+				government = proletarian_dictatorship
+				government = fascist_dictatorship
+				government = fascist_monarchy
+				government = bourgeois_dictatorship
+				government = presidential_dictatorship
+				government = autonomous_dependency
+				NOT = {	liberal = 50  }
+				NOT = { moralism = 20 }
+			}
 		}
 		effect = {
 			remove_country_modifier = liquor_prohibition
 			set_country_flag = prohibition_repealed
-
 		}
 	}
 	

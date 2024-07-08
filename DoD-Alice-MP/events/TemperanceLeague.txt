@@ -595,9 +595,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			NOT = {
-				average_consciousness = 5
-			}
+			NOT = { average_consciousness = 5 }
 		}
 	}
 	
@@ -605,9 +603,8 @@ country_event = {
 		name = "EVTOPTA180"
 		random_state = {
 			limit = { is_colonial = no }
-			any_owned = {
-				add_crime = mafia
-			}
+			any_owned = { add_crime = mafia }
+			any_pop = { consciousness = 0.5 }
 		}
 	}
 	
@@ -615,9 +612,7 @@ country_event = {
 		name = "EVTOPTB180"
 		random_state = {
 			limit = { is_colonial = no }
-			any_pop = {
-				militancy = 1
-			}
+			any_pop = { militancy = 1 }
 		}
 	}
 }
@@ -636,8 +631,8 @@ country_event = {
 			liberal = 40
 			anarcho_liberal = 40
 			AND = {
-			liberal = 20
-			anarcho_liberal = 20
+				liberal = 20
+				anarcho_liberal = 20
 			}
 			has_country_modifier = liquor_prohibition
 			has_country_flag = prohibition_repealed
