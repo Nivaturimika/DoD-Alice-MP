@@ -569,3 +569,15 @@ autonomous_dependency_modifier = {
 	suppression_points_modifier = 1	
 }
 
+ostfold_independent_spirit = {
+	trigger = { OR = { tag = OST tag = OSU } }
+	icon = 9
+	prestige = 0.01
+	research_points_modifier = 0.01
+	tax_efficiency = 0.05
+	import_cost = -0.02
+    land_organisation = 0.05
+    land_unit_start_experience = 0.05
+	tariff_efficiency_modifier = 0.02
+	global_immigrant_attract = 0.01
+}
