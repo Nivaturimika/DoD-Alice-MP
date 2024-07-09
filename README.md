@@ -2,6 +2,8 @@
 
 Multiplayer version of DoD rework, for Alice.
 
+![DoD-Alice-MP](./dod_mp.png)
+
 ## How to play?
 
 Since the game is heavily rebalanced, forget what you learnt from vanilla - it's going to be harmful:
