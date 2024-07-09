@@ -1,3 +1,6 @@
+owner = OST
+controller = OST
+add_core = OST
 trade_goods = timber
 life_rating = 15
 terrain = jungle

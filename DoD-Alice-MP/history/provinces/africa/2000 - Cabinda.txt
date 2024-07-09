@@ -1,5 +1,7 @@
-owner = SPA
-controller = SPA
+owner = OST
+controller = OST
+add_core = OST
+add_core = LOA
 add_core = KON
 trade_goods = fruit
 life_rating = 35
