@@ -64,7 +64,7 @@ country_event = {
 	option = {
 		name = "He deserves the title."
 		set_country_flag = farnese_claim
-		PAR = { all_core = { add_core = THIS }   }
+		PAR = { all_core = { add_core = THIS } }
 	}
 }
 
