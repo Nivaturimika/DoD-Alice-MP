@@ -1951,6 +1951,7 @@ liberate_country = {
 	# FROM - country scope is possible match?
 	# war target country of goal is scope
 	allowed_countries = {
+		NOT = { tag = FROM }
 		#Prevent the CB being used on substates and on countries you are at war with
 		NOT = {
 			FROM = { war_with = THIS }
@@ -1976,15 +1977,11 @@ liberate_country = {
 		}
 		OR = {
 			AND = {
-				THIS = { ai = no }
-				any_owned_province = { is_core = FROM }
-			}
-			AND = {
-				FROM = { exists = yes }
-				any_owned_province = { is_core = FROM }
-			}
-			AND = {
-				FROM = { involved_in_crisis = yes }
+				OR = {
+					THIS = { ai = no }
+					FROM = { exists = yes }
+					FROM = { involved_in_crisis = yes }
+				}
 				any_owned_province = { is_core = FROM }
 			}
 			AND = {
