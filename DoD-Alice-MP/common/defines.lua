@@ -753,6 +753,7 @@ graphics =
 alice =
 {
     ALICE_FULL_REINFORCE = 0.0,
+	ALICE_EVAL_AI_MIL_EVERYDAY = 1.0,
 }
 
 }
