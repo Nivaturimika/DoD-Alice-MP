@@ -1,5 +1,6 @@
-owner = OST
-controller = OST
+owner = OSU
+controller = OSU
+add_core = OSU
 add_core = OST
 add_core = LOA
 add_core = KON
