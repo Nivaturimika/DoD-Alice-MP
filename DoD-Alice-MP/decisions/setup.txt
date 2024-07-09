@@ -202,6 +202,22 @@ political_decisions = {
 			
 			JAP = { country_event = { id = 334700 days = 1 } }
 			BOH = {
+				add_country_modifier = {
+					name = HOLY_ROMAN_EMPEROR
+					duration = -1
+				}
+				add_country_modifier = {
+					name = BOH_prague
+					duration = -1
+				}
+				set_variable = {
+					which = IMPERIAL_GRACE
+					value = 10
+				}
+				set_variable = {
+					which = HOLLOWING_CHECK
+					value = 10
+				}
 				lambda_country_event = {
 					title = "HUNC1.T"
 					desc = "HUNC1.D"
@@ -209,22 +225,6 @@ political_decisions = {
 					option = {
 						name = "HUNC1.A"
 						prestige = -1
-						add_country_modifier = {
-							name = HOLY_ROMAN_EMPEROR
-							duration = -1
-						}
-						add_country_modifier = {
-							name = BOH_prague
-							duration = -1
-						}
-						set_variable = {
-							which = IMPERIAL_GRACE
-							value = 10
-						}
-						set_variable = {
-							which = HOLLOWING_CHECK
-							value = 10
-						}
 						DSX = { set_country_flag = the_first_incident }
 					}
 				}
