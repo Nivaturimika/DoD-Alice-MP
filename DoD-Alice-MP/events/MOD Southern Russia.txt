@@ -104,25 +104,25 @@ country_event = { #End of the neutrality of the Cossacks
 	picture = "cossack_rada"
 
 	trigger = {
-	primary_culture = cossack
-	has_country_modifier = neutrality
-	OR = {
-	1039 = { owner = { is_culture_group = tatar_group } }
-	972 = { owner = { is_culture_group = tatar_group } }
-	has_global_flag = move_CSK
-	968 = { owner = { civilized = yes } }
-	year = 1845
-	}
+		primary_culture = cossack
+		has_country_modifier = neutrality
+		OR = {
+			1039 = { owner = { is_culture_group = tatar_group } }
+			972 = { owner = { is_culture_group = tatar_group } }
+			has_global_flag = move_CSK
+			968 = { owner = { civilized = yes } }
+			year = 1845
+		}
 	}
 
 	mean_time_to_happen = {
-	days = 1
+		days = 1
 	}
 
 	option = {
-	name = "TAR4.A"
-	remove_country_modifier = neutrality
-	set_country_flag = cossack_neutrality_ended
+		name = "TAR4.A"
+		remove_country_modifier = neutrality
+		set_country_flag = cossack_neutrality_ended
 	}
 }
 
@@ -858,48 +858,41 @@ country_event = {
 	picture = "Tatar_imam"
 
 	trigger = {
-	tag = AKH
-	OR = {
-	year = 1844
-	has_country_flag = cossack_neutrality_ended
-	}
-	ASK = { exists = yes }
-	war = no
+		tag = AKH
+		OR = {
+			year = 1844
+			has_country_flag = cossack_neutrality_ended
 		}
+		ASK = { exists = yes }
+		war = no
+	}
 
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-	months = 3
+		months = 3
 	}
 
 	option = {
-	name = "TAR28.A"
-	remove_country_modifier = neutrality
-	random_owned = {
-				limit = { owner = { NOT = { has_country_flag = cossack_neutrality_ended } } }
-				owner = { set_country_flag = cossack_neutrality_ended }
-			}
-	random_owned = {
-				limit = { owner = { NOT = { has_global_flag = move_CSK } } }
-				owner = { set_global_flag = move_CSK }
-			}
-	badboy = 5
-	casus_belli = {
-				target = ASK
-				type = conquest
-				months = 24
-			}
-	war = {
+		name = "TAR28.A"
+		remove_country_modifier = neutrality
+		set_country_flag = cossack_neutrality_ended
+		set_global_flag = move_CSK
+		badboy = 5
+		casus_belli = {
+			target = ASK
+			type = conquest
+			months = 24
+		}
+		war = {
 			target = ASK
 			attacker_goal = {
 				casus_belli = conquest
 			}
 		}
-	ai_chance = {
-		factor = 80
+		ai_chance = {
+			factor = 80
 		}
-
 	}
 
 	option = {
@@ -917,62 +910,57 @@ country_event = {
 	picture = "cossack_rada"
 
 	trigger = {
-	tag = AKH
-	OR = {
-	AND = {
-	government = democracy
-	CSK = { government = democracy }
+		tag = AKH
+		OR = {
+			AND = {
+				government = democracy
+				CSK = { government = democracy }
 			}
-	AND = {
-	government = presidential_dictatorship
-	CSK = { government = presidential_dictatorship }
+			AND = {
+				government = presidential_dictatorship
+				CSK = { government = presidential_dictatorship }
 			}
 		}
-	CSK = {
-		owns = 972
-		owns = 978
-		owns = 1019
-		owns = 980
+		CSK = {
+			owns = 972
+			owns = 978
+			owns = 1019
+			owns = 980
+			war = no
+		}
 		war = no
-			}
-	war = no
-		}
+	}
 
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-	days = 10
+		days = 10
 	}
 
 	option = {
-	name = "TAR29.A"
-	CSK = { country_event = 203529 }
-	ai_chance = {
-		factor = 90
+		name = "TAR29.A"
+		CSK = {
+			lambda_country_event = {
+				title = "TAR30.T"
+				desc = "TAR30.D"
+				picture = "cossack_rada"
+				option = {
+					name = "TAR30.A"
+					inherit = FROM
+				}
+			}
+		}
+		ai_chance = {
+			factor = 90
 		}
 	}
 
 	option = {
-	name = "TAR29.B"
-	ai_chance = {
-		factor = 10
+		name = "TAR29.B"
+		ai_chance = {
+			factor = 10
 		}
 	}
-}
-
-country_event = {
-	id = 203529
-	title = "TAR30.T"
-	desc = "TAR30.D"
-	picture = "cossack_rada"
-
-	is_triggered_only = yes
-
-	option = {
-	name = "TAR30.A"
-	inherit = FROM
-	}
-
 }
 
 #########KHK's bid for unification
@@ -1444,103 +1432,151 @@ country_event = {
 	desc = "TAR41.D"
 
 	trigger = {
-	year = 1853
-	tag = CSK
-	has_country_modifier = cossack_lifestyle
+		year = 1853
+		tag = CSK
+		has_country_modifier = cossack_lifestyle
 	}
 
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-	months = 20
+		months = 20
 	}
 
 	option = {
-	name = "TAR41.A" #Break up
-	all_core = { remove_core = CSK }
-	any_owned = {
-	limit = {
-		is_core = VOR
+		name = "TAR41.A" #Break up
+		all_core = { remove_core = CSK }
+		any_owned = {
+			limit = {
+				is_core = VOR
 			}
-	secede_province = VOR
+			secede_province = VOR
 		}
-	VOR = {
-		add_country_modifier = {
-		name = cossack_lifestyle
-		duration = -1
+		VOR = {
+			add_country_modifier = {
+			name = cossack_lifestyle
+			duration = -1
 			}
-	}
-	any_owned = {
-	limit = {
-		OR = {
-		is_core = AKH
-		is_core = KAZ
-		is_core = ASK
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = AKH
+					is_core = KAZ
+					is_core = ASK
 				}
 			}
-	secede_province = AKH
+			secede_province = AKH
 		}
-	AKH = {
-		add_country_modifier = {
-		name = cossack_lifestyle
-		duration = -1
-	}
-	}
-	any_owned = {
-	limit = {
-		is_core = DON
+		AKH = {
+			add_country_modifier = {
+				name = cossack_lifestyle
+				duration = -1
 			}
-	secede_province = DON
 		}
-	DON = {
-		add_country_modifier = {
-		name = cossack_lifestyle
-		duration = -1
-	}
-	}
-	any_owned = {
-	limit = {
-		is_core = ZAZ
+		any_owned = {
+			limit = {
+				is_core = DON
 			}
-	secede_province = ZAZ
+			secede_province = DON
 		}
-	any_owned = {
-	limit = {
-		is_core = CRI
+		DON = {
+			add_country_modifier = {
+				name = cossack_lifestyle
+				duration = -1
 			}
-	secede_province = ZAZ
 		}
-	ZAZ = {
-		add_country_modifier = {
-		name = cossack_lifestyle
-		duration = -1
-	}
-	}
-	change_tag = KHK
-	any_country = {
-	limit = {
-		OR = {
-			tag = RUS
-			tag = MOS
+		any_owned = {
+			limit = {
+				is_core = ZAZ
+			}
+			secede_province = ZAZ
 		}
-		has_global_flag = GO_SOUTH_YOUNG_MAN
-	}
-	country_event = { id = 222577 days = 1 }
-	}
-	ai_chance = {
-	factor = 15
+		any_owned = {
+			limit = {
+				is_core = CRI
+			}
+			secede_province = ZAZ
+		}
+		ZAZ = {
+			add_country_modifier = {
+				name = cossack_lifestyle
+				duration = -1
+			}
+		}
+		change_tag = KHK
+		any_country = {
+			limit = {
+				OR = {
+					tag = RUS
+					tag = MOS
+				}
+				has_global_flag = GO_SOUTH_YOUNG_MAN
+			}
+			country_event = { id = 222577 days = 1 }
+		}
+		ai_chance = {
+			factor = 15
 		}
 	}
 
 	option = {
-	name = "TAR41.B" #We need a new course for our country !
-	#remove_country_modifier = cossack_lifestyle
-	any_pop = {
-	consciousness = 3
+		name = "TAR41.B" #We need a new course for our country !
+		#remove_country_modifier = cossack_lifestyle
+		any_pop = { consciousness = 3 }
+		###############
+		# Chorna Rada #
+		###############
+		lambda_country_event = {
+			title = "TAR46.T" #Opening of the Chorna Rada
+			desc = "TAR46.D"
+			option = {
+				name = "TAR46.A"
+				set_global_flag = Chorna_Rada
+				RAP = {
+					set_variable = {
+						which = unification_CSK
+						value = 0
+					}
+				}
+				prestige = 1
+				lambda_country_event = {
+					title = "TAR47.T" #Question of Serfdom and Slavery
+					desc = "TAR47.D"
+					option = {
+						name = "TAR47.A" #abolish serfdom
+						political_reform = peonage
+						political_reform = no_slavery
+						add_country_modifier = { #Economical debuff
+							name = economic_nerf_CSK
+							duration = -1
+						}
+						any_pop = {
+							militancy = -1
+							consciousness = 2
+						}
+						prestige = 3
+						country_event = { id = 203547 days = 1 }
+					}
+					option = {
+						name = "TAR47.B"
+						serfs = {
+							militancy = -1
+							consciousness = 2
+						}
+						country_event = { id = 203547 days = 1 }
+						RAP = {
+							change_variable = {
+								which = unification_CSK
+								value = 1
+							}
+						}
+					}
+				}
+			}
 		}
-	country_event = { id = 203545 days = 70 }
-	ai_chance = {
-	factor = 80
+		ai_chance = {
+			factor = 80
 		}
 	}
 }
@@ -1622,58 +1658,55 @@ country_event = {
 	desc = "TAR44.D"
 
 	trigger = {
-	tag = CSK
-	has_country_flag = Carnegie_mill
-	owns = 975
-	owns = 979
-	NOT = { has_country_flag = DON_boom }
+		tag = CSK
+		has_country_flag = Carnegie_mill
+		owns = 975
+		owns = 979
 	}
 
+	fire_only_once = yes
+
 	mean_time_to_happen = {
-	months = 70
+		months = 70
 	}
 
 	option = {
-	name = "TAR44.A"
-	set_country_flag = DON_boom
-	add_country_modifier = {
+		name = "TAR44.A"
+		add_country_modifier = {
 			name = Donbass_boom
 			duration = 3650
-	}
-	random_owned = {
-				limit = {
-					province_id = 975
-					state_scope = {
-						OR = {
-							NOT = { has_building = steel_machine_parts_factory  }
-							NOT = { has_building = iron_machine_parts_factory  }
-							NOT = { has_building = machine_parts_factory  }
-						}
+		}
+		975 = {
+			limit = {
+				owned_by = THIS
+				state_scope = {
+					OR = {
+						NOT = { has_building = steel_machine_parts_factory  }
+						NOT = { has_building = iron_machine_parts_factory  }
+						NOT = { has_building = machine_parts_factory  }
 					}
 				}
-				owner = {
-					capital = 975
-					build_factory_in_capital_state = iron_machine_parts_factory
+			}
+			owner = {
+				capital = 975
+				build_factory_in_capital_state = iron_machine_parts_factory
+			}
+		}
+		979 = {
+			limit = {
+				owned_by = THIS
+				state_scope = {
+					NOT = { has_building = steamer_shipyard }
 				}
 			}
-	random_owned = {
-				limit = {
-					province_id = 979
-					state_scope = {
-						NOT = { has_building = steamer_shipyard }
-					}
-				}
-				owner = {
-					capital = 979
-					build_factory_in_capital_state = steamer_shipyard
-				}
+			owner = {
+				capital = 979
+				build_factory_in_capital_state = steamer_shipyard
 			}
-	random_owned = {
-				limit = {
-					province_id = 978 #Kharkov
-					owned_by = CSK
-				}
-				CSK = { capital = 978 }
+		}
+		978 = {
+			limit = { owned_by = CSK }
+			CSK = { capital = 978 }
 		}
 	}
 }
@@ -1684,13 +1717,13 @@ country_event = {
 	desc = "TAR45.D"
 
 	trigger = {
-	has_country_flag = DON_boom
+		has_country_flag = Carnegie_mill
 	}
 
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-	months = 80
+		months = 80
 	}
 
 	option = {
@@ -1698,72 +1731,6 @@ country_event = {
 	prestige = 2
 	}
 }
-
-###############
-# Chorna Rada #
-###############
-
-country_event = {
-	id = 203545
-	title = "TAR46.T" #Opening of the Chorna Rada
-	desc = "TAR46.D"
-
-	is_triggered_only = yes
-
-	option = {
-	name = "TAR46.A"
-	set_global_flag = Chorna_Rada
-	RAP = {
-			set_variable = {
-				which = unification_CSK
-				value = 0
-			}
-		}
-	prestige = 1
-	country_event = { id = 203546 days = 2 }
-	}
-}
-
-country_event = {
-	id = 203546
-	title = "TAR47.T" #Question of Serfdom and Slavery
-	desc = "TAR47.D"
-
-	is_triggered_only = yes
-
-	option = {
-	name = "TAR47.A" #abolish serfdom
-	political_reform = peonage
-	political_reform = no_slavery
-	add_country_modifier = { #Economical debuff
-		name = economic_nerf_CSK
-		duration = -1
-		}
-	any_pop = {
-	militancy = -1
-	consciousness = 2
-		}
-	prestige = 3
-	country_event = { id = 203547 days = 1 }
-	}
-
-	option = {
-	name = "TAR47.B"
-	any_pop = {
-	limit = { type = serfs }
-	militancy = -1
-	consciousness = 2
-		}
-	country_event = { id = 203547 days = 1 }
-	RAP = {
-			change_variable = {
-				which = unification_CSK
-				value = 1
-			}
-		}
-	}
-}
-
 
 country_event = {
 	id = 203547
@@ -1773,11 +1740,11 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	name = "TAR48.A" #Centralization
-	political_reform = unitary
-	prestige = 1
-	country_event = { id = 203548 days = 3 }
-	RAP = {
+		name = "TAR48.A" #Centralization
+		political_reform = unitary
+		prestige = 1
+		country_event = { id = 203548 days = 3 }
+		RAP = {
 			change_variable = {
 				which = unification_CSK
 				value = 1
@@ -1786,14 +1753,14 @@ country_event = {
 	}
 
 	option = {
-	name = "TAR48.B" #Confederation
-	political_reform = confederalism
-	#modifier political debuff
-	add_country_modifier = {
-		name = political_nerf_CSK
-		duration = -1
+		name = "TAR48.B" #Confederation
+		political_reform = confederalism
+		#modifier political debuff
+		add_country_modifier = {
+			name = political_nerf_CSK
+			duration = -1
 		}
-	country_event = { id = 203548 days = 3 }
+		country_event = { id = 203548 days = 3 }
 	}
 }
 
