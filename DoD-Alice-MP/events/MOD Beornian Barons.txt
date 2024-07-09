@@ -5,30 +5,30 @@ country_event = {
 	desc = "NAN1.D" 
 	
 	trigger = { 
-	tag = LOT 
-	has_country_flag = bigger_lot 
-	NOT = { has_country_flag = dealt_with_NAN } 
-	NAN = { exists = no } 
-	owns = 2348
+		tag = LOT 
+		has_country_flag = bigger_lot 
+		NOT = { has_country_flag = dealt_with_NAN } 
+		NAN = { exists = no } 
+		owns = 2348
 	}
 	
 	mean_time_to_happen = { 
-	days = 1 
+		days = 1 
 	}
 	
 	option = { 
-	name = "NAN1.A"
-	add_accepted_culture = beornian
-	set_country_flag = dealt_with_NAN 
+		name = "NAN1.A"
+		add_accepted_culture = beornian
+		set_country_flag = dealt_with_NAN 
 	} 
 	
 	option = { 
-	name = "NAN1.B"
-	add_country_modifier = { 
-	name = opened_the_pampas 
-	duration = 9000
-	}
-	set_country_flag = dealt_with_NAN 
+		name = "NAN1.B"
+		add_country_modifier = { 
+			name = opened_the_pampas 
+			duration = 9000
+		}
+		set_country_flag = dealt_with_NAN 
 	}
 }
 

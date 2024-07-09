@@ -1,14 +1,8 @@
-political_decisions = {
-	
+political_decisions = {	
 	setup_decision = {
 		potential = {
-			tag = CLN
+			ai = yes
 			NOT = { has_global_flag = setup_complete }
-		}
-		
-		allow = {
-			war = no
-			is_vassal = no
 		}
 		
 		effect = {
@@ -99,14 +93,14 @@ political_decisions = {
 			}				
 			any_country = {
 				limit = {
-				OR = {
-					is_culture_group = dravidian
-					is_culture_group = south_asian
-					is_culture_group = chinese
-					is_culture_group = southeast_asian
-					is_culture_group = austronesian
-					is_culture_group = central_asian
-				}
+					OR = {
+						is_culture_group = dravidian
+						is_culture_group = south_asian
+						is_culture_group = chinese
+						is_culture_group = southeast_asian
+						is_culture_group = austronesian
+						is_culture_group = central_asian
+					}
 				}
 				add_country_modifier = {
 					name = selon_stagnation
@@ -207,7 +201,34 @@ political_decisions = {
 			LWE = { small_arms = 100 canned_food = 100 liquor = 50 artillery = 50 treasury = 900000 set_country_flag = aloysuis }
 			
 			JAP = { country_event = { id = 334700 days = 1 } }
-			BOH = { country_event = { id = 150000 days = 0 } }
+			BOH = {
+				lambda_country_event = {
+					title = "HUNC1.T"
+					desc = "HUNC1.D"
+					picture = "german_rhine"
+					option = {
+						name = "HUNC1.A"
+						prestige = -1
+						add_country_modifier = {
+							name = HOLY_ROMAN_EMPEROR
+							duration = -1
+						}
+						add_country_modifier = {
+							name = BOH_prague
+							duration = -1
+						}
+						set_variable = {
+							which = IMPERIAL_GRACE
+							value = 10
+						}
+						set_variable = {
+							which = HOLLOWING_CHECK
+							value = 10
+						}
+						DSX = { set_country_flag = the_first_incident }
+					}
+				}
+			}
 			AUS = {
 				lambda_country_event = {
 					title = "SGF1.T"
@@ -809,90 +830,11 @@ political_decisions = {
 					owner = { set_country_flag = reactionary_election_win }
 				}
 			}
-			
-			### AI Personality ###
-			any_country = {
-				limit = {
-					ai = yes
-					exists = yes
-				}
-				random = {
-					chance = 10
-					remove_country_modifier = malevolent_ai
-					remove_country_modifier = benefactor_ai
-					remove_country_modifier = coward_ai
-					add_country_modifier = { name = benefactor_ai duration = 8030 }
-				}
-				random = {
-					chance = 10
-					remove_country_modifier = malevolent_ai
-					remove_country_modifier = benefactor_ai
-					remove_country_modifier = coward_ai
-					add_country_modifier = { name = malevolent_ai duration = 8030 }
-				}
-				random = {
-					chance = 10
-					remove_country_modifier = malevolent_ai
-					remove_country_modifier = benefactor_ai
-					remove_country_modifier = coward_ai
-					add_country_modifier = { name = coward_ai duration = 8030 }
-				}
-				random_list = {
-					20 = { add_country_modifier = { name = picking_personality duration = 7300 } }
-					20 = { add_country_modifier = { name = picking_personality duration = 9125 } }
-					20 = { add_country_modifier = { name = picking_personality duration = 8030 } }
-					20 = { add_country_modifier = { name = picking_personality duration = 10220 } }
-					20 = { add_country_modifier = { name = picking_personality duration = 10950 } }
-				}
-			}
 			set_global_flag = setup_complete
 		}
 		
 		ai_will_do = {
 			factor = 1
-		}
-	}
-	
-	pick_AI_personality = {
-		picture = constantinople
-		potential = {
-			ai = yes
-			year = 1837
-			month = 8
-			NOT = { month = 10 }
-			NOT = {
-				has_country_modifier = picking_personality
-				has_country_flag = ghost_country
-				tag = RAP
-			}
-		}
-
-		allow = {
-		}
-
-		effect = {
-			remove_country_modifier = malevolent_ai
-			remove_country_modifier = benefactor_ai
-			remove_country_modifier = coward_ai
-			random = {
-				chance = 10
-				add_country_modifier = { name = benefactor_ai duration = 8030 }
-			}
-			random = {
-				chance = 10
-				add_country_modifier = { name = malevolent_ai duration = 8030 }
-			}
-			random = {
-				chance = 10
-				add_country_modifier = { name = coward_ai duration = 8030 }
-			}
-			random_list = {
-				20 = { add_country_modifier = { name = picking_personality duration = 7300 } }
-				20 = { add_country_modifier = { name = picking_personality duration = 9125 } }
-				20 = { add_country_modifier = { name = picking_personality duration = 8030 } }
-				20 = { add_country_modifier = { name = picking_personality duration = 10220 } }
-				20 = { add_country_modifier = { name = picking_personality duration = 10950 } }
-			}
 		}
 	}
 }

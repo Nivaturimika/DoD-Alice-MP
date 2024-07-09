@@ -4,34 +4,6 @@
 
 #With a MTTH of 6 Months. A event triggers that randomly gives a GP the ability to annex Bengal under the pretence of "Protecting Western Assets"
 
-#### Bengal Neutrality - To prevent Bengal killing everyone in India before 1850 ####
-
-country_event = {
-	id = 8910016
-	title = "HND23.T"
-	desc = "HND23.D"
-	picture = "india"
-
-	trigger = {
-	tag = BEN
-	NOT = { has_country_flag = neutral_tiger }
-	}
-
-	mean_time_to_happen = {
-	days = 1
-	}
-
-	option = {
-	name = "HND23.A"
-	prestige = -1
-	set_country_flag = neutral_tiger
-	add_country_modifier = {
-		name = neutrality
-			duration = -1
-	}
-	}
-}
-
 ############ THE BENGAL AFFAIR #######
 
 country_event = {
@@ -41,11 +13,11 @@ country_event = {
 	picture = "delhi_sultan"
 
 	trigger = {
-	tag = MUG
-	exists = BEN
-	year = 1849
-	NOT = { has_country_flag = a_mughal_affair }
-	NOT = { has_global_flag = MythicalRealmofHindustan }
+		tag = MUG
+		exists = BEN
+		year = 1849
+		NOT = { has_country_flag = a_mughal_affair }
+		NOT = { has_global_flag = MythicalRealmofHindustan }
 	}
 
 	mean_time_to_happen = {
@@ -53,25 +25,34 @@ country_event = {
 	}
 
 	option = {
-	name = "HND01.A"
-	prestige = 10
-	set_country_flag = a_mughal_affair
-	set_country_flag = a_foolish_war
-	BEN = { remove_country_modifier = neutrality country_event = 891002 }
-	casus_belli = {
-				target = BEN
-				type = conquest_any
-				months = 60
-	}
-	war = {
-		target = BEN
-		attacker_goal = {
-		casus_belli = conquest_any
-						}
-		defender_goal = {
-		casus_belli = status_quo
-						}
+		name = "HND01.A"
+		prestige = 10
+		set_country_flag = a_mughal_affair
+		set_country_flag = a_foolish_war
+		BEN = {
+			lambda_country_event = {
+				title = "HND03.T"
+				desc = "HND03.D"
+				picture = "delhi_sultan"
+				option = {
+					name = "HND03.A"
+					add_country_modifier = {
+						name = taiping_draft
+						duration = 1095
+					}
+				}
 			}
+		}
+		casus_belli = {
+			target = BEN
+			type = conquest_any
+			months = 60
+		}
+		war = {
+			target = BEN
+			attacker_goal = { casus_belli = conquest_any }
+			defender_goal = { casus_belli = status_quo }
+		}
 	}
 }
 
@@ -100,23 +81,6 @@ country_event = {
 	set_country_flag = a_mughal_affair
 	set_country_flag = Mughals_unstable
 	}
-}
-
-country_event = {
-	id = 891002
-	title = "HND03.T"
-	desc = "HND03.D"
-	picture = "delhi_sultan"
-
-	is_triggered_only = yes
-
-	option = {
-	name = "HND03.A"
-	add_country_modifier = {
-		name = taiping_draft
-		duration = 1095
-}
-}
 }
 
 ############# THE MUGHAL COLLAPSE ##############
@@ -270,7 +234,6 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = underground_parties
 
-	
 
 
 
@@ -279,7 +242,8 @@ country_event = {
 
 
 
-	
+
+
 	treasury = 10000
 	ammunition = 1000
 	small_arms = 1000
@@ -302,7 +266,6 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = underground_parties
 
-	
 
 
 
@@ -311,7 +274,8 @@ country_event = {
 
 
 
-	
+
+
 	treasury = 10000
 	ammunition = 1000
 	small_arms = 1000
@@ -334,7 +298,6 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = underground_parties
 
-	
 
 
 
@@ -343,7 +306,8 @@ country_event = {
 
 
 
-	
+
+
 	treasury = 10000
 	ammunition = 1000
 	small_arms = 1000
@@ -366,7 +330,6 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = underground_parties
 
-	
 
 
 
@@ -375,7 +338,8 @@ country_event = {
 
 
 
-	
+
+
 	treasury = 10000
 	ammunition = 1000
 	small_arms = 1000
@@ -976,7 +940,6 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = underground_parties
 
-		
 
 
 
@@ -985,7 +948,8 @@ country_event = {
 
 
 
-		
+
+
 	}
 	ai_chance = {
 			factor = 100
@@ -1066,7 +1030,6 @@ country_event = {
 		political_reform = first_past_the_post
 		political_reform = underground_parties
 
-		
 
 
 
@@ -1075,7 +1038,8 @@ country_event = {
 
 
 
-		
+
+
 	}
 	ai_chance = {
 			factor = 100

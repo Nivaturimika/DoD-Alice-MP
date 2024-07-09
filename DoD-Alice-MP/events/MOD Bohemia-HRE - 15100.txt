@@ -5468,16 +5468,16 @@ country_event = {
 		remove_country_modifier = HOLY_ROMAN_EMPEROR
 		remove_country_modifier = BOH_anti_war_ruling_class
 		add_country_modifier = {
-		name = BOH_effectively_occupied
-		duration = -1
+			name = BOH_effectively_occupied
+			duration = 2190
 		}
 		add_country_modifier = {
-		name = BOH_shattered_reicharmee
-		duration = -1
+			name = BOH_shattered_reicharmee
+			duration = 2190
 		}
 		add_country_modifier = {
 			name = war_justification_blocked
-			duration = -1
+			duration = 2190
 		}
 		remove_country_modifier = BOH_unshakable_autocracy
 		remove_country_modifier = BOH_powerful_reichsarmee
@@ -6290,11 +6290,11 @@ country_event = {
 		tag = BOH
 		has_country_modifier = HOLY_ROMAN_EMPEROR
 		NOT = {
-		OR = {
-			government = hms_government
-			government = prussian_constitutionalism
-			government = absolute_monarchy
-		}
+			OR = {
+				government = hms_government
+				government = prussian_constitutionalism
+				government = absolute_monarchy
+			}
 		}
 		war = no
 	}
@@ -6306,14 +6306,14 @@ country_event = {
 	option = {
 		name = "HREBOH77.A"
 		change_variable = {
-		which = IMPERIAL_GRACE
-		value = -20
+			which = IMPERIAL_GRACE
+			value = -20
 		}
 		prestige_factor = -0.50
 		government = hms_government
 		any_pop = {
-		militancy = -9
-		consciousness = -9
+			militancy = -9
+			consciousness = -9
 		}
 		clr_country_flag = THU_protected
 		clr_global_flag = GREAT_GERMAN_WAR_ACTIVE
@@ -6323,16 +6323,16 @@ country_event = {
 		remove_country_modifier = BOH_anti_war_ruling_class
 		clr_country_flag = second_great_german_war_possible
 		add_country_modifier = {
-		name = BOH_effectively_occupied
-		duration = -1
+			name = BOH_effectively_occupied
+			duration = 2190
 		}
 		add_country_modifier = {
-		name = BOH_shattered_reicharmee
-		duration = -1
+			name = BOH_shattered_reicharmee
+			duration = 2190
 		}
 		add_country_modifier = {
 			name = war_justification_blocked
-			duration = -1
+			duration = 2190
 		}
 		remove_country_modifier = BOH_unshakable_autocracy
 		remove_country_modifier = BOH_powerful_reichsarmee

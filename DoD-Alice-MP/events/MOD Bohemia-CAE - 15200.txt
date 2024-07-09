@@ -146,456 +146,191 @@ country_event = {
 				factor = 3
 			}
 		}
-		random_owned = {
-		limit = { owner = { NOT = { government = hms_government } } }
-		owner = { country_event = 152002 }
-		}
-		random_owned = {
-		limit = { owner = { government = hms_government } }
-		owner = { country_event = { id = 152003 days = 7 } }
-		}
-	}
-}
-
-## The Bohemian Constitution - This should relieve the liberal pressure for now. Hopefully.
-
-country_event = {
-	id = 152002
-	title = "CAEBOH3.T"
-	desc = "CAEBOH3.D"
-	picture = "BOH_gov"
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = "CAEBOH3.A"
-		country_event = { id = 152003 days = 7 }
-		remove_country_modifier = BOH_unshakable_autocracy
-		nationalvalue = nv_equality
-		government = hms_government
-		ruling_party_ideology = conservative
-		political_reform = appointed
-		political_reform = wealth_voting
-		political_reform = yes_meeting
-		political_reform = censored_press
-		political_reform = no_trade_unions
-		political_reform = first_past_the_post
-		political_reform = gerrymandering
-		political_reform = culture_voting_only
-
-		
-
-
-
-
-
-
-
-		
-		
-
-
-		any_pop = {
-			limit = {
-			OR = {
-				has_pop_culture = czech
-				has_pop_culture = north_german
-			}
-			}
-			scaled_militancy = {
-				ideology = reactionary
-				factor = 2
-			}
-			scaled_consciousness = {
-				ideology = reactionary
-				factor = 2
-			}
-			scaled_militancy = {
-				ideology = conservative
-				factor = 1
-			}
-			scaled_consciousness = {
-				ideology = conservative
-				factor = 1
-			}
-			scaled_militancy = {
-				ideology = liberal
-				factor = -8
-			}
-			scaled_consciousness = {
-				ideology = liberal
-				factor = -8
-			}
-		}
-		any_pop = {
-			limit = {
-			has_pop_culture = old_czech
-			}
-			scaled_militancy = {
-				ideology = reactionary
-				factor = 1
-			}
-			scaled_consciousness = {
-				ideology = reactionary
-				factor = 1
-			}
-			scaled_militancy = {
-				ideology = liberal
-				factor = -6
-			}
-			scaled_consciousness = {
-				ideology = liberal
-				factor = -6
-			}
-		}
-	}
-}
-
-## The Diplomatic Collapse - Kills off all Diplomatic Points - Scwartz is able to barely recover relations with some Elbian nations but the rest are a lost cause.
-
-country_event = {
-	id = 152003
-	title = "CAEBOH4.T"
-	desc = "CAEBOH4.D"
-	picture = "meeting_german_princes"
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = "CAEBOH4.A"
-		country_event = { id = 152004 days = 7 }
-		add_country_modifier = {
-		name = BOH_diplomatic_collapse
-		duration = -1
-		}
-		add_country_modifier = {
-		name = war_justification_blocked
-		duration = -1
-		}
-		any_country = {
-			limit = {
-			is_culture_group = germanic
-			NOT = { tag = SGF }
-			NOT = { primary_culture = south_german }
-			NOT = { primary_culture = north_german }
-			}
-			leave_alliance = BOH
-			relation = { who = BOH value = -400 }
-		}
-		any_country = {
-			limit = {
-				primary_culture = south_german
-			}
-			leave_alliance = BOH
-			relation = { who = BOH value = -400 }
-		}
-		any_country = {
-			limit = {
-			primary_culture = north_german
-			}
-			relation = { who = BOH value = 100 }
-		}
-		diplomatic_influence = { who = SAX value = 200 }
-		diplomatic_influence = { who = THU value = 200 }
-		diplomatic_influence = { who = SGF value = -400 }
-		relation = { who = SGF value = 325 }
-		any_country = {
-			limit = {
-			OR = {
-				tag = THU
-				tag = SAX
-			}
-			exists = yes
-			capital = 534
-			}
-			relation = { who = THIS value = 400 }
-			relation = { who = SCA value = -400 }
-		}
-		any_country = {
-			limit = {
-			tag = SAX
-			NOT = { capital = 534 }
-			}
-			relation = { who = THIS value = -400 }
-			relation = { who = SCA value = 400 }
-		}
-		any_pop = {
-			limit = {
-			has_pop_culture = north_german
-			}
-			scaled_militancy = {
-				ideology = reactionary
-				factor = -2
-			}
-			scaled_consciousness = {
-				ideology = reactionary
-				factor = -2
-			}
-			scaled_militancy = {
-				ideology = conservative
-				factor = -2
-			}
-			scaled_consciousness = {
-				ideology = conservative
-				factor = -2
-			}
-			scaled_militancy = {
-				ideology = liberal
-				factor = -2
-			}
-			scaled_consciousness = {
-				ideology = liberal
-				factor = -2
+		## The Diplomatic Collapse - Kills off all Diplomatic Points - Scwartz is able to barely recover relations with some Elbian nations but the rest are a lost cause.
+		lambda_country_event = {
+			id = 152003
+			title = "CAEBOH4.T"
+			desc = "CAEBOH4.D"
+			picture = "meeting_german_princes"
+			option = {
+				name = "CAEBOH4.A"
+				## The Complete Collapse of the Reichsarmee - Well, that's a shame
+				lambda_country_event = {
+					title = "CAEBOH5.T"
+					desc = "CAEBOH5.D"
+					picture = "bohemian_march"
+					option = {
+						name = "CAEBOH5.A"
+						add_country_modifier = {
+							name = BOH_shattered_reicharmee
+							duration = 2190
+						}
+						remove_country_modifier = BOH_powerful_reichsarmee
+						remove_country_modifier = BOH_subpar_reichsarmee
+						remove_country_modifier = BOH_grand_reichsarmee
+						remove_country_modifier = BOH_incapable_army
+						soldiers = { militancy = 2 consciousness = 2 }
+						officers = { militancy = 4 consciousness = 4 }
+						set_country_flag = BOH_grand_reforms_possible
+					}
+				}
+				add_country_modifier = {
+					name = BOH_diplomatic_collapse
+					duration = 14600
+				}
+				add_country_modifier = {
+					name = war_justification_blocked
+					duration = 14600
+				}
+				any_country = {
+					limit = {
+						is_culture_group = germanic
+						NOT = { tag = SGF }
+						NOT = { primary_culture = south_german }
+						NOT = { primary_culture = north_german }
+					}
+					leave_alliance = BOH
+				}
+				diplomatic_influence = { who = SAX value = 200 }
+				diplomatic_influence = { who = THU value = 200 }
+				diplomatic_influence = { who = SGF value = -400 }
+				any_pop = {
+					limit = { has_pop_culture = north_german }
+					scaled_militancy = {
+						ideology = reactionary
+						factor = -2
+					}
+					scaled_consciousness = {
+						ideology = reactionary
+						factor = -2
+					}
+					scaled_militancy = {
+						ideology = conservative
+						factor = -2
+					}
+					scaled_consciousness = {
+						ideology = conservative
+						factor = -2
+					}
+					scaled_militancy = {
+						ideology = liberal
+						factor = -2
+					}
+					scaled_consciousness = {
+						ideology = liberal
+						factor = -2
+					}
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = south_german
+							has_pop_culture = rheinish
+							has_pop_culture = swabian
+						}
+					}
+					scaled_militancy = {
+						ideology = reactionary
+						factor = 2
+					}
+					scaled_consciousness = {
+						ideology = reactionary
+						factor = 2
+					}
+					scaled_militancy = {
+						ideology = conservative
+						factor = 2
+					}
+					scaled_consciousness = {
+						ideology = conservative
+						factor = 2
+					}
+					scaled_militancy = {
+						ideology = liberal
+						factor = 2
+					}
+					scaled_consciousness = {
+						ideology = liberal
+						factor = 2
+					}
+				}
 			}
 		}
-		any_pop = {
-			limit = {
-			OR = {
-				has_pop_culture = south_german
-				has_pop_culture = rheinish
-				has_pop_culture = swabian
-			}
-			}
-			scaled_militancy = {
-				ideology = reactionary
-				factor = 2
-			}
-			scaled_consciousness = {
-				ideology = reactionary
-				factor = 2
-			}
-			scaled_militancy = {
-				ideology = conservative
-				factor = 2
-			}
-			scaled_consciousness = {
-				ideology = conservative
-				factor = 2
-			}
-			scaled_militancy = {
-				ideology = liberal
-				factor = 2
-			}
-			scaled_consciousness = {
-				ideology = liberal
-				factor = 2
-			}
-		}
-	}
-}
-
-## The Complete Collapse of the Reichsarmee - Well, that's a shame
-
-country_event = {
-	id = 152004
-	title = "CAEBOH5.T"
-	desc = "CAEBOH5.D"
-	picture = "bohemian_march"
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = "CAEBOH5.A"
-		add_country_modifier = {
-		name = BOH_shattered_reicharmee
-		duration = -1
-		}
-		remove_country_modifier = BOH_powerful_reichsarmee
-		remove_country_modifier = BOH_subpar_reichsarmee
-		remove_country_modifier = BOH_grand_reichsarmee
-		remove_country_modifier = BOH_incapable_army
-		soldiers = {
-			militancy = 2
-			consciousness = 2
-		}
-		officers = {
-			militancy = 4
-			consciousness = 4
-		}
-		set_country_flag = BOH_grand_reforms_possible
-	}
-}
-
-#### Outro for HRE Collapse - This is if Bohemia been dismantled ####
-
-##### The Coronation of the "Bohemian Emperor" (which is basically a practical joke at this point)
-
-country_event = {
-	id = 152005
-	title = "CAEBOH6.T"
-	desc = "CAEBOH6.D"
-	picture = "BOH_throne"
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = "CAEBOH5.A"
-		relation = { who = SGF value = -400 }
-		diplomatic_influence = { who = SGF value = -400 }
-		remove_country_modifier = BOH_effectively_occupied
-		set_country_flag = BOH_occupation_ending
-		country_event = { id = 152006 days = 0 }
-		prestige = -10
-		any_pop = {
-			limit = {
-			OR = {
-				has_pop_culture = czech
-				has_pop_culture = north_german
-			}
-			}
-			scaled_militancy = {
-				ideology = reactionary
-				factor = -4
-			}
-			scaled_consciousness = {
-				ideology = reactionary
-				factor = -4
-			}
-			scaled_militancy = {
-				ideology = conservative
-				factor = -2
-			}
-			scaled_consciousness = {
-				ideology = conservative
-				factor = -2
-			}
-			scaled_militancy = {
-				ideology = liberal
-				factor = 3
-			}
-			scaled_consciousness = {
-				ideology = liberal
-				factor = 3
-			}
-		}
-		any_pop = {
-			limit = {
-			has_pop_culture = old_czech
-			}
-			scaled_militancy = {
-				ideology = reactionary
-				factor = -1
-			}
-			scaled_consciousness = {
-				ideology = reactionary
-				factor = -1
-			}
-			scaled_militancy = {
-				ideology = liberal
-				factor = 5
-			}
-			scaled_consciousness = {
-				ideology = liberal
-				factor = 5
-			}
-		}
-	}
-}
-
-## A Enforced Constitution - Bohemia and Burgundy forcing a dysfunctional but democratic constitution onto Bohemia
-
-## The Liberals get everything to the point where it actively harms the country ###
-
-country_event = {
-	id = 152006
-	title = "CAEBOH7.T"
-	desc = "CAEBOH7.D"
-	picture = "BOH_gov"
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = "CAEBOH7.A"
-		country_event = { id = 152007 days = 0 }
-		set_country_flag = siggy_is_doomed
-		government = hms_government
-		nationalvalue = nv_equality
-		ruling_party_ideology = conservative
-		political_reform = wealth_voting
-		political_reform = yes_meeting
-		political_reform = censored_press
-		political_reform = no_trade_unions
-		political_reform = secret_ballots
-		political_reform = population_equal_weight
-		political_reform = proportional_representation
-		political_reform = culture_voting_only
-
-		
-
-
-
-
-
-
-
-		
-		
-
-
-		any_pop = {
-			limit = {
-			OR = {
-				has_pop_culture = czech
-				has_pop_culture = north_german
-			}
-			}
-			scaled_militancy = {
-				ideology = reactionary
-				factor = 4
-			}
-			scaled_consciousness = {
-				ideology = reactionary
-				factor = 4
-			}
-			scaled_militancy = {
-				ideology = conservative
-				factor = 2
-			}
-			scaled_consciousness = {
-				ideology = conservative
-				factor = 2
-			}
-			scaled_militancy = {
-				ideology = liberal
-				factor = -9
-			}
-			scaled_consciousness = {
-				ideology = liberal
-				factor = -9
-			}
-		}
-		any_pop = {
-			limit = {
-			has_pop_culture = old_czech
-			}
-			scaled_militancy = {
-				ideology = reactionary
-				factor = 2
-			}
-			scaled_consciousness = {
-				ideology = reactionary
-				factor = 2
-			}
-			scaled_militancy = {
-				ideology = conservative
-				factor = 1
-			}
-			scaled_consciousness = {
-				ideology = conservative
-				factor = 1
-			}
-			scaled_militancy = {
-				ideology = liberal
-				factor = -5
-			}
-			scaled_consciousness = {
-				ideology = liberal
-				factor = -5
+		if = {
+			limit = { government != hms_government }
+			## The Bohemian Constitution - This should relieve the liberal pressure for now. Hopefully.
+			lambda_country_event = {
+				title = "CAEBOH3.T"
+				desc = "CAEBOH3.D"
+				picture = "BOH_gov"
+				option = {
+					name = "CAEBOH3.A"
+					remove_country_modifier = BOH_unshakable_autocracy
+					nationalvalue = nv_equality
+					government = hms_government
+					ruling_party_ideology = conservative
+					political_reform = appointed
+					political_reform = wealth_voting
+					political_reform = yes_meeting
+					political_reform = censored_press
+					political_reform = no_trade_unions
+					political_reform = first_past_the_post
+					political_reform = gerrymandering
+					political_reform = culture_voting_only
+					any_pop = {
+						limit = {
+							OR = {
+								has_pop_culture = czech
+								has_pop_culture = north_german
+							}
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 2
+						}
+						scaled_consciousness = {
+							ideology = reactionary
+							factor = 2
+						}
+						scaled_militancy = {
+							ideology = conservative
+							factor = 1
+						}
+						scaled_consciousness = {
+							ideology = conservative
+							factor = 1
+						}
+						scaled_militancy = {
+							ideology = liberal
+							factor = -8
+						}
+						scaled_consciousness = {
+							ideology = liberal
+							factor = -8
+						}
+					}
+					any_pop = {
+						limit = {
+							has_pop_culture = old_czech
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1
+						}
+						scaled_consciousness = {
+							ideology = reactionary
+							factor = 1
+						}
+						scaled_militancy = {
+							ideology = liberal
+							factor = -6
+						}
+						scaled_consciousness = {
+							ideology = liberal
+							factor = -6
+						}
+					}
+				}
 			}
 		}
 	}

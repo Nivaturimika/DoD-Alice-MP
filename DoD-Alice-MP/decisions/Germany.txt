@@ -210,9 +210,155 @@ political_decisions = {
 		effect = {
 			prestige = 1
 			remove_country_modifier = BOH_effectively_occupied
-			country_event = { id = 152005 days = 31 }
+			#### Outro for HRE Collapse - This is if Bohemia been dismantled ####
+			## A Enforced Constitution - Bohemia and Burgundy forcing a dysfunctional but democratic constitution onto Bohemia
+			##### The Coronation of the "Bohemian Emperor" (which is basically a practical joke at this point)
+			lambda_country_event = {
+				title = "CAEBOH6.T"
+				desc = "CAEBOH6.D"
+				picture = "BOH_throne"
+				option = {
+					name = "CAEBOH5.A"
+					relation = { who = SGF value = -400 }
+					diplomatic_influence = { who = SGF value = -400 }
+					remove_country_modifier = BOH_effectively_occupied
+					set_country_flag = BOH_occupation_ending
+					## The Liberals get everything to the point where it actively harms the country ###
+					lambda_country_event = {
+						title = "CAEBOH7.T"
+						desc = "CAEBOH7.D"
+						picture = "BOH_gov"
+						option = {
+							name = "CAEBOH7.A"
+							country_event = { id = 152007 days = 0 }
+							set_country_flag = siggy_is_doomed
+							government = hms_government
+							nationalvalue = nv_equality
+							ruling_party_ideology = conservative
+							political_reform = wealth_voting
+							political_reform = yes_meeting
+							political_reform = censored_press
+							political_reform = no_trade_unions
+							political_reform = secret_ballots
+							political_reform = population_equal_weight
+							political_reform = proportional_representation
+							political_reform = culture_voting_only
+							any_pop = {
+								limit = {
+									OR = {
+										has_pop_culture = czech
+										has_pop_culture = north_german
+									}
+								}
+								scaled_militancy = {
+									ideology = reactionary
+									factor = 4
+								}
+								scaled_consciousness = {
+									ideology = reactionary
+									factor = 4
+								}
+								scaled_militancy = {
+									ideology = conservative
+									factor = 2
+								}
+								scaled_consciousness = {
+									ideology = conservative
+									factor = 2
+								}
+								scaled_militancy = {
+									ideology = liberal
+									factor = -9
+								}
+								scaled_consciousness = {
+									ideology = liberal
+									factor = -9
+								}
+							}
+							any_pop = {
+								limit = { has_pop_culture = old_czech }
+								scaled_militancy = {
+									ideology = reactionary
+									factor = 2
+								}
+								scaled_consciousness = {
+									ideology = reactionary
+									factor = 2
+								}
+								scaled_militancy = {
+									ideology = conservative
+									factor = 1
+								}
+								scaled_consciousness = {
+									ideology = conservative
+									factor = 1
+								}
+								scaled_militancy = {
+									ideology = liberal
+									factor = -5
+								}
+								scaled_consciousness = {
+									ideology = liberal
+									factor = -5
+								}
+							}
+						}
+					}
+					prestige = -10
+					any_pop = {
+						limit = {
+							OR = {
+								has_pop_culture = czech
+								has_pop_culture = north_german
+							}
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = -4
+						}
+						scaled_consciousness = {
+							ideology = reactionary
+							factor = -4
+						}
+						scaled_militancy = {
+							ideology = conservative
+							factor = -2
+						}
+						scaled_consciousness = {
+							ideology = conservative
+							factor = -2
+						}
+						scaled_militancy = {
+							ideology = liberal
+							factor = 3
+						}
+						scaled_consciousness = {
+							ideology = liberal
+							factor = 3
+						}
+					}
+					any_pop = {
+						limit = { has_pop_culture = old_czech }
+						scaled_militancy = {
+							ideology = reactionary
+							factor = -1
+						}
+						scaled_consciousness = {
+							ideology = reactionary
+							factor = -1
+						}
+						scaled_militancy = {
+							ideology = liberal
+							factor = 5
+						}
+						scaled_consciousness = {
+							ideology = liberal
+							factor = 5
+						}
+					}
+				}
+			}
 		}
-
 		ai_will_do = {
 			factor = 1
 		}

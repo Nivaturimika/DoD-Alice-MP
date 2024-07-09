@@ -4,37 +4,6 @@
 #### Check MOD Bohemia-HRE for later imperial incidents ####
 
 country_event = {
-	id = 150000
-	title = "HUNC1.T"
-	desc = "HUNC1.D"
-	picture = "german_rhine"
-
-    is_triggered_only = yes
-
-	option = {
-	    name = "HUNC1.A"
-		prestige = -1
-	    add_country_modifier = {
-		   name = HOLY_ROMAN_EMPEROR
-		   duration = -1
-		}
-	    add_country_modifier = {
-		   name = BOH_prague
-		   duration = -1
-		}
-	    set_variable = {
-		   which = IMPERIAL_GRACE
-		   value = 10
-	    }
-	    set_variable = {
-		   which = HOLLOWING_CHECK
-		   value = 10
-	    }
-		DSX = { set_country_flag = the_first_incident }
-	}
-}
-
-country_event = {
 	id = 150001
 	title = "HUNC2.T"
 	desc = "HUNC2.D"
