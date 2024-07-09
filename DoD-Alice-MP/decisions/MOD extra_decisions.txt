@@ -729,75 +729,7 @@ political_decisions = {
 			clr_country_flag = nv_change
 		}
 	}
-
-	#disable_state_election_events = {
-	#	alert = no
-	#	potential = {
-	#		not = { has_country_flag = no_state_election_events }
-	#		has_country_flag = hidden_decisions
-	#	}
-	#	allow = {
-	#		ai = no
-	#	}
-	#	effect = {
-	#		set_country_flag = no_state_election_events
-	#	}
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-	#}
-
-	#enable_state_election_events = {
-	#	alert = no
-	#	potential = {
-	#		has_country_flag = no_state_election_events
-	#		has_country_flag = hidden_decisions
-	#	}
-	#	allow = {
-	#		ai = no
-	#	}
-	#	effect = {
-	#		clr_country_flag = no_state_election_events
-	#	}
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-	#}
-
-	disable_rgo_change_events = {
-		alert = no
-		potential = {
-			not = { has_country_flag = no_rgo_change_events }
-			has_country_flag = hidden_decisions
-		}
-		allow = {
-			ai = no
-		}
-		effect = {
-			set_country_flag = no_rgo_change_events
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	enable_rgo_change_events = {
-		alert = no
-		potential = {
-			has_country_flag = no_rgo_change_events
-			has_country_flag = hidden_decisions
-		}
-		allow = {
-			ai = no
-		}
-		effect = {
-			clr_country_flag = no_rgo_change_events
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
+	
     leave_soi = {
         alert = no
         picture = sign_the_geneva_convention
