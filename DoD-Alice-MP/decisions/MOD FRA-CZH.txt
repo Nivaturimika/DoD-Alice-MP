@@ -35,61 +35,61 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	core_provence = {
 		picture = valois_italy
 		potential = {
 			tag = DUA
 			NOT = { has_country_flag = provence_cored }
 		}
-		
+
 		allow = {
 			test = is_colonial_power
 			owns = 470
 			NOT = { exists = PRV }
-			NOT = { exists = AVN }	
+			NOT = { exists = AVN }
 		}
-		
+
 		effect = {
-			prestige = 5	
+			prestige = 5
 			set_country_flag = provence_cored
 			FRA_467 = { add_core = DUA }
 		}
-			
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	meddle_in_italy = {
 		picture = DUA_italy
 		potential = {
 			tag = DUA
 			NOT = { has_country_flag = meddle_in_italy }
-		}
-		
-		allow = {
 			is_greater_power = yes
+			NOT = { exists = ITA }
+			NOT = { exists = AUV }
+		}
+
+		allow = {
 			has_global_flag = JEAN_ENDING
 			OR = {
 				has_country_flag = ITALY_OPEN
 				NOT = { exists = BRG }
 			}
 			war = no
-			NOT = { exists = ITA }		
-			NOT = { exists = AUV }
-			PRV = { 
+			PRV = {
 				exists = no
 				all_core = { owned_by = THIS }
-			}	
+			}
 		}
-		
+
 		effect = {
-			prestige = 5	
-			relation = { who = ARN value = -200 }	
+			prestige = 5
+			relation = { who = ARN value = -200 }
 			set_country_flag = meddle_in_italy
 		}
-			
+
 		ai_will_do = {
 			factor = 1
 		}

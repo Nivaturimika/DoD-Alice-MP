@@ -333,27 +333,23 @@ political_decisions = {
 	organize_ASG = {
 		picture = zuharra
 		potential = {
-			capital_scope = { 
-				continent =  europe
-				}
+			capital_scope = { continent =  europe }
 			NOT = { OR = { tag = PBG tag = FRK tag = BRG tag = SCA } }
 			NOT = {
 				has_global_flag = ASG_organized
 				capital_scope = { continent = oceania }
 			}
 			owns = 3337
+			owns = 2506
 		}
 		
 		allow = {
 			war = no
 			nationalism_n_imperialism = 1
-			owns = 2506
-			
 		}
 		
 		effect = {
 			set_global_flag = ASG_organized
-			
 			set_country_flag = ASG_master
 			prestige = 3	
 			any_owned = { 
