@@ -326,6 +326,14 @@ political_reforms = {
 				NOT = { has_country_flag = belgian_confederation_slavery }
 				NOT = { has_country_flag = government_busy_with_something }
 			}
+			on_execute = {
+				effect = {
+					any_state = {
+						limit = { is_slave = yes }
+						is_slave = no
+					}
+				}
+			}
 		}
 	}
 	
@@ -981,6 +989,44 @@ political_reforms = {
 				NOT = { has_country_flag = government_busy_with_something }
 				NOT = { has_country_flag = levys_abolished }		
 			}
+			on_execute = {
+				effect = {
+					set_country_flag = levys_abolished
+					any_owned = {
+						limit = {
+							has_pop_type = soldiers
+							has_pop_type = labourers
+							is_colonial = no
+						}
+						soldiers = {
+							limit = { NOT = { is_accepted_culture = yes is_primary_culture = yes } }
+							militancy = 1 pop_type = labourers
+						}
+					}
+					any_owned = {
+						limit = {
+							has_pop_type = soldiers
+							has_pop_type = farmers
+							is_colonial = no
+						}
+						soldiers = {
+							limit = { NOT = { is_accepted_culture = yes is_primary_culture = yes } }
+							militancy = 1 pop_type = farmers
+						}
+					}
+					any_owned = {
+						limit = {
+							has_pop_type = soldiers
+							NOT = { has_pop_type = farmers has_pop_type = labourers }
+							is_colonial = no
+						}
+						soldiers = {
+							limit = { NOT = { is_accepted_culture = yes is_primary_culture = yes } }
+							militancy = 1 pop_type = farmers
+						}
+					}
+				}
+			}
 		}
 		
 		restricted_recruitment = {
@@ -991,6 +1037,43 @@ political_reforms = {
 				NOT = { has_country_flag = government_busy_with_something }
 				NOT = { has_country_flag = army_reform_banned }	
 				NOT = { debt_law = serfdom }
+			}
+			on_execute = {
+				effect = {
+					any_owned = {
+						limit = {
+							has_pop_type = soldiers
+							has_pop_type = labourers
+							is_colonial = no
+						}
+						soldiers = {
+							limit = { NOT = { is_accepted_culture = yes is_primary_culture = yes } }
+							militancy = 1 pop_type = labourers
+						}
+					}
+					any_owned = {
+						limit = {
+							has_pop_type = soldiers
+							has_pop_type = farmers
+							is_colonial = no
+						}
+						soldiers = {
+							limit = { NOT = { is_accepted_culture = yes is_primary_culture = yes } }
+							militancy = 1 pop_type = farmers
+						}
+					}
+					any_owned = {
+						limit = {
+							has_pop_type = soldiers
+							NOT = { has_pop_type = farmers has_pop_type = labourers }
+							is_colonial = no
+						}
+						soldiers = {
+							limit = { NOT = { is_accepted_culture = yes is_primary_culture = yes } }
+							militancy = 1 pop_type = farmers
+						}
+					}
+				}
 			}
 		}
 		

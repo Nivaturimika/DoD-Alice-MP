@@ -47,7 +47,7 @@ country_event = {
 				war = no
 			}
 			remove_country_modifier = kinda_bad_badboy
-            remove_country_modifier = bad_badboy
+			remove_country_modifier = bad_badboy
 		}
 		
 		#updating missing flags
@@ -163,13 +163,13 @@ country_event = {
 			}
 			overlord = {
 				random_list = {
-                	17 = { country_event = 70005 } }
-                	17 = { country_event = { id = 70005 days = 1 } }
-                	17 = { country_event = { id = 70005 days = 2 } }
-                	17 = { country_event = { id = 70005 days = 3 } }
-                	17 = { country_event = { id = 70005 days = 4 } }
-                	15 = { country_event = { id = 70005 days = 5 } }
-            	}
+					17 = { country_event = 70005 } }
+					17 = { country_event = { id = 70005 days = 1 } }
+					17 = { country_event = { id = 70005 days = 2 } }
+					17 = { country_event = { id = 70005 days = 3 } }
+					17 = { country_event = { id = 70005 days = 4 } }
+					15 = { country_event = { id = 70005 days = 5 } }
+				}
 			}
 		}
 		CLN = { country_event = { id = 477877787 days = 1 } }
@@ -185,18 +185,6 @@ country_event = {
 
 	option = {
 		name = "Checking..."
-
-		#clean up crisis tension
-		any_country = {
-            limit = {
-				exists = yes
-                OR = {
-                    NOT = { test = revolution_n_counter_researched }
-                    is_vassal = yes
-                }
-            }
-            any_state  = { flashpoint_tension = -100 }
-        }
 		#silver mine modifiers
 		any_country = {
 			limit = {
@@ -242,11 +230,11 @@ country_event = {
 			limit = {
 				any_owned_province = {
 					has_province_modifier = silver_mine
-			    }
+				}
 			}
 			any_owned = {
 				limit = {
-				    has_province_modifier = silver_mine
+					has_province_modifier = silver_mine
 					NOT = { trade_goods = precious_metal }
 				}
 				remove_province_modifier = silver_mine
@@ -263,366 +251,6 @@ country_event = {
 			set_country_flag = exempt_from_vassal_contribution
 		}
 
-		#cleanup colonial cores
-		any_country = {
-			limit = {
-				civilized = yes
-				NOT = { capital_scope = { continent = africa } }
-			}
-			any_owned = {
-				limit = {
-					is_core = NGR
-					OR = {
-						is_core = SOK
-						is_core = ILO
-						is_core = TOU
-						is_core = OYO
-						is_core = KNO
-						is_core = ADW
-						is_core = NRI
-						is_core = KAN
-					}
-				}
-				remove_core = SOK
-				remove_core = ILO
-				remove_core = TOU
-				remove_core = OYO
-				remove_core = KNO
-				remove_core = ADW
-				remove_core = NRI
-				remove_core = KAN
-			}
-			any_owned = {
-				limit = {
-					is_core = CMR
-					OR = {
-						is_core = SOK
-						is_core = ADW
-						is_core = NRI
-						is_core = KAN
-					}
-				}
-				remove_core = SOK
-				remove_core = ADW
-				remove_core = NRI
-				remove_core = KAN
-			}
-			any_owned = {
-				limit = {
-					is_core = CAR
-					OR = {
-						is_core = KAN
-						is_core = ADW
-						is_core = WTT
-					}
-				}
-				remove_core = KAN
-				remove_core = ADW
-				remove_core = WTT
-			}
-			any_owned = {
-				limit = {
-					is_core = IVC
-					OR = {
-						is_core = ASH
-						is_core = WTT
-					}
-				}
-				remove_core = ASH
-				remove_core = MOS
-				remove_core = WTT
-			}
-			any_owned = {
-				limit = {
-					is_core = GNE
-					OR = {
-						is_core = FJA
-						is_core = WTT
-					}
-				}
-				remove_core = FJA
-				remove_core = WTT
-			}
-			any_owned = {
-				limit = {
-					is_core = SNG
-					OR = {
-						is_core = FJA
-						is_core = TOU
-					}
-				}
-				remove_core = FJA
-				remove_core = TOU
-			}
-			any_owned = {
-				limit = {
-					is_core = NIG
-					OR = {
-						is_core = ILO
-						is_core = TOU
-						is_core = KNO
-						is_core = KAN
-						is_core = SOK
-					}
-				}
-				remove_core = SOK
-				remove_core = ILO
-				remove_core = TOU
-				remove_core = KNO
-				remove_core = KAN
-			}
-			any_owned = {
-				limit = {
-					OR = {
-						is_core = CNG
-						is_core = CGO
-					}
-					OR = {
-						is_core = LOA
-						is_core = KON
-					}
-				}
-				remove_core = LOA
-				remove_core = KON
-			}
-			any_owned = {
-				limit = {
-					is_core = MAL
-					OR = {
-						is_core = TOU
-						is_core = FJA
-						is_core = ILO
-					}
-				}
-				remove_core = TOU
-				remove_core = FJA
-				remove_core = MOS
-				remove_core = ILO
-
-			}
-			any_owned = {
-				limit = {
-					is_core = GMB
-					OR = {
-						is_core = FJA
-						is_core = TOU
-					}
-				}
-				remove_core = FJA
-				remove_core = TOU
-			}
-			any_owned = {
-				limit = {
-					is_core = MOZ
-					OR = {
-						is_core = ZUL
-						is_core = SHO
-					}
-				}
-				remove_core = ZUL
-				remove_core = SHO
-			}
-			any_owned = {
-				limit = {
-					is_core = ALD
-					OR = {
-						is_core = ALJ
-						is_core = KBL
-					}
-				}
-				remove_core = KBL
-				remove_core = ALJ
-			}
-			any_owned = {
-				limit = {
-					is_core = TRA
-					OR = {
-						is_core = MYS
-						is_core = MDR
-						is_core = ADR
-						is_core = HYD
-					}
-				}
-				remove_core = MYS
-				remove_core = MDR
-				remove_core = ADR
-				remove_core = HYD
-			}
-			any_owned = {
-				limit = {
-					is_core = PAK
-					OR = {
-						is_core = SIN
-						is_core = KAS
-						is_core = JOD
-						is_core = MEW
-						is_core = JAI
-						is_core = JAS
-						is_core = BIK
-					}
-				}
-				remove_core = SIN
-				remove_core = KAS
-				remove_core = JOD
-				remove_core = MEW
-				remove_core = JAI
-				remove_core = JAS
-				remove_core = BIK
-			}
-			any_owned = {
-				limit = {
-					is_core = MUG
-					OR = {
-						is_core = KAS
-						is_core = BUN
-						is_core = AWA
-						is_core = BIH
-						is_core = GWA
-						is_core = ORI
-						is_core = NAG
-					}
-				}
-				remove_core = KAS
-				remove_core = BUN
-				remove_core = AWA
-				remove_core = BIH
-				remove_core = GWA
-				remove_core = ORI
-				remove_core = NAG
-			}
-			any_owned = {
-				limit = {
-					is_core = RAJ
-					OR = {
-						is_core = JOD
-						is_core = MEW
-						is_core = JAI
-						is_core = JAS
-						is_core = BIK
-						is_core = BER
-					}
-				}
-				remove_core = JOD
-				remove_core = MEW
-				remove_core = JAI
-				remove_core = JAS
-				remove_core = BIK
-				remove_core = BER
-			}
-		}
-
-		#fix for bad modifier
-		any_country = {
-			limit = {
-				ai = no
-				war = no
-				has_country_modifier = disable_conquest_cb
-			}
-			remove_country_modifier = disable_conquest_cb
-		}
-
-		#Remove call_allies flag
-		any_country = {
-			limit = {
-				ai = yes
-				war = no
-				has_country_flag = calling_all_allies
-			}
-			clr_country_flag = calling_all_allies
-		}
-
-		#cleanup unciv colonies
-		any_country = {
-			limit = {
-				civilized = no
-				any_state = { is_colonial = yes }
-				NOT = { UTI = { exists = yes } }
-			}
-			any_state = {
-				limit = { is_colonial = yes }
-				any_owned = { add_core = UTI }
-			}
-			any_owned = {
-				limit = { is_core = UTI }
-				secede_province = THIS
-			}
-			THIS = {
-				any_owned = {
-					limit = { is_core = UTI }
-					secede_province = UTI
-				}
-				create_vassal = UTI
-			}
-			inherit = UTI
-			any_owned = {
-				limit = { is_core = UTI }
-				remove_core = UTI
-			}
-		}
-
-		#cleanup bugged slave states
-		any_country = {
-			limit = {
-				any_state = { is_slave = yes }
-				slavery = no_slavery
-			}
-			any_state = {
-				limit = { is_slave = yes }
-				is_slave = no
-			}
-		}
-
-		# Levys are dead jim
-		any_country = {
-			limit = {
-			    NOT = { has_country_flag = levys_abolished }
-				NOT = { recruitment_reform = peasant_levys }
-			}
-			set_country_flag = levys_abolished
-		}
-
-		# Delete Illegal Soldier Pops
-		any_country = {
-			limit = {
-				OR = {
-					recruitment_reform = peasant_levys
-					recruitment_reform = restricted_recruitment
-				}
-			}
-            any_owned = {
-				limit = {
-					has_pop_type = soldiers
-					has_pop_type = labourers
-					is_colonial = no
-				}
-				soldiers = {
-					limit = { NOT = { is_accepted_culture = yes is_primary_culture = yes } }
-					militancy = 1 pop_type = labourers
-				}
-            }
-            any_owned = {
-				limit = {
-					has_pop_type = soldiers
-					has_pop_type = farmers
-					is_colonial = no
-				}
-				soldiers = {
-					limit = { NOT = { is_accepted_culture = yes is_primary_culture = yes } }
-					militancy = 1 pop_type = farmers
-				}
-            }
-            any_owned = {
-				limit = {
-					has_pop_type = soldiers
-					NOT = { has_pop_type = farmers has_pop_type = labourers }
-					is_colonial = no
-				}
-				soldiers = {
-					limit = { NOT = { is_accepted_culture = yes is_primary_culture = yes } }
-					militancy = 1 pop_type = farmers
-				}
-			}
-		}
 		#If Tuscan global flag has not been cleared and its 1850 then clear it
 		any_country = {
 			limit = {
@@ -654,8 +282,6 @@ country_event = {
 					duration = -1
 				}
 			}
-		}
-		any_country = {
 			any_owned = {
 				limit = {
 					owner = { invention = colonial_exploitation }
@@ -666,162 +292,152 @@ country_event = {
 					duration = -1
 				}
 			}
-		}
-		any_country = {
 			any_owned = {
 				limit = { is_colonial = no }
 				remove_province_modifier = colonial_province
 				remove_province_modifier = colonial_exploitation_tech_effect
 			}
 		}
-		any_country = {
-			if = {
-				limit = { ai = yes }
-				add_country_modifier = { name = ai_nation_boost_income duration = -1 }
-			} else = {
-				remove_country_modifier = ai_nation_boost_income
-			}
-		}
 
 		# Colonial Mait - Post Colonial
 
 		any_country = {
-		    limit = {
-			   ai = yes
-			   exists = yes
-			   has_global_flag = post_colonial_era_fired
+			limit = {
+				ai = yes
+				exists = yes
+				has_global_flag = post_colonial_era_fired
 			}
 			any_country = {
 				any_owned = {
 					remove_province_modifier = colonial_province
 				}
 			}
-		    any_country = {
-			   limit = {
-				   NOT = { capital_scope = { continent = africa } }
-			   }
-			   any_owned = {
-				   limit = {
-					   is_colonial = yes
-					   continent = africa
-				   }
-				   add_province_modifier = {
-					  name = colonial_dawn
-					  duration = -1
-				   }
-			   }
-		   }
-		   any_country = {
-			   limit = {
-				   NOT = { capital_scope = { continent = asia } }
-			   }
-			   any_owned = {
-				   limit = {
-					   is_colonial = yes
-					   continent = asia
-					   NOT = { is_core = RUS }
-				   }
-				   add_province_modifier = {
-					   name = colonial_dawn
-					   duration = -1
-				   }
-			   }
-		   }
-		   any_country = {
-			   limit = {
-				   is_vassal = yes
-				   capital_scope = { continent = africa }
-			   }
-			   any_owned = {
-			   	   limit = {
-					   continent = africa
-				   }
-				   add_province_modifier = {
-					   name = colonial_dawn
-					   duration = -1
-				   }
-			   }
-		   }
-		   any_country = {
-		 	   limit = {
-				   is_vassal = yes
-				   capital_scope = { continent = asia }
-			   }
-			   any_owned = {
-				    limit = {
-					   continent = asia
-					   NOT = { is_core = RUS }
-				   }
-				   add_province_modifier = {
-					   name = colonial_dawn
-					   duration = -1
-				   }
-			   }
-		   }
-		   any_country = {
-			   any_owned = {
-				   limit = {
-					   owner = { invention = colonial_exploitation }
-					   is_colonial = yes
-					   NOT = { is_core = RUS }
-				   }
-				   add_province_modifier = {
-					   name = colonial_exploitation_tech_effect
-					   duration = -1
-				   }
-			   }
-		   }
-		   any_country = {
-				any_owned = {
-					limit = {
-					    OR = {
-						   is_colonial = no
-						   is_core = RUS
-						}
-					}
-					remove_province_modifier = colonial_province
-					remove_province_modifier = colonial_exploitation_tech_effect
-					remove_province_modifier = colonial_dawn
+			any_country = {
+			limit = {
+				NOT = { capital_scope = { continent = africa } }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					continent = africa
 				}
-		   }
+				add_province_modifier = {
+					name = colonial_dawn
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				NOT = { capital_scope = { continent = asia } }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					continent = asia
+					NOT = { is_core = RUS }
+				}
+				add_province_modifier = {
+					name = colonial_dawn
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				is_vassal = yes
+				capital_scope = { continent = africa }
+			}
+			any_owned = {
+				limit = {
+					continent = africa
+				}
+				add_province_modifier = {
+					name = colonial_dawn
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				is_vassal = yes
+				capital_scope = { continent = asia }
+			}
+			any_owned = {
+					limit = {
+					continent = asia
+					NOT = { is_core = RUS }
+				}
+				add_province_modifier = {
+					name = colonial_dawn
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					owner = { invention = colonial_exploitation }
+					is_colonial = yes
+					NOT = { is_core = RUS }
+				}
+				add_province_modifier = {
+					name = colonial_exploitation_tech_effect
+					duration = -1
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						is_colonial = no
+						is_core = RUS
+					}
+				}
+				remove_province_modifier = colonial_province
+				remove_province_modifier = colonial_exploitation_tech_effect
+				remove_province_modifier = colonial_dawn
+			}
+		}
 		}
 
 		#slave pop growth
 		any_country = {
-            limit = {
+			limit = {
 				exists = yes
-                NOT = { has_country_modifier = slave_growth }
-                slavery = yes_slavery
-                any_owned_province = { has_pop_type = slaves NOT = { slaves = 0.75 } }
-            }
-            slaves = {
-                limit = { NOT = { location = { slaves = 0.75 } } }
-                random_list = {
-                    10 = {}
-                    10 = { reduce_pop = 1.04 }
-                    10 = { reduce_pop = 1.05 }
-                    10 = { reduce_pop = 1.06 }
-                    10 = { reduce_pop = 1.07 }
-                    10 = { reduce_pop = 1.08 }
-                    10 = { reduce_pop = 1.09 }
-                    10 = { reduce_pop = 1.10 }
-                    10 = { reduce_pop = 1.11 }
-                    10 = { reduce_pop = 1.12 }
-                }
-            }
-            slaves = {
-                random = { chance = 10 reduce_pop = 0.97 }
-            }
-            slaves = {
-                random = { chance = 10 reduce_pop = 0.98 }
-            }
-            random_list = {
-                33 = { add_country_modifier = { name = slave_growth duration = 1460 } }
-                33 = { add_country_modifier = { name = slave_growth duration = 1827 } }
-                33 = { add_country_modifier = { name = slave_growth duration = 2190 } }
-            }
-            any_pop = { limit = { type = slaves } literacy = -0.1 }
-        }
+				NOT = { has_country_modifier = slave_growth }
+				slavery = yes_slavery
+				any_owned_province = { has_pop_type = slaves NOT = { slaves = 0.75 } }
+			}
+			slaves = {
+				limit = { NOT = { location = { slaves = 0.75 } } }
+				random_list = {
+					10 = {}
+					10 = { reduce_pop = 1.04 }
+					10 = { reduce_pop = 1.05 }
+					10 = { reduce_pop = 1.06 }
+					10 = { reduce_pop = 1.07 }
+					10 = { reduce_pop = 1.08 }
+					10 = { reduce_pop = 1.09 }
+					10 = { reduce_pop = 1.10 }
+					10 = { reduce_pop = 1.11 }
+					10 = { reduce_pop = 1.12 }
+				}
+			}
+			slaves = {
+				random = { chance = 10 reduce_pop = 0.97 }
+			}
+			slaves = {
+				random = { chance = 10 reduce_pop = 0.98 }
+			}
+			random_list = {
+				33 = { add_country_modifier = { name = slave_growth duration = 1460 } }
+				33 = { add_country_modifier = { name = slave_growth duration = 1827 } }
+				33 = { add_country_modifier = { name = slave_growth duration = 2190 } }
+			}
+			slaves = { literacy = -0.1 }
+		}
 
 		#substate payment
 		any_country = {

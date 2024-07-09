@@ -718,10 +718,6 @@ great_depression = {
 	icon = 12
 }
 
-great_depression_cooldown = {
-	icon = 12
-}
-
 central_bank_established = {
     loan_interest = -0.02
     poor_savings_modifier = 0.2

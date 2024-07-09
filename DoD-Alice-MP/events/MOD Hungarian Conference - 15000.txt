@@ -9,23 +9,23 @@ country_event = {
 	desc = "HUNC2.D"
 	picture = "german_rhine"
 
-    trigger = {
-        tag = DSX
-        has_country_flag = the_first_incident
-    }
+	trigger = {
+		tag = DSX
+		has_country_flag = the_first_incident
+	}
 
 	fire_only_once = yes
 
-    mean_time_to_happen =  {
-        days = 31
-    }
+	mean_time_to_happen =  {
+		days = 31
+	}
 
-    option = {
-        name = "HUNC2.A"
+	option = {
+		name = "HUNC2.A"
 		clr_country_flag = the_first_incident
 		prestige = 5
-        any_pop = {
-		   militancy = -1
+		any_pop = {
+		militancy = -1
 		}
 		political_reform = federalism
 		AUS = { country_event = { id = 260003 days = 7 } }
@@ -36,7 +36,7 @@ country_event = {
 		561 = { add_core = THU }
 		554 = { add_core = THU }
 		change_tag = THU
-    }
+	}
 }
 
 # Erfurt Agreement - Imperial Incident One
@@ -48,52 +48,52 @@ country_event = {
 	desc = "HUNC3.D"
 	picture = "BOH_throne"
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = "HUNC3.A"
+	option = {
+		name = "HUNC3.A"
 		leave_alliance = THU
 		relation = { who = THU value = -200 }
-	    diplomatic_influence = { who = THU value = -200 }
+		diplomatic_influence = { who = THU value = -200 }
 		ai_chance = {
 			factor = 75
-			   modifier = {
-			      factor = 0
-				  THU = { ai = no }
-			   }
+			modifier = {
+				factor = 0
+				THU = { ai = no }
+			}
 		}
-    }
+	}
 
-    option = {
-        name = "HUNC3.B"
+	option = {
+		name = "HUNC3.B"
 		badboy = 1
-        relation = { who = DUA value = -5 }
+		relation = { who = DUA value = -5 }
 		create_alliance = THU
 		relation = { who = THU value = 400 }
-	    diplomatic_influence = { who = THU value = 400 }
+		diplomatic_influence = { who = THU value = 400 }
 		SCA = {
-		   relation = { who = THU value = -400 }
-	       diplomatic_influence = { who = THU value = -400 }
+		relation = { who = THU value = -400 }
+		diplomatic_influence = { who = THU value = -400 }
 		}
 		BRG = {
-		   relation = { who = THU value = -400 }
-	       diplomatic_influence = { who = THU value = -400 }
+		relation = { who = THU value = -400 }
+		diplomatic_influence = { who = THU value = -400 }
 		}
 		any_country = {
-		   limit = {
-		      tag = HAN
-			  exists = yes
-		   }
-		   set_country_flag = THU_protected
+		limit = {
+			tag = HAN
+			exists = yes
 		}
-	    change_variable = {
-		   which = IMPERIAL_GRACE
-		   value = 1
-	    }
+		set_country_flag = THU_protected
+		}
+		change_variable = {
+		which = IMPERIAL_GRACE
+		value = 1
+		}
 		ai_chance = {
 			factor = 25
 		}
-    }
+	}
 }
 
 #### The Riots in Bremen ####
@@ -106,17 +106,17 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = BOH
+	trigger = {
+		tag = BOH
 		year = 1838
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 7
-    }
+	mean_time_to_happen =  {
+		days = 7
+	}
 
 	option = {
-	    name = "HUNC4.A"
+		name = "HUNC4.A"
 		BRE = {
 			any_pop = {
 				scaled_militancy = {
@@ -151,10 +151,10 @@ country_event = {
 
 	fire_only_once = yes
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC5.A"
+		name = "HUNC5.A"
 		set_country_flag = abolish_serfdom_SCA
 		any_pop = {
 			scaled_militancy = {
@@ -184,7 +184,7 @@ country_event = {
 		}
 		BRE = {
 			any_pop = {
-			    reduce_pop = 0.99
+				reduce_pop = 0.99
 				scaled_militancy = {
 					ideology = liberal
 					factor = 2
@@ -211,7 +211,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC6.A"
+		name = "HUNC6.A"
 		prestige = -1
 		relation = { who = SCA value = -100 }
 	}
@@ -227,18 +227,18 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = BOH
+	trigger = {
+		tag = BOH
 		year = 1838
 		has_country_flag = mecklenburg_demonstrations
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 7
-    }
+	mean_time_to_happen =  {
+		days = 7
+	}
 
 	option = {
-	    name = "HUNC7.A"
+		name = "HUNC7.A"
 		clr_country_flag = mecklenburg_demonstrations
 		MSZ = {
 			any_pop = {
@@ -277,19 +277,19 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = HUN
+	trigger = {
+		tag = HUN
 		NOT = { year = 1837 }
-        NOT = { has_country_flag = hungarian_intro }
+		NOT = { has_country_flag = hungarian_intro }
 
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 3
-    }
+	mean_time_to_happen =  {
+		days = 3
+	}
 
 	option = {
-	    name = "HUNC8.A"
+		name = "HUNC8.A"
 		prestige = -1
 		set_country_flag = hungarian_intro
 	}
@@ -305,25 +305,25 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = HUN
+	trigger = {
+		tag = HUN
 		year = 1837
-        NOT = { has_country_flag = slovaks_are_trash }
-    }
+		NOT = { has_country_flag = slovaks_are_trash }
+	}
 
-    mean_time_to_happen =  {
-        days = 31
-    }
+	mean_time_to_happen =  {
+		days = 31
+	}
 
 	option = {
-	    name = "HUNC9.A"
+		name = "HUNC9.A"
 		prestige = -1
 		any_pop = {
-		   limit = {
-		     culture = slovak
-		   }
-		   militancy = 1
-		   consciousness = 1
+		limit = {
+			culture = slovak
+		}
+		militancy = 1
+		consciousness = 1
 		}
 		set_country_flag = slovaks_are_trash
 	}
@@ -339,25 +339,25 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = HUN
+	trigger = {
+		tag = HUN
 		year = 1838
-        NOT = { has_country_flag = nitra_is_bad }
-    }
+		NOT = { has_country_flag = nitra_is_bad }
+	}
 
-    mean_time_to_happen =  {
-        days = 31
-    }
+	mean_time_to_happen =  {
+		days = 31
+	}
 
 	option = {
-	    name = "HUNC10.A"
+		name = "HUNC10.A"
 		prestige = -1
 		any_pop = {
-		   limit = {
-		     culture = slovak
-		   }
-		   militancy = 1
-		   consciousness = 1
+		limit = {
+			culture = slovak
+		}
+		militancy = 1
+		consciousness = 1
 		}
 		set_country_flag = slovakia_is_bad
 		set_country_flag = nitra_is_bad
@@ -374,25 +374,25 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = HUN
+	trigger = {
+		tag = HUN
 		year = 1838
 		has_country_flag = slovakia_is_bad
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 31
-    }
+	mean_time_to_happen =  {
+		days = 31
+	}
 
 	option = {
-	    name = "HUNC11.A"
+		name = "HUNC11.A"
 		prestige = -5
 		any_pop = {
-		   limit = {
-		     culture = slovak
-		   }
-		   militancy = 1
-		   consciousness = 1
+		limit = {
+			culture = slovak
+		}
+		militancy = 1
+		consciousness = 1
 		}
 		clr_country_flag = slovakia_is_bad
 		BOH = { country_event = 150011 }
@@ -407,15 +407,15 @@ country_event = {
 	desc = "HUNC12.D"
 	picture = "huncrisis"
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC12.A"
+		name = "HUNC12.A"
 		any_pop = {
-		   limit = {
-		     culture = old_czech
-		   }
-		   consciousness = 1
+		limit = {
+			culture = old_czech
+		}
+		consciousness = 1
 		}
 	}
 }
@@ -430,17 +430,17 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = HUN
+	trigger = {
+		tag = HUN
 		year = 1839
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 31
-    }
+	mean_time_to_happen =  {
+		days = 31
+	}
 
 	option = {
-	    name = "HUNC13.A"
+		name = "HUNC13.A"
 		prestige_factor = -0.2
 		remove_accepted_culture = slovak
 		any_pop = {
@@ -470,7 +470,7 @@ country_event = {
 			}
 		}
 		BOH = { country_event = 150013 }
-        country_event = { id = 150014 days = 14 }
+		country_event = { id = 150014 days = 14 }
 	}
 }
 
@@ -488,22 +488,22 @@ country_event = {
 
 	fire_only_once = yes
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC14.A"
+		name = "HUNC14.A"
 		prestige = 10
 		any_pop = {
-		   limit = {
-		     culture = czech
-		   }
-		   consciousness = -1
+		limit = {
+			culture = czech
+		}
+		consciousness = -1
 		}
 		any_pop = {
-		   limit = {
-		     culture = old_czech
-		   }
-		   consciousness = 1
+		limit = {
+			culture = old_czech
+		}
+		consciousness = 1
 		}
 	}
 }
@@ -519,7 +519,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC15.A"
+		name = "HUNC15.A"
 		prestige = -1
 		relation = { who = SCA value = -50 }
 		SCA = { country_event = { id = 150015 days = 7 } }
@@ -539,7 +539,7 @@ country_event = {
 	# Inform Burgundy. Its time to crush the Bohemian Menace...
 
 	option = {
-	    name = "HUNC16.A"
+		name = "HUNC16.A"
 		any_pop = {
 			scaled_militancy = {
 				ideology = reactionary
@@ -568,11 +568,11 @@ country_event = {
 		}
 		set_country_flag = fake_GGW
 		relation = { who = BOH value = -200 }
-	    iron = 10
-	    wool = 10
-	    timber = 25
-	    small_arms = 10
-	    leadership = 20
+		iron = 10
+		wool = 10
+		timber = 25
+		small_arms = 10
+		leadership = 20
 		BRG = { country_event = { id = 150016 days = 3 } }
 	}
 }
@@ -590,7 +590,7 @@ country_event = {
 	# We are on the edge of the Second Great German War
 
 	option = {
-	    name = "HUNC17.A"
+		name = "HUNC17.A"
 		any_pop = {
 			scaled_militancy = {
 				ideology = reactionary
@@ -619,11 +619,11 @@ country_event = {
 		}
 		set_country_flag = fake_GGW
 		relation = { who = BOH value = -200 }
-	    iron = 10
-	    wool = 10
-	    timber = 25
-	    small_arms = 10
-	    leadership = 20
+		iron = 10
+		wool = 10
+		timber = 25
+		small_arms = 10
+		leadership = 20
 		BOH = { country_event = { id = 150017 days = 3 } }
 	}
 }
@@ -641,7 +641,7 @@ country_event = {
 	# The treaty of Paris should have prevented this
 
 	option = {
-	    name = "HUNC18.A"
+		name = "HUNC18.A"
 		set_country_flag = fake_GGW
 		relation = { who = DUA value = 10 }
 		DUA = { country_event = { id = 150018 days = 7 } }
@@ -661,18 +661,18 @@ country_event = {
 	# There will not be a war. Demobilize and attend a conference in Neutral Grounds. NOW
 
 	option = {
-	    name = "HUNC19.A"
+		name = "HUNC19.A"
 		relation = { who = BRG value = -50 }
 		relation = { who = BOH value = -50 }
 		relation = { who = SCA value = -50 }
 		country_event = { id = 150027 days = 31 }
 		any_country = {
-		   limit = {
-		      has_country_flag = fake_GGW
-		   }
-		   clr_country_flag = fake_GGW
-		   country_event = { id = 150019 days = 7 }
-        }
+		limit = {
+			has_country_flag = fake_GGW
+		}
+		clr_country_flag = fake_GGW
+		country_event = { id = 150019 days = 7 }
+		}
 	}
 }
 
@@ -682,14 +682,14 @@ country_event = {
 	id = 150019
 	title = "HUNC20.T"
 	desc = "HUNC20.D"
-    picture = "anglois_path"
+	picture = "anglois_path"
 
 	is_triggered_only = yes
 
 	#Perfedious Anglois...
 
 	option = {
-	    name = "HUNC20.A"
+		name = "HUNC20.A"
 		relation = { who = DUA value = -10 }
 		any_pop = {
 			scaled_militancy = {
@@ -718,17 +718,17 @@ country_event = {
 			}
 		}
 		random_owned = {
-		   limit = { owner = { tag = BOH } }
-		    owner = { country_event = { id = 150020 days = 1 } }
-	    }
-  		random_owned = {
-		   limit = { owner = { tag = SCA } }
-		    owner = { country_event = { id = 150021 days = 1 } }
-	    }
+		limit = { owner = { tag = BOH } }
+			owner = { country_event = { id = 150020 days = 1 } }
+		}
 		random_owned = {
-		   limit = { owner = { tag = BRG } }
-		    owner = { country_event = { id = 150022 days = 1 } }
-	    }
+		limit = { owner = { tag = SCA } }
+			owner = { country_event = { id = 150021 days = 1 } }
+		}
+		random_owned = {
+		limit = { owner = { tag = BRG } }
+			owner = { country_event = { id = 150022 days = 1 } }
+		}
 	}
 }
 
@@ -745,7 +745,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC21.A"
+		name = "HUNC21.A"
 		PLC = { country_event = { id = 150026 days = 3 } }
 		relation = { who = PLC value = 50 }
 		diplomatic_influence = { who = PLC value = 50 }
@@ -755,7 +755,7 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC21.B"
+		name = "HUNC21.B"
 		prestige = 5
 		relation = { who = PLC value = -25 }
 		diplomatic_influence = { who = PLC value = -25 }
@@ -777,7 +777,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC22.A"
+		name = "HUNC22.A"
 		TUR = { country_event = { id = 150026 days = 3 } }
 		relation = { who = TUR value = 50 }
 		diplomatic_influence = { who = TUR value = 50 }
@@ -787,7 +787,7 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC22.B"
+		name = "HUNC22.B"
 		prestige = 5
 		relation = { who = TUR value = -25 }
 		diplomatic_influence = { who = TUR value = -25 }
@@ -808,7 +808,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC23.A"
+		name = "HUNC23.A"
 		BAV = { country_event = { id = 150023 days = 1 } }
 		relation = { who = AUS value = 1 }
 		diplomatic_influence = { who = AUS value = 1 }
@@ -818,7 +818,7 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC23.B"
+		name = "HUNC23.B"
 		prestige = 5
 		relation = { who = AUS value = -1 }
 		diplomatic_influence = { who = AUS value = -1 }
@@ -839,7 +839,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC24.A"
+		name = "HUNC24.A"
 		AUS = { country_event = { id = 150026 days = 2 } }
 		relation = { who = BOH value = 50 }
 		relation = { who = AUS value = 50 }
@@ -849,7 +849,7 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC24.B"
+		name = "HUNC24.B"
 		prestige = 5
 		AUS = { country_event = { id = 150024 days = 1 } }
 		BOH = { country_event = { id = 150025 days = 1 } }
@@ -870,9 +870,9 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC25.A"
+		name = "HUNC25.A"
 		prestige = -5
-        relation = { who = BAV value = -25 }
+		relation = { who = BAV value = -25 }
 	}
 }
 
@@ -887,7 +887,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC26.A"
+		name = "HUNC26.A"
 		prestige = -5
 		relation = { who = AUS value = -75 }
 		diplomatic_influence = { who = AUS value = -75 }
@@ -907,7 +907,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC27.A"
+		name = "HUNC27.A"
 		prestige = 5
 		relation = { who = BOH value = 25 }
 		relation = { who = SCA value = 25 }
@@ -932,16 +932,16 @@ country_event = {
 
 
 	option = {
-	    name = "HUNC28.A"
-        prestige = 5
+		name = "HUNC28.A"
+		prestige = 5
 		relation = { who = BOH value = 10 }
 		relation = { who = SCA value = 10 }
 		relation = { who = BRG value = 10 }
-		CLN = {
-	       set_variable = {
-		      which = HUN_POWER
-		      value = 10
-	       }
+		HUN = {
+		set_variable = {
+			which = HUN_POWER
+			value = 10
+		}
 		}
 		BOH = { country_event = { id = 150028 days = 1 } }
 		#any_country = {
@@ -971,30 +971,30 @@ country_event = {
 
 
 	option = {
-	    name = "HUNC28.A"
-        prestige = 1
+		name = "HUNC28.A"
+		prestige = 1
 		any_pop = {
-		  consciousness = 1
+		consciousness = 1
 		}
 		any_country = {
-		   limit = {
-		      tag = TUR
-			  has_country_flag = attending_HUN_conference
-		   }
-		   country_event = { id = 150030 days = 0 }
+		limit = {
+			tag = TUR
+			has_country_flag = attending_HUN_conference
+		}
+		country_event = { id = 150030 days = 0 }
 		}
 		SCA = { country_event = { id = 150031 days = 3 } }
 		any_country = {
-		   limit = {
-		      OR = {
-			    tag = BOH
+		limit = {
+			OR = {
+				tag = BOH
 				tag = BRG
 				tag = DUA
 				tag = HUN
 				has_country_flag = attending_HUN_conference
-		      }
-		   }
-		   country_event = { id = 150032 days = 3 }
+			}
+		}
+		country_event = { id = 150032 days = 3 }
 		}
 	}
 }
@@ -1013,16 +1013,16 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC31.A"
+		name = "HUNC31.A"
 		badboy = 2
 		prestige = 2
-        relation = { who = BOH value = -50 }
+		relation = { who = BOH value = -50 }
 		relation = { who = HUN value = -50 }
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = 1
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = 1
+		}
 		}
 		ai_chance = {
 			factor = 80
@@ -1030,16 +1030,16 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC31.B"
+		name = "HUNC31.B"
 		badboy = -2
 		prestige = -5
-        relation = { who = BOH value = 50 }
+		relation = { who = BOH value = 50 }
 		relation = { who = HUN value = 50 }
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = -1
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = -1
+		}
 		}
 		ai_chance = {
 			factor = 20
@@ -1062,14 +1062,14 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC32.A"
+		name = "HUNC32.A"
 		badboy = -1
 		prestige = 2
 		plurality = 5
 		any_pop = {
-		  consciousness = 1
+		consciousness = 1
 		}
-        relation = { who = BOH value = -80 }
+		relation = { who = BOH value = -80 }
 		BRG = { country_event = { id = 150033 days = 3 } }
 	}
 }
@@ -1086,8 +1086,8 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC33.A"
-        relation = { who = SCA value = -10 }
+		name = "HUNC33.A"
+		relation = { who = SCA value = -10 }
 	}
 }
 
@@ -1103,31 +1103,31 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC34.A"
+		name = "HUNC34.A"
 		badboy = -1
 		prestige = 5
-        relation = { who = BOH value = -50 }
+		relation = { who = BOH value = -50 }
 		relation = { who = SCA value = 100 }
 		any_country = {
-		   limit = {
-		      tag = PLC
-			  has_country_flag = attending_HUN_conference
-		   }
-		   country_event = { id = 150034 days = 0 }
+		limit = {
+			tag = PLC
+			has_country_flag = attending_HUN_conference
+		}
+		country_event = { id = 150034 days = 0 }
 		}
 		any_country = {
-		   limit = {
-		      tag = AUS
-			  has_country_flag = attending_HUN_conference
-		   }
-		   country_event = { id = 150035 days = 1 }
+		limit = {
+			tag = AUS
+			has_country_flag = attending_HUN_conference
+		}
+		country_event = { id = 150035 days = 1 }
 		}
 		DUA = { country_event = { id = 150036 days = 7 } }
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = 1
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = 1
+		}
 		}
 		ai_chance = {
 			factor = 90
@@ -1135,32 +1135,32 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC34.B"
+		name = "HUNC34.B"
 		set_global_flag = burgundian_backstabbing
 		badboy = 1
 		prestige = -10
-        relation = { who = BOH value = 50 }
+		relation = { who = BOH value = 50 }
 		relation = { who = SCA value = -100 }
 		any_country = {
-		   limit = {
-		      tag = PLC
-			  has_country_flag = attending_HUN_conference
-		   }
-		   country_event = { id = 150034 days = 0 }
+		limit = {
+			tag = PLC
+			has_country_flag = attending_HUN_conference
+		}
+		country_event = { id = 150034 days = 0 }
 		}
 		any_country = {
-		   limit = {
-		      tag = AUS
-			  has_country_flag = attending_HUN_conference
-		   }
-		   country_event = { id = 150035 days = 1 }
+		limit = {
+			tag = AUS
+			has_country_flag = attending_HUN_conference
+		}
+		country_event = { id = 150035 days = 1 }
 		}
 		DUA = { country_event = { id = 150036 days = 7 } }
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = -1
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = -1
+		}
 		}
 		ai_chance = {
 			factor = 10
@@ -1189,20 +1189,20 @@ country_event = {
 	# This is a bad idea as this is basically a diplomatic severence with Bohemia
 
 	option = {
-	    name = "HUNC35.A"
+		name = "HUNC35.A"
 		badboy = 5
 		prestige = 10
 		leave_alliance = BOH
 		relation = { who = SCA value = 200 }
 		BOH = {
-           relation = { who = PLC value = -200 }
-		   diplomatic_influence = { who = BAV value = -200 }
+		relation = { who = PLC value = -200 }
+		diplomatic_influence = { who = BAV value = -200 }
 		}
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = 1
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = 1
+		}
 		}
 		ai_chance = {
 			factor = 20
@@ -1212,16 +1212,16 @@ country_event = {
 	# Polish Simp
 
 	option = {
-	    name = "HUNC35.B"
+		name = "HUNC35.B"
 		prestige = -10
-        relation = { who = BOH value = 100 }
+		relation = { who = BOH value = 100 }
 		relation = { who = SCA value = -100 }
 		relation = { who = HUN value = -100 }
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = -1
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = -1
+		}
 		}
 		ai_chance = {
 			factor = 80
@@ -1240,16 +1240,16 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC36.A"
+		name = "HUNC36.A"
 		prestige = 1
 		relation = { who = BOH value = -100 }
 		relation = { who = SCA value = 50 }
 		relation = { who = HUN value = 50 }
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = 1
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = 1
+		}
 		}
 		ai_chance = {
 			factor = 20
@@ -1257,10 +1257,10 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC36.B"
+		name = "HUNC36.B"
 		badboy = 1
 		set_global_flag = AUS_agreement_BOH
-        relation = { who = BOH value = 100 }
+		relation = { who = BOH value = 100 }
 		relation = { who = SCA value = -100 }
 		relation = { who = HUN value = -100 }
 		ai_chance = {
@@ -1280,17 +1280,17 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC37.A"
+		name = "HUNC37.A"
 		country_event = { id = 150037 days = 1 }
 		prestige = 5
 		relation = { who = BOH value = -25 }
 		relation = { who = SCA value = 25 }
 		relation = { who = HUN value = 25 }
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = 1
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = 1
+		}
 		}
 		ai_chance = {
 			factor = 60
@@ -1298,17 +1298,17 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC37.B"
+		name = "HUNC37.B"
 		country_event = { id = 150037 days = 1 }
 		badboy = 1
-        relation = { who = BOH value = 25 }
+		relation = { who = BOH value = 25 }
 		relation = { who = SCA value = -25 }
 		relation = { who = HUN value = -25 }
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = -1
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = -1
+		}
 		}
 		ai_chance = {
 			factor = 40
@@ -1327,8 +1327,8 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC38.A"
-        set_global_flag = venice_congress_lull
+		name = "HUNC38.A"
+		set_global_flag = venice_congress_lull
 	}
 }
 
@@ -1342,18 +1342,18 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = BRG
+	trigger = {
+		tag = BRG
 		has_global_flag = venice_congress_lull
 		has_global_flag = burgundian_backstabbing
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 3
-    }
+	mean_time_to_happen =  {
+		days = 3
+	}
 
 	option = {
-	    name = "HUNC39.A"
+		name = "HUNC39.A"
 		prestige = -5
 		any_pop = {
 			scaled_militancy = {
@@ -1388,13 +1388,13 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC39.B"
+		name = "HUNC39.B"
 		clr_global_flag = burgundian_backstabbing
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = 1
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = 1
+		}
 		}
 		ai_chance = {
 			factor = 25
@@ -1411,15 +1411,15 @@ country_event = {
 	picture = "pommern"
 
 	fire_only_once = yes
-    is_triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC40.A"
+		name = "HUNC40.A"
 		prestige = -5
 		release_vassal = TES
-        689 = { remove_core = BOH }
-        684 = { remove_core = BOH add_core = TES secede_province = TES change_province_name = "Opole" }
-        685 = { remove_core = BOH add_core = TES secede_province = TES change_province_name = "Bytom" state_scope = { change_region_name = "Garny Slask" } }
+		689 = { remove_core = BOH }
+		684 = { remove_core = BOH add_core = TES secede_province = TES change_province_name = "Opole" }
+		685 = { remove_core = BOH add_core = TES secede_province = TES change_province_name = "Bytom" state_scope = { change_region_name = "Garny Slask" } }
 		relation = { who = BRG value = 200 }
 		clr_global_flag = burgundian_backstabbing
 		clr_global_flag = AUS_agreement_BOH
@@ -1458,13 +1458,13 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC40.B"
+		name = "HUNC40.B"
 		clr_global_flag = burgundian_backstabbing
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = 1
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = 1
+		}
 		}
 		ai_chance = {
 			factor = 50
@@ -1482,19 +1482,19 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = BOH
+	trigger = {
+		tag = BOH
 		has_global_flag = venice_congress_lull
 		has_global_flag = AUS_agreement_BOH
 		NOT = { has_global_flag = burgundian_backstabbing }
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 3
-    }
+	mean_time_to_happen =  {
+		days = 3
+	}
 
 	option = {
-	    name = "HUNC41.A"
+		name = "HUNC41.A"
 		relation = { who = AUS value = -25 }
 		prestige = 20
 		any_pop = {
@@ -1522,7 +1522,7 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC41.B"
+		name = "HUNC41.B"
 		prestige = -10
 		any_pop = {
 			scaled_militancy = {
@@ -1544,11 +1544,11 @@ country_event = {
 		}
 		HUN = { set_country_flag = AUS_agreement_HUN_active }
 		clr_global_flag = AUS_agreement_BOH
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = -2
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = -2
+		}
 		}
 		ai_chance = {
 			factor = 50
@@ -1570,22 +1570,22 @@ country_event = {
 	major = yes
 
 	option = {
-	    name = "HUNC41.A"
+		name = "HUNC41.A"
 		clr_global_flag = AUS_agreement_BOH
 		clr_country_flag = attending_HUN_conference
 		relation = { who = BAV value = 400 }
 		relation = { who = SCA value = 400 }
 		relation = { who = BRG value = 400 }
 		BOH = {
-		   relation = { who = AUS value = -400 }
-		   diplomatic_influence = { who = AUS value = -400 }
-		   prestige = -25
+		relation = { who = AUS value = -400 }
+		diplomatic_influence = { who = AUS value = -400 }
+		prestige = -25
 		}
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = 3
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = 3
+		}
 		}
 	}
 }
@@ -1601,30 +1601,30 @@ country_event = {
 	major = yes
 	fire_only_once = yes
 
-    trigger = {
-        tag = DUA
+	trigger = {
+		tag = DUA
 		has_global_flag = venice_congress_lull
 		NOT = { has_global_flag = scandinavia_is_backstabbed }
 		NOT = { has_global_flag = AUS_agreement_BOH }
 		NOT = { has_global_flag = burgundian_backstabbing }
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 31
-    }
+	mean_time_to_happen =  {
+		days = 31
+	}
 
 	option = {
-	    name = "HUNC43.A"
+		name = "HUNC43.A"
 		clr_global_flag = venice_congress_lull
 		prestige = 5
 		any_pop = {
-		  consciousness = 1
+		consciousness = 1
 		}
-		CLN = {
-	       set_variable = {
-		      which = MSZ_POWER
-		      value = 10
-	       }
+		MSZ = {
+		set_variable = {
+			which = MSZ_POWER
+			value = 10
+		}
 		}
 		relation = { who = BOH value = 10 }
 		relation = { who = BRG value = 10 }
@@ -1632,16 +1632,16 @@ country_event = {
 		relation = { who = HUN value = 10 }
 		BOH = { country_event = { id = 150045 days = 1 } }
 		any_country = {
-		   limit = {
-		      OR = {
-			    tag = SCA
+		limit = {
+			OR = {
+				tag = SCA
 				tag = BRG
 				tag = DUA
 				tag = HUN
 				has_country_flag = attending_HUN_conference
-		      }
-		   }
-		   country_event = { id = 150046 days = 1 }
+			}
+		}
+		country_event = { id = 150046 days = 1 }
 		}
 	}
 }
@@ -1659,25 +1659,25 @@ country_event = {
 	major = yes
 	fire_only_once = yes
 
-    trigger = {
-        tag = DUA
+	trigger = {
+		tag = DUA
 		has_global_flag = venice_congress_lull
 		has_global_flag = scandinavia_is_backstabbed
 		NOT = { has_global_flag = AUS_agreement_BOH }
 		NOT = { has_global_flag = burgundian_backstabbing }
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 31
-    }
+	mean_time_to_happen =  {
+		days = 31
+	}
 
 	option = {
-	    name = "HUNC44.A"
+		name = "HUNC44.A"
 		any_country = {
-		   limit = {
-		      has_country_flag = attending_HUN_conference
-		   }
-		   clr_country_flag = attending_HUN_conference
+		limit = {
+			has_country_flag = attending_HUN_conference
+		}
+		clr_country_flag = attending_HUN_conference
 		}
 		SCA = { country_event = 150044 }
 		set_global_flag = END_OF_VENICE_CONGRESS
@@ -1686,11 +1686,11 @@ country_event = {
 		relation = { who = BOH value = -100 }
 		relation = { who = BRG value = -100 }
 		relation = { who = SCA value = 25 }
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = -20
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = -20
+		}
 		}
 		any_pop = {
 			scaled_militancy = {
@@ -1728,21 +1728,21 @@ country_event = {
 	# We will give up Pommerania to maintain peace.
 
 	option = {
-	    name = "HUNC45.A"
+		name = "HUNC45.A"
 		prestige_factor = -0.5
-        relation = { who = BRG value = -50 }
+		relation = { who = BRG value = -50 }
 		any_owned = {
-	        limit = {
-	           is_core = POM
-		    }
+			limit = {
+			is_core = POM
+			}
 			remove_core = SCA
-	        secede_province = POM
-        }
+			secede_province = POM
+		}
 		BOH = {
-		   relation = { who = POM value = 400 }
-		   diplomatic_influence = { who = POM value = 400 }
-		   #set_country_flag = POM_expedite_CAE
-		   country_event = 150069
+		relation = { who = POM value = 400 }
+		diplomatic_influence = { who = POM value = 400 }
+		#set_country_flag = POM_expedite_CAE
+		country_event = 150069
 		}
 		any_pop = {
 			scaled_militancy = {
@@ -1779,8 +1779,8 @@ country_event = {
 	# This is down the bottom after the outcomes for the Conference
 
 	option = {
-	    name = "HUNC45.B"
-        relation = { who = BRG value = -400 }
+		name = "HUNC45.B"
+		relation = { who = BRG value = -400 }
 		leave_alliance = BRG
 		BOH = { country_event = 150070 }
 		ai_chance = {
@@ -1800,20 +1800,20 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC46.A"
+		name = "HUNC46.A"
 		badboy = 2
-	    SCA = { country_event = { id = 150047 days = 1 } }
+		SCA = { country_event = { id = 150047 days = 1 } }
 		any_country = {
-		   limit = {
-		      OR = {
-			    tag = BOH
+		limit = {
+			OR = {
+				tag = BOH
 				tag = BRG
 				tag = DUA
 				tag = HUN
 				has_country_flag = attending_HUN_conference
-		      }
-		   }
-		   country_event = { id = 150048 days = 1 }
+			}
+		}
+		country_event = { id = 150048 days = 1 }
 		}
 		any_pop = {
 			scaled_militancy = {
@@ -1841,7 +1841,7 @@ country_event = {
 				factor = -3
 			}
 		}
-        relation = { who = SCA value = -50 }
+		relation = { who = SCA value = -50 }
 		relation = { who = BRG value = -50 }
 		relation = { who = DUA value = -10 }
 	}
@@ -1860,8 +1860,8 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC47.A"
-        relation = { who = BOH value = -1 }
+		name = "HUNC47.A"
+		relation = { who = BOH value = -1 }
 	}
 }
 
@@ -1878,7 +1878,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC48.A"
+		name = "HUNC48.A"
 		prestige = 1
 		badboy = -2
 		BRG = { country_event = { id = 150049 days = 1 } }
@@ -1927,8 +1927,8 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC49.A"
-        relation = { who = SCA value = 10 }
+		name = "HUNC49.A"
+		relation = { who = SCA value = 10 }
 	}
 }
 
@@ -1943,37 +1943,37 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC50.A"
+		name = "HUNC50.A"
 		badboy = -1
 		relation = { who = BOH value = -50 }
 		relation = { who = SCA value = 50 }
-	    DUA = { country_event = { id = 150055 days = 31 } }
+		DUA = { country_event = { id = 150055 days = 31 } }
 		any_country = {
-		   limit = {
-		      tag = PLC
-			  has_country_flag = attending_HUN_conference
-		   }
-		   country_event = { id = 150050 days = 1 }
+		limit = {
+			tag = PLC
+			has_country_flag = attending_HUN_conference
+		}
+		country_event = { id = 150050 days = 1 }
 		}
 		any_country = {
-		   limit = {
-		      tag = TUR
-			  has_country_flag = attending_HUN_conference
-		   }
-		   country_event = { id = 150051 days = 1 }
+		limit = {
+			tag = TUR
+			has_country_flag = attending_HUN_conference
+		}
+		country_event = { id = 150051 days = 1 }
 		}
 		any_country = {
-		   limit = {
-		      tag = AUS
-			  has_country_flag = attending_HUN_conference
-		   }
-		   country_event = { id = 150052 days = 1 }
+		limit = {
+			tag = AUS
+			has_country_flag = attending_HUN_conference
 		}
-		CLN = {
-	       change_variable = {
-		      which = MSZ_POWER
-		      value = -1
-	       }
+		country_event = { id = 150052 days = 1 }
+		}
+		MSZ = {
+		change_variable = {
+			which = MSZ_POWER
+			value = -1
+		}
 		}
 	}
 }
@@ -1989,14 +1989,14 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC51.A"
-        relation = { who = BOH value = -50 }
+		name = "HUNC51.A"
+		relation = { who = BOH value = -50 }
 		relation = { who = SCA value = 50 }
-		CLN = {
-	       change_variable = {
-		      which = MSZ_POWER
-		      value = -1
-	       }
+		MSZ = {
+		change_variable = {
+			which = MSZ_POWER
+			value = -1
+		}
 		}
 		ai_chance = {
 			factor = 50
@@ -2004,14 +2004,14 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC51.B"
-        relation = { who = BOH value = 50 }
+		name = "HUNC51.B"
+		relation = { who = BOH value = 50 }
 		relation = { who = SCA value = -50 }
-		CLN = {
-	       change_variable = {
-		      which = MSZ_POWER
-		      value = 1
-	       }
+		MSZ = {
+		change_variable = {
+			which = MSZ_POWER
+			value = 1
+		}
 		}
 		ai_chance = {
 			factor = 50
@@ -2030,14 +2030,14 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC52.A"
-        relation = { who = BOH value = -50 }
+		name = "HUNC52.A"
+		relation = { who = BOH value = -50 }
 		relation = { who = SCA value = 50 }
-		CLN = {
-	       change_variable = {
-		      which = MSZ_POWER
-		      value = -1
-	       }
+		MSZ = {
+		change_variable = {
+			which = MSZ_POWER
+			value = -1
+		}
 		}
 		ai_chance = {
 			factor = 80
@@ -2045,14 +2045,14 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC52.B"
-        relation = { who = BOH value = 50 }
+		name = "HUNC52.B"
+		relation = { who = BOH value = 50 }
 		relation = { who = SCA value = -50 }
-		CLN = {
-	       change_variable = {
-		      which = MSZ_POWER
-		      value = 1
-	       }
+		MSZ = {
+		change_variable = {
+			which = MSZ_POWER
+			value = 1
+		}
 		}
 		ai_chance = {
 			factor = 20
@@ -2072,14 +2072,14 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC53.A"
-        relation = { who = BOH value = -50 }
+		name = "HUNC53.A"
+		relation = { who = BOH value = -50 }
 		relation = { who = SCA value = 50 }
-		CLN = {
-	       change_variable = {
-		      which = MSZ_POWER
-		      value = -1
-	       }
+		MSZ = {
+		change_variable = {
+			which = MSZ_POWER
+			value = -1
+		}
 		}
 		ai_chance = {
 			factor = 40
@@ -2087,9 +2087,9 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC53.B"
+		name = "HUNC53.B"
 		prestige = 1
-        BOH = { country_event = { id = 150053 days = 1 } }
+		BOH = { country_event = { id = 150053 days = 1 } }
 		ai_chance = {
 			factor = 60
 		}
@@ -2109,7 +2109,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC54.A"
+		name = "HUNC54.A"
 		relation = { who = AUS value = -25 }
 		prestige = 20
 		any_pop = {
@@ -2138,7 +2138,7 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC54.B"
+		name = "HUNC54.B"
 		prestige = -10
 		any_pop = {
 			scaled_militancy = {
@@ -2160,11 +2160,11 @@ country_event = {
 		}
 		#### This sets a AI weight and gives a punishment event for the player with specific interventions
 		set_country_flag = AUS_agreement_GER_active
-		CLN = {
-	       change_variable = {
-		      which = MSZ_POWER
-		      value = 2
-	       }
+		MSZ = {
+		change_variable = {
+			which = MSZ_POWER
+			value = 2
+		}
 		}
 		ai_chance = {
 			factor = 50
@@ -2186,26 +2186,28 @@ country_event = {
 	major = yes
 
 	option = {
-	    name = "HUNC55.A"
+		name = "HUNC55.A"
 		clr_country_flag = AUS_agreement_GER_active
 		clr_country_flag = attending_HUN_conference
 		relation = { who = BAV value = 400 }
 		relation = { who = SCA value = 400 }
 		relation = { who = BRG value = 400 }
 		BOH = {
-		   relation = { who = AUS value = -400 }
-		   diplomatic_influence = { who = AUS value = -400 }
-		   prestige = -25
+		relation = { who = AUS value = -400 }
+		diplomatic_influence = { who = AUS value = -400 }
+		prestige = -25
 		}
-		CLN = {
-	       change_variable = {
-		      which = HUN_POWER
-		      value = 3
-	       }
-	       change_variable = {
-		      which = MSZ_POWER
-		      value = -3
-	       }
+		HUN = {
+		change_variable = {
+			which = HUN_POWER
+			value = 3
+		}
+		}
+		MSZ = {
+		change_variable = {
+			which = MSZ_POWER
+			value = -3
+		}
 		}
 	}
 }
@@ -2221,17 +2223,17 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC56.A"
+		name = "HUNC56.A"
 		set_global_flag = venice_congress_actone
 		prestige = 5
 		relation = { who = BOH value = -10 }
 		relation = { who = SCA value = 10 }
 		relation = { who = HUN value = 10 }
-		CLN = {
-	       change_variable = {
-		      which = MSZ_POWER
-		      value = -1
-	       }
+		MSZ = {
+		change_variable = {
+			which = MSZ_POWER
+			value = -1
+		}
 		}
 		ai_chance = {
 			factor = 20
@@ -2239,17 +2241,17 @@ country_event = {
 	}
 
 	option = {
-	    name = "HUNC56.B"
+		name = "HUNC56.B"
 		set_global_flag = venice_congress_actone
 		badboy = 1
-        relation = { who = BOH value = 10 }
+		relation = { who = BOH value = 10 }
 		relation = { who = SCA value = -10 }
 		relation = { who = HUN value = -10 }
-		CLN = {
-	       change_variable = {
-		      which = MSZ_POWER
-		      value = 1
-	       }
+		MSZ = {
+		change_variable = {
+			which = MSZ_POWER
+			value = 1
+		}
 		}
 		ai_chance = {
 			factor = 80
@@ -2271,34 +2273,34 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = BOH
+	trigger = {
+		tag = BOH
 		has_global_flag = venice_congress_actone
-		CLN = {
-		   NOT = {
-	          check_variable = {
-		         which = MSZ_POWER
-		         value = 8
-	          }
-		   }
+		MSZ = {
+		NOT = {
+			check_variable = {
+				which = MSZ_POWER
+				value = 8
+			}
 		}
-    }
+		}
+	}
 
-    mean_time_to_happen =  {
-        days = 3
-    }
+	mean_time_to_happen =  {
+		days = 3
+	}
 
 	# You idiots rigged this against me.
 
 	option = {
-	    name = "HUNC57.A"
+		name = "HUNC57.A"
 		clr_global_flag = venice_congress_actone
 		set_global_flag = venice_congress_acttwo
 		set_country_flag = BOH_denied_pommerania
 		prestige = -5
 		any_pop = {
-		    ideology = { factor = -0.05 value = conservative }
-		    ideology = { factor = 0.05 value = liberal }
+			ideology = { factor = -0.05 value = conservative }
+			ideology = { factor = 0.05 value = liberal }
 			scaled_militancy = {
 				ideology = reactionary
 				factor = 2
@@ -2334,18 +2336,18 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC56.A"
+		name = "HUNC56.A"
 		prestige = 20
-	    any_pop = {
-	        limit = {
-	           location = { is_core = POM }
-	        }
-	        militancy = -9
-	        consciousness = -9
-	    }
 		any_pop = {
-		    ideology = { factor = -0.05 value = conservative }
-		    ideology = { factor = 0.05 value = reactionary }
+			limit = {
+			location = { is_core = POM }
+			}
+			militancy = -9
+			consciousness = -9
+		}
+		any_pop = {
+			ideology = { factor = -0.05 value = conservative }
+			ideology = { factor = 0.05 value = reactionary }
 			scaled_militancy = {
 				ideology = reactionary
 				factor = -3
@@ -2384,39 +2386,39 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = BOH
+	trigger = {
+		tag = BOH
 		has_global_flag = venice_congress_actone
-		CLN = {
-	       check_variable = {
-		      which = MSZ_POWER
-		      value = 8
-	       }
-		   NOT = {
-	          check_variable = {
-		         which = MSZ_POWER
-		         value = 12
-	          }
-		   }
+		MSZ = {
+		check_variable = {
+			which = MSZ_POWER
+			value = 8
 		}
-    }
+		NOT = {
+			check_variable = {
+				which = MSZ_POWER
+				value = 12
+			}
+		}
+		}
+	}
 
-    mean_time_to_happen =  {
-        days = 3
-    }
+	mean_time_to_happen =  {
+		days = 3
+	}
 
 	# Yay...
 
 	option = {
-	    name = "HUNC580.A"
+		name = "HUNC580.A"
 		clr_global_flag = venice_congress_actone
 		set_global_flag = venice_congress_acttwo
 		545 = { add_core = BOH }
 		inherit = MSZ
 		prestige = 1
 		any_pop = {
-		    ideology = { factor = -0.01 value = conservative }
-		    ideology = { factor = 0.01 value = liberal }
+			ideology = { factor = -0.01 value = conservative }
+			ideology = { factor = 0.01 value = liberal }
 			scaled_militancy = {
 				ideology = reactionary
 				factor = 1
@@ -2441,18 +2443,18 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC59.A"
+		name = "HUNC59.A"
 		prestige = -1
-	    any_pop = {
-	        limit = {
-	           location = { is_core = POM }
-	        }
-	        militancy = 1
-	        consciousness = 1
-	    }
 		any_pop = {
-		    ideology = { factor = -0.02 value = conservative }
-		    ideology = { factor = 0.02 value = liberal }
+			limit = {
+			location = { is_core = POM }
+			}
+			militancy = 1
+			consciousness = 1
+		}
+		any_pop = {
+			ideology = { factor = -0.02 value = conservative }
+			ideology = { factor = 0.02 value = liberal }
 			scaled_militancy = {
 				ideology = reactionary
 				factor = 1
@@ -2477,30 +2479,30 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = BOH
+	trigger = {
+		tag = BOH
 		has_global_flag = venice_congress_actone
-		CLN = {
-	       check_variable = {
-		      which = MSZ_POWER
-		      value = 12
-	       }
+		MSZ = {
+		check_variable = {
+			which = MSZ_POWER
+			value = 12
 		}
-    }
+		}
+	}
 
-    mean_time_to_happen =  {
-        days = 3
-    }
+	mean_time_to_happen =  {
+		days = 3
+	}
 
 	option = {
-	    name = "HUNC60.A"
+		name = "HUNC60.A"
 		clr_global_flag = venice_congress_actone
 		set_global_flag = venice_congress_acttwo
 		set_country_flag = SCA_POM_COMPROMISED
 		prestige = 20
 		any_pop = {
-		    ideology = { factor = -0.05 value = conservative }
-		    ideology = { factor = 0.05 value = reactionary }
+			ideology = { factor = -0.05 value = conservative }
+			ideology = { factor = 0.05 value = reactionary }
 			scaled_militancy = {
 				ideology = reactionary
 				factor = -3
@@ -2544,19 +2546,19 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC61.A"
+		name = "HUNC61.A"
 		set_country_flag = SCA_POM_COMPROMISED
 		prestige = -20
-	    any_pop = {
-	        limit = {
-	           location = { is_core = POM }
-	        }
-	        militancy = 4
-	        consciousness = 4
-	    }
 		any_pop = {
-		    ideology = { factor = -0.05 value = conservative }
-		    ideology = { factor = 0.05 value = liberal }
+			limit = {
+			location = { is_core = POM }
+			}
+			militancy = 4
+			consciousness = 4
+		}
+		any_pop = {
+			ideology = { factor = -0.05 value = conservative }
+			ideology = { factor = 0.05 value = liberal }
 			scaled_militancy = {
 				ideology = reactionary
 				factor = 2
@@ -2594,35 +2596,35 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = BOH
+	trigger = {
+		tag = BOH
 		has_global_flag = venice_congress_acttwo
-		CLN = {
-	       check_variable = {
-		      which = HUN_POWER
-		      value = 12
-	       }
+		HUN = {
+			check_variable = {
+				which = HUN_POWER
+				value = 12
+			}
 		}
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 3
-    }
+	mean_time_to_happen =  {
+		days = 3
+	}
 
 	# AAAAA
 
 	option = {
-	    name = "HUNC62.A"
+		name = "HUNC62.A"
 		clr_global_flag = venice_congress_acttwo
 		set_global_flag = venice_congress_final
 		prestige = -5
 		release_vassal = TES
-        689 = { remove_core = THIS }
-        684 = { remove_core = THIS add_core = TES secede_province = TES change_province_name = "Opole" }
-        685 = { remove_core = THIS add_core = TES secede_province = TES change_province_name = "Bytom" state_scope = { change_region_name = "Garny Slask" } }
+		689 = { remove_core = THIS }
+		684 = { remove_core = THIS add_core = TES secede_province = TES change_province_name = "Opole" }
+		685 = { remove_core = THIS add_core = TES secede_province = TES change_province_name = "Bytom" state_scope = { change_region_name = "Garny Slask" } }
 		any_pop = {
-		    ideology = { factor = -0.05 value = conservative }
-		    ideology = { factor = 0.05 value = liberal }
+			ideology = { factor = -0.05 value = conservative }
+			ideology = { factor = 0.05 value = liberal }
 			scaled_militancy = {
 				ideology = reactionary
 				factor = 2
@@ -2646,15 +2648,15 @@ country_event = {
 		relation = { who = BRG value = -25 }
 		relation = { who = SCA value = -25 }
 		HUN = { country_event = { id = 150062 days = 0 } }
-	    ai_chance = {
-           factor = 90
-	    }
+		ai_chance = {
+		factor = 90
+		}
 	}
 
 	## LOL NO
 
 	option = {
-	    name = "HUNC62.B"
+		name = "HUNC62.B"
 		badboy = 5
 		relation = { who = HUN value = -100 }
 		diplomatic_influence = { who = HUN value = -100 }
@@ -2666,8 +2668,8 @@ country_event = {
 		inherit = TES
 		689 = { change_province_name = "Teschen" }
 		any_pop = {
-		    ideology = { factor = -0.01 value = conservative }
-		    ideology = { factor = 0.01 value = liberal }
+			ideology = { factor = -0.01 value = conservative }
+			ideology = { factor = 0.01 value = liberal }
 			scaled_militancy = {
 				ideology = reactionary
 				factor = 1
@@ -2677,14 +2679,14 @@ country_event = {
 				factor = 1
 			}
 		}
-	    change_variable = {
-		   which = IMPERIAL_GRACE
-		   value = 1
-	    }
+		change_variable = {
+		which = IMPERIAL_GRACE
+		value = 1
+		}
 		HUN = { country_event = { id = 150065 days = 0 } }
-	    ai_chance = {
-           factor = 10
-	    }
+		ai_chance = {
+		factor = 10
+		}
 	}
 }
 
@@ -2699,21 +2701,21 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC63.A"
+		name = "HUNC63.A"
 		clr_country_flag = AUS_agreement_HUN_active
 		SCA = {
-		   diplomatic_influence = { who = HUN value = 400 }
-		   relation = { who = HUN value = 400 }
-		   create_alliance = HUN
+		diplomatic_influence = { who = HUN value = 400 }
+		relation = { who = HUN value = 400 }
+		create_alliance = HUN
 		}
 		prestige = 20
-	    any_pop = {
-	        limit = {
-	           location = { is_core = SLV }
-	        }
-	        militancy = -9
-	        consciousness = -9
-	    }
+		any_pop = {
+			limit = {
+			location = { is_core = SLV }
+			}
+			militancy = -9
+			consciousness = -9
+		}
 		any_pop = {
 			scaled_militancy = {
 				ideology = reactionary
@@ -2753,39 +2755,39 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = BOH
+	trigger = {
+		tag = BOH
 		has_global_flag = venice_congress_acttwo
-		CLN = {
-	       check_variable = {
-		      which = HUN_POWER
-		      value = 8
-	       }
-		   NOT = {
-	          check_variable = {
-		         which = HUN_POWER
-		         value = 12
-	          }
-		   }
+		HUN = {
+			check_variable = {
+				which = HUN_POWER
+				value = 8
+			}
+			NOT = {
+				check_variable = {
+					which = HUN_POWER
+					value = 12
+				}
+			}
 		}
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 3
-    }
+	mean_time_to_happen =  {
+		days = 3
+	}
 
 	# At least we resolved that problem.
 
 	option = {
-	    name = "HUNC64.A"
+		name = "HUNC64.A"
 		clr_global_flag = venice_congress_acttwo
 		set_global_flag = venice_congress_final
 		prestige = 5
 		inherit = TES
 		689 = { change_province_name = "Teschen" }
 		any_pop = {
-		    ideology = { factor = -0.01 value = conservative }
-		    ideology = { factor = 0.01 value = liberal }
+			ideology = { factor = -0.01 value = conservative }
+			ideology = { factor = 0.01 value = liberal }
 			scaled_militancy = {
 				ideology = reactionary
 				factor = 1
@@ -2812,21 +2814,21 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	    name = "HUNC66.A"
+		name = "HUNC66.A"
 		clr_country_flag = AUS_agreement_HUN_active
 		SCA = {
-		   diplomatic_influence = { who = HUN value = 400 }
-		   relation = { who = HUN value = 400 }
-		   create_alliance = HUN
+		diplomatic_influence = { who = HUN value = 400 }
+		relation = { who = HUN value = 400 }
+		create_alliance = HUN
 		}
 		prestige = 5
-	    any_pop = {
-	        limit = {
-	           location = { is_core = SLV }
-	        }
-	        militancy = -2
-	        consciousness = -2
-	    }
+		any_pop = {
+			limit = {
+			location = { is_core = SLV }
+			}
+			militancy = -2
+			consciousness = -2
+		}
 		any_pop = {
 			scaled_militancy = {
 				ideology = reactionary
@@ -2852,25 +2854,25 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = BOH
+	trigger = {
+		tag = BOH
 		has_global_flag = venice_congress_acttwo
-		CLN = {
-		   NOT = {
-	          check_variable = {
-		         which = HUN_POWER
-		         value = 8
-	          }
-		   }
+		HUN = {
+			NOT = {
+				check_variable = {
+					which = HUN_POWER
+					value = 8
+				}
+			}
 		}
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 3
-    }
+	mean_time_to_happen =  {
+		days = 3
+	}
 
 	option = {
-	    name = "HUNC67.A"
+		name = "HUNC67.A"
 		clr_global_flag = venice_congress_acttwo
 		set_global_flag = venice_congress_final
 		prestige = 20
@@ -2878,8 +2880,8 @@ country_event = {
 		689 = { change_province_name = "Teschen" }
 		create_vassal = HUN
 		any_pop = {
-		    ideology = { factor = -0.05 value = conservative }
-		    ideology = { factor = 0.05 value = reactionary }
+			ideology = { factor = -0.05 value = conservative }
+			ideology = { factor = 0.05 value = reactionary }
 			scaled_militancy = {
 				ideology = reactionary
 				factor = -3
@@ -2909,12 +2911,12 @@ country_event = {
 		relation = { who = BRG value = -100 }
 		relation = { who = SCA value = -100 }
 		HUN = {
-		   set_country_flag = AUS_agreement_HUN_active
-	       add_country_modifier = {
-              name = calm_before_storm
-	          duration = 14
-	       }
-		   country_event = { id = 150067 days = 14 }
+		set_country_flag = AUS_agreement_HUN_active
+		add_country_modifier = {
+			name = calm_before_storm
+			duration = 14
+		}
+		country_event = { id = 150067 days = 14 }
 		}
 	}
 }
@@ -2932,55 +2934,55 @@ country_event = {
 	picture = "congress_venice"
 
 	fire_only_once = yes
-    is_triggered_only = yes
+	is_triggered_only = yes
 	major = yes
 
 	option = {
-	    name = "HUNC68.A"
+		name = "HUNC68.A"
 		prestige_factor = -0.25
 		any_owned = {
-	       limit = {
-	          is_core = SIE
-		   }
-	       secede_province = SIE
+		limit = {
+			is_core = SIE
+		}
+		secede_province = SIE
 		}
 		any_owned = {
-	       limit = {
-	          is_core = SLA
-		   }
-	       secede_province = SLA
+		limit = {
+			is_core = SLA
+		}
+		secede_province = SLA
 		}
 		950 = { add_core = PLC }
 		any_owned = {
-	       limit = {
-	          is_core = RUT
-		   }
-	       secede_province = PLC
+		limit = {
+			is_core = RUT
+		}
+		secede_province = PLC
 		}
 		random_owned = {
-		   limit = {
-		      owner = { has_country_flag = AUS_agreement_HUN_active }
-		   }
-		   owner = {
-		      clr_country_flag = AUS_agreement_HUN_active
-		      any_owned = {
-	             limit = {
-					 province_id = 623
-		         }
-	             secede_province = AUS
-		      }
-		      any_owned = {
-	             limit = {
-					 province_id = 639
-		         }
-	             secede_province = AUS
-		      }
-		   }
+		limit = {
+			owner = { has_country_flag = AUS_agreement_HUN_active }
+		}
+		owner = {
+			clr_country_flag = AUS_agreement_HUN_active
+			any_owned = {
+				limit = {
+					province_id = 623
+				}
+				secede_province = AUS
+			}
+			any_owned = {
+				limit = {
+					province_id = 639
+				}
+				secede_province = AUS
+			}
+		}
 		}
 		SIE = { government = absolute_monarchy }
 		any_pop = {
-		    ideology = { factor = -0.1 value = conservative }
-		    ideology = { factor = 0.1 value = liberal }
+			ideology = { factor = -0.1 value = conservative }
+			ideology = { factor = 0.1 value = liberal }
 			scaled_militancy = {
 				ideology = reactionary
 				factor = 2
@@ -3022,31 +3024,31 @@ country_event = {
 	fire_only_once = yes
 	major = yes
 
-    trigger = {
-        tag = DUA
+	trigger = {
+		tag = DUA
 		has_global_flag = venice_congress_final
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 3
-    }
+	mean_time_to_happen =  {
+		days = 3
+	}
 
 	option = {
-	    name = "HUNC69.A"
+		name = "HUNC69.A"
 		any_country = {
-		   limit = {
-		      has_country_flag = attending_HUN_conference
-		   }
-		   clr_country_flag = attending_HUN_conference
+		limit = {
+			has_country_flag = attending_HUN_conference
+		}
+		clr_country_flag = attending_HUN_conference
 		}
 		clr_global_flag = venice_congress_final
-        set_global_flag = END_OF_VENICE_CONGRESS
+		set_global_flag = END_OF_VENICE_CONGRESS
 		set_global_flag = DVG_infamy_cleared
-	    remove_country_modifier = DVG_infamy
-        any_country = {
-	        limit = { tag != THIS }
-	        remove_country_modifier = DVG_infamy
-	    }
+		remove_country_modifier = DVG_infamy
+		any_country = {
+			limit = { tag != THIS }
+			remove_country_modifier = DVG_infamy
+		}
 		prestige = 20
 		any_pop = {
 			scaled_militancy = {
@@ -3093,13 +3095,13 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-    option = {
-        name = "HUNC70.A"
-        prestige = 20
+	option = {
+		name = "HUNC70.A"
+		prestige = 20
 		relation = { who = BOH value = 50 }
 		any_pop = {
-		  consciousness = -3
-		  militancy = -3
+		consciousness = -3
+		militancy = -3
 		}
 	}
 }
@@ -3115,8 +3117,8 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-    option = {
-        name = "HUNC71.A"
+	option = {
+		name = "HUNC71.A"
 		set_global_flag = pommerania_war_early
 		war = {
 			target = SCA
@@ -3128,7 +3130,7 @@ country_event = {
 				casus_belli = status_quo
 			}
 		}
-        SCA = { country_event = 150071 }
+		SCA = { country_event = 150071 }
 		ai_chance = {
 			factor = 80
 		}
@@ -3136,13 +3138,13 @@ country_event = {
 
 	## Refusing to go to war now gives the same effect as if the Congress voted to give Meckelnburg
 
-    option = {
-        name = "HUNC71.B"
+	option = {
+		name = "HUNC71.B"
 		badboy = -10
 		prestige = -5
 		any_pop = {
-		    ideology = { factor = -0.05 value = conservative }
-		    ideology = { factor = 0.05 value = reactionary }
+			ideology = { factor = -0.05 value = conservative }
+			ideology = { factor = 0.05 value = reactionary }
 			scaled_militancy = {
 				ideology = reactionary
 				factor = -3
@@ -3190,9 +3192,9 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-    option = {
-        name = "HUNC72.A"
-        prestige = -1
+	option = {
+		name = "HUNC72.A"
+		prestige = -1
 	}
 }
 
@@ -3207,41 +3209,41 @@ country_event = {
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = SCA
+	trigger = {
+		tag = SCA
 		has_global_flag = pommerania_war_early
 		war = no
 		has_country_flag = custom_treaty_loser
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 3
-    }
+	mean_time_to_happen =  {
+		days = 3
+	}
 
 	option = {
-	    name = "HUNC73.A"
+		name = "HUNC73.A"
 		prestige_factor = -0.25
 		clr_global_flag = pommerania_war_early
 		clr_country_flag = custom_treaty_loser
 		any_owned = {
-	        limit = {
-	           is_core = POM
-		    }
+			limit = {
+			is_core = POM
+			}
 			remove_core = SCA
-	        secede_province = POM
-        }
+			secede_province = POM
+		}
 		any_country = {
-		   limit = {
-		      tag = MSZ
-			  vassal_of = BOH
-		   }
-		   annex_to = BOH
+		limit = {
+			tag = MSZ
+			vassal_of = BOH
+		}
+		annex_to = BOH
 		}
 		BOH = {
-		   relation = { who = POM value = 400 }
-		   diplomatic_influence = { who = POM value = 400 }
-		   #set_country_flag = POM_expedite_CAE
-		   country_event = 150073
+		relation = { who = POM value = 400 }
+		diplomatic_influence = { who = POM value = 400 }
+		#set_country_flag = POM_expedite_CAE
+		country_event = 150073
 		}
 		any_pop = {
 			scaled_militancy = {
@@ -3284,31 +3286,31 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-    option = {
-        name = "HUNC72.A"
-        prestige = 20
+	option = {
+		name = "HUNC72.A"
+		prestige = 20
 		# Failsafe for AI to stop them from annexing BRA
 		any_owned = {
-	        limit = {
-	           is_core = HAN
-		    }
-	        secede_province = HAN
-        }
+			limit = {
+			is_core = HAN
+			}
+			secede_province = HAN
+		}
 		any_owned = {
-	        limit = {
-	           is_core = THU
-		    }
-	        secede_province = THU
-        }
+			limit = {
+			is_core = THU
+			}
+			secede_province = THU
+		}
 		any_owned = {
-	        limit = {
-	           is_core = BRA
-		    }
-	        secede_province = BRA
-        }
+			limit = {
+			is_core = BRA
+			}
+			secede_province = BRA
+		}
 		any_pop = {
-		   militancy = -3
-		   consciousness = -3
+		militancy = -3
+		consciousness = -3
 		}
 	}
 }
@@ -3319,49 +3321,49 @@ country_event = {
 	id = 150074
 	title = "HUNC75.T"
 	desc = "HUNC75.D"
-    picture = "SCAwins"
+	picture = "SCAwins"
 
 	fire_only_once = yes
 
-    trigger = {
-        tag = SCA
+	trigger = {
+		tag = SCA
 		has_global_flag = pommerania_war_early
 		war = no
 		NOT = { has_country_flag = custom_treaty_loser }
-    }
+	}
 
-    mean_time_to_happen =  {
-        days = 3
-    }
+	mean_time_to_happen =  {
+		days = 3
+	}
 
 	option = {
-	    name = "HUNC75.A"
+		name = "HUNC75.A"
 		prestige = 20
 		clr_global_flag = pommerania_war_early
 		clr_country_flag = custom_treaty_loser
 		any_pop = {
-	        limit = {
-	           NOT = { location = { is_core = POM } }
-	        }
-		   militancy = -3
-		   consciousness = -3
+			limit = {
+			NOT = { location = { is_core = POM } }
+			}
+		militancy = -3
+		consciousness = -3
 		}
-	    any_pop = {
-	        limit = {
-	           location = { is_core = POM }
-	        }
-	        militancy = -9
-	        consciousness = -9
-	    }
+		any_pop = {
+			limit = {
+			location = { is_core = POM }
+			}
+			militancy = -9
+			consciousness = -9
+		}
 		any_country = {
-		   limit = {
-		      tag = MSZ
-			  vassal_of = BOH
-		   }
-		   annex_to = SCA
+		limit = {
+			tag = MSZ
+			vassal_of = BOH
+		}
+		annex_to = SCA
 		}
 		BOH = {
-		   country_event = 150075
+		country_event = 150075
 		}
 
 	}
@@ -3379,28 +3381,28 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 
-    option = {
-        name = "HUNC76.A"
-        prestige_factor = -0.25
+	option = {
+		name = "HUNC76.A"
+		prestige_factor = -0.25
 		# Failsafe for AI to stop them from annexing BRA
 		any_owned = {
-	        limit = {
-	           is_core = HAN
-		    }
-	        secede_province = HAN
-        }
+			limit = {
+			is_core = HAN
+			}
+			secede_province = HAN
+		}
 		any_owned = {
-	        limit = {
-	           is_core = THU
-		    }
-	        secede_province = THU
-        }
+			limit = {
+			is_core = THU
+			}
+			secede_province = THU
+		}
 		any_owned = {
-	        limit = {
-	           is_core = BRA
-		    }
-	        secede_province = BRA
-        }
+			limit = {
+			is_core = BRA
+			}
+			secede_province = BRA
+		}
 		any_pop = {
 			scaled_militancy = {
 				ideology = reactionary

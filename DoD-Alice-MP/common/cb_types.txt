@@ -212,6 +212,8 @@ dismantle_cb = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		set_country_flag = dismantling_treaty
 	}
 }
@@ -281,6 +283,8 @@ dismantle_cb_add = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		set_country_flag = dismantling_treaty
 	}
 }
@@ -344,6 +348,8 @@ dismantle_cb_add_new = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		set_country_flag = dismantling_treaty
 	}
 }
@@ -388,6 +394,8 @@ great_war_penalty_cb = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		political_reform = no_draft
 	}
 }
@@ -473,6 +481,8 @@ acquire_core_state = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		country_event =	2650	# Territorial Loss event
 	}
 }
@@ -557,6 +567,8 @@ acquire_all_cores = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		country_event =	2650	# Territorial Loss event
 	}
 }
@@ -681,6 +693,8 @@ russian_governorate_cb = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 
 	}
 }
@@ -1390,6 +1404,8 @@ unification_GP_humiliate = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		prestige_factor = -0.2
 	}
 }
@@ -1882,6 +1898,7 @@ free_peoples = {
 
 	on_po_accepted = {
 		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		country_event =	2651	# Territorial Loss event
 	}
 }
@@ -2129,10 +2146,7 @@ liberate_country = {
 	war_name = WAR_LIBERATE_NAME
 
 	on_add = {
-		if = {
-			limit = { ai = no }
-			add_country_modifier = { name = disable_conquest_cb duration = -1 }
-		}
+		add_country_modifier = { name = disable_conquest_cb duration = -1 }
 		move_issue_percentage = {
 			from = jingoism
 			to = pro_military
@@ -2142,6 +2156,9 @@ liberate_country = {
 
 	on_po_accepted = {
 		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		country_event =	2651	# Territorial Loss event
 	}
 }
@@ -2249,6 +2266,8 @@ free_allied_cores = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		country_event =	2651	# Territorial Loss event
 	}
 }
@@ -2702,6 +2721,8 @@ cut_down_to_size = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		random_owned = {
 			limit = {
 				owner = {
@@ -2844,6 +2865,8 @@ humiliate = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		prestige_factor = -0.2
 	}
 }
@@ -4276,6 +4299,8 @@ demand_concession_casus_belli = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 	}
 }
 
@@ -4478,6 +4503,8 @@ demand_concession_NI_casus_belli = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 	}
 }
 
@@ -4665,6 +4692,8 @@ demand_concession_BC_casus_belli = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 	}
 }
 
@@ -5032,7 +5061,9 @@ annex_africa = {
 		}
 	}
 
-	on_po_accepted = { THIS = { add_country_modifier = { name = claimed_africa duration = 120 } } }
+	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies THIS = { add_country_modifier = { name = claimed_africa duration = 120 } } }
 }
 
 annex_africa_full = {
@@ -5129,6 +5160,8 @@ annex_africa_full = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = { add_country_modifier = { name = claimed_africa duration = 120 } }
 		tech_school = developing_tech_school
 	}
@@ -5288,7 +5321,9 @@ establish_protectorate_casus_belli = {
 			value = 0.1
 		}
 	}
-	on_po_accepted = { tech_school = developing_tech_school }
+	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies tech_school = developing_tech_school }
 }
 
 establish_protectorate_NI_casus_belli = {
@@ -5454,7 +5489,9 @@ establish_protectorate_NI_casus_belli = {
 			value = 0.1
 		}
 	}
-	on_po_accepted = { tech_school = developing_tech_school }
+	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies tech_school = developing_tech_school }
 }
 
 establish_protectorate_BC_casus_belli = {
@@ -5612,7 +5649,9 @@ establish_protectorate_BC_casus_belli = {
 			value = 0.1
 		}
 	}
-	on_po_accepted = { tech_school = developing_tech_school }
+	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies tech_school = developing_tech_school }
 }
 
 #Negotiated Transfer
@@ -5697,6 +5736,8 @@ cut_down_to_size_no_add_wargoal = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = { set_country_flag = won_MEX_USA_war }
 	}
 }
@@ -5735,6 +5776,8 @@ cut_down_to_size_no_infamy = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 	}
 }
 
@@ -5867,6 +5910,8 @@ make_puppet = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		country_event = 19370
 	}
 }
@@ -6045,6 +6090,8 @@ great_war_install_democracy = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = { set_country_flag = friendly_democracy }
 		country_event = 96085
 	}
@@ -6102,6 +6149,8 @@ great_war_install_fascism = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = { set_country_flag = friendly_fascist }
 		country_event = 96086
 	}
@@ -6156,6 +6205,8 @@ great_war_install_communism = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = { set_country_flag = friendly_communist }
 		country_event = 96087
 	}
@@ -6210,6 +6261,8 @@ great_war_install_socrep = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = { set_country_flag = friendly_socialist_republic }
 		country_event = 96088
 	}
@@ -6286,6 +6339,8 @@ install_democracy = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = { set_country_flag = friendly_democracy }
 		country_event = 96085
 	}
@@ -6354,6 +6409,8 @@ install_fascism = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = {
 			set_country_flag = friendly_fascist
 			any_country = {
@@ -6436,6 +6493,8 @@ install_communism = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = {
 			set_country_flag = friendly_communist
 			any_country = {
@@ -6518,6 +6577,8 @@ install_socrep = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = {
 			set_country_flag = friendly_socialist_republic
 			any_country = {
@@ -6603,6 +6664,8 @@ revolutionary_war = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = {
 			set_country_flag = friendly_democracy
 			any_country = {
@@ -6943,6 +7006,8 @@ dismantle_forts = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 	}
 }
 
@@ -7020,6 +7085,8 @@ acquire_any_state = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		random_owned = {
 			limit = {
 				owner = {
@@ -7082,6 +7149,8 @@ conquest_any = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 	}
 }
 
@@ -7183,6 +7252,8 @@ treaty_port_casus_belli = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		if = {
 			limit = {
 				civilized = no
@@ -7259,7 +7330,9 @@ install_fascism_make_puppet = {
 		}
 	}
 
-	on_po_accepted = { THIS = { set_country_flag = friendly_fascist_puppet } country_event = 96086 }
+	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies THIS = { set_country_flag = friendly_fascist_puppet } country_event = 96086 }
 }
 
 install_communism_make_puppet = {
@@ -7301,7 +7374,9 @@ install_communism_make_puppet = {
 		}
 	}
 
-	on_po_accepted = { THIS = { set_country_flag = friendly_communist_puppet } country_event = 96087 }
+	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies THIS = { set_country_flag = friendly_communist_puppet } country_event = 96087 }
 }
 
 install_democracy_make_puppet = {
@@ -7343,7 +7418,9 @@ install_democracy_make_puppet = {
 		}
 	}
 
-	on_po_accepted = { THIS = { set_country_flag = friendly_democracy_puppet } country_event = 96085 }
+	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies THIS = { set_country_flag = friendly_democracy_puppet } country_event = 96085 }
 }
 
 geuzen_cb = {
@@ -7376,6 +7453,8 @@ geuzen_cb = {
 	po_reparations = yes
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		country_event = 98247
 	}
 
@@ -7418,6 +7497,8 @@ custom_treaty_cb = {
 	po_reparations = yes
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		set_country_flag = custom_treaty_loser
 	}
 
@@ -8128,6 +8209,8 @@ colonial_conquest = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = {
 			random_list = {
 				20 = { add_country_modifier = { name = claimed_africa duration = 365 } }
@@ -8418,6 +8501,8 @@ colonial_conquest_full = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = {
 			random_list = {
 				20 = { add_country_modifier = { name = claimed_africa duration = 365 } }
@@ -8574,6 +8659,8 @@ steal_puppet = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		THIS = { set_country_flag = new_overlord }
 	}
 }
@@ -9050,6 +9137,8 @@ liberate_puppet = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		country_event =    2651    # Territorial Loss event
 		THIS = { country_event = 19369 } # Starts puppeting event chain
 	}
@@ -9225,6 +9314,8 @@ liberate_puppet_no_infamy = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		country_event = 2651    # Territorial Loss event
 		THIS = { country_event = 19369 } # Starts puppeting event chain
 	}
@@ -9264,6 +9355,8 @@ humiliate_no_infamy = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 		prestige_factor = -0.2
 	}
 }
@@ -9323,7 +9416,9 @@ establish_protectorate_casus_belli_no_infamy = {
 			value = 0.1
 		}
 	}
-	on_po_accepted = { tech_school = unciv_tech_school }
+	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies tech_school = unciv_tech_school }
 }
 
 demand_concession_casus_belli_no_infamy = {
@@ -9404,5 +9499,7 @@ demand_concession_casus_belli_no_infamy = {
 	}
 
 	on_po_accepted = {
+		THIS = { remove_country_modifier = disable_conquest_cb }
+		clr_country_flag = calling_all_allies
 	}
 }

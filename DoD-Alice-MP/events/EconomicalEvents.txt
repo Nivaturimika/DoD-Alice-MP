@@ -236,8 +236,7 @@ country_event = {
 		any_neighbor_country = {
 			has_country_modifier = stock_market_crash
 		}
-		NOT = { has_country_modifier = great_depression }	
-		CLN = { NOT = { has_country_modifier = great_depression_cooldown } }
+		NOT = { has_country_modifier = great_depression }
 	}
 	
 	mean_time_to_happen = {
@@ -310,12 +309,6 @@ country_event = {
 	
 	option = {
 		name = "God, that's so depressing."
-		CLN = { 
-            add_country_modifier = {
-			    name = great_depression_cooldown
-			    duration = 9125
-		    }
-		}
 		remove_country_modifier = economic_trend
 		add_country_modifier = {
 			name = economic_trend
