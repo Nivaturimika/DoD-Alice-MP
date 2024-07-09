@@ -733,37 +733,6 @@ country_event = {
 	}
 }
 
-### The Great Bohemian Reforms - This explains Bohemia's Institutional Reform Program after HRE collapse - This needs State and Government and is fired by decision
-
-country_event = {
-	id = 152008
-	title = "CAEBOH9.T"
-	desc = "CAEBOH9.D"
-	picture = "adminstration"
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = "CAEBOH8.A"
-		random_owned = {
-			limit = { owner = { ai = yes } }
-			owner = {
-			canned_food = 1000
-			regular_clothes = 1000
-			luxury_clothes = 1000
-			small_arms = 1000
-			artillery = 1000
-			}
-		}
-		set_country_flag = czech_time_BOH
-		any_pop = {
-		militancy = -1
-		consciousness = 1
-		}
-	}
-}
-
 ### Czech protest for rights - Beginning of the Czech National Revival
 
 country_event = {
@@ -786,8 +755,8 @@ country_event = {
 		name = "CAEBOH10.A"
 		clr_country_flag = czech_time_BOH
 		add_country_modifier = {
-		name = BOH_czechs
-		duration = -1
+			name = BOH_czechs
+			duration = -1
 		}
 		any_pop = {
 			limit = {
@@ -847,7 +816,7 @@ country_event = {
 		}
 		any_pop = {
 			limit = {
-			has_pop_culture = old_czech
+				has_pop_culture = old_czech
 			}
 			ideology = {
 				value = conservative
@@ -7699,13 +7668,9 @@ country_event = {
 		consciousness = -9
 		}
 		add_accepted_culture = old_czech
-		random_owned = {
-			limit = {
-			owner = {
-				government = prussian_constitutionalism
-			}
-			}
-			owner = { government = hms_government }
+		if = {
+			limit = { government = prussian_constitutionalism }
+			government = hms_government
 		}
 		ruling_party_ideology = market_liberal
 		political_reform = population_equal_weight
@@ -7715,19 +7680,6 @@ country_event = {
 		political_reform = free_press
 		political_reform = all_voting_pops
 		political_reform = gerrymandering
-
-		
-
-
-
-
-
-
-
-		
-		
-
-
 		country_event = 152090
 	}
 }
@@ -7747,8 +7699,8 @@ country_event = {
 	option = {
 		name = "CAESCA49.A"
 		any_pop = {
-		militancy = 1
-		consciousness = 1
+			militancy = 1
+			consciousness = 1
 		}
 	}
 }
@@ -7877,73 +7829,71 @@ country_event = {
 
 	option = {
 		name = "CAESCA52.A"
-			prestige = 10
-			625 = { remove_province_modifier = nationalist_agitation }
-			remove_country_modifier = general_strike
-			add_country_modifier = {
-				name = the_red_scare
-				duration = 3650
-			}
-			set_country_flag = communist_purge
-			any_pop = { limit = { pop_majority_ideology = communist } random_list = { 50 = { reduce_pop = 0.95 } 50 = { reduce_pop = 0.9 } } }
-			any_pop = {
-				limit = { social_movement = yes }
-				militancy = -7
-				random_list = { 50 = { reduce_pop = 0.9 } 50 = { reduce_pop = 0.85 } }
-			}
-			any_pop = {
-				limit = {
-					OR = { type = soldiers type = officers }
-					pop_majority_ideology = communist
-					}
-					militancy = -9 ideology = { factor = 0.35 value = conservative }
-					random_list = { 50 = { reduce_pop = 0.9 } 50 = { reduce_pop = 0.85 } }
-			}
-			any_pop = { ideology = { factor = -0.15 value = communist } }
-
-			random_owned = {
+		prestige = 10
+		625 = { remove_province_modifier = nationalist_agitation }
+		remove_country_modifier = general_strike
+		add_country_modifier = {
+			name = the_red_scare
+			duration = 3650
+		}
+		set_country_flag = communist_purge
+		any_pop = {
+			limit = { pop_majority_ideology = communist }
+			random_list = { 50 = { reduce_pop = 0.95 } 50 = { reduce_pop = 0.9 } }
+		}
+		any_pop = {
+			limit = { social_movement = yes }
+			militancy = -7
+			random_list = { 50 = { reduce_pop = 0.9 } 50 = { reduce_pop = 0.85 } }
+		}
+		any_pop = {
 			limit = {
-				owner = { has_country_modifier = charismatic_leader_communist }
+				OR = { type = soldiers type = officers }
+				pop_majority_ideology = communist
 			}
-			owner = {
-				clr_country_flag = charismatic_leader
-				clr_country_flag = charismatic_leader_communist
-				remove_country_modifier = charismatic_leader_communist
-			}
-			}
+			militancy = -9 ideology = { factor = 0.35 value = conservative }
+			random_list = { 50 = { reduce_pop = 0.9 } 50 = { reduce_pop = 0.85 } }
+		}
+		any_pop = { ideology = { factor = -0.15 value = communist } }
 
-			random_owned = {
-			limit = {
-				owner = { has_country_modifier = charismatic_leader_socialist }
-			}
-			owner = {
-				clr_country_flag = charismatic_leader
-				clr_country_flag = charismatic_leader_socialist
-				remove_country_modifier = charismatic_leader_socialist
-			}
-			}
+		random_owned = {
+		limit = {
+			owner = { has_country_modifier = charismatic_leader_communist }
+		}
+		owner = {
+			clr_country_flag = charismatic_leader
+			clr_country_flag = charismatic_leader_communist
+			remove_country_modifier = charismatic_leader_communist
+		}
+		}
 
-			random_owned = {
-			limit = {
-				owner = { has_country_modifier = popular_figurehead_communist }
-			}
-			owner = {
-				clr_country_flag = popular_figurehead
-				clr_country_flag = popular_figurehead_communist
-				remove_country_modifier = popular_figurehead_communist
-			}
-			}
+		random_owned = {
+		limit = {
+			owner = { has_country_modifier = charismatic_leader_socialist }
+		}
+		owner = {
+			clr_country_flag = charismatic_leader
+			clr_country_flag = charismatic_leader_socialist
+			remove_country_modifier = charismatic_leader_socialist
+		}
+		}
 
-			random_owned = {
-			limit = {
-				owner = { has_country_modifier = popular_figurehead_socialist }
-			}
-			owner = {
-				clr_country_flag = popular_figurehead
-				clr_country_flag = popular_figurehead_socialist
-				remove_country_modifier = popular_figurehead_socialist
-			}
-			}
+		random_owned = {
+		limit = {
+			owner = { has_country_modifier = popular_figurehead_communist }
+		}
+		owner = {
+			clr_country_flag = popular_figurehead
+			clr_country_flag = popular_figurehead_communist
+			remove_country_modifier = popular_figurehead_communist
+		}
+		}
+		if = {
+			limit = { has_country_modifier = popular_figurehead_socialist }
+			clr_country_flag = popular_figurehead
+			clr_country_flag = popular_figurehead_socialist
+			remove_country_modifier = popular_figurehead_socialist
+		}
 
 		any_owned = {
 			limit = {
@@ -7951,9 +7901,9 @@ country_event = {
 					has_province_modifier = socialist_stronghold
 					has_province_modifier = communist_stronghold
 				}
-				}
-				remove_province_modifier = socialist_stronghold
-				remove_province_modifier = communist_stronghold
+			}
+			remove_province_modifier = socialist_stronghold
+			remove_province_modifier = communist_stronghold
 		}
 		any_pop = { militancy = -5 }
 		any_pop = {

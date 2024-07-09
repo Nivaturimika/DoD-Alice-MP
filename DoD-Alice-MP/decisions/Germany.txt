@@ -230,21 +230,34 @@ political_decisions = {
 		}
 
 		allow = {
-		OR = {
-			state_n_government = 1
-			AND = {
-				ai = yes
-				year = 1861
+			OR = {
+				state_n_government = 1
+				AND = {
+					ai = yes
+					year = 1861
+				}
 			}
-		}
-		has_country_flag = BOH_grand_reforms_possible
+			has_country_flag = BOH_grand_reforms_possible
 		}
 
 		effect = {
 			prestige = 5
 			set_country_flag = BOH_grand_reformation
 			clr_country_flag = BOH_grand_reforms_possible
-			country_event = { id = 152008 days = 14 }
+			### The Great Bohemian Reforms - This explains Bohemia's Institutional Reform Program after HRE collapse - This needs State and Government and is fired by decision
+			lambda_country_event = {
+				title = "CAEBOH9.T"
+				desc = "CAEBOH9.D"
+				picture = "adminstration"
+				option = {
+					name = "CAEBOH8.A"
+					set_country_flag = czech_time_BOH
+					any_pop = {
+						militancy = -1
+						consciousness = 1
+					}
+				}
+			}
 		}
 
 		ai_will_do = {
