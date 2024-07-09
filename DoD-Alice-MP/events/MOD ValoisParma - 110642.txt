@@ -1,7 +1,6 @@
 #Antonio Farnese and the Valois
 # Born in 1810 and dies at the ripe old age of 81 in 1891. This guy is a real piece of work and if for any reason the Valois find themselves on either the Italian or French Thrones. He is likely to create a glorious empire in his name.
 country_event = {
-
 	id = 1106420
 	title = "VAL90.T"
 	desc = "VAL90.D"
@@ -12,7 +11,7 @@ country_event = {
 	trigger = {
 		tag = PRV
 		NOT = { has_country_flag = ant_parma }
-		}
+	}
 
 	mean_time_to_happen = {
 		months = 1
@@ -25,9 +24,9 @@ country_event = {
 		set_country_flag = ant_parma
 		set_global_flag = the_road_to_emperor
 		define_general = {
-		name = "Antonio Farnese"
-		personality = genius
-		background = rising_star
+			name = "Antonio Farnese"
+			personality = genius
+			background = rising_star
 		}
 		ai_chance = {
 			factor = 90
@@ -37,7 +36,7 @@ country_event = {
 	option = {
 		name = "A ambitious fool. Send him back to Parma."
 		set_country_flag = ant_parma
-		prestige = -5
+		badboy = -3
 		ai_chance = {
 			factor = 10
 		}
@@ -423,25 +422,19 @@ country_event = {
 
 	trigger = {
 		OR = {
-		tag = FRA
-		tag = FRT
-		tag = PRV
-		tag = ITA
+			tag = FRA
+			tag = FRT
+			tag = PRV
+			tag = ITA
 		}
 		has_global_flag = the_road_to_emperor
 		OR = { 
-		has_country_flag = ant_parma
-		has_country_flag = farnese_emperor
-		has_country_flag = farnese_primeminister
+			has_country_flag = ant_parma
+			has_country_flag = farnese_emperor
+			has_country_flag = farnese_primeminister
 		}
 		NOT = { has_country_flag = farnese_dead }			
-		NOT = {
-		OR = {
-		government = absolute_monarchy
-		government = prussian_constitutionalism
-		government = hms_government
-		}
-	}
+		NOT = { test = is_monarchy_government }
 	}
 
 	mean_time_to_happen = {
