@@ -22,7 +22,7 @@ sea_starts = {
 	3224 3225 3226 3227 3228 3229 3230 3231 3232 3233 3234 3235 3236 3237 3238 3239 3240 3241 3242 3243 3244 3245 3247 3248 3350 3351 3352 3353 3354
 }
     
-definitions = "../mod/Divergences of Darkness Fan Fork/map/definition.csv"
+definitions = "definition.csv"
 provinces = "provinces.bmp"
 positions = "positions.txt"
 terrain = "terrain.bmp"
@@ -35,11 +35,9 @@ region = "region.txt"
 region_sea = "region_sea.txt"
 province_flag_sprite = "province_flag_sprites"
 
-
 border_heights = {
 	500
 	800
-
 }
 
 terrain_sheet_heights = {
