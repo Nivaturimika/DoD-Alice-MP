@@ -1,6 +1,7 @@
 capital = 995
 primary_culture = karelian
 culture = finnish
+culture = african_minor
 religion = orthodox
 government = presidential_dictatorship # Lord Protector assigned by Scandinavian Emperor
 plurality = 0.0
