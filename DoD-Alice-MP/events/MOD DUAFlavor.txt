@@ -157,15 +157,7 @@ country_event = {
 		set_country_flag = french_integration
 		set_country_flag = choice_pokemon
 		ai_chance = {
-		factor = 50
-			modifier = {
-				factor = 0
-				has_global_flag = ENL_DUA_global
-			}
-			modifier = {
-				factor = 0
-				has_global_flag = DUA_DUA_global
-			}
+			factor = 50
 		}
 	}
 
@@ -176,14 +168,6 @@ country_event = {
 		set_country_flag = choice_pokemon
 		ai_chance = {
 			factor = 20
-			modifier = {
-				factor = 0
-				has_global_flag = FRA_DUA_global
-			}
-			modifier = {
-				factor = 0
-				has_global_flag = DUA_DUA_global
-			}
 		}
 	}
 	option = {
@@ -194,14 +178,6 @@ country_event = {
 		country_event = 650240
 		ai_chance = {
 			factor = 30
-			modifier = {
-				factor = 0
-				has_global_flag = FRA_DUA_global
-			}
-			modifier = {
-				factor = 0
-				has_global_flag = ENL_DUA_global
-			}
 		}
 	}
 }

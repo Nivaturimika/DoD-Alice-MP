@@ -86,10 +86,6 @@ country_event = {
 				factor = 0 
 				QUI = { ai = no } 
 			}
-			modifier = { 
-				factor = 0 
-				has_global_flag = no_reconquista_global
-			}
         }
 	}
 	
@@ -100,10 +96,6 @@ country_event = {
 		set_global_flag = CLM_ARMISTICE
         ai_chance = {
             factor = 40
-			modifier = { 
-				factor = 0
-				has_global_flag = reconquista_global
-			}
         }
 	}
 }
@@ -2467,10 +2459,6 @@ country_event = {
         any_pop = { limit = { OR = { culture = mexican culture = lusitanian culture = central_american } } militancy = 1 }	
         ai_chance = {
             factor = 60
-			modifier = { 
-				factor = 0
-				has_global_flag = CLM_liberal_global
-			}
         }		
 	}
 }
@@ -2659,10 +2647,6 @@ country_event = {
         any_pop = { limit = { culture = mexican } militancy = 5 }	
         ai_chance = {
             factor = 60
-			modifier = { 
-				factor = 0
-				has_global_flag = CLM_castro_global
-			}
         }		
 	}
 	
@@ -2677,10 +2661,6 @@ country_event = {
         any_pop = { limit = { OR = { culture = mexican culture = lusitanian culture = central_american } } militancy = 3 consciousness = 1 }	
         ai_chance = {
             factor = 40
-			modifier = { 
-				factor = 0
-				has_global_flag = CLM_dissolve_global
-			}
         }		
 	}
 }
@@ -3732,10 +3712,6 @@ country_event = {
         any_pop = { limit = { OR = { culture = lusitanian culture = central_american } } militancy = 2 }	
         ai_chance = {
             factor = 50
-			modifier = { 
-				factor = 0 
-				has_global_flag = CLM_liberal_global
-			}
         }
 	}
 }
@@ -4023,10 +3999,6 @@ country_event = {
         any_pop = { limit = { OR = { culture = lusitanian culture = central_american } } militancy = 2 }
         ai_chance = {
             factor = 10
-			modifier = { 
-				factor = 0 
-				has_global_flag = CLM_liberal_global
-			}
         }
 	}    
 	

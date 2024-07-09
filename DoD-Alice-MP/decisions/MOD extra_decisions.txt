@@ -1,64 +1,4 @@
 political_decisions = {
-
-	#tutorial_1_ = {
-	#	alert = yes
-	#	potential = {
-	#		has_country_flag = hidden_decisions
-	#		not = { has_country_flag = hidden_tutorials }
-	#		not = { has_country_flag = tutorial_1 }
-	#		ai = no
-	#	}
-	#	allow = {
-	#		ai = no
-	#
-	#	}
-	#	effect = {
-	#		set_global_flag = tutorial_1
-	#	}
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-	#}
-
-	#alert_avg_mil = {
-	#	alert = yes
-	#	potential = {
-	#		not = { has_country_flag = hidden_alerts }
-	#		not = { has_country_flag = hidden_alert_avg_mil }
-	#		ai = no
-	#	}
-	#	allow = {
-	#		ai = no
-	#	}
-	#	effect = {
-	#		set_global_flag = hidden_alert_avg_mil
-	#	}
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-	#}
-
-	railroading = {
-		alert = no
-		picture = bytown_1853
-		potential = {
-			ai = no
-			has_country_flag = hidden_decisions
-			NOT = { year = 1837 }
-		}
-
-		allow = {
-		}
-
-		effect = {
-		country_event = 88000
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
 	exhibition = {
 		alert = yes
 		picture = exhibition
@@ -895,46 +835,6 @@ political_decisions = {
 
 		ai_will_do = {
 			factor = 1
-		}
-	}
-
-	hide_extra_decisions = {
-		alert = no
-		picture = bytown_1853
-		potential = {
-			has_country_flag = hidden_decisions
-			ai = no
-		}
-
-		allow = {
-		}
-
-		effect = {
-			clr_country_flag = hidden_decisions
-
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	show_extra_decisions = {
-		alert = no
-		picture = bytown_1853
-		potential = {
-			NOT = { has_country_flag = hidden_decisions }
-			ai = no
-		}
-
-		allow = {
-		}
-
-		effect = {
-		set_country_flag = hidden_decisions
-		}
-
-		ai_will_do = {
-			factor = 0
 		}
 	}
 }

@@ -274,10 +274,6 @@ country_event = {
 		factor = 0
 		KIE = { ai = no }				  
 		}
-		modifier = {
-		factor = 0
-			has_global_flag = stanislaw_global		
-		}
 		}
 	}
 	
@@ -292,10 +288,6 @@ country_event = {
 		}
 	ai_chance = { 
 	factor = 20
-		modifier = {
-		factor = 0
-			has_global_flag = not_stanislaw_global		
-		}
 		}
 	}
 }
