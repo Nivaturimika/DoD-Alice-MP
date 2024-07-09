@@ -28,14 +28,6 @@ save_the_nation4;Final Hour;;;;;;;;;;;;;
 save_the_nation4_desc;The country is almost entirely galvanized against the hated enemy.;;;;;;;;;;;;;
 save_the_nation5;Great Trial;;;;;;;;;;;;;
 save_the_nation5_desc;All shall perish under the weight of our extreme revanchism.;;;;;;;;;;;;;
-craftsmen_fix_cooldown;Craftsmen Fix Cooldown;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-craftsmen_fix_cooldown_desc;Craftsmen Fix Cooldown is 10 years.;;;;;;;;;;;;;x,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-EVTNAME9999901;Craftsmen Exploit Salvage (Part 1);;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-EVTDESC9999901;This event converts all non-core/non-accepted craftsmen into farmers if they are on your cores. Part 2 will spawn in 3 days, be sure to select this option FIRST.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-EVTNAME9999902;Craftsmen Exploit Salvage (Part 2);;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-EVTDESC9999902;This event converts all 100% unemployed farmers into laborers.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-craftsmen_fix_desc;Fix the craftsmen bug. This is when you have a province that has craftsmen of a non-accepted culture and none of an accepted culture. It forces all promoting pops to become the culture of the craftsmen.;;;;;;;x;;;;
-craftsmen_fix_title;Craftsmen bug fix;;;;;;;x;;;;
 EVTNAME99801;Deciding a Colonial Policy;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC99801;Now that $COUNTRY$ is a colonial power, it is time to decide a policy of how $COUNTRY_ADJ$ colonial lands will be administered.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT99801OPTA;Our people need more land to settle!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,

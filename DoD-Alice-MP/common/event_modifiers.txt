@@ -438,12 +438,6 @@ the_bonnie_blue_flag = {
 	icon = 15
 }
 
-# CRAFTSMAN FIX #
-
-craftsmen_fix_cooldown = {
-    icon = 12
-}
-
 ##### WORKPLACE EVENTS #####
 silk_famine = {
 	farm_RGO_eff = -0.5
