@@ -256,11 +256,11 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			OR = {
-			has_country_flag = siberiatamed
-			AND = { 
-			ai = yes
-			year = 1880
-			}
+				has_country_flag = siberiatamed
+				AND = { 
+					ai = yes
+					year = 1880
+				}
 			}
 			NOT = { tech_school = russian_tech_school }
 			OR = {
@@ -320,59 +320,4 @@ political_decisions = {
 			factor = 1
 		}
 	}
-
-	switch_to_traditional_academic = {
-		alert = no
-		potential = {
-			OR = {
-			   has_country_flag = government_decisions	
-			   ai = yes
-			}
-			NOT = { tech_school = traditional_academic }
-			OR = {
-				ai = no
-				tech_school = developing_tech_school
-			}
-			civilized = yes
-		}
-		
-		allow = {
-			OR = {
-				AND = {
-					NOT = {
-						tech_school = developing_tech_school
-						has_country_modifier = academic_confusion
-					}
-					prestige = 45
-				}
-				AND = {
-					tech_school = developing_tech_school
-					literacy = 0.25
-					enlightenment_thought = 1
-					late_enlightenment_philosophy = 1
-					post_napoleonic_thought = 1
-					flintlock_rifles = 1
-					post_nelsonian_thought = 1
-					clipper_design = 1
-					private_banks = 1
-					no_standard = 1
-					piston_steam_engine = 1
-					interchangeable_parts = 1
-				}
-			}
-		}
-		
-		effect = {
-			random_owned = { limit = { owner = { NOT = { tech_school = developing_tech_school } } } owner = { prestige = -15 } }
-			add_country_modifier = {
-				name = academic_confusion
-				duration = 3650
-			}
-			tech_school = traditional_academic
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 }

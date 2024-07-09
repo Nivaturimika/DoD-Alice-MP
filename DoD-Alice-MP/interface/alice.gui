@@ -1,0 +1,48 @@
+guiTypes = {
+	nationScriptButtonType = {
+		name = "xgui_restore_academia"
+		extends = "country_technology"
+		position = { 440 20 }
+		quadTextureSprite = "GFX_button_standard_144"
+		buttonText = "xgui_restore_academia"
+		buttonFont = "vic_18_black"
+		allow = {
+			NOT = { tech_school = traditional_academic }
+			civilized = yes
+			OR = {
+				AND = {
+					NOT = {
+						tech_school = developing_tech_school
+						has_country_modifier = academic_confusion
+					}
+					prestige >= 45
+				}
+				AND = {
+					tech_school = developing_tech_school
+					literacy = 0.25
+					enlightenment_thought = 1
+					late_enlightenment_philosophy = 1
+					post_napoleonic_thought = 1
+					flintlock_rifles = 1
+					post_nelsonian_thought = 1
+					clipper_design = 1
+					private_banks = 1
+					no_standard = 1
+					piston_steam_engine = 1
+					interchangeable_parts = 1
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { NOT = { tech_school = developing_tech_school } }
+				prestige = -15
+			}
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = traditional_academic
+		}
+	}
+}

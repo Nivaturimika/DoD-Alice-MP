@@ -11,7 +11,7 @@ political_decisions = {
 	#	allow = {
 	#		ai = no
 	#
-    #	}
+	#	}
 	#	effect = {
 	#		set_global_flag = tutorial_1
 	#	}
@@ -51,7 +51,7 @@ political_decisions = {
 		}
 
 		effect = {
-		   country_event = 88000
+		country_event = 88000
 		}
 
 		ai_will_do = {
@@ -701,13 +701,9 @@ political_decisions = {
 			NOT = {	has_country_flag = nv_change }
 			ai = no
 			civilized = yes
-		}
-
-		allow = {
-		    NOT = {	has_country_modifier = national_confusion }
+			NOT = {	has_country_modifier = national_confusion }
 			ideological_thought = 1
 		}
-
 		effect = {
 			set_country_flag = nv_change
 		}
@@ -719,83 +715,79 @@ political_decisions = {
 		potential = {
 			ai = no
 			has_country_flag = nv_change
-		}
-
-		allow = {
 			ideological_thought = 1
 		}
-
 		effect = {
 			clr_country_flag = nv_change
 		}
 	}
-	
-    leave_soi = {
-        alert = no
-        picture = sign_the_geneva_convention
-        potential = {
-            part_of_sphere = yes
-            OR = {
-                is_vassal = no
-                AND = {
-                    ai = yes
-                    has_country_flag = failed_unification_remove_from_sphere
-                }
-            }
-        }
 
-        allow = {
-            OR = {
-                total_pops = 50000000
-                AND = {
-                    is_secondary_power = yes
-                    sphere_owner = {
-                        NOT = {
-                            relation = { who = THIS value = -100 }
-                            truce_with = THIS
-                        }
-                    }
-                }
-                AND = {
-                    ai = yes
-                    has_country_flag = failed_unification_remove_from_sphere
-                }
-            }
-        }
+	leave_soi = {
+		alert = no
+		picture = sign_the_geneva_convention
+		potential = {
+			part_of_sphere = yes
+			OR = {
+				is_vassal = no
+				AND = {
+					ai = yes
+					has_country_flag = failed_unification_remove_from_sphere
+				}
+			}
+		}
 
-        effect = {
-            random_owned = {
-                limit = { owner = { NOT = { has_country_flag = failed_unification_remove_from_sphere } } }
-                owner = { sphere_owner = { country_event = 13202 } }
-            }
-            random_owned = {
-                limit = { owner = { has_country_flag = failed_unification_remove_from_sphere } }
-                owner = {
-                    clr_country_flag = failed_unification_remove_from_sphere
-                    sphere_owner = { diplomatic_influence = { who = THIS value = -200 } }
-                }
-            }
-        }
+		allow = {
+			OR = {
+				total_pops = 50000000
+				AND = {
+					is_secondary_power = yes
+					sphere_owner = {
+						NOT = {
+							relation = { who = THIS value = -100 }
+							truce_with = THIS
+						}
+					}
+				}
+				AND = {
+					ai = yes
+					has_country_flag = failed_unification_remove_from_sphere
+				}
+			}
+		}
 
-        ai_will_do = {
-            factor = 1
+		effect = {
+			random_owned = {
+				limit = { owner = { NOT = { has_country_flag = failed_unification_remove_from_sphere } } }
+				owner = { sphere_owner = { country_event = 13202 } }
+			}
+			random_owned = {
+				limit = { owner = { has_country_flag = failed_unification_remove_from_sphere } }
+				owner = {
+					clr_country_flag = failed_unification_remove_from_sphere
+					sphere_owner = { diplomatic_influence = { who = THIS value = -200 } }
+				}
+			}
+		}
 
-            # Ai will do, if sphere owner has LESS than thrice our brigades.
-            modifier = {
-                factor = 0
-                NOT = {
-                    total_pops = 50000000
-                    has_country_flag = failed_unification_remove_from_sphere
-                }
-                sphere_owner = {
-                    # Factor = (sphere_owner regiments) / (our regiments).
-                    # Returns true if( factor >= x ).
-                    # Use NOT statement to check if( factor < x )
-                    brigades_compare = 3
-                }
-            }
-        }
-    }
+		ai_will_do = {
+			factor = 1
+
+			# Ai will do, if sphere owner has LESS than thrice our brigades.
+			modifier = {
+				factor = 0
+				NOT = {
+					total_pops = 50000000
+					has_country_flag = failed_unification_remove_from_sphere
+				}
+				sphere_owner = {
+					# Factor = (sphere_owner regiments) / (our regiments).
+					# Returns true if( factor >= x ).
+					# Use NOT statement to check if( factor < x )
+					brigades_compare = 3
+				}
+			}
+		}
+	}
 
 	nationalize = {
 		picture = nationalize
@@ -810,7 +802,7 @@ political_decisions = {
 			part_of_sphere = no
 			is_vassal = no
 			OR = {
-			    economic_policy = statism
+				economic_policy = statism
 				economic_policy = state_capitalism
 				economic_policy = planned_economy
 				is_greater_power = yes
@@ -887,9 +879,9 @@ political_decisions = {
 			war = no
 			year = 1840
 			OR = {
-			   government = democracy
-			   government = parliamentary_republic
-			   government = socialist_republic
+			government = democracy
+			government = parliamentary_republic
+			government = socialist_republic
 			}
 		}
 
@@ -918,7 +910,7 @@ political_decisions = {
 		}
 
 		effect = {
-		    clr_country_flag = hidden_decisions
+			clr_country_flag = hidden_decisions
 
 		}
 
@@ -938,7 +930,7 @@ political_decisions = {
 		}
 
 		effect = {
-		   set_country_flag = hidden_decisions
+		set_country_flag = hidden_decisions
 		}
 
 		ai_will_do = {

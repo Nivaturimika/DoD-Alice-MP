@@ -94,7 +94,7 @@ guiTypes = {
 		instantTextBoxType = { 
 			name = "administration"
 			position = { x = 40 y = 30 }
-			font = "vic_18_black"
+			font = "vic_18"
 			text = "TECHNOLOGYVIEW_ADMINISTRATION"	
 			maxWidth = 110
 			maxHeight = 20	
