@@ -53,7 +53,7 @@ political_decisions = {
 	}
 	
 	reclaim_spanish_march = {
-		picture = IDK something catalan
+		picture = aaa
 		potential = {
 			tag = FRK
 			has_country_flag = new_charlemagne
@@ -78,7 +78,7 @@ political_decisions = {
 	}
 	
 	elbian_conquest = {
-		picture = 
+		picture = aaa
 		potential = {
 			tag = FRK
 			has_country_flag = new_charlemagne
@@ -205,7 +205,7 @@ political_decisions = {
 	#####But what if you want a kinder, gentler European tyrant? 
 	
 	nous_es_europe = {
-		picture = 
+		picture = aaa
 		potential = {
 			tag = FRK 
 			has_unclaimed_cores = no
@@ -248,7 +248,7 @@ political_decisions = {
 	}
 	
 	new_elbian_policy = {
-		#picture
+		picture = aaa
 		potential = {
 			tag = FRK 
 			has_country_flag = we_are_europe
@@ -293,7 +293,7 @@ political_decisions = {
 	}
 	
 	new_danubian_policy = {
-		#picture
+		picture = aaa
 		potential = {
 			tag = FRK 
 			has_country_flag = we_are_europe
@@ -349,7 +349,7 @@ political_decisions = {
 	}
 	
 	new_italian_policy = {
-		#picture
+		picture = aaa
 		potential = {
 			tag = FRK 
 			has_country_flag = we_are_europe
@@ -410,7 +410,7 @@ political_decisions = {
 	}
 	
 	new_iberian_policy = {
-		#picture
+		picture = aaa
 		potential = {
 			tag = FRK 
 			has_country_flag = we_are_europe
