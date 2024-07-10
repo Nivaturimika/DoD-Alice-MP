@@ -1,5 +1,6 @@
 owner = SCA
 controller = SCA
+add_core = SHE
 add_core = ICL
 add_core = SCA
 add_core = SCO
