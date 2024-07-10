@@ -507,10 +507,6 @@ SWE		= "countries/Sweden.txt"  #ADDED IN MODIFICATIONS
 SMI		= "countries/Sapmi.txt"  #ADDED IN MODIFICATIONS 
 KAR		= "countries/Karelia.txt" #ADDED IN MODIFICATIONS
 ING 	= "countries/Ingria.txt" #ADDED IN MODIFICATIONS
-OST		= "countries/Ostfold.txt" #ADDED IN MODIFICATIONS
-OSU		= "countries/Ostfeld.txt" #ADDED IN MODIFICATIONS
-FAR		= "countries/Faroe Islands.txt" #ADDED IN MODIFICATIONS
-SHE		= "countries/Shetland.txt" #ADDED IN MODIFICATIONS
 
 #North America
 ANI		= "countries/Anishinabe.txt"	#Cree/Ojibwe/Chipewan/Odawa
@@ -600,12 +596,19 @@ PPU		= "countries/Papua.txt"
 
 #Fixed
 LIP = "countries/Lippe-Detmold.txt"
+
+##New tags in Alice
 SGN = "countries/Singapore.txt"
 MAJ = "countries/Majapahit.txt"
 NRM = "countries/Normandy.txt"
 GSC = "countries/Gascony.txt"
 QAT = "countries/Qatar.txt"
 PTN = "countries/Patan.txt"
+OST = "countries/Ostfold.txt"
+OSU = "countries/Ostfeld.txt"
+FAR = "countries/Faroe Islands.txt"
+SHE = "countries/Shetland.txt"
+ALA = "countries/Aland.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes #any tags after this is considered dynamic dominions

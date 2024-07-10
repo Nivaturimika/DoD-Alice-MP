@@ -1,0 +1,3 @@
+color = { 198 200 241 }
+template = "default"
+template = "scandinavian"

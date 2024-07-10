@@ -1,4 +1,4 @@
-capital = 1167
+capital = 1165
 primary_culture = bedouin
 religion = shiite
 government = feudal_monarchy

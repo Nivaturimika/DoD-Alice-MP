@@ -1,4 +1,4 @@
-capital = 1600
+capital = 1384
 primary_culture = malay
 culture = han
 religion = mahayana

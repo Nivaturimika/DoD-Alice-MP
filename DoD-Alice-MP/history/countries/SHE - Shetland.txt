@@ -1,4 +1,4 @@
-capital = 995
+capital = 3355
 primary_culture = scandinavian
 culture = anglois
 religion = orthodox
