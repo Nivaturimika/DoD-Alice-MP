@@ -1,5 +1,6 @@
-owner = ABU
-controller = ABU
+owner = QAT
+controller = QAT
+add_core = QAT
 add_core = ABU
 add_core = NEJ
 add_core = ARA
