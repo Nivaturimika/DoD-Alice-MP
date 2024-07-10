@@ -509,6 +509,7 @@ KAR		= "countries/Karelia.txt" #ADDED IN MODIFICATIONS
 ING 	= "countries/Ingria.txt" #ADDED IN MODIFICATIONS
 OST		= "countries/Ostfold.txt" #ADDED IN MODIFICATIONS
 OSU		= "countries/Ostfeld.txt" #ADDED IN MODIFICATIONS
+FAR		= "countries/Faroe Islands.txt" #ADDED IN MODIFICATIONS
 
 #North America
 ANI		= "countries/Anishinabe.txt"	#Cree/Ojibwe/Chipewan/Odawa

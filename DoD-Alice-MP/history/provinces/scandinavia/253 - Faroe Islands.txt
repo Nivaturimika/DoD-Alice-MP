@@ -1,5 +1,6 @@
 owner = SCA
 controller = SCA
+add_core = FAR
 add_core = ICL
 add_core = SCA
 trade_goods = fish
