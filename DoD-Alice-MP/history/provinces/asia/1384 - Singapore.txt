@@ -1,5 +1,6 @@
 owner = SCA
 controller = SCA
+add_core = SGN
 add_core = LYM
 add_core = JOH
 add_core = NUS
