@@ -1,5 +1,6 @@
-owner = BAH
-controller = BAH
+owner = BIR
+controller = BIR
+add_core = BIR
 add_core = BAH
 add_core = TAR
 #add_core = RUS
