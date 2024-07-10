@@ -602,6 +602,7 @@ PPU		= "countries/Papua.txt"
 LIP = "countries/Lippe-Detmold.txt"
 SGN = "countries/Singapore.txt"
 MAJ = "countries/Majapahit.txt"
+NRM = "countries/Normandy.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes #any tags after this is considered dynamic dominions
