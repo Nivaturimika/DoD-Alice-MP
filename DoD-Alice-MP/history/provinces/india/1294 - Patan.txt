@@ -1,6 +1,6 @@
-owner = BER
-controller = BER
-add_core = BER
+owner = PTN
+controller = PTN
+add_core = PTN
 add_core = HND
 trade_goods = opium
 life_rating = 30

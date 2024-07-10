@@ -605,6 +605,7 @@ MAJ = "countries/Majapahit.txt"
 NRM = "countries/Normandy.txt"
 GSC = "countries/Gascony.txt"
 QAT = "countries/Qatar.txt"
+PTN = "countries/Patan.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes #any tags after this is considered dynamic dominions
