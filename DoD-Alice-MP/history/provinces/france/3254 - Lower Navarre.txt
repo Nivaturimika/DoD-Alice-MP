@@ -1,5 +1,6 @@
 owner = NAV
 controller = NAV
+add_core = GSC
 add_core = NAV
 trade_goods = copper
 life_rating = 35
