@@ -736,6 +736,40 @@ country_event = {
 			}
 		}
 	}
+
+	option = {
+		name = "EVTOPTC14580"
+		prestige = 5
+		random_state = {
+			limit = {
+				is_colonial = yes
+				any_owned_province = { is_state_religion = no }
+			}
+			any_pop = {
+				limit = { is_state_religion = no }
+				militancy = 8
+				consciousness = 8
+				ideology = { value = separatist factor = 0.5 }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTD14580"
+		prestige = -10
+		treasury = -5000
+		random_state = {
+			limit = {
+				is_colonial = yes
+				any_owned_province = { is_state_religion = no }
+			}
+			any_pop = {
+				limit = { is_state_religion = no }
+				militancy = -10
+				consciousness = -10
+			}
+		}
+	}
 }
 
 # Disloyal Regiment
