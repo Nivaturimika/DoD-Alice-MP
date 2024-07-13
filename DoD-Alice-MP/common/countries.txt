@@ -610,6 +610,7 @@ FAR = "countries/Faroe Islands.txt"
 SHE = "countries/Shetland.txt"
 ALA = "countries/Aland.txt"
 BIR = "countries/Birid.txt"
+KOS = "countries/Kosovo.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes #any tags after this is considered dynamic dominions
