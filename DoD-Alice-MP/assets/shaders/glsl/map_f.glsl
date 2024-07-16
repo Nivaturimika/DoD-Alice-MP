@@ -55,10 +55,13 @@ vec4 get_water_terrain()
 	vec2 tex_coord = tex_coord;
 	vec2 corrected_coord = get_corrected_coords(tex_coord);
 	vec3 WorldColorColor = texture(colormap_water, corrected_coord).rgb;
+        WorldColorColor.b = WorldColorColor.r;
+        WorldColorColor.g *= 0.88f;
+        WorldColorColor.r *= 0.5f;
 	if (corrected_coord.y > 1)
-		WorldColorColor = vec3(0.78125, 0.79296, 0.76562);
+		WorldColorColor = vec3(0.14, 0.23, 0.36);
 	if (corrected_coord.y < 0)
-		WorldColorColor = vec3(0.78125, 0.79296, 0.76562);
+		WorldColorColor = vec3(0.20, 0.35, 0.43);
 	tex_coord *= 100.;
 	tex_coord = tex_coord * 0.25 + time * 0.002;
 
@@ -106,13 +109,7 @@ vec4 get_water_terrain()
 }
 
 vec4 get_water_political() {
-	vec2 tex_coord = tex_coord;
-	vec2 corrected_coord = get_corrected_coords(tex_coord);
-	vec3 color = texture(colormap_water, corrected_coord).rgb;
-	if (corrected_coord.y > 1)
-		color = vec3(0.78125, 0.79296, 0.76562);
-	if (corrected_coord.y < 0)
-		color = vec3(0.78125, 0.79296, 0.76562);
+	vec3 color = texture(colormap_water, get_corrected_coords(tex_coord)).rgb;
 
 	// The "foldable map" overlay effect
 	vec4 OverlayColor = texture(overlay, tex_coord * vec2(11., 11.*map_size.y/map_size.x));
@@ -191,13 +188,9 @@ vec4 get_land_political_close() {
 	float prov_highlight = texture(province_highlight, prov_id).r * (abs(cos(time * 3.f)) + 1.f);
 	vec3 political = clamp(mix(prov_color, stripe_color, stripeFactor) + vec4(prov_highlight), 0.0, 1.0).rgb;
 	political *= texture(province_fow, prov_id).rgb;
-	political = political - 0.7;
-
 	// Mix together the terrain and map mode color
-	terrain.rgb = mix(terrain.rgb, political, 0.3);
-	terrain.rgb *= 1.5;
-	//terrain.rgb += vec3((test * 255) == id);
-	//terrain.r += ((abs(rel_coord.y) + abs(rel_coord.x)) > 0.5 ? 6 : 0) * 0.3;
+	terrain.rgb = mix(terrain.rgb, political, 0.5);
+	terrain.rgb *= 1.5f;
 	return terrain;
 }
 
