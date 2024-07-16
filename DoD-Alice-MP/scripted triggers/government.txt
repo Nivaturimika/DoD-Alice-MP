@@ -11,6 +11,15 @@ is_monarchy_government = {
 	}
 }
 
+is_republic_government = {
+	main_parameter = nation
+	OR = {
+		government = democracy
+		government = parliamentary_republic
+		government = socialist_republic
+	}
+}
+
 is_dictatorship_government = {
 	main_parameter = nation
 	OR = {

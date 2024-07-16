@@ -42,7 +42,7 @@ ideologies = {
 		modifier = {
 			factor = 1.5
 			NOT = { political_reform_want = 0.20 }
-		}		
+		}
 	}
 	liberal = {
 		factor = 1
@@ -68,42 +68,34 @@ ideologies = {
 issues = {
 	no_slavery = {
 		factor = 4
-		
 		modifier = {
 			factor = 0
-			slavery = no_slavery
-		}
-		
-		modifier = {
-			factor = 0
-			country = { civilized = no }
+			OR = {
+				slavery = no_slavery
+				country = { civilized = no }
+			}
 		}
 	}
-	
+
 	freedom_of_womb = {
 		factor = 1
 		modifier = {
 			factor = 0
-			NOT = { is_next_reform = freedom_of_womb }
+			OR = {
+				NOT = { is_next_reform = freedom_of_womb }
+				country = { civilized = no }
+			}
 		}
-		
-		modifier = {
-			factor = 0
-			country = { civilized = no }
-		}
-		
 	}
-	
+
 	yes_slavery = {
 		factor = 1
 		modifier = {
 			factor = 0
-			slavery = no_slavery
-		}
-		
-		modifier = {
-			factor = 0
-			country = { civilized = no }
+			OR = {
+				slavery = no_slavery
+				country = { civilized = no }
+			}
 		}
 	}
 }
