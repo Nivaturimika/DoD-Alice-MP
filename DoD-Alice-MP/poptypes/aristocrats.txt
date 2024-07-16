@@ -67,125 +67,60 @@ country_migration_target =
 
 	modifier = {
 		factor = 0
-		border_policy = quota_immigration
-		THIS = { NOT = { literacy = 0.6 } }
-	}
-
-
-	modifier = {
+		OR = {
+			border_policy = closed_borders
+			AND = {
+				border_policy = quota_immigration
+				THIS = { NOT = { literacy = 0.6 } }
+			}
+			has_country_flag = native_american_state
+			civilized = no
+			AND = {
+				civilized = yes
+				war = yes
+				war_countries = {
+					civilized = yes
+					OR = {
+						AND = {
+							THIS = { capital_scope = { continent = south_america } }
+							capital_scope = { continent = south_america }
+						}
+						AND = {
+							THIS = { capital_scope = { continent = north_america } }
+							capital_scope = { continent = north_america }
+						}
+						AND = {
+							THIS = { capital_scope = { continent = oceania } }
+							capital_scope = { continent = oceania }
+						}
+						AND = {
+							THIS = { capital_scope = { continent = europe } }
+							capital_scope = { continent = europe }
+						}
+						AND = {
+							THIS = { capital_scope = { continent = asia } }
+							capital_scope = { continent = asia }
+						}
+					}
+				}
+			}
+		}
+	}	modifier = {
 		factor = 1.1
-		is_greater_power = yes
-	}
-	modifier = {
-		factor = 1.05
-		is_secondary_power = yes
-	}
-	modifier = {
-		factor = 1.1
-		religion = THIS
-	}
-	modifier = {
-		factor = 0.98
-		NOT = { plurality = 20 }
-	}
-	modifier = {
-		factor = 0.98
-		NOT = { plurality = 40 }
-	}
-	modifier = {
-		factor = 1.02
-		plurality = 60
-	}
-	modifier = {
-		factor = 1.05
-		plurality = 80
-	}
-	modifier = {
-		factor = 1.05
-		plurality = 100
-	}
-	modifier = {
-		factor = 1.02
-		prestige = 1000
-	}
-	modifier = {
-		factor = 1.02
-		prestige = 500
-	}
-	modifier = {
-		factor = 1.02
-		prestige = 100
-	}
-	modifier = {
-		factor = 1.02
-		prestige = 50
-	}
-	modifier = {
-		factor = 0.95
-		NOT = { prestige = 10 }
-	}
-	modifier = {
-		factor = 1.02
-		industrial_score = 1000
-	}
-	modifier = {
-		factor = 1.02
-		industrial_score = 500
-	}
-	modifier = {
-		factor = 1.02
-		industrial_score = 100
-	}
-	modifier = {
-		factor = 1.02
-		industrial_score = 50
-	}
-	modifier = {
-		factor = 0.95
-		NOT = { industrial_score = 10 }
-	}
-	modifier = {
-		factor = 1.02
-		num_of_cities = 20
-	}
-	modifier = {
-		factor = 1.02
-		num_of_cities = 30
-	}
-	modifier = {
-		factor = 1.02
-		num_of_cities = 50
-	}
-	modifier = {
-		factor = 1.02
-		num_of_cities = 75
-	}
-	modifier = {
-		factor = 0.98
-		NOT = { num_of_cities = 10 }
-	}
-
-	modifier = {
-		factor = 1.1
-		is_culture_group = THIS
+		OR = {
+			test = is_colonial_power
+			AND = {
+				religion = THIS
+				religious_policy = moralism
+			}
+			religion = THIS
+			is_culture_group = THIS
+		}
 	}
 	modifier = {
 		factor = 1.2
 		religious_policy = moralism
 		religion = THIS
-	}
-	modifier = {
-		factor = 0.8
-		religious_policy = moralism
-		NOT = { religion = THIS }
-	}
-	modifier = {
-		factor = 0.9
-		religious_policy = pluralism
-	}
-	modifier = {
-		factor = 0.8
-		religious_policy = pro_atheism
 	}
 	modifier = {
 		factor = 1.2
@@ -261,31 +196,7 @@ country_migration_target =
 		citizenship_policy = full_citizenship
 	}
 	modifier = {
-		factor = 0.95
-		unemployment = 0.1
-	}
-	modifier = {
-		factor = 0.95
-		unemployment = 0.15
-	}
-	modifier = {
-		factor = 0.95
-		unemployment = 0.2
-	}
-	modifier = {
-		factor = 0.95
-		unemployment = 0.25
-	}
-	modifier = {
-		factor = 0.95
-		unemployment = 0.3
-	}
-	modifier = {
-		factor = 0.95
-		unemployment = 0.35
-	}
-	modifier = {
-		factor = 0.95
+		factor = 0.5
 		unemployment = 0.5
 	}
 	modifier = {
@@ -320,38 +231,7 @@ country_migration_target =
 	       is_culture_group = oversea_chinese
 	    }
 	}
-	modifier = {
-		factor = 0.01
-		country = { has_country_flag = native_american_state }
-	}
-	modifier = {
-		factor = 0.9
-		average_militancy = 1
-	}
-	modifier = {
-		factor = 0.9
-		average_militancy = 2
-	}
-	modifier = {
-		factor = 0.8
-		average_militancy = 3
-	}
-	modifier = {
-		factor = 0.8
-		average_militancy = 4
-	}
-	modifier = {
-		factor = 0.8
-		average_militancy = 5
-	}
-	modifier = {
-		factor = 0.8
-		average_militancy = 6
-	}
-	modifier = {
-		factor = 0.8
-		average_militancy = 7
-	}
+
 	modifier = {
 		factor = 0.5
 		average_militancy = 8
@@ -360,18 +240,12 @@ country_migration_target =
 		factor = 0.5
 		num_of_revolts = 1
 	}
-	modifier = {
-		factor = 0.5
-		war = yes
-	}
+
 	modifier = {
 		factor = 0
 		government = proletarian_dictatorship
 	}
-	modifier = {
-		factor = 0
-		civilized = no
-	}
+
 }
 
 migration_target =
