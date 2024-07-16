@@ -1,26 +1,27 @@
 in vec2 tex_coord;
-layout (location = 0) out vec4 frag_color;
-layout (binding = 0) uniform sampler2D provinces_texture_sampler;
-layout (binding = 1) uniform sampler2D terrain_texture_sampler;
-layout (binding = 3) uniform sampler2DArray terrainsheet_texture_sampler;
-layout (binding = 4) uniform sampler2D water_normal;
-layout (binding = 5) uniform sampler2D colormap_water;
-layout (binding = 6) uniform sampler2D colormap_terrain;
-layout (binding = 7) uniform sampler2D overlay;
-layout (binding = 8) uniform sampler2DArray province_color;
-layout (binding = 9) uniform sampler2D colormap_political;
-layout (binding = 10) uniform sampler2D province_highlight;
-layout (binding = 11) uniform sampler2D stripes_texture;
-layout (binding = 13) uniform sampler2D province_fow;
-layout (binding = 15) uniform usampler2D diag_border_identifier;
+out vec4 frag_color;
 
+uniform sampler2D provinces_texture_sampler;
+uniform sampler2D terrain_texture_sampler;
+uniform sampler2DArray terrainsheet_texture_sampler;
+uniform sampler2D water_normal;
+uniform sampler2D colormap_water;
+uniform sampler2D colormap_terrain;
+uniform sampler2D overlay;
+uniform sampler2DArray province_color;
+uniform sampler2D colormap_political;
+uniform sampler2D province_highlight;
+uniform sampler2D stripes_texture;
+uniform sampler2D province_fow;
+uniform usampler2D diag_border_identifier;
+uniform uint subroutines_index_2;
 // location 0 : offset
 // location 1 : zoom
 // location 2 : screen_size
-layout (location = 3) uniform vec2 map_size;
-layout (location = 4) uniform float time;
+uniform vec2 map_size;
+uniform float time;
+uniform float gamma;
 
-layout (location = 11) uniform float gamma;
 vec4 gamma_correct(vec4 colour) {
 	return vec4(pow(colour.rgb, vec3(1.f / gamma)), colour.a);
 }
@@ -37,14 +38,7 @@ vec2 get_corrected_coords(vec2 coords) {
 	return coords;
 }
 
-subroutine vec4 get_land_class();
-layout(location = 0) subroutine uniform get_land_class get_land;
-
-subroutine vec4 get_water_class();
-layout(location = 1) subroutine uniform get_water_class get_water;
-
 // The water effect
-layout(index = 3) subroutine(get_water_class)
 vec4 get_water_terrain()
 {
 	vec2 prov_id = texture(provinces_texture_sampler, tex_coord).xy;
@@ -61,13 +55,10 @@ vec4 get_water_terrain()
 	vec2 tex_coord = tex_coord;
 	vec2 corrected_coord = get_corrected_coords(tex_coord);
 	vec3 WorldColorColor = texture(colormap_water, corrected_coord).rgb;
-        WorldColorColor.b = WorldColorColor.r;
-        WorldColorColor.g *= 0.88f;
-        WorldColorColor.r *= 0.5f;
 	if (corrected_coord.y > 1)
-		WorldColorColor = vec3(0.14, 0.23, 0.36);
+		WorldColorColor = vec3(0.78125, 0.79296, 0.76562);
 	if (corrected_coord.y < 0)
-		WorldColorColor = vec3(0.20, 0.35, 0.43);
+		WorldColorColor = vec3(0.78125, 0.79296, 0.76562);
 	tex_coord *= 100.;
 	tex_coord = tex_coord * 0.25 + time * 0.002;
 
@@ -114,9 +105,14 @@ vec4 get_water_terrain()
 	return vec4(OutColor, vWaterTransparens);
 }
 
-layout(index = 4) subroutine(get_water_class)
 vec4 get_water_political() {
-	vec3 color = texture(colormap_water, get_corrected_coords(tex_coord)).rgb;
+	vec2 tex_coord = tex_coord;
+	vec2 corrected_coord = get_corrected_coords(tex_coord);
+	vec3 color = texture(colormap_water, corrected_coord).rgb;
+	if (corrected_coord.y > 1)
+		color = vec3(0.78125, 0.79296, 0.76562);
+	if (corrected_coord.y < 0)
+		color = vec3(0.78125, 0.79296, 0.76562);
 
 	// The "foldable map" overlay effect
 	vec4 OverlayColor = texture(overlay, tex_coord * vec2(11., 11.*map_size.y/map_size.x));
@@ -160,12 +156,10 @@ vec4 get_terrain_mix() {
 	return terrain;
 }
 
-layout(index = 0) subroutine(get_land_class)
 vec4 get_land_terrain() {
 	return get_terrain_mix();
 }
 
-layout(index = 1) subroutine(get_land_class)
 vec4 get_land_political_close() {
 	vec4 terrain = get_terrain_mix();
 	float is_land = terrain.a;
@@ -182,7 +176,7 @@ vec4 get_land_political_close() {
 	vec2 rel_coord = tex_coord * map_size - floor(tex_coord * map_size) - vec2(0.5);
 	int shift = int(sign(rel_coord.x) + 2 * sign(rel_coord.y) + 3);
 
-	rounded_tex_coords.y += (((test >> shift) & 1) != 0) && (abs(rel_coord.x) + abs(rel_coord.y) > 0.5) ? sign(rel_coord.y) / map_size.y : 0;
+	rounded_tex_coords.y += (((int(test) >> shift) & 1) != 0) && (abs(rel_coord.x) + abs(rel_coord.y) > 0.5) ? sign(rel_coord.y) / map_size.y : 0;
 
 	vec2 prov_id = texture(provinces_texture_sampler, rounded_tex_coords).xy;
 
@@ -197,14 +191,17 @@ vec4 get_land_political_close() {
 	float prov_highlight = texture(province_highlight, prov_id).r * (abs(cos(time * 3.f)) + 1.f);
 	vec3 political = clamp(mix(prov_color, stripe_color, stripeFactor) + vec4(prov_highlight), 0.0, 1.0).rgb;
 	political *= texture(province_fow, prov_id).rgb;
+	political = political - 0.7;
+
 	// Mix together the terrain and map mode color
-	terrain.rgb = mix(terrain.rgb, political, 0.5);
-	terrain.rgb *= 1.5f;
+	terrain.rgb = mix(terrain.rgb, political, 0.3);
+	terrain.rgb *= 1.5;
+	//terrain.rgb += vec3((test * 255) == id);
+	//terrain.r += ((abs(rel_coord.y) + abs(rel_coord.x)) > 0.5 ? 6 : 0) * 0.3;
 	return terrain;
 }
 
-layout(index = 2) subroutine(get_land_class)
-vec4 get_terrain_political_far() {
+vec4 get_land_political_far() {
 	vec4 terrain = get_terrain(vec2(0, 0), vec2(0));
 	float is_land = terrain.a;
 	vec2 prov_id = texture(provinces_texture_sampler, tex_coord).xy;
@@ -236,6 +233,25 @@ vec4 get_terrain_political_far() {
 	OutColor.a = is_land;
 
 	return OutColor;
+}
+
+vec4 get_land() {
+	switch(int(subroutines_index_2)) {
+case 0: return get_land_terrain();
+case 1: return get_land_political_close();
+case 2: return get_land_political_far();
+default: break;
+	}
+	return vec4(1.f);
+}
+vec4 get_water() {
+	switch(int(subroutines_index_2)) {
+case 0: return get_water_terrain();
+case 1: return get_water_terrain();
+case 2: return get_water_political();
+default: break;
+	}
+	return vec4(1.f);
 }
 
 // The terrain map
