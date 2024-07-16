@@ -722,40 +722,37 @@ emigration_chance =
 		NOT = { location = { controlled_by = owner } }
 	}
 	modifier = {
-		factor = 10
-		country = {
-			civilized = yes
-			war = yes
-			war_countries = {
+		factor = 0.1
+		OR = {
+			country = {
 				civilized = yes
-				OR = {
-					AND = {
-						THIS = { capital_scope = { continent = south_america } }
-						capital_scope = { continent = south_america }
-					}
-					AND = {
-						THIS = { capital_scope = { continent = north_america } }
-						capital_scope = { continent = north_america }
-					}
-					AND = {
-						THIS = { capital_scope = { continent = oceania } }
-						capital_scope = { continent = oceania }
-					}
-					AND = {
-						THIS = { capital_scope = { continent = europe } }
-						capital_scope = { continent = europe }
-					}
-					AND = {
-						THIS = { capital_scope = { continent = asia } }
-						capital_scope = { continent = asia }
+				war = yes
+				war_countries = {
+					civilized = yes
+					OR = {
+						AND = {
+							THIS = { capital_scope = { continent = south_america } }
+							capital_scope = { continent = south_america }
+						}
+						AND = {
+							THIS = { capital_scope = { continent = north_america } }
+							capital_scope = { continent = north_america }
+						}
+						AND = {
+							THIS = { capital_scope = { continent = oceania } }
+							capital_scope = { continent = oceania }
+						}
+						AND = {
+							THIS = { capital_scope = { continent = europe } }
+							capital_scope = { continent = europe }
+						}
+						AND = {
+							THIS = { capital_scope = { continent = asia } }
+							capital_scope = { continent = asia }
+						}
 					}
 				}
 			}
-		}
-	}
-	modifier = {
-		factor = 0.1
-		OR = {
 			AND = {
 				country = { religious_policy = moralism }
 				is_state_religion = no
