@@ -372,8 +372,7 @@ country_event = {
 			militancy = 3
 			consciousness = 6
 		}
-		any_country = {
-			limit = { is_greater_power = yes }
+		any_greater_power = {
 			relation = {
 				who = THIS
 				value = 20

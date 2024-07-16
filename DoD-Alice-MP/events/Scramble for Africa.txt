@@ -5,7 +5,7 @@
 #################################################################################################################
 
 country_event = {
-	
+
 	id = 95500
 	title = "EVTNAME95500" #The Berlin Conference
 	desc = "EVTDESC95500"
@@ -53,7 +53,7 @@ country_event = {
 }
 
 country_event = {
-	
+
 	id = 95502
 	title = "EVTNAME95502" #The Age of Colonialism
 	desc = "EVTDESC95502"
@@ -105,7 +105,7 @@ country_event = {
 	title = "EVTNAME95503" #the Modern Age
 	desc = "EVTDESC95503"
 	picture = "zulu"
-	
+
 	trigger = {
 		war = no
 		civilized = no
@@ -127,11 +127,11 @@ country_event = {
 		NOT = { tag = LIB }
         NOT = { tag = OMA }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
     option = {
 		name = "$COUNTRY$ shall endure."
         set_country_flag = africa_in_the_modern_age
@@ -147,13 +147,13 @@ country_event = {
 }
 
 country_event = {
-	
+
 	id = 95504
 	title = "EVTNAME95504" #Sahel Jihad
 	desc = "EVTDESC95504"
 	picture = "arab_revolt"
-	
-	trigger = {	
+
+	trigger = {
 	    has_country_flag = this_cannot_trigger
 	    exists = yes
 		war = no
@@ -163,7 +163,7 @@ country_event = {
 		NOT = {
 			num_of_revolts = 1
 			has_recently_lost_war = yes
-		}	
+		}
 		any_neighbor_country = {
 			civilized = no
 			NOT = { truce_with = THIS }
@@ -181,7 +181,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 60
 		modifier = {
@@ -193,7 +193,7 @@ country_event = {
 			civilization_progress = 0.75
 		}
 	}
-	
+
 	option = {
 		name = "For the glory of Allah!"
 		any_pop = {
@@ -238,7 +238,7 @@ country_event = {
 	title = "EVTNAME95505" #Imperialism Comes to $COUNTRY$
 	desc = "EVTDESC95505"
 	picture = "scramble_for_africa"
-	
+
 	trigger = {
 		has_global_flag = berlin_conference
 		capital_scope = { continent = africa }
@@ -265,7 +265,7 @@ country_event = {
             has_country_flag = post_colonial_country
         }
     }
-	
+
     mean_time_to_happen = {
         months = 12
         modifier = {
@@ -295,7 +295,7 @@ country_event = {
             sphere_owner = { tag = TUR }
         }
     }
-	
+
 	option = {
 		name = "We have no choice but to submit."
 		sphere_owner = { country_event = 95506 }
@@ -366,9 +366,9 @@ country_event = {
 	title = "EVTNAME95506" #The $FROMCOUNTRY_ADJ$ Protectorate
 	desc = "EVTDESC95506"
 	picture = "scramble_for_africa"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "We will not force ourselves upon $FROMCOUNTRY$."
 		FROM = { set_country_flag = refused_protectorate }
@@ -394,7 +394,7 @@ country_event = {
 				factor = 0
 				badboy = 0.92
 			}
-		}			
+		}
 	}
 }
 
@@ -459,7 +459,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "95507.B"
 		prestige = -25
@@ -483,12 +483,12 @@ country_event = {
 }
 
 country_event = {
-	
+
 	id = 95508
 	title = "EVTNAME95508" #The Sale of Assab
 	desc = "EVTDESC95508"
 	picture = "scramble_for_africa"
-	
+
 	trigger = {
 		civilized = yes
 		is_vassal = no
@@ -514,7 +514,7 @@ country_event = {
 			}
 		}
 	}
-	
+
     mean_time_to_happen = {
         months = 50
         modifier = {
@@ -537,11 +537,11 @@ country_event = {
             tag = ITA
         }
     }
-	
+
 	immediate = {
 		set_country_flag = sale_of_assab
 	}
-	
+
 	option = {
 		name = "Push for direct control."
         badboy = 2
@@ -565,7 +565,7 @@ country_event = {
             }
         }
     }
-	
+
 	option = {
 		name = "We have no interest in Assab."
 		badboy = -1
@@ -589,14 +589,14 @@ country_event = {
 }
 
 country_event = {
-			
+
 	id = 95509
 	title = "EVTNAME95508" #The Sale of Assab - Owner
 	desc = "EVTDESC95509"
 	picture = "scramble_for_africa"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Assab belongs to $COUNTRY$!"
 		set_global_flag = assab_sold
@@ -614,8 +614,7 @@ country_event = {
 				months = 60
 			}
 		}
-		any_country = {
-			limit = { is_greater_power = yes }
+		any_greater_power = {
 			diplomatic_influence = { who = THIS value = -100 }
 		}
 	}
@@ -626,7 +625,7 @@ country_event = {
 	title = "Colonial Ambition"
 	desc = "We must take our place among the colonial powers of Africa."
 	picture = "scramble_for_africa"
-	
+
 	trigger = {
 		has_global_flag = berlin_conference
 		capital_scope = { continent = europe }
@@ -665,11 +664,11 @@ country_event = {
 			tag = RUS
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 24
 	}
-	
+
 	option = {
 		name = "We must act at once!"
 		random_country = {
@@ -711,7 +710,7 @@ country_event = {
 				type = place_in_the_sun
 				months = 60
 			}
-		}	
+		}
 	}
 }
 
@@ -720,9 +719,9 @@ country_event = {
 	title = "The $FROMCOUNTRY$ Imperialists"
 	desc = "They are coming!"
 	picture = "scramble_for_africa"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "Oh no!"
 		FROM = {
@@ -742,7 +741,7 @@ country_event = {
 	title = "EVTNAME95514" #Ethiopian Rule
 	desc = "EVTDESC95514"
 	picture = "arab_revolt"
-	
+
 	trigger = {
 		exists = yes
 		tag = ETH
@@ -755,11 +754,11 @@ country_event = {
 			1867 = { empty = yes } #Ogaden
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {
 		name = "95514.A"
 		years_of_research = 0.25

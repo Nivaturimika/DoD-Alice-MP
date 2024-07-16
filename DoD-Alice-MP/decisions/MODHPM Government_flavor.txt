@@ -296,20 +296,14 @@ political_decisions = {
 					}
 				}
 			}
-
-			random_owned = {
+			if = {
 				limit = {
-					owner = {
-						part_of_sphere = no
-						NOT = { any_greater_power = { neighbour = THIS } }
-					}
+					part_of_sphere = no
+					NOT = { any_greater_power = { neighbour = THIS } }
 				}
-				owner = {
-					random_country = {
-						limit = { is_greater_power = yes }
-						relation = { who = THIS value = 50 }
-						diplomatic_influence = { who = THIS value = 50 }
-					}
+				random_greater_power = {
+					relation = { who = THIS value = 50 }
+					diplomatic_influence = { who = THIS value = 50 }
 				}
 			}
 		}

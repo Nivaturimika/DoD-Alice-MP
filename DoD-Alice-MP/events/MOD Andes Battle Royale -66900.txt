@@ -996,8 +996,7 @@ country_event = {
 	option = {
 	name = "AND25.A"
 	set_country_flag = 400year
-	any_country = {
-	limit = { is_greater_power = yes }
+	any_greater_power = {
 	   relation = { who = THIS value = 50 }
 	}
 	prestige = 5

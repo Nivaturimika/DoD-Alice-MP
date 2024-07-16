@@ -3,117 +3,99 @@ political_decisions = {
 	goa_treaty = {
 	picture = treaty_india
 		potential = {
-      OR = {
-			   tag = VIJ   
-			   tag = DRA    
-			   tag = BHA     
-			   tag = BHO     
-			   tag = HND
-      }
+			OR = {
+				tag = VIJ
+				tag = DRA
+				tag = BHA
+				tag = BHO
+				tag = HND
+			}
 			NOT = {
 				has_country_flag = goa_treaty_pending
 			}
-			
-			SPA = {
-				owns = 1303
-			}
+			1303 = { owned_by = SPA }
 		}
-	
+
 		allow = {
 			owns = 1301
 			owns = 1302
 			civilized = yes
 			war = no
 			SPA = { war = no }
-			relation = { who = SPA value = 50 }
 		}
-	
+
 		effect = {
-			SPA = {
-				country_event = 333021
-			}
+			SPA = { country_event = 333021 }
 			set_country_flag = goa_treaty_pending
 		}
-	
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	masulipatnam_treaty = {
 	picture = treaty_india
 		potential = {
-      OR = {
-			   tag = VIJ   
-			   tag = DRA    
-			   tag = BHA     
-			   tag = ADR      
-			   tag = HYD    
-			   tag = HND     
-			   tag = TRA
-      }
+			OR = {
+				tag = VIJ
+				tag = DRA
+				tag = BHA
+				tag = ADR
+				tag = HYD
+				tag = HND
+				tag = TRA
+			}
 			NOT = {
 				has_country_flag = masulipatnam_treaty_pending
 			}
-				
-			BRG = {
-				owns = 1306
-			}
+			1306 = { owned_by = BRG }
 		}
-		
+
 		allow = {
-			owns = 1307 
-			owns = 1308 
-			owns = 1283  
-			owns = 1305   
-			owns = 1287    
+			owns = 1307
+			owns = 1308
+			owns = 1283
+			owns = 1305
+			owns = 1287
 			civilized = yes
 			war = no
-			BRG = {
-				war = no
-			}
+			BRG = { war = no }
 			relation = { who = BRG value = 50 }
 		}
-		
+
 		effect = {
-			BRG = {
-				country_event = 333022
-			}
+			BRG = { country_event = 333022 }
 			set_country_flag = masulipatnam_treaty_pending
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	masulipatnam_treaty2 = {
 	picture = treaty_india
 		potential = {
       OR = {
-			   tag = VIJ   
-			   tag = DRA    
-			   tag = BHA     
-			   tag = ADR      
-			   tag = HYD    
-			   tag = HND     
+			   tag = VIJ
+			   tag = DRA
+			   tag = BHA
+			   tag = ADR
+			   tag = HYD
+			   tag = HND
 			   tag = TRA
       }
-			NOT = {
-				has_country_flag = masulipatnam_treaty_pending
-			}
-				
-			PBG = {
-				owns = 1306
-			}
+			NOT = { has_country_flag = masulipatnam_treaty_pending }
+			1306 = { owned_by = PBG }
 		}
-		
+
 		allow = {
-			owns = 1307 
-			owns = 1308 
-			owns = 1283  
-			owns = 1305   
-			owns = 1287    
+			owns = 1307
+			owns = 1308
+			owns = 1283
+			owns = 1305
+			owns = 1287
 			civilized = yes
 			war = no
 			PBG = {
@@ -121,14 +103,14 @@ political_decisions = {
 			}
 			relation = { who = PBG value = 50 }
 		}
-		
+
 		effect = {
 			PBG = {
 				country_event = 333022
 			}
 			set_country_flag = masulipatnam_treaty_pending
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}

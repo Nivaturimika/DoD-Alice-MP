@@ -6,8 +6,10 @@ country_event = {
 	title = "EVTNAME98262"
 	desc = "EVTDESC98262"
 	picture = "diamonds_in_kimberley"
-	
+
 	trigger = {
+		year >= 1864
+		civilized = yes
 		OR = {
 			owns = 2558
 			AND = {
@@ -15,18 +17,16 @@ country_event = {
 				owns = 2101
 			}
 		}
-		year = 1864
-		civilized = yes
 		2094 = {
 			empty = yes
 			NOT = { trade_goods = precious_goods }
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = { months = 36 }
-		
+
 	option = {
 		name = "EVT98262OPTA"
 		set_country_flag = kimberley_goldrush
@@ -47,31 +47,28 @@ country_event = {
 	title = "SAFN01.T"
 	desc = "SAFN01.D"
 	picture = "geusintro"
-	
-	trigger = { 
-	OR = { 
-	   primary_culture = afro_south_african
-	   primary_culture = boer
+
+	trigger = {
+		OR = {
+			primary_culture = afro_south_african
+			primary_culture = boer
+		}
+		NOT = { has_country_flag = der_status_quo }
 	}
-	NOT = { has_country_flag = der_status_quo }
+
+	mean_time_to_happen = {
+	days = 1
 	}
-	
-	mean_time_to_happen = { 
-	days = 1 
-	}
-	
-	option = { 
-	    name = "SAFN01.A"
-	    set_country_flag = der_status_quo
-	    prestige = 1	
-	    any_country = {
-	        limit = { 
-		        is_greater_power = yes
-	        }  
-	        leave_alliance = THIS
-	        relation = { who = THIS value = -400 }
-	        diplomatic_influence = { who = THIS value = -400 }		
-	    }
+
+	option = {
+		name = "SAFN01.A"
+		set_country_flag = der_status_quo
+		prestige = 1
+		any_greater_power = {
+			leave_alliance = THIS
+			relation = { who = THIS value = -400 }
+			diplomatic_influence = { who = THIS value = -400 }
+		}
 	}
 }
 
@@ -82,52 +79,52 @@ country_event = {
 	title = "SAFN02.T"
 	desc = "SAFN02.D"
 	picture = "schoeman_rifles"
-	
-	trigger = { 
+
+	trigger = {
 	tag = LWE
 	year = 1844
 	NOT = { has_country_flag = alyo_strikes }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	months = 3
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN02.A"
 	set_country_flag = alyo_strikes
 	prestige = 5
 	any_country = {
-	   limit = {
-	       OR = {
-		     AND = {
-		        tag = BRG
-			    NOT = { exists = PBG }
-		     }
-		     AND = {
-		        tag = PBG
-			    NOT = { exists = BRG }
-		     }
-	      }
-	   }
-	  country_event = { id = 333203 days = 30 }
+	limit = {
+		OR = {
+			AND = {
+				tag = BRG
+				NOT = { exists = PBG }
+			}
+			AND = {
+				tag = PBG
+				NOT = { exists = BRG }
+			}
+		}
 	}
-	ai_chance = { 
+	country_event = { id = 333203 days = 30 }
+	}
+	ai_chance = {
 	factor = 75
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN02.B"
 	set_country_flag = alyo_strikes
 	set_country_flag = LWE_status_quo
 	prestige = -10
 	any_pop = {
-		militancy = 3 
+		militancy = 3
 		consciousness = 3
-	}	
-	ai_chance = { 
-	factor = 25 
+	}
+	ai_chance = {
+	factor = 25
 		}
 	}
 }
@@ -137,54 +134,54 @@ country_event = {
 	title = "SAFN03.T"
 	desc = "SAFN03.D"
 	picture = "schoeman_rifles"
-	
+
 	is_triggered_only = yes
-	
+
 	# Who cares?
-	
-	option = { 
+
+	option = {
 	name = "SAFN03.A"
 	prestige = -5
-    any_pop = {
-         limit = {
-             has_pop_culture = burgundian
-             location = { province_id = 2091 }
-         }
-         move_pop = 2087
-    }     
-	LWE = { 
-	   prestige = 5
-	   set_country_flag = LWE_status_quo 
+	any_pop = {
+		limit = {
+			has_pop_culture = burgundian
+			location = { province_id = 2091 }
+		}
+		move_pop = 2087
 	}
-	any_owned = { 
-	  limit = { 
-	  province_id = 2091
-	  }
-	  secede_province = LWE
+	LWE = {
+	prestige = 5
+	set_country_flag = LWE_status_quo
 	}
-	ai_chance = { 
+	any_owned = {
+	limit = {
+	province_id = 2091
+	}
+	secede_province = LWE
+	}
+	ai_chance = {
 	factor = 75
 		}
 	}
-	
+
 	# DECLARE WAR
-	
-	option = { 
+
+	option = {
 	name = "SAFN03.B"
 	set_global_flag = LWE_BRG_War
 	prestige = 5
-    any_pop = {
-         limit = {
-             has_pop_culture = burgundian
-             location = { province_id = 2091 }
-         }
-         move_pop = 2087
-    }
-	any_owned = { 
-	  limit = { 
-	  province_id = 2091
-	  }
-	  secede_province = LWE
+	any_pop = {
+		limit = {
+			has_pop_culture = burgundian
+			location = { province_id = 2091 }
+		}
+		move_pop = 2087
+	}
+	any_owned = {
+	limit = {
+	province_id = 2091
+	}
+	secede_province = LWE
 	}
 	war = {
 		target = LWE
@@ -194,9 +191,9 @@ country_event = {
 			defender_goal = {
 				casus_belli = geuzen_cb
 			}
-	}	
-	ai_chance = { 
-	   factor = 25 
+	}
+	ai_chance = {
+	factor = 25
 			modifier = {
 				factor = 0
 				is_disarmed = yes
@@ -214,23 +211,23 @@ country_event = {
 	title = "SAFN04.T"
 	desc = "SAFN04.D"
 	picture = "cape_map"
-	
-	trigger = { 
+
+	trigger = {
 	exists = yes
 	OR = {
-	   tag = BRG
-	   tag = PBG
+	tag = BRG
+	tag = PBG
 	}
 	has_global_flag = LWE_BRG_War
 	war = no
 	NOT = { exists = LWE }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 2
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN04.A"
 	clr_global_flag = LWE_BRG_War
 	set_global_flag = SAF_SQ_Broken
@@ -243,26 +240,26 @@ country_event = {
 	title = "SAFN05.T"
 	desc = "SAFN05.D"
 	picture = "cape_map"
-	
-	trigger = { 
+
+	trigger = {
 	tag = LWE
 	has_global_flag = LWE_BRG_War
 	war = no
 	owns = 2087
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 2
 	}
 
-	option = { 
+	option = {
 	name = "SAFN05.A"
 	clr_country_flag = SAFWPCheck
 	clr_global_flag = LWE_BRG_War
 	clr_global_flag = SAFFGW
 	set_global_flag = SAFFGWEnd
 	clr_global_flag = SAFSGW
-    clr_global_flag = SAFSGWA
+	clr_global_flag = SAFSGWA
 	set_global_flag = SAFSGWEnd
 	clr_country_flag = LWE_status_quo
 	set_country_flag = alyo_strikes
@@ -278,27 +275,27 @@ country_event = {
 	title = "SAFN06.T"
 	desc = "SAFN06.D"
 	picture = "cape_map"
-	
-	trigger = { 
+
+	trigger = {
 	tag = LWE
 	war = no
 	owns = 2087
 	NOT = { has_country_flag = alyo_strikes }
-	NOT = { has_global_flag = LWE_BRG_War }	
+	NOT = { has_global_flag = LWE_BRG_War }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 2
 	}
 
-	option = { 
+	option = {
 	name = "SAFN06.A"
 	clr_country_flag = SAFWPCheck
 	clr_global_flag = LWE_BRG_War
 	clr_global_flag = SAFFGW
 	set_global_flag = SAFFGWEnd
 	clr_global_flag = SAFSGW
-    clr_global_flag = SAFSGWA
+	clr_global_flag = SAFSGWA
 	set_global_flag = SAFSGWEnd
 	clr_country_flag = LWE_status_quo
 	set_country_flag = alyo_strikes
@@ -314,20 +311,20 @@ country_event = {
 	title = "SAFN07.T"
 	desc = "SAFN07.D"
 	picture = "boer_war"
-	
-	trigger = { 
+
+	trigger = {
 	exists = yes
 	tag = LWE
 	has_global_flag = LWE_BRG_War
 	war = no
 	NOT = { owns = 2087 }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 2
 	}
 
-	option = { 
+	option = {
 	name = "SAFN07.A"
 	clr_global_flag = LWE_BRG_War
 	set_country_flag = LWE_status_quo
@@ -343,21 +340,21 @@ country_event = {
 	title = "SAFN08.T"
 	desc = "SAFN08.D"
 	picture = "pioneer_wagons"
-	
-	trigger = { 
+
+	trigger = {
 	tag = TRN
 	NFL = { exists = yes }
 	year = 1844
 	NOT = { has_country_flag = reur_republic }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	months = 100
-        modifier = {
+		modifier = {
 			factor = 5
 			AND = {
-			   NOT = { year = 1849 }
-			   NOT = { has_global_flag = SAF_SQ_Broken }
+			NOT = { year = 1849 }
+			NOT = { has_global_flag = SAF_SQ_Broken }
 			}
 		}
 		modifier = {
@@ -369,25 +366,25 @@ country_event = {
 			year = 1849
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN08.A"
 	set_country_flag = reur_republic
 	prestige = 5
 	NFL = { country_event = { id = 333209 days = 3 } }
-	ai_chance = { 
+	ai_chance = {
 	factor = 75
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN08.B"
 	set_country_flag = reur_republic
 	set_country_flag = TRN_status_quo
 	NFL = { set_country_flag = NFL_status_quo }
-	relation = { who = NFL value = 100 }	
-	ai_chance = { 
-	    factor = 25 
+	relation = { who = NFL value = 100 }
+	ai_chance = {
+		factor = 25
 			modifier = {
 				factor = 0
 				has_global_flag = SAF_SQ_Broken
@@ -401,29 +398,29 @@ country_event = {
 	title = "SAFN09.T"
 	desc = "SAFN09.D"
 	picture = "pioneer_wagons"
-	
+
 	is_triggered_only = yes
-	
-	option = { 
+
+	option = {
 	name = "SAFN09.A"
 	set_country_flag = NFL_status_quo
-	TRN = { country_event = { id = 333210 days = 3 } }	
-	ai_chance = { 
-	    factor = 50
+	TRN = { country_event = { id = 333210 days = 3 } }
+	ai_chance = {
+		factor = 50
 			modifier = {
 				factor = 0
 				has_global_flag = SAF_SQ_Broken
 			}
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN09.B"
 	prestige = 5
-	relation = { who = TRN value = -50 }	
+	relation = { who = TRN value = -50 }
 	TRN = { country_event = { id = 333211 days = 3 } }
-	ai_chance = { 
-	factor = 50 
+	ai_chance = {
+	factor = 50
 		}
 	}
 }
@@ -433,10 +430,10 @@ country_event = {
 	title = "SAFN10.T"
 	desc = "SAFN10.D"
 	picture = "trekboers_crossing_the_karoo"
-	
+
 	is_triggered_only = yes
-	
-	option = { 
+
+	option = {
 	name = "SAFN10.A"
 	prestige = 10
 	set_country_flag = TRN_status_quo
@@ -448,45 +445,45 @@ country_event = {
 	title = "SAFN11.T"
 	desc = "SAFN11.D"
 	picture = "schoeman_rifles"
-	
+
 	is_triggered_only = yes
-	
-	option = { 
+
+	option = {
 	name = "SAFN11.A"
 	prestige = -10
 	relation = { who = NFL value = -50 }
 	set_country_flag = TRN_status_quo
 	NFL = { set_country_flag = NFL_status_quo }
 	any_pop = {
-		militancy = 2 
+		militancy = 2
 		consciousness = 2
 	}
-	ai_chance = { 
-	    factor = 25
+	ai_chance = {
+		factor = 25
 			modifier = {
 				factor = 0
 				has_global_flag = SAF_SQ_Broken
 			}
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN11.B"
 	prestige = 5
 	set_global_flag = NFL_TRN_War
-	relation = { who = NFL value = -200 }	
+	relation = { who = NFL value = -200 }
 	leave_alliance = NFL
-	war = { 
+	war = {
 		target = NFL
-		    attacker_goal = {
+			attacker_goal = {
 			casus_belli = make_puppet
 			}
 			defender_goal = {
 				casus_belli = make_puppet
-	        }
-            call_ally = yes			
+			}
+			call_ally = yes
 	}
-	ai_chance = { 
+	ai_chance = {
 	factor = 75
 		}
 	}
@@ -499,23 +496,23 @@ country_event = {
 	title = "SAFN12.T"
 	desc = "SAFN12.D"
 	picture = "cape_map"
-	
-	trigger = { 
+
+	trigger = {
 	tag = TRN
-	war = no	
+	war = no
 	is_vassal = no
-	NFL = { NOT = { vassal_of = THIS } }	
+	NFL = { NOT = { vassal_of = THIS } }
 	has_global_flag = NFL_TRN_War
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 2
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN12.A"
 	prestige = -10
-    NFL = { set_country_flag = NFL_status_quo prestige = -10 }
+	NFL = { set_country_flag = NFL_status_quo prestige = -10 }
 	clr_global_flag = NFL_TRN_War
 	set_country_flag = TRN_status_quo
 	}
@@ -528,51 +525,51 @@ country_event = {
 	title = "SAFN13.T"
 	desc = "SAFN13.D"
 	picture = cape_map
-	
+
 	trigger = {
-    OR = {	
-	   tag = TRN
-	   tag = NFL
+	OR = {
+	tag = TRN
+	tag = NFL
 	}
 	has_global_flag = NFL_TRN_War
 	is_vassal = no
-	war = no	
+	war = no
 	OR = {
-	   TRN = { vassal_of = THIS }
-	   NFL = { vassal_of = THIS }
-	   }
+	TRN = { vassal_of = THIS }
+	NFL = { vassal_of = THIS }
 	}
-	
-	mean_time_to_happen = { 
+	}
+
+	mean_time_to_happen = {
 	days = 2
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN13.A"
 	clr_global_flag = NFL_TRN_War
 	set_country_flag = ngeus_status_quo
 	relation = { who = TRN value = 400 }
 	relation = { who = NFL value = 400 }
-	any_country = { 
-	   limit = {  
-		  tag = TRN
-		  is_vassal = yes
-		  tag != THIS
-	   }
-	   NFL = { inherit = TRN }
+	any_country = {
+	limit = {
+		tag = TRN
+		is_vassal = yes
+		tag != THIS
 	}
-	any_country = { 
-	   limit = { 
-		  tag = NFL
-		  is_vassal = yes
-		  tag != THIS
-	   }
-	   TRN = { inherit = NFL }
+	NFL = { inherit = TRN }
+	}
+	any_country = {
+	limit = {
+		tag = NFL
+		is_vassal = yes
+		tag != THIS
+	}
+	TRN = { inherit = NFL }
 	}
 	TRN = { all_core = { add_core = ORA } }
 	NFL = { all_core = { add_core = ORA } }
 	change_tag = ORA
-	}	
+	}
 }
 
 ##############################################
@@ -596,10 +593,10 @@ country_event = {
 	title = "SAFN14.T"
 	desc = "SAFN14.D"
 	picture = "xhosa_bushfighting"
-	
+
 	trigger = {
-    tag = LWE
-	OR = { 
+	tag = LWE
+	OR = {
 	owns = 2087
 	has_country_flag = LWE_status_quo
 	}
@@ -607,12 +604,12 @@ country_event = {
 	year = 1848
 	XHO = { exists = yes }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	months = 2
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN14.A"
 	set_country_flag = LWE_XHO_Con
 	relation = { who = XHO value = -400 }
@@ -625,19 +622,19 @@ country_event = {
 	title = "SAFN15.T"
 	desc = "SAFN15.D"
 	picture = "zulu"
-	
+
 	trigger = {
-    tag = ZUL
-    exists = ORA
+	tag = ZUL
+	exists = ORA
 	NOT = { has_country_flag = ZUL_BSH_Con }
 	year = 1850
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	months = 2
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN15.A"
 	set_country_flag = ZUL_BSH_Con
 	define_general = {
@@ -650,51 +647,51 @@ country_event = {
 				duration = 1825
 	}
 	relation = { who = BSH value = -400 }
-	war = { 
+	war = {
 		target = BSH
-		    attacker_goal = {
+			attacker_goal = {
 			casus_belli = conquest
 			}
 			defender_goal = {
 				casus_belli = status_quo
-	        }			
+			}
 	}
 	}
-}		
+}
 
 country_event = {
 	id = 333216
 	title = "SAFN16.T"
 	desc = "SAFN16.D"
 	picture = "xhosa_bushfighting"
-	
+
 	trigger = {
-	OR = { 
-	   AND = { 
-	      tag = TRN
-	      NOT = { exists = ORA }
-	   }
-	   AND = { 
-	      tag = LWE
-	      NOT = { exists = TRN }
-		  NOT = { exists = ORA }
-	   }
+	OR = {
+	AND = {
+		tag = TRN
+		NOT = { exists = ORA }
 	}
-	OR = { 
-	   has_country_flag = LWE_status_quo
-	   has_country_flag = TRN_status_quo
-	   owns = 2087   
+	AND = {
+		tag = LWE
+		NOT = { exists = TRN }
+		NOT = { exists = ORA }
+	}
+	}
+	OR = {
+	has_country_flag = LWE_status_quo
+	has_country_flag = TRN_status_quo
+	owns = 2087
 	}
 	NOT = { has_country_flag = TRN_BSH_Con }
 	BSH = { exists = yes }
 	year = 1854
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	months = 2
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN16.A"
 	clr_country_flag = native_retreat_BOE
 	set_country_flag = TRN_BSH_Con
@@ -709,31 +706,31 @@ country_event = {
 	title = "SAFN17.T"
 	desc = "SAFN17.D"
 	picture = "zulu"
-	
+
 	trigger = {
 	OR = {
-	   tag = ORA 
-	   tag = NFL
+	tag = ORA
+	tag = NFL
 	}
-    OR = {
-       has_country_flag = ngeus_status_quo
-	   has_country_flag = NFL_status_quo
-	}	
+	OR = {
+	has_country_flag = ngeus_status_quo
+	has_country_flag = NFL_status_quo
+	}
 	NOT = { has_country_flag = NFL_ZUL_Con }
 	ZUL = { exists = yes }
 	year = 1857
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	months = 2
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN17.A"
 	clr_country_flag = native_retreat_BOE
 	set_country_flag = NFL_ZUL_Con
 	prestige = 1
-	relation = { who = ZUL value = -400 }	
+	relation = { who = ZUL value = -400 }
 	ZUL = { all_core = { add_core = THIS } }
 	}
 }
@@ -743,32 +740,32 @@ country_event = {
 	title = "SAFN18.T"
 	desc = "SAFN18.D"
 	picture = "blood_river"
-	
+
 	trigger = {
 	OR = {
-	   tag = ORA 
-	   tag = NFL
-	   tag = TRN
-	   tag = LWE
+	tag = ORA
+	tag = NFL
+	tag = TRN
+	tag = LWE
 	}
 	OR = {
-	  AND = {
-	     owns = 2112
-	     NOT = { exists = ZUL }
-	  }
-	  AND = {
-	     owns = 2104
-         NOT = { exists = BSH }
-      }	  
+	AND = {
+		owns = 2112
+		NOT = { exists = ZUL }
+	}
+	AND = {
+		owns = 2104
+		NOT = { exists = BSH }
+	}
 	}
 	NOT = { has_country_flag = native_retreat_BOE }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 1
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN17.A"
 	set_country_flag = native_retreat_BOE
 	any_owned = {
@@ -784,7 +781,7 @@ country_event = {
 	}
 	remove_core = THIS
 	secede_province = ZUL
-	}	
+	}
 	}
 }
 
@@ -802,9 +799,9 @@ country_event = {
 	desc = "SAFN62.D"
 	picture = "cape_map"
 
-	
+
 	trigger = {
-    tag = PBG
+	tag = PBG
 	year = 1857
 	has_country_flag = SAFN_break
 	NOT = { has_country_flag = the_boer_warning }
@@ -812,56 +809,56 @@ country_event = {
 	NOT = { has_global_flag = SAFFGW }
 	NOT = { has_global_flag = SAFFGWEnd }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	months = 3
 	}
-	
+
 	# Allow him to maintain his autonomy.
-	
-	option = { 
+
+	option = {
 	name = "SAFN62.A"
 	set_country_flag = the_boer_warning
-	any_pop = { 
-	   limit = { 
-	      location = { is_core = BTV }
-	   }
-	   militancy = 1
-	   consciousness = 1
-	   ideology = { factor = 0.05 value = separatist } 
-	} 
+	any_pop = {
+	limit = {
+		location = { is_core = BTV }
+	}
+	militancy = 1
+	consciousness = 1
+	ideology = { factor = 0.05 value = separatist }
+	}
 	relation = { who = LWE value = -100 }
 	relation = { who = ORA value = -100 }
 	relation = { who = NFL value = -100 }
 	relation = { who = TRN value = -100 }
-	ai_chance = { 
-	   factor = 50
-	   }
+	ai_chance = {
+	factor = 50
 	}
-	
+	}
+
 	# Prepare to abolish the duchy and offer the Geuzen everything but Cape Town for a deal.
-	
-	option = { 
+
+	option = {
 	name = "SAFN62.B"
 	set_country_flag = the_boer_warning
 	any_country = {
-	   limit = {
-	      tag = LWE
-	      owns = 2096
-		  exists = yes
-	   }	
-	   country_event = { id = 333263 days = 14 }
+	limit = {
+		tag = LWE
+		owns = 2096
+		exists = yes
 	}
-    any_country = {
-	   limit = {
-	      owns = 2049
-	      NOT = { exists = LWE }
-	   }
-	   country_event = { id = 333263 days = 14 }
+	country_event = { id = 333263 days = 14 }
 	}
-	ai_chance = { 
-	   factor = 50
-	   }	
+	any_country = {
+	limit = {
+		owns = 2049
+		NOT = { exists = LWE }
+	}
+	country_event = { id = 333263 days = 14 }
+	}
+	ai_chance = {
+	factor = 50
+	}
 	}
 }
 
@@ -873,115 +870,115 @@ country_event = {
 	desc = "SAFN63.D"
 	picture = "cape_map"
 
-	
+
 	is_triggered_only = yes
-	
-	option = { 
+
+	option = {
 	name = "SAFN63.A"
-	    prestige = 5
+		prestige = 5
 		clr_country_flag = the_boer_warning
 		clr_country_flag = SAFN_break
 		clr_country_flag = SAFWPCheck
-	    clr_global_flag = SAFFGW
-	    clr_global_flag = SAFSGW
-        clr_global_flag = SAFSGWA
-	    set_global_flag = SAFFGWEnd      
-	    set_global_flag = SAFSGWEnd	
+		clr_global_flag = SAFFGW
+		clr_global_flag = SAFSGW
+		clr_global_flag = SAFSGWA
+		set_global_flag = SAFFGWEnd
+		set_global_flag = SAFSGWEnd
 		set_global_flag = 2087_Treaty
-        2087 = { remove_core = BTV remove_core = LWE remove_core = SAF }			
+		2087 = { remove_core = BTV remove_core = LWE remove_core = SAF }
 		SAF = {
 			all_core = {
 				limit = { continent = africa }
 				remove_core = PBG
 			}
-		}	
+		}
 		BTV = {
 			all_core = {
 				limit = { continent = africa }
 				remove_core = PBG
 			}
-		}	
-        remove_country_modifier = geus_status_quo	
-        remove_country_modifier = war_justification_blocked	
-	    any_country = {
-	    limit = {
-	    OR = {
-	       primary_culture = boer
-	       primary_culture = afro_south_african
-	       }
-	    }
-	    remove_country_modifier = geus_status_quo
-		remove_country_modifier = war_justification_blocked	
-	    } 
-        any_country = {
-	    limit = {
-	    tag = LWE
-	    exists = no 
-	    }
-	    government = democracy
-	    ruling_party_ideology = conservative
-        political_reform = population_equal_weight
-        political_reform = universal_voting
-        political_reform = yes_meeting
-        political_reform = free_press
-        political_reform = secret_ballots
-        
-	    
-	    
-	    
-        
-	    
-        
-        
-	    
-	    
-	    
-	    
-	    
-	    
-	    clr_country_flag = tory_election_win
-	    clr_country_flag = socialist_election_win
-	    clr_country_flag = liberal_election_win
-	    clr_country_flag = communist_election_win
-	    clr_country_flag = fascist_election_win
-	    clr_country_flag = reactionary_election_win
-	    clr_country_flag = anarcho_liberal_election_win
-	    clr_country_flag = social_liberal_election_win
-	    clr_country_flag = market_liberal_election_win		
+		}
+		remove_country_modifier = geus_status_quo
+		remove_country_modifier = war_justification_blocked
+		any_country = {
+		limit = {
+		OR = {
+		primary_culture = boer
+		primary_culture = afro_south_african
+		}
+		}
+		remove_country_modifier = geus_status_quo
+		remove_country_modifier = war_justification_blocked
+		}
+		any_country = {
+		limit = {
+		tag = LWE
+		exists = no
+		}
+		government = democracy
+		ruling_party_ideology = conservative
+		political_reform = population_equal_weight
+		political_reform = universal_voting
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = secret_ballots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win
+		clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    }
-        PBG = {
-	    relation = { who = THIS value = 300 }
-	    diplomatic_influence = { who = THIS value = 200 }
+
+
+
+
+
+
+
+
+
+		}
+		PBG = {
+		relation = { who = THIS value = 300 }
+		diplomatic_influence = { who = THIS value = 200 }
 		create_alliance = THIS
-	    any_owned = {
-	    limit = {
-	    is_core = LWE
-	    }
-	    secede_province = LWE
-	    } 	
-        }	
-        2087 = { add_core = SAF }	
-	    ai_chance = { 
-	    factor = 80
-	    }
+		any_owned = {
+		limit = {
+		is_core = LWE
+		}
+		secede_province = LWE
+		}
+		}
+		2087 = { add_core = SAF }
+		ai_chance = {
+		factor = 80
+		}
 	}
 
-	option = { 
+	option = {
 	name = "SAFN63.B"
-	   PBG = { country_event = { id = 333264 days = 14 } }
-	   ai_chance = { 
-	   factor = 20
-	   }
+	PBG = { country_event = { id = 333264 days = 14 } }
+	ai_chance = {
+	factor = 20
+	}
 	}
 }
 
@@ -994,24 +991,24 @@ country_event = {
 	picture = "cape_map"
 
 	is_triggered_only = yes
-	
+
 	# I guess we are going to have to tolerate the duke then.
-	
-	option = { 
+
+	option = {
 	name = "SAFN64.A"
-	any_pop = { 
-	   limit = { 
-	      location = { is_core = BTV }
-	   }
-	   militancy = 1
-	   consciousness = 1
-	   ideology = { factor = 0.05 value = separatist } 
-	} 
+	any_pop = {
+	limit = {
+		location = { is_core = BTV }
+	}
+	militancy = 1
+	consciousness = 1
+	ideology = { factor = 0.05 value = separatist }
+	}
 	relation = { who = LWE value = -100 }
 	relation = { who = ORA value = -100 }
 	relation = { who = NFL value = -100 }
 	relation = { who = TRN value = -100 }
-	}	
+	}
 }
 
 #### The First Geuzen War - Alt LWE Invasion (Republic) ####
@@ -1021,11 +1018,11 @@ country_event = {
 	title = "SAFN65.T"
 	desc = "SAFN65.D"
 	picture = "boer_war"
-	
+
 	major = yes
-	
+
 	trigger = {
-    tag = PBG
+	tag = PBG
 	year = 1860
 	month = 4
 	LWE = { exists = yes }
@@ -1034,24 +1031,24 @@ country_event = {
 	NOT = { has_global_flag = SAFFGW }
 	NOT = { has_global_flag = SAFFGWEnd }
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN65.A"
 	prestige = -1
 	clr_country_flag = the_boer_warning
 	clr_country_flag = SAFN_break
 	set_global_flag = SAFFGW
 	set_country_flag = LWE_BRG_War
-	war = { 
+	war = {
 		target = LWE
-		    attacker_goal = {
+			attacker_goal = {
 			casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = acquire_core_state
 				state_province_id = 2087
-			}			
-	    }
+			}
+		}
 	}
 }
 
@@ -1062,9 +1059,9 @@ country_event = {
 	title = "SAFN24.T"
 	desc = "SAFN24.D"
 	picture = "cape_map"
-	
+
 	trigger = {
-    tag = BRG
+	tag = BRG
 	year = 1857
 	NOT = { has_country_flag = SAFN_break }
 	NOT = { has_country_flag = the_boer_warning }
@@ -1072,22 +1069,22 @@ country_event = {
 	NOT = { has_global_flag = SAFFGW }
 	NOT = { has_global_flag = SAFFGWEnd }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	months = 3
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN24.A"
 	set_country_flag = the_boer_warning
-	any_pop = { 
-	   limit = { 
-	      location = { is_core = BTV }
-	   }
-	   militancy = 1
-	   consciousness = 1
-	   ideology = { factor = 0.05 value = separatist } 
-	} 
+	any_pop = {
+	limit = {
+		location = { is_core = BTV }
+	}
+	militancy = 1
+	consciousness = 1
+	ideology = { factor = 0.05 value = separatist }
+	}
 	relation = { who = LWE value = -100 }
 	relation = { who = ORA value = -100 }
 	relation = { who = NFL value = -100 }
@@ -1102,9 +1099,9 @@ country_event = {
 	title = "SAFN19.T"
 	desc = "SAFN19.D"
 	picture = "boer_troops"
-	
+
 	trigger = {
-    tag = BRG
+	tag = BRG
 	year = 1860
 	month = 8
 	has_country_flag = the_boer_warning
@@ -1114,29 +1111,29 @@ country_event = {
 	NOT = { has_global_flag = SAFFGW }
 	NOT = { has_global_flag = SAFFGWEnd }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 4
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN19.A"
 	clr_country_flag = the_boer_warning
 	set_global_flag = JEAN_FGW
 	country_event = { id = 333220 days = 10 }
 	relation = { who = LWE value = -400 }
-	ai_chance = { 
+	ai_chance = {
 	factor = 75
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN19.B"
 	set_global_flag = JEAN_FGW
 	clr_country_flag = the_boer_warning
 	country_event = { id = 333221 days = 10 }
-	relation = { who = LWE value = -400 }	
-	ai_chance = { 
+	relation = { who = LWE value = -400 }
+	ai_chance = {
 	factor = 25
 		}
 	}
@@ -1149,26 +1146,26 @@ country_event = {
 	title = "SAFN20.T"
 	desc = "SAFN20.D"
 	picture = "boer_war"
-	
+
 	is_triggered_only = yes
-	
+
 	major = yes
-	
-	option = { 
+
+	option = {
 	name = "SAFN20.A"
 	prestige = 10
 	clr_global_flag = JEAN_FGW
 	set_global_flag = SAFFGW
 	set_country_flag = LWE_BRG_War
-	war = { 
+	war = {
 		target = LWE
-		    attacker_goal = {
-			    casus_belli = conquest_any
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}		
-	    }
+			}
+		}
 	}
 }
 
@@ -1179,26 +1176,26 @@ country_event = {
 	title = "SAFN21.T"
 	desc = "SAFN21.D"
 	picture = "boer_war"
-	
+
 	is_triggered_only = yes
-	
+
 	major = yes
-	
-	option = { 
+
+	option = {
 	name = "SAFN21.A"
 	prestige = -10
 	clr_global_flag = JEAN_FGW
 	set_global_flag = SAFFGW
 	set_country_flag = LWE_BRG_War
-	war = { 
+	war = {
 		target = LWE
-		    attacker_goal = {
-			    casus_belli = conquest_any
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}			
-	    }
+			}
+		}
 	}
 }
 
@@ -1209,16 +1206,16 @@ country_event = {
 	title = "SAFN22.T"
 	desc = "SAFN22.D"
 	picture = "boer_war"
-	
+
 	major = yes
-	
+
 	trigger = {
 	OR = {
-       tag = BRG
-	   AND = {
-	      tag = PBG
-	      has_country_flag = SAFN_break
-	   }
+	tag = BRG
+	AND = {
+		tag = PBG
+		has_country_flag = SAFN_break
+	}
 	}
 	year = 1860
 	month = 5
@@ -1232,36 +1229,36 @@ country_event = {
 	NOT = { has_global_flag = SAFFGW }
 	NOT = { has_global_flag = SAFFGWEnd }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 4
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN22.A"
 	prestige = -10
 	clr_country_flag = the_boer_warning
 	clr_country_flag = SAFN_break
 	clr_global_flag = JEAN_FGW
 	set_global_flag = SAFFGW
-	war = { 
+	war = {
 		target = TRN
-		    attacker_goal = {
-			    casus_belli = conquest_any
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}			
-	    }
-	war = { 
+			}
+		}
+	war = {
 		target = NFL
-		    attacker_goal = {
-			    casus_belli = conquest_any
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}			
-	    }
+			}
+		}
 	}
 }
 
@@ -1272,16 +1269,16 @@ country_event = {
 	title = "SAFN23.T"
 	desc = "SAFN23.D"
 	picture = "boer_war"
-	
+
 	major = yes
-	
+
 	trigger = {
-	OR = {  
-       tag = BRG
-	   AND = {
-	      tag = PBG
-	      has_country_flag = SAFN_break
-	   }
+	OR = {
+	tag = BRG
+	AND = {
+		tag = PBG
+		has_country_flag = SAFN_break
+	}
 	}
 	year = 1860
 	month = 5
@@ -1295,27 +1292,27 @@ country_event = {
 	NOT = { has_global_flag = SAFFGW }
 	NOT = { has_global_flag = SAFFGWEnd }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 4
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN21.A"
 	prestige = -10
 	clr_country_flag = the_boer_warning
 	clr_country_flag = SAFN_break
 	clr_global_flag = JEAN_FGW
 	set_global_flag = SAFFGW
-	war = { 
+	war = {
 		target = ORA
-		    attacker_goal = {
-			    casus_belli = conquest_any
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}			
-	    }
+			}
+		}
 	}
 }
 
@@ -1326,36 +1323,36 @@ country_event = {
 	title = "SAFN25.T"
 	desc = "SAFN25.D"
 	picture = "boer_troops"
-	
+
 	trigger = {
 	exists = yes
-    tag = LWE
+	tag = LWE
 	has_global_flag = SAFFGW
 	war = yes
 	NOT = { exists = ORA }
 	NOT = { has_country_flag = LWE_AID }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 1
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN25.B"
 	set_country_flag = LWE_AID
 	relation = { who = NFL value = -100 }
 	relation = { who = TRN value = -100 }
-	ai_chance = { 
+	ai_chance = {
 	factor = 20
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN25.A"
 	set_country_flag = LWE_AID
 	TRN = { country_event = { id = 333226 days = 1 } }
 	NFL = { country_event = { id = 333226 days = 2 } }
-	ai_chance = { 
+	ai_chance = {
 	factor = 75
 		}
 	}
@@ -1366,32 +1363,32 @@ country_event = {
 	title = "SAFN26.T"
 	desc = "SAFN26.D"
 	picture = "boer_troops"
-	
-	is_triggered_only = yes	
-	
-	option = { 
+
+	is_triggered_only = yes
+
+	option = {
 	name = "SAFN26.A"
 	prestige = 5
 	relation = { who = LWE value = 400 }
 	create_alliance = LWE
 	any_country = {
-	   limit = {
-	      tag = LWE
-		  ai = yes
-	   }
-	   country_event = { id = 333227 days = 1 }
+	limit = {
+		tag = LWE
+		ai = yes
 	}
-	ai_chance = { 
+	country_event = { id = 333227 days = 1 }
+	}
+	ai_chance = {
 	factor = 75
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN26.B"
 	prestige = -5
 	end_war = BRG
 	relation = { who = LWE value = -100 }
-	ai_chance = { 
+	ai_chance = {
 	factor = 25
 		}
 	}
@@ -1402,10 +1399,10 @@ country_event = {
 	title = "SAFN27.T"
 	desc = "SAFN27.D"
 	picture = "boer_war"
-	
-	is_triggered_only = yes	
-	
-	option = { 
+
+	is_triggered_only = yes
+
+	option = {
 	name = "SAFN27.A"
 		random_country = {
 			limit = {
@@ -1432,34 +1429,34 @@ country_event = {
 	title = "SAFN28.T"
 	desc = "SAFN28.D"
 	picture = "boer_troops"
-	
+
 	trigger = {
 	exists = yes
-    tag = LWE
+	tag = LWE
 	has_global_flag = SAFFGW
 	war = yes
 	exists = ORA
 	NOT = { has_country_flag = LWE_AID }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 1
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN28.B"
 	set_country_flag = LWE_AID
 	relation = { who = ORA value = -100 }
-	ai_chance = { 
+	ai_chance = {
 	factor = 25
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN28.A"
 	set_country_flag = LWE_AID
 	ORA = { country_event = { id = 333229 days = 1 } }
-	ai_chance = { 
+	ai_chance = {
 	factor = 75
 		}
 	}
@@ -1470,54 +1467,54 @@ country_event = {
 	title = "SAFN29.T"
 	desc = "SAFN29.D"
 	picture = "boer_troops"
-	
-	is_triggered_only = yes	
-	
-	option = { 
+
+	is_triggered_only = yes
+
+	option = {
 	name = "SAFN29.A"
 	prestige = 5
 	relation = { who = LWE value = 400 }
 	create_alliance = LWE
 	any_country = {
-	   limit = {
-	      tag = LWE
-		  ai = yes
-	   }
-	   country_event = { id = 333230 days = 1 }
+	limit = {
+		tag = LWE
+		ai = yes
 	}
-	ai_chance = { 
+	country_event = { id = 333230 days = 1 }
+	}
+	ai_chance = {
 	factor = 50
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN29.B"
 	prestige = 10
 	end_war = BRG
 	relation = { who = LWE value = -400 }
 	leave_alliance = LWE
-	war = { 
+	war = {
 		target = LWE
-		    attacker_goal = {
+			attacker_goal = {
 			casus_belli = civil_war
 			}
 			defender_goal = {
 			casus_belli = civil_war
-	    }			
-	}	
+		}
+	}
 	LWE = { country_event = { id = 333231 days = 1 } }
 	BRG = { country_event = { id = 333232 days = 3 } }
-	ai_chance = { 
+	ai_chance = {
 	factor = 40
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN29.C"
 	prestige = -5
 	end_war = BRG
 	relation = { who = LWE value = -100 }
-	ai_chance = { 
+	ai_chance = {
 	factor = 10
 		}
 	}
@@ -1528,10 +1525,10 @@ country_event = {
 	title = "SAFN30.T"
 	desc = "SAFN30.D"
 	picture = "boer_war"
-	
-	is_triggered_only = yes	
-	
-	option = { 
+
+	is_triggered_only = yes
+
+	option = {
 	name = "SAFN30.A"
 		random_country = {
 			limit = {
@@ -1556,16 +1553,16 @@ country_event = {
 	title = "SAFN31.T"
 	desc = "SAFN31.D"
 	picture = "boer_war"
-	
-    is_triggered_only = yes	
-	
-	option = { 
+
+	is_triggered_only = yes
+
+	option = {
 	name = "SAFN31.A"
 	relation = { who = ORA value = -400 }
 	add_country_modifier = {
 				name = taiping_draft
 				duration = 1440
-	    }
+		}
 	}
 }
 
@@ -1574,22 +1571,22 @@ country_event = {
 	title = "SAFN32.T"
 	desc = "SAFN32.D"
 	picture = "boer_war"
-	
-    is_triggered_only = yes	
-	
-	option = { 
+
+	is_triggered_only = yes
+
+	option = {
 	name = "SAFN32.A"
 	prestige = -1
 	relation = { who = ORA value = -400 }
-	war = { 
+	war = {
 		target = ORA
-		    attacker_goal = {
-			    casus_belli = conquest_any
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}			
-	    }
+			}
+		}
 	}
 }
 
@@ -1600,9 +1597,9 @@ country_event = {
 	title = "SAFN33.T"
 	desc = "SAFN33.D"
 	picture = "cape_map"
-	
+
 	trigger = {
-    tag = BRG
+	tag = BRG
 	has_global_flag = SAFFGW
 	has_country_flag = LWE_BRG_War
 	exists = TRN
@@ -1617,31 +1614,31 @@ country_event = {
 	NOT = { has_global_flag = JEAN_FGW }
 	NOT = { has_global_flag = SAFFGWEnd }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 1
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN33.A"
-	war = { 
+	war = {
 		target = TRN
-		    attacker_goal = {
-			    casus_belli = conquest_any
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}			
-	    }
-	war = { 
+			}
+		}
+	war = {
 		target = NFL
-		    attacker_goal = {
-			    casus_belli = conquest_any
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}			
-	    }
+			}
+		}
 	}
 }
 
@@ -1652,11 +1649,11 @@ country_event = {
 	title = "SAFN34.T"
 	desc = "SAFN34.D"
 	picture = "cape_map"
-	
+
 	trigger = {
-    tag = BRG
+	tag = BRG
 	has_global_flag = SAFFGW
-	has_country_flag = LWE_BRG_War	
+	has_country_flag = LWE_BRG_War
 	exists = ORA
 	NOT = { exists = LWE }
 	NOT = { exists = TRN }
@@ -1669,22 +1666,22 @@ country_event = {
 	NOT = { has_global_flag = JEAN_FGW }
 	NOT = { has_global_flag = SAFFGWEnd }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 1
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN34.A"
-	war = { 
+	war = {
 		target = ORA
-		    attacker_goal = {
-			    casus_belli = conquest_any
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}			
-	    }
+			}
+		}
 	}
 }
 
@@ -1695,26 +1692,26 @@ country_event = {
 	title = "SAFN35.T"
 	desc = "SAFN35.D"
 	picture = "volksraad"
-	
+
 	trigger = {
-    tag = BRG
+	tag = BRG
 	exists = PBG
 	OR = {
-	   war_with = ORA
-	   war_with = LWE
-	   war_with = TRN
-	   war_with = NFL
+	war_with = ORA
+	war_with = LWE
+	war_with = TRN
+	war_with = NFL
 	}
 	has_global_flag = SAFFGW
 	NOT = { has_global_flag = SAFFGWEnd }
 	NOT = { has_country_flag = SAFWPCheck }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 7
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN35.A"
 	prestige = 10
 	end_war = ORA
@@ -1722,25 +1719,25 @@ country_event = {
 	end_war = TRN
 	end_war = NFL
 	any_country = {
-	   limit = { 
-	      tag = LWE
-		  exists = yes
-	   }
-	   country_event = { id = 3332350 days = 0 }
-	}	
+	limit = {
+		tag = LWE
+		exists = yes
+	}
+	country_event = { id = 3332350 days = 0 }
+	}
 	# Treaty Borders
 	SAF = { all_core = { remove_core = BTV } }
 	ENG_2087 = { remove_core = BTV  }
-	ai_chance = { 
+	ai_chance = {
 	factor = 80
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN35.B"
 	set_country_flag = SAFWPCheck
-	prestige = -10 
-	ai_chance = { 
+	prestige = -10
+	ai_chance = {
 	factor = 20
 		}
 	}
@@ -1753,17 +1750,17 @@ country_event = {
 	title = "SAFN350.T"
 	desc = "SAFN350.D"
 	picture = "trekboers_crossing_the_karoo"
-	
+
 	is_triggered_only = yes
-	
-	option = { 
+
+	option = {
 	name = "SAFN35.B"
 	prestige = 20
-	add_country_modifier = { 
+	add_country_modifier = {
 		name = war_justification_blocked
-		duration = -1 
+		duration = -1
 	}
-	}		
+	}
 }
 
 #### The First Geuzen War - BRG is dead or a normal WP occurred ####
@@ -1773,56 +1770,56 @@ country_event = {
 	title = "SAFN36.T"
 	desc = "SAFN36.D"
 	picture = "trekboers_crossing_the_karoo"
-	
+
 	trigger = {
 	exists = yes
-    tag = ORA
+	tag = ORA
 	war = no
 	has_global_flag = SAFFGW
 	NOT = { war_with = PBG }
 	NOT = { war_with = BRG }
-	LWE = { 
-	   AND = {
-	      NOT = { war_with = PBG }
-	      NOT = { war_with = BRG }
-	   }
+	LWE = {
+	AND = {
+		NOT = { war_with = PBG }
+		NOT = { war_with = BRG }
+	}
 	}
 	NOT = { has_global_flag = SAFFGWEnd }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 14
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN36.A"
 	prestige = 10
-    any_country = {
+	any_country = {
 	limit = {
 	tag = LWE
-	exists = no 
+	exists = no
 	}
 	government = democracy
 	ruling_party_ideology = conservative
-    political_reform = population_equal_weight
-    political_reform = universal_voting
-    political_reform = yes_meeting
-    political_reform = free_press
-    political_reform = secret_ballots
-    
-	
-	
-	
-    
-	
-    
-    
-	
-	
-	
-	
-	
-	
+	political_reform = population_equal_weight
+	political_reform = universal_voting
+	political_reform = yes_meeting
+	political_reform = free_press
+	political_reform = secret_ballots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -1831,44 +1828,44 @@ country_event = {
 	clr_country_flag = reactionary_election_win
 	clr_country_flag = anarcho_liberal_election_win
 	clr_country_flag = social_liberal_election_win
-	clr_country_flag = market_liberal_election_win		
+	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
 	}
 	any_country = {
 	limit = {
 	tag = TRN
-	exists = no 
+	exists = no
 	}
 	government = democracy
 	ruling_party_ideology = conservative
-    political_reform = population_equal_weight
-    political_reform = universal_voting
-    political_reform = yes_meeting
-    political_reform = free_press
-    political_reform = secret_ballots
-    
-	
-	
-	
-    
-	
-    
-    
-	
-	
-	
-	
-	
-	
+	political_reform = population_equal_weight
+	political_reform = universal_voting
+	political_reform = yes_meeting
+	political_reform = free_press
+	political_reform = secret_ballots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -1877,44 +1874,44 @@ country_event = {
 	clr_country_flag = reactionary_election_win
 	clr_country_flag = anarcho_liberal_election_win
 	clr_country_flag = social_liberal_election_win
-	clr_country_flag = market_liberal_election_win		
+	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
 	}
 	any_country = {
 	limit = {
 	tag = NFL
-	exists = no 
+	exists = no
 	}
 	government = democracy
 	ruling_party_ideology = conservative
-    political_reform = population_equal_weight
-    political_reform = universal_voting
-    political_reform = yes_meeting
-    political_reform = free_press
-    political_reform = secret_ballots
-    
-	
-	
-	
-    
-	
-    
-    
-	
-	
-	
-	
-	
-	
+	political_reform = population_equal_weight
+	political_reform = universal_voting
+	political_reform = yes_meeting
+	political_reform = free_press
+	political_reform = secret_ballots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -1923,138 +1920,138 @@ country_event = {
 	clr_country_flag = reactionary_election_win
 	clr_country_flag = anarcho_liberal_election_win
 	clr_country_flag = social_liberal_election_win
-	clr_country_flag = market_liberal_election_win		
+	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
 	}
 	BRG = {
-	any_owned = { 
-	  limit = { 
-	  is_core = ORA
-	  NOT = { is_core = SAF }
-	  }
-	  secede_province = ORA
+	any_owned = {
+	limit = {
+	is_core = ORA
+	NOT = { is_core = SAF }
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = NFL
-	  NOT = { is_core = SAF }
-	  }
-	  secede_province = NFL
+	secede_province = ORA
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = TRN
-	  NOT = { is_core = SAF }
-	  }
-	  secede_province = TRN
+	any_owned = {
+	limit = {
+	is_core = NFL
+	NOT = { is_core = SAF }
+	}
+	secede_province = NFL
+	}
+	any_owned = {
+	limit = {
+	is_core = TRN
+	NOT = { is_core = SAF }
+	}
+	secede_province = TRN
 	}
 	}
 	PBG = {
-	any_owned = { 
-	  limit = { 
-	  is_core = ORA
-	  NOT = { is_core = SAF }
-	  }
-	  secede_province = ORA
+	any_owned = {
+	limit = {
+	is_core = ORA
+	NOT = { is_core = SAF }
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = NFL
-	  NOT = { is_core = SAF }
-	  }
-	  secede_province = NFL
+	secede_province = ORA
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = TRN
-	  NOT = { is_core = SAF }
-	  }
-	  secede_province = TRN
+	any_owned = {
+	limit = {
+	is_core = NFL
+	NOT = { is_core = SAF }
+	}
+	secede_province = NFL
+	}
+	any_owned = {
+	limit = {
+	is_core = TRN
+	NOT = { is_core = SAF }
+	}
+	secede_province = TRN
 	}
 	}
 	clr_global_flag = SAFFGW
 	clr_country_flag = SAFWPCheck
 	set_global_flag = SAFFGWEnd
-	set_global_flag = SAFFGWWhitePeace	
-	}	
+	set_global_flag = SAFFGWWhitePeace
+	}
 }
-	
+
 country_event = {
 	id = 333237
 	title = "SAFN37.T"
 	desc = "SAFN37.D"
 	picture = "trekboers_crossing_the_karoo"
-	
+
 	trigger = {
 	exists = yes
 	war = no
 	OR = {
-	   tag = NFL
-	   AND = {
-	      tag = TRN
-	      NOT = { exists = NFL }
-	    }
-    }
+	tag = NFL
+	AND = {
+		tag = TRN
+		NOT = { exists = NFL }
+		}
+	}
 	has_global_flag = SAFFGW
 	NOT = { exists = ORA }
 	NOT = { war_with = PBG }
 	NOT = { war_with = BRG }
-	LWE = { 
-	   AND = {
-	      NOT = { war_with = PBG }
-	      NOT = { war_with = BRG }
-	   }
-	}	
-	TRN = { 
-	   AND = {
-	      NOT = { war_with = PBG }
-	      NOT = { war_with = BRG }
-	   }
+	LWE = {
+	AND = {
+		NOT = { war_with = PBG }
+		NOT = { war_with = BRG }
 	}
 	}
-	
-	mean_time_to_happen = { 
+	TRN = {
+	AND = {
+		NOT = { war_with = PBG }
+		NOT = { war_with = BRG }
+	}
+	}
+	}
+
+	mean_time_to_happen = {
 	days = 14
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN37.A"
 	prestige = 10
-    any_country = {
+	any_country = {
 	limit = {
 	tag = LWE
-	exists = no 
+	exists = no
 	}
 	government = democracy
 	ruling_party_ideology = conservative
-    political_reform = population_equal_weight
-    political_reform = universal_voting
-    political_reform = yes_meeting
-    political_reform = free_press
-    political_reform = secret_ballots
-    
-	
-	
-	
-    
-	
-    
-    
-	
-	
-	
-	
-	
-	
+	political_reform = population_equal_weight
+	political_reform = universal_voting
+	political_reform = yes_meeting
+	political_reform = free_press
+	political_reform = secret_ballots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -2063,44 +2060,44 @@ country_event = {
 	clr_country_flag = reactionary_election_win
 	clr_country_flag = anarcho_liberal_election_win
 	clr_country_flag = social_liberal_election_win
-	clr_country_flag = market_liberal_election_win		
+	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
 	}
 	any_country = {
 	limit = {
 	tag = TRN
-	exists = no 
+	exists = no
 	}
 	government = democracy
 	ruling_party_ideology = conservative
-    political_reform = population_equal_weight
-    political_reform = universal_voting
-    political_reform = yes_meeting
-    political_reform = free_press
-    political_reform = secret_ballots
-    
-	
-	
-	
-    
-	
-    
-    
-	
-	
-	
-	
-	
-	
+	political_reform = population_equal_weight
+	political_reform = universal_voting
+	political_reform = yes_meeting
+	political_reform = free_press
+	political_reform = secret_ballots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -2109,44 +2106,44 @@ country_event = {
 	clr_country_flag = reactionary_election_win
 	clr_country_flag = anarcho_liberal_election_win
 	clr_country_flag = social_liberal_election_win
-	clr_country_flag = market_liberal_election_win		
+	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
 	}
 	any_country = {
 	limit = {
 	tag = NFL
-	exists = no 
+	exists = no
 	}
 	government = democracy
 	ruling_party_ideology = conservative
-    political_reform = population_equal_weight
-    political_reform = universal_voting
-    political_reform = yes_meeting
-    political_reform = free_press
-    political_reform = secret_ballots
-    
-	
-	
-	
-    
-	
-    
-    
-	
-	
-	
-	
-	
-	
+	political_reform = population_equal_weight
+	political_reform = universal_voting
+	political_reform = yes_meeting
+	political_reform = free_press
+	political_reform = secret_ballots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -2155,69 +2152,69 @@ country_event = {
 	clr_country_flag = reactionary_election_win
 	clr_country_flag = anarcho_liberal_election_win
 	clr_country_flag = social_liberal_election_win
-	clr_country_flag = market_liberal_election_win		
+	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
 	}
 	BRG = {
-	any_owned = { 
-	  limit = { 
-	  is_core = ORA
-	  NOT = { is_core = SAF }
-	  }
-	  secede_province = ORA
+	any_owned = {
+	limit = {
+	is_core = ORA
+	NOT = { is_core = SAF }
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = NFL
-	  NOT = { is_core = SAF }
-	  }
-	  secede_province = NFL
+	secede_province = ORA
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = TRN
-	  NOT = { is_core = SAF }
-	  }
-	  secede_province = TRN
+	any_owned = {
+	limit = {
+	is_core = NFL
+	NOT = { is_core = SAF }
+	}
+	secede_province = NFL
+	}
+	any_owned = {
+	limit = {
+	is_core = TRN
+	NOT = { is_core = SAF }
+	}
+	secede_province = TRN
 	}
 	}
 	PBG = {
-	any_owned = { 
-	  limit = { 
-	  is_core = ORA
-	  NOT = { is_core = SAF }
-	  }
-	  secede_province = ORA
+	any_owned = {
+	limit = {
+	is_core = ORA
+	NOT = { is_core = SAF }
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = NFL
-	  NOT = { is_core = SAF }
-	  }
-	  secede_province = NFL
+	secede_province = ORA
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = TRN
-	  NOT = { is_core = SAF }
-	  }
-	  secede_province = TRN
+	any_owned = {
+	limit = {
+	is_core = NFL
+	NOT = { is_core = SAF }
+	}
+	secede_province = NFL
+	}
+	any_owned = {
+	limit = {
+	is_core = TRN
+	NOT = { is_core = SAF }
+	}
+	secede_province = TRN
 	}
 	}
 	clr_global_flag = SAFFGW
 	clr_country_flag = SAFWPCheck
 	set_global_flag = SAFFGWEnd
-	set_global_flag = SAFFGWWhitePeace	
-	}	
+	set_global_flag = SAFFGWWhitePeace
+	}
 }
 
 #### The First Geuzen War - BRG has defeated the Boers before dying ####
@@ -2227,9 +2224,9 @@ country_event = {
 	title = "SAFN38.T"
 	desc = "SAFN38.D"
 	picture = "cape_map"
-	
+
 	trigger = {
-    tag = BRG
+	tag = BRG
 	NOT = { exists = ORA }
 	NOT = { exists = TRN }
 	NOT = { exists = LWE }
@@ -2238,12 +2235,12 @@ country_event = {
 	has_global_flag = SAFFGW
 	NOT = { has_global_flag = SAFFGWEnd }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 1
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN38.A"
 	end_war = ORA
 	end_war = LWE
@@ -2254,19 +2251,19 @@ country_event = {
 	remove_country_modifier = geus_status_quo
 	remove_country_modifier = war_justification_blocked
 	any_country = {
-	    limit = {
-	    OR = {
-	       primary_culture = boer
-	       primary_culture = afro_south_african
-	       }
-	    }
-	    remove_country_modifier = geus_status_quo
+		limit = {
+		OR = {
+		primary_culture = boer
+		primary_culture = afro_south_african
+		}
+		}
+		remove_country_modifier = geus_status_quo
 		remove_country_modifier = war_justification_blocked
 	}
 	clr_global_flag = SAFFGW
 	clr_country_flag = SAFWPCheck
 	set_global_flag = SAFFGWEnd
-	}	
+	}
 }
 
 ### See 98247+ and above for Treaty of Vereeniging related events ###
@@ -2282,31 +2279,31 @@ country_event = {
 	title = "SAFN39.T"
 	desc = "SAFN39.D"
 	picture = "volksraad"
-	
+
 	trigger = {
 	OR = {
-	   tag = ORA
-	   AND = {
-	      tag = NFL
-	      NOT = { exists = ORA }
-	   }
-    }
+	tag = ORA
+	AND = {
+		tag = NFL
+		NOT = { exists = ORA }
+	}
+	}
 	has_global_flag = SAFFGWEnd
 	has_global_flag = SAFFGWWhitePeace
 	NOT = { has_global_flag = SAFNHCWar }
 	NOT = { has_global_flag = SAFNHConcluded }
 	}
-	
-	mean_time_to_happen = { 
-	   months = 1
+
+	mean_time_to_happen = {
+	months = 1
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN39.A"
 	prestige = 10
 	LWE = { remove_country_modifier = war_justification_blocked }
 	set_country_flag = BoerNHC
-	any_country = { 
+	any_country = {
 	limit = {
 	primary_culture = boer
 	exists = yes
@@ -2314,7 +2311,7 @@ country_event = {
 	}
 	country_event = 333240
 	}
-    }	
+	}
 }
 
 country_event = {
@@ -2322,12 +2319,12 @@ country_event = {
 	title = "SAFN40.T"
 	desc = "SAFN40.D"
 	picture = "volksraad"
-	
+
 	is_triggered_only = yes
-	
-	option = { 
+
+	option = {
 	name = "SAFN40.A"
- 		ai_chance = {  
+		ai_chance = {
 			factor = 100
 			modifier = {
 				factor = 0.75
@@ -2340,14 +2337,14 @@ country_event = {
 				tag = LWE
 				NOT = { OR = { government = democracy government = parliamentary_republic } }
 			}
-		}    
-	}	
-	
-	option = { 
+		}
+	}
+
+	option = {
 	name = "SAFN40.B"
 	prestige = 10
-    set_global_flag = BTV_conference_collapse
- 		ai_chance = {  
+	set_global_flag = BTV_conference_collapse
+		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 0
@@ -2357,28 +2354,28 @@ country_event = {
 				factor = 0
 				government = parliamentary_republic
 			}
-		} 
+		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN40.C"
-	    any_country = {
+		any_country = {
 		limit = {
-	    tag = ORA
-	    exists = yes
+		tag = ORA
+		exists = yes
 		}
 		THIS = { change_tag_no_core_switch = ORA }
-	    }
-	    any_country = {
+		}
+		any_country = {
 		limit = {
-	    tag = NFL
-	    exists = yes
+		tag = NFL
+		exists = yes
 		}
 		THIS = { change_tag_no_core_switch = NFL }
-	    }	
- 		ai_chance = {  
+		}
+		ai_chance = {
 			factor = 0
-		} 
+		}
 	}
 }
 
@@ -2389,56 +2386,56 @@ country_event = {
 	title = "SAFN41.T"
 	desc = "SAFN41.D"
 	picture = "boer_war"
-	
+
 	major = yes
-	
+
 	trigger = {
 	OR = {
-	   tag = ORA
-	   AND = {
-	      tag = NFL
-	      NOT = { exists = ORA }
-	   }
-    }
+	tag = ORA
+	AND = {
+		tag = NFL
+		NOT = { exists = ORA }
+	}
+	}
 	has_global_flag = SAFFGWWhitePeace
 	has_country_flag = BoerNHC
 	NOT = { has_global_flag = BTV_conference_collapse }
 	NOT = { has_global_flag = SAFNHConcluded }
 	}
-	
-	mean_time_to_happen = { 
-	   days = 3
+
+	mean_time_to_happen = {
+	days = 3
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN41.A"
 	prestige = 20
 	clr_country_flag = BoerNHC
 	clr_global_flag = SAFFGWWhitePeace
 	set_global_flag = SAFNHConcluded
-	any_country = { 
+	any_country = {
 	limit = {
 	primary_culture = boer
 	exists = yes
 	tag != THIS
 	}
-	all_core = { add_core = BTV } 
+	all_core = { add_core = BTV }
 	annex_to = THIS
 	}
-    change_tag = BTV
+	change_tag = BTV
 	remove_country_modifier = geus_status_quo
-	remove_country_modifier = war_justification_blocked	
+	remove_country_modifier = war_justification_blocked
 	any_country = {
-	   limit = {
-	   OR = {
-	      primary_culture = boer
-	      primary_culture = afro_south_african
-	      }
-	   }
-	   remove_country_modifier = geus_status_quo
-	   remove_country_modifier = war_justification_blocked	
-	}	
-    } 	
+	limit = {
+	OR = {
+		primary_culture = boer
+		primary_culture = afro_south_african
+		}
+	}
+	remove_country_modifier = geus_status_quo
+	remove_country_modifier = war_justification_blocked
+	}
+	}
 }
 
 ### NHC - Complete Chaos
@@ -2448,36 +2445,36 @@ country_event = {
 	title = "SAFN42.T"
 	desc = "SAFN42.D"
 	picture = "boer_war"
-	
+
 	major = yes
-	
+
 	trigger = {
 	OR = {
-	   tag = ORA
-	   AND = {
-	      tag = NFL
-	      NOT = { exists = ORA }
-	   }
-    }
+	tag = ORA
+	AND = {
+		tag = NFL
+		NOT = { exists = ORA }
+	}
+	}
 	has_global_flag = SAFFGWWhitePeace
 	has_country_flag = BoerNHC
 	has_global_flag = BTV_conference_collapse
 	NOT = { has_global_flag = SAFNHCWar }
 	NOT = { has_global_flag = SAFNHConcluded }
 	}
-	
-	mean_time_to_happen = { 
-	   days = 3
+
+	mean_time_to_happen = {
+	days = 3
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN42.A"
 	prestige = -20
-    add_country_modifier = {
+	add_country_modifier = {
 		name = CLM_fight
 		duration = 1825
 	}
-    add_country_modifier = {
+	add_country_modifier = {
 		name = small_country_draft
 		duration = 1825
 	}
@@ -2487,49 +2484,49 @@ country_event = {
 	set_global_flag = SAFNHCWar
 	relation = { who = LWE value = -400 }
 	relation = { who = TRN value = -400 }
-	any_country = { 
-	    limit = {
-	       primary_culture = boer
-	       exists = yes
-	       tag != THIS
-	    }
-	    relation = { who = THIS value = -400 }
+	any_country = {
+		limit = {
+		primary_culture = boer
+		exists = yes
+		tag != THIS
+		}
+		relation = { who = THIS value = -400 }
 		leave_alliance = THIS
-        add_country_modifier = {
+		add_country_modifier = {
 		name = CLM_fight
 		duration = 1825
-	    }
-        add_country_modifier = {
+		}
+		add_country_modifier = {
 		name = small_country_draft
 		duration = 1825
-	    }
-	    war = { 
+		}
+		war = {
 		target = THIS
-		    attacker_goal = {
-			   casus_belli = civil_war
+			attacker_goal = {
+			casus_belli = civil_war
 			}
 			defender_goal = {
 				casus_belli = civil_war
-	        }			
-	    }
+			}
+		}
 	}
-	any_country = { 
-	    limit = {
-	       tag = LWE
-		   exists = yes
-		   exists = TRN
-	    }
-	    relation = { who = TRN value = -400 }
+	any_country = {
+		limit = {
+		tag = LWE
+		exists = yes
+		exists = TRN
+		}
+		relation = { who = TRN value = -400 }
 		leave_alliance = TRN
-	    war = { 
+		war = {
 		target = TRN
-		    attacker_goal = {
-			   casus_belli = civil_war
+			attacker_goal = {
+			casus_belli = civil_war
 			}
 			defender_goal = {
 				casus_belli = civil_war
-	        }			
-	    }
+			}
+		}
 	}
 	}
 }
@@ -2541,50 +2538,50 @@ country_event = {
 	title = "SAFN43.T"
 	desc = "SAFN43.D"
 	picture = "boer_war_camps"
-	
+
 	trigger = {
 	has_global_flag = SAFNHCWar
 	NOT = { has_global_flag = SAFNHConcluded }
 	OR = {
-	   AND = {
-	   tag = BTV
-	   NOT = { exists = LWE }
-	   NOT = { exists = NFL }
-	   NOT = { exists = TRN }
-	   NOT = { exists = ORA }
-	   }
-	   AND = {
-	   tag = ORA
-	   NOT = { exists = LWE }
-	   NOT = { exists = NFL }
-	   NOT = { exists = TRN }
-	   }
-	   AND = { 
-	   tag = NFL 
-	   NOT = { exists = LWE }
-	   NOT = { exists = ORA }
-	   NOT = { exists = TRN }
-	   }
-	   AND = { 
-	   tag = TRN
-	   NOT = { exists = LWE }
-	   NOT = { exists = ORA }
-	   NOT = { exists = NFL }
-	   }
-	   AND = { 
-	   tag = LWE 
-	   NOT = { exists = NFL }
-	   NOT = { exists = ORA }
-	   NOT = { exists = TRN }
-	   }	   
-    }	
+	AND = {
+	tag = BTV
+	NOT = { exists = LWE }
+	NOT = { exists = NFL }
+	NOT = { exists = TRN }
+	NOT = { exists = ORA }
 	}
-	
-	mean_time_to_happen = { 
-	   days = 2
+	AND = {
+	tag = ORA
+	NOT = { exists = LWE }
+	NOT = { exists = NFL }
+	NOT = { exists = TRN }
 	}
-	
-	option = { 
+	AND = {
+	tag = NFL
+	NOT = { exists = LWE }
+	NOT = { exists = ORA }
+	NOT = { exists = TRN }
+	}
+	AND = {
+	tag = TRN
+	NOT = { exists = LWE }
+	NOT = { exists = ORA }
+	NOT = { exists = NFL }
+	}
+	AND = {
+	tag = LWE
+	NOT = { exists = NFL }
+	NOT = { exists = ORA }
+	NOT = { exists = TRN }
+	}
+	}
+	}
+
+	mean_time_to_happen = {
+	days = 2
+	}
+
+	option = {
 	name = "SAFN43.A"
 	prestige = 20
 	clr_global_flag = SAFNHCWar
@@ -2593,18 +2590,18 @@ country_event = {
 	remove_country_modifier = small_country_draft
 	remove_country_modifier = CLM_fight
 	remove_country_modifier = geus_status_quo
-	remove_country_modifier = war_justification_blocked	
+	remove_country_modifier = war_justification_blocked
 	any_country = {
-	   limit = {
-	   OR = {
-	      primary_culture = boer
-	      primary_culture = afro_south_african
-	      }
-	   }
-	   remove_country_modifier = small_country_draft
-	   remove_country_modifier = CLM_fight
-	   remove_country_modifier = geus_status_quo
-	   remove_country_modifier = war_justification_blocked	
+	limit = {
+	OR = {
+		primary_culture = boer
+		primary_culture = afro_south_african
+		}
+	}
+	remove_country_modifier = small_country_draft
+	remove_country_modifier = CLM_fight
+	remove_country_modifier = geus_status_quo
+	remove_country_modifier = war_justification_blocked
 	}
 	}
 }
@@ -2616,20 +2613,20 @@ country_event = {
 	title = "This is for the dumb AI"
 	desc = "Please form Batavia for me daddy"
 	picture = "boer_war_camps"
-	
+
 	trigger = {
 	has_global_flag = SAFNHCWar
 	NOT = { has_global_flag = SAFNHConcluded }
 	primary_culture = boer
 	war = no
-    NOT = { tag = SAF }	
+	NOT = { tag = SAF }
 	}
-	
-	mean_time_to_happen = { 
-	   days = 40
+
+	mean_time_to_happen = {
+	days = 40
 	}
-	
-	option = { 
+
+	option = {
 	name = "free BTV"
 	prestige = -5
 	clr_global_flag = SAFNHCWar
@@ -2637,25 +2634,25 @@ country_event = {
 	remove_country_modifier = small_country_draft
 	remove_country_modifier = CLM_fight
 	remove_country_modifier = geus_status_quo
-	remove_country_modifier = war_justification_blocked	
+	remove_country_modifier = war_justification_blocked
 	any_country = {
-	   limit = {
-	   OR = {
-	      primary_culture = boer
-	      primary_culture = afro_south_african
-	   }
-	   NOT = { tag = SAF }
-	   }
-	   end_war = LWE
-	   end_war = NFL
-	   end_war = BTV
-	   end_war = TRN
-	   end_war = ORA
-	   remove_country_modifier = small_country_draft
-	   remove_country_modifier = CLM_fight
-	   remove_country_modifier = geus_status_quo
-	   remove_country_modifier = war_justification_blocked
-	   annex_to = THIS
+	limit = {
+	OR = {
+		primary_culture = boer
+		primary_culture = afro_south_african
+	}
+	NOT = { tag = SAF }
+	}
+	end_war = LWE
+	end_war = NFL
+	end_war = BTV
+	end_war = TRN
+	end_war = ORA
+	remove_country_modifier = small_country_draft
+	remove_country_modifier = CLM_fight
+	remove_country_modifier = geus_status_quo
+	remove_country_modifier = war_justification_blocked
+	annex_to = THIS
 	}
 	change_tag = BTV
 	}
@@ -2674,28 +2671,28 @@ country_event = {
 	title = "SAFN44.T"
 	desc = "SAFN44.D"
 	picture = "goldrush"
-	
+
 	trigger = {
-	   year = 1883
-	   owns = 2092
-	   civilized = yes
-	   2092 = {
-		   NOT = { trade_goods = precious_goods }
-	   }
+	year = 1883
+	owns = 2092
+	civilized = yes
+	2092 = {
+		NOT = { trade_goods = precious_goods }
 	}
-	
-	mean_time_to_happen = { 
-	   months = 12
 	}
-	
-	option = { 
+
+	mean_time_to_happen = {
+	months = 12
+	}
+
+	option = {
 	name = "SAFN44.A"
 		2092 = {
 			trade_goods = precious_goods
 			add_province_modifier = { name = gold_rush duration = 5475 }
 		}
 		BRG = { set_country_flag = rijsseenfoortcrisis	 }
-		PBG = { set_country_flag = rijsseenfoortcrisis	 }	
+		PBG = { set_country_flag = rijsseenfoortcrisis	 }
 	}
 }
 
@@ -2706,29 +2703,29 @@ country_event = {
 	title = "SAFN45.T"
 	desc = "SAFN45.D"
 	picture = "goldrush"
-	
+
 	trigger = {
-	   OR = {
-	      tag = BRG
-		  tag = FRK
-		  tag = PBG
-	   }
-	   owns = 2087
-	   NOT = { owns = 2092 }
-	   OR = {
-	      has_global_flag = DUTCH_OVER
-		  government = hms_government 
-		  government = democracy
-		  government = parliamentary_republic
-	   }
-	   has_country_flag = rijsseenfoortcrisis
+	OR = {
+		tag = BRG
+		tag = FRK
+		tag = PBG
 	}
-	
-	mean_time_to_happen = { 
-	   days = 14
+	owns = 2087
+	NOT = { owns = 2092 }
+	OR = {
+		has_global_flag = DUTCH_OVER
+		government = hms_government
+		government = democracy
+		government = parliamentary_republic
 	}
-	
-	option = { 
+	has_country_flag = rijsseenfoortcrisis
+	}
+
+	mean_time_to_happen = {
+	days = 14
+	}
+
+	option = {
 	name = "SAFN45.A"
 		clr_country_flag = rijsseenfoortcrisis
 		set_country_flag = prospectors_bane_BRG
@@ -2742,27 +2739,27 @@ country_event = {
 	title = "SAFN46.T"
 	desc = "SAFN46.D"
 	picture = "diamonds_in_kimberley"
-	
+
 	trigger = {
-	   OR = {
-	      tag = BRG
-		  tag = FRK
-		  tag = PBG
-	   }
-	   has_country_flag = you_idiot_SAF
+	OR = {
+		tag = BRG
+		tag = FRK
+		tag = PBG
 	}
-	
-	mean_time_to_happen = { 
-	   days = 7
+	has_country_flag = you_idiot_SAF
 	}
-	
-	option = { 
+
+	mean_time_to_happen = {
+	days = 7
+	}
+
+	option = {
 	name = "SAFN46.A"
 	money = 10000
 	clr_country_flag = you_idiot_SAF
 	set_country_flag = SAF_murder_prosp
 	BTV = { country_event = { id = 333247 days = 3 } }
-    }
+	}
 }
 
 # The Beginning of the Crisis - Prospectors Murdered!
@@ -2772,19 +2769,19 @@ country_event = {
 	title = "SAFN47.T"
 	desc = "SAFN47.D"
 	picture = "schoeman_rifles"
-	
-	is_triggered_only = yes 
-	
-	option = { 
+
+	is_triggered_only = yes
+
+	option = {
 	name = "SAFN47.A"
 	clr_country_flag = you_idiot_SAF
 	set_country_flag = SAF_murder_prosp
-    any_country = {
-	   limit = {
-	   owns = 2087
-	   }
-	   country_event = { id = 333248 days = 31 }
-	   }
+	any_country = {
+	limit = {
+	owns = 2087
+	}
+	country_event = { id = 333248 days = 31 }
+	}
 	}
 }
 
@@ -2795,39 +2792,39 @@ country_event = {
 	title = "SAFN48.T"
 	desc = "SAFN48.D"
 	picture = "boer_war"
-	
+
 	major = yes
-	
-	is_triggered_only = yes 
-	
-	option = { 
+
+	is_triggered_only = yes
+
+	option = {
 	name = "SAFN48.A"
 	remove_country_modifier = geus_status_quo
 	remove_country_modifier = war_justification_blocked
 	any_country = {
-	    limit = {
-	    OR = {
-	       primary_culture = boer
-	       primary_culture = afro_south_african
-	       }
-	    }
-	    remove_country_modifier = geus_status_quo
+		limit = {
+		OR = {
+		primary_culture = boer
+		primary_culture = afro_south_african
+		}
+		}
+		remove_country_modifier = geus_status_quo
 		remove_country_modifier = war_justification_blocked
-	} 
+	}
 	clr_country_flag = SAF_murder_prosp
 	set_global_flag = SAFSGW
 	SAF = { all_core = { add_core = BTV } }
 	ENG_2087 = { add_core = BTV }
-	    war = { 
+		war = {
 		target = BTV
-		    attacker_goal = {
-			    casus_belli = conquest_any
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}			
-	    }
-    }  		
+			}
+		}
+	}
 }
 
 #### The Second Geuzen War - BRG has defeated the Boers ####
@@ -2837,24 +2834,24 @@ country_event = {
 	title = "SAFN49.T"
 	desc = "SAFN49.D"
 	picture = "cape_map"
-	
+
 	trigger = {
 	OR = {
-       tag = BRG
-	   tag = FRK
-	   tag = PBG
+	tag = BRG
+	tag = FRK
+	tag = PBG
 	}
 	war = no
 	NOT = { exists = BTV }
 	has_global_flag = SAFSGW
 	NOT = { has_global_flag = SAFSGWEnd }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 7
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN49.A"
 	prestige = 10
 	war_exhaustion = -25
@@ -2865,12 +2862,12 @@ country_event = {
 	inherit = NFL
 	clr_global_flag = SAFFGW
 	clr_global_flag = SAFSGW
-    clr_global_flag = SAFSGWA
+	clr_global_flag = SAFSGWA
 	clr_country_flag = SAFWPCheck
 	set_global_flag = SAFFGWEnd
 	set_global_flag = SAFSGWEnd
 	set_global_flag = SAFSGWBRGWins
-	}	
+	}
 }
 
 
@@ -2887,24 +2884,24 @@ country_event = {
 	title = "SAFN66.T"
 	desc = "SAFN66.D"
 	picture = "schoeman_rifles"
-	
+
 	is_triggered_only = yes
 
-	option = { 
+	option = {
 	name = "SAFN66.A"
-    set_country_flag = BTV_is_a_wimp
-	ai_chance = { 
+	set_country_flag = BTV_is_a_wimp
+	ai_chance = {
 	factor = 20
-		}	
+		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN66.B"
 	badboy = 3
 	country_event = { id = 333269 days = 7 }
-	ai_chance = { 
+	ai_chance = {
 	factor = 80
-		}			
+		}
 	}
 }
 
@@ -2915,21 +2912,21 @@ country_event = {
 	title = "SAFN67.T"
 	desc = "SAFN67.D"
 	picture = "BOH_Nuremberg_Burning"
-	
+
 	trigger = {
 	has_country_flag = BTV_is_a_wimp
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	months = 6
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN67.A"
 	prestige = -2
 	clr_country_flag = BTV_is_a_wimp
 	set_global_flag = BTV_trap
-	}	
+	}
 }
 
 country_event = {
@@ -2937,27 +2934,27 @@ country_event = {
 	title = "SAFN68.T"
 	desc = "SAFN68.D"
 	picture = "schoeman_rifles"
-	
+
 	trigger = {
 	exists = yes
 	OR = {
-	  tag = BRG
-	  tag = FRK
-	  tag = PBG
+	tag = BRG
+	tag = FRK
+	tag = PBG
 	}
 	has_global_flag = BTV_trap
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 14
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN68.A"
 	prestige = 1
 	clr_global_flag = BTV_trap
 	set_country_flag = BTV_SGW_trigger
-	}	
+	}
 }
 
 ## Raid Path - BTV/OIA did a naughty thing. Next event triggers war.
@@ -2967,24 +2964,24 @@ country_event = {
 	title = "SAFN69.T"
 	desc = "SAFN69.D"
 	picture = "boer_war"
-	
+
 	is_triggered_only = yes
-	
-	option = { 
+
+	option = {
 	name = "SAFN69.A"
 	set_country_flag = ASGW_BTV
 	any_country = {
-	   limit = {
-	     exists = yes
-	     OR = {
-		    tag = BRG
+	limit = {
+		exists = yes
+		OR = {
+			tag = BRG
 			tag = FRK
 			tag = PBG
-	     }
-	   }
-	   country_event = { id = 3332702 days = 1 }
-	}	
-	}	
+		}
+	}
+	country_event = { id = 3332702 days = 1 }
+	}
+	}
 }
 
 ## BTV/ORA warned that Burgundy has decided to march north. Next event triggers war.
@@ -2994,24 +2991,24 @@ country_event = {
 	title = "SAFN70.T"
 	desc = "SAFN70.D"
 	picture = "boer_war"
-	
+
 	is_triggered_only = yes
-	
-	option = { 
+
+	option = {
 	name = "SAFN70.A"
 	set_country_flag = ASGW_BTV
 	any_country = {
-	   limit = {
-	     exists = yes
-	     OR = {
-		    tag = BRG
+	limit = {
+		exists = yes
+		OR = {
+			tag = BRG
 			tag = FRK
 			tag = PBG
-	     }
-	   }
-	   country_event = { id = 3332703 days = 1 }
-	}	
-	}	
+		}
+	}
+	country_event = { id = 3332703 days = 1 }
+	}
+	}
 }
 
 # The Second Geuzen War - BRG/PBG attacks BTV/ORA after BTV/ORA stole states in the south.
@@ -3021,58 +3018,58 @@ country_event = {
 	title = "SAFN71.T"
 	desc = "SAFN71.D"
 	picture = "boer_war"
-	
+
 	major = yes
-	
-	is_triggered_only = yes 
-	
-	option = { 
+
+	is_triggered_only = yes
+
+	option = {
 	name = "SAFN71.A"
 	remove_country_modifier = geus_status_quo
 	remove_country_modifier = war_justification_blocked
 	any_country = {
-	    limit = {
-	    OR = {
-	       primary_culture = boer
-	       primary_culture = afro_south_african
-	       }
-	    }
-	    remove_country_modifier = geus_status_quo
+		limit = {
+		OR = {
+		primary_culture = boer
+		primary_culture = afro_south_african
+		}
+		}
+		remove_country_modifier = geus_status_quo
 		remove_country_modifier = war_justification_blocked
-	} 
+	}
 	clr_global_flag = BTV_southern_raid
 	set_global_flag = SAFSGWA
 	set_country_flag = ASGW_BRG
 	any_owned = {
-	   limit = { 
-	      province_id = 2096
-	   }
-	   secede_province = FROM
+	limit = {
+		province_id = 2096
+	}
+	secede_province = FROM
 	}
 	any_owned = {
-	   limit = { 
-	      province_id = 2097
-	   }
-	   secede_province = FROM
+	limit = {
+		province_id = 2097
+	}
+	secede_province = FROM
 	}
 	any_owned = {
-	   limit = { 
-	      province_id = 2092
-	   }
-	   secede_province = FROM
+	limit = {
+		province_id = 2092
+	}
+	secede_province = FROM
 	}
 	SAF = { all_core = { add_core = BTV } }
 	ENG_2087 = { add_core = BTV }
-	war = { 
+	war = {
 		target = FROM
-		    attacker_goal = {
-			    casus_belli = conquest_any
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}			
-	    }
-    }  		
+			}
+		}
+	}
 }
 
 # The Second Geuzen War - BRG/PBG attacks BTV/ORA
@@ -3082,40 +3079,40 @@ country_event = {
 	title = "SAFN72.T"
 	desc = "SAFN72.D"
 	picture = "boer_war"
-	
+
 	major = yes
-	
-	is_triggered_only = yes 
-	
-	option = { 
+
+	is_triggered_only = yes
+
+	option = {
 	name = "SAFN72.A"
 	remove_country_modifier = geus_status_quo
 	remove_country_modifier = war_justification_blocked
 	any_country = {
-	    limit = {
-	    OR = {
-	       primary_culture = boer
-	       primary_culture = afro_south_african
-	       }
-	    }
-	    remove_country_modifier = geus_status_quo
+		limit = {
+		OR = {
+		primary_culture = boer
+		primary_culture = afro_south_african
+		}
+		}
+		remove_country_modifier = geus_status_quo
 		remove_country_modifier = war_justification_blocked
-	} 
+	}
 	clr_global_flag = BTV_southern_raid
 	set_global_flag = SAFSGWA
 	set_country_flag = ASGW_BRG
 	SAF = { all_core = { add_core = BTV } }
 	ENG_2087 = { add_core = BTV }
-	war = { 
+	war = {
 		target = FROM
-		    attacker_goal = {
-			    casus_belli = conquest_any
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}			
-	    }
-    }  		
+			}
+		}
+	}
 }
 
 #### The Second Geuzen War - BRG has defeated the Boers ####
@@ -3125,26 +3122,26 @@ country_event = {
 	title = "SAFN73.T"
 	desc = "SAFN73.D"
 	picture = "cape_map"
-	
+
 	trigger = {
 	OR = {
-       tag = BRG
-	   tag = FRK
-	   tag = PBG
+	tag = BRG
+	tag = FRK
+	tag = PBG
 	}
 	war = no
 	NOT = { exists = BTV }
 	NOT = { exists = ORA }
 	has_global_flag = SAFSGWA
-    has_country_flag = ASGW_BRG
+	has_country_flag = ASGW_BRG
 	NOT = { has_global_flag = SAFSGWEnd }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 7
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN49.A"
 	prestige = 10
 	war_exhaustion = -25
@@ -3155,12 +3152,12 @@ country_event = {
 	inherit = NFL
 	clr_global_flag = SAFFGW
 	clr_global_flag = SAFSGW
-    clr_global_flag = SAFSGWA
+	clr_global_flag = SAFSGWA
 	clr_country_flag = SAFWPCheck
 	set_global_flag = SAFFGWEnd
 	set_global_flag = SAFSGWEnd
 	set_global_flag = SAFSGWBRGWins
-	}	
+	}
 }
 
 #####################################################
@@ -3181,18 +3178,18 @@ country_event = {
 	news_desc_medium = "EVTDESC98247_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC98247_NEWS_SHORT"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "98247.A"
 		prestige = -50
 		clr_country_flag = SAFWPCheck
-	    clr_global_flag = SAFFGW
-	    set_global_flag = SAFFGWEnd
-	    clr_global_flag = SAFSGW
-        clr_global_flag = SAFSGWA
-	    set_global_flag = SAFSGWEnd
+		clr_global_flag = SAFFGW
+		set_global_flag = SAFFGWEnd
+		clr_global_flag = SAFSGW
+		clr_global_flag = SAFSGWA
+		set_global_flag = SAFSGWEnd
 		SAF = {
 			all_core = {
 				limit = { continent = africa }
@@ -3208,16 +3205,16 @@ country_event = {
 		}
 		remove_country_modifier = geus_status_quo
 		remove_country_modifier = war_justification_blocked
-	    any_country = {
-		   limit = {
-	       OR = {
-	          primary_culture = boer
-	          primary_culture = afro_south_african
-	       }
-		   }
-	       remove_country_modifier = geus_status_quo
-		   remove_country_modifier = war_justification_blocked
-	    }
+		any_country = {
+		limit = {
+		OR = {
+			primary_culture = boer
+			primary_culture = afro_south_african
+		}
+		}
+		remove_country_modifier = geus_status_quo
+		remove_country_modifier = war_justification_blocked
+		}
 		random_country = {
 			limit = {
 				war_with = THIS
@@ -3237,28 +3234,28 @@ country_event = {
 			end_war = THIS
 		}
 	}
-	
+
 	option = {
 		name = "98247.B"
 		prestige = -25
 		clr_country_flag = SAFWPCheck
-	    clr_global_flag = SAFFGW
-	    set_global_flag = SAFFGWEnd
-	    clr_global_flag = SAFSGW
-        clr_global_flag = SAFSGWA
-	    set_global_flag = SAFSGWEnd
+		clr_global_flag = SAFFGW
+		set_global_flag = SAFFGWEnd
+		clr_global_flag = SAFSGW
+		clr_global_flag = SAFSGWA
+		set_global_flag = SAFSGWEnd
 		remove_country_modifier = geus_status_quo
 		remove_country_modifier = war_justification_blocked
-	    any_country = {
-	       limit = {
-	       OR = {
-	          primary_culture = boer
-	          primary_culture = afro_south_african
-	          }
-	       }
-	       remove_country_modifier = geus_status_quo
-		   remove_country_modifier = war_justification_blocked
-	    }
+		any_country = {
+		limit = {
+		OR = {
+			primary_culture = boer
+			primary_culture = afro_south_african
+			}
+		}
+		remove_country_modifier = geus_status_quo
+		remove_country_modifier = war_justification_blocked
+		}
 		random_country = {
 			limit = {
 				war_with = THIS
@@ -3285,9 +3282,9 @@ country_event = {
 	title = "EVTNAME98248" #The Treaty of Vereeniging - Reconciliation
 	desc = "EVTDESC98248"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "98248.A"
 		prestige = 25
@@ -3324,9 +3321,9 @@ country_event = {
 	title = "EVTNAME98248" #The Treaty of Vereeniging - Anger
 	desc = "EVTDESC98249"
 	picture = "treaty"
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "98249.A"
 		prestige = 25
@@ -3378,30 +3375,30 @@ country_event = {
 	title = "SAFN50.T"
 	desc = "SAFN50.D"
 	picture = "volksraad"
-	
-	trigger = { 
-	tag = BTV 
-	government = presidential_dictatorship 
-	capital = 2096 
+
+	trigger = {
+	tag = BTV
+	government = presidential_dictatorship
+	capital = 2096
 	has_country_flag = aloysuis
 	}
-	
-	mean_time_to_happen = { 
-	months = 1 
+
+	mean_time_to_happen = {
+	months = 1
 	}
-	
-	option = { 
+
+	option = {
 	name = "333250.A"
-	government = absolute_monarchy 
+	government = absolute_monarchy
 	ruling_party_ideology = paternal
 	clr_country_flag = aloysuis
 	set_country_flag = former_LWE
-	ai_chance = { 
-	factor = 50 
+	ai_chance = {
+	factor = 50
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "333250.B"
 	clr_country_flag = aloysuis
 	set_country_flag = former_LWE
@@ -3414,8 +3411,8 @@ country_event = {
 	political_reform = first_past_the_post
 	political_reform = gerrymandering
 	country_event = 800054
-	ai_chance = { 
-	factor = 50 
+	ai_chance = {
+	factor = 50
 		}
 	}
 }
@@ -3427,19 +3424,19 @@ country_event = {
 	title = "SAFN51.T"
 	desc = "SAFN51.D"
 	picture = "pioneer_wagons"
-	
-	trigger = { 
+
+	trigger = {
 	OR = { tag = SAF tag = BTV }
 	2093 = { empty = yes }
 	2088 = { empty = yes }
 	2087 = { owned_by = THIS }
 	}
-	
-	mean_time_to_happen = { 
-	months = 10 
+
+	mean_time_to_happen = {
+	months = 10
 	}
-	
-	option = { 
+
+	option = {
 	name = "333251.A"
 	2088 = { secede_province = THIS }
 	2093 = { secede_province = THIS }
@@ -3454,27 +3451,27 @@ country_event = {
 	desc = "SAFN52.D"
 	picture = "pioneer_wagons"
 
-	trigger = { 
+	trigger = {
 	OR = {
-	   tag = SAF
-       tag = BTV
-    }	
+	tag = SAF
+	tag = BTV
+	}
 	owns = 2087
-	primary_culture = boer 
+	primary_culture = boer
 	is_vassal = no
 	}
-	
-	fire_only_once = yes 
-	
-	option = { 
-	name = "333252.A" 
-	add_country_modifier = { 
+
+	fire_only_once = yes
+
+	option = {
+	name = "333252.A"
+	add_country_modifier = {
 	name = trek_boers
 	duration = 10000
 		}
 	}
 }
-	
+
 #####################################################
 
 ############ GVS - The Geuzen Civil War #####################
@@ -3482,7 +3479,7 @@ country_event = {
 #####################################################
 
 # This is triggered if BRG/PBG is out of Africa. BTV exists and LWE exist at the same time.
- 
+
 # The Final Showdown - All Geus Tags are warned that they are going to be declaring war on each other at some point in the next few weeks since there is no point with the continued status quo if BRG/PBG has been kicked out.
 
 country_event = {
@@ -3490,34 +3487,34 @@ country_event = {
 	title = "SAFN53.T"
 	desc = "SAFN53.D"
 	picture = "schoeman_rifles"
-	
+
 	trigger = {
 	exists = yes
-    OR = { 
-       tag = ORA	
-	   tag = BTV
-	   tag = NFL
-	   tag = TRN
-	   tag = LWE
-    }	
-    OR = {	
-	   AND = {
-          NOT = { BRG = { owns = 2087 } }
-	      NOT = { PBG = { owns = 2087 } }
-	   }
-	   has_global_flag = 2087_Treaty
-	}	
+	OR = {
+	tag = ORA
+	tag = BTV
+	tag = NFL
+	tag = TRN
+	tag = LWE
+	}
+	OR = {
+	AND = {
+		NOT = { BRG = { owns = 2087 } }
+		NOT = { PBG = { owns = 2087 } }
+	}
+	has_global_flag = 2087_Treaty
+	}
 	NOT = { has_country_flag = line_is_drawn_here }
 	NOT = { has_global_flag = Geus_Civil_War }
 	NOT = { has_global_flag = GCWConcluded }
 	NOT = { has_global_flag = SAFNHConcluded }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 1
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN53.A"
 	prestige = 1
 	set_country_flag = line_is_drawn_here
@@ -3531,86 +3528,86 @@ country_event = {
 	title = "SAFN54.T"
 	desc = "SAFN54.D"
 	picture = "boer_war"
-	
+
 	major = yes
-	
+
 	trigger = {
 	exists = yes
-    OR = { 
-       tag = ORA	
-	   tag = BTV
-	   tag = NFL
-	   tag = TRN
-	   tag = LWE
-    }
-    OR = {	
-	   AND = {
-          NOT = { BRG = { owns = 2087 } }
-	      NOT = { PBG = { owns = 2087 } }
-	   }
-	   has_global_flag = 2087_Treaty
+	OR = {
+	tag = ORA
+	tag = BTV
+	tag = NFL
+	tag = TRN
+	tag = LWE
+	}
+	OR = {
+	AND = {
+		NOT = { BRG = { owns = 2087 } }
+		NOT = { PBG = { owns = 2087 } }
+	}
+	has_global_flag = 2087_Treaty
 	}
 	has_country_flag = line_is_drawn_here
 	NOT = { has_global_flag = Geus_Civil_War }
 	NOT = { has_global_flag = GCWConcluded }
-    NOT = { has_global_flag = SAFNHConcluded }
+	NOT = { has_global_flag = SAFNHConcluded }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	days = 14
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN54.A"
 	ORA = { clr_country_flag = line_is_drawn_here }
-    BTV = { clr_country_flag = line_is_drawn_here }
+	BTV = { clr_country_flag = line_is_drawn_here }
 	NFL = { clr_country_flag = line_is_drawn_here }
 	TRN = { clr_country_flag = line_is_drawn_here }
 	LWE = { clr_country_flag = line_is_drawn_here }
-    add_country_modifier = {
+	add_country_modifier = {
 		name = CLM_fight
 		duration = 1825
 	}
-    add_country_modifier = {
+	add_country_modifier = {
 		name = small_country_draft
 		duration = 1825
 	}
 	remove_country_modifier = geus_status_quo
-	remove_country_modifier = war_justification_blocked	
+	remove_country_modifier = war_justification_blocked
 	any_country = {
-	   limit = {
-	   OR = {
-	      primary_culture = boer
-	      primary_culture = afro_south_african
-	      }
-	   }
-	   remove_country_modifier = geus_status_quo
-	   remove_country_modifier = war_justification_blocked	
+	limit = {
+	OR = {
+		primary_culture = boer
+		primary_culture = afro_south_african
+		}
+	}
+	remove_country_modifier = geus_status_quo
+	remove_country_modifier = war_justification_blocked
 	}
 	set_global_flag = Geus_Civil_War
 	any_country = {
-	   limit = {
-	   exists = yes
-	   primary_culture = boer 
-	   }
-       add_country_modifier = {
-		 name = CLM_fight
-		 duration = 1825
-	   }
-       add_country_modifier = {
-		  name = small_country_draft
-		  duration = 1825
-	   }
-	   war = { 
-	   target = THIS
-	      attacker_goal = {
-		     casus_belli = civil_war
-		  }
-		  defender_goal = {
-		     casus_belli = civil_war
-		        }			
-	        }	   
-	    }
+	limit = {
+	exists = yes
+	primary_culture = boer
+	}
+	add_country_modifier = {
+		name = CLM_fight
+		duration = 1825
+	}
+	add_country_modifier = {
+		name = small_country_draft
+		duration = 1825
+	}
+	war = {
+	target = THIS
+		attacker_goal = {
+			casus_belli = civil_war
+		}
+		defender_goal = {
+			casus_belli = civil_war
+				}
+			}
+		}
 	}
 }
 
@@ -3621,55 +3618,55 @@ country_event = {
 	title = "SAFN55.T"
 	desc = "SAFN55.D"
 	picture = "boer_war_camps"
-	
+
 	trigger = {
 	has_global_flag = Geus_Civil_War
 	NOT = { has_global_flag = GCWConcluded }
 	NOT = { has_global_flag = SAFNHConcluded }
 	OR = {
-	   AND = { 
-	      tag = BTV
-	      NOT = { exists = NFL }
-	      NOT = { exists = ORA }
-	      NOT = { exists = TRN }
-		  NOT = { exists = LWE }
-	   }
-	   AND = {
-	      tag = ORA
-	      NOT = { exists = LWE }
-	      NOT = { exists = NFL }
-	      NOT = { exists = TRN }
-		  NOT = { exists = BTV }
-	   }
-	   AND = { 
-	      tag = NFL 
-	      NOT = { exists = LWE }
-	      NOT = { exists = ORA }
-	      NOT = { exists = TRN }
-		  NOT = { exists = BTV }
-	   }
-	   AND = { 
-	      tag = TRN
-	      NOT = { exists = LWE }
-	      NOT = { exists = ORA }
-	      NOT = { exists = NFL }
-		  NOT = { exists = BTV }
-	   }
-	   AND = { 
-	      tag = LWE 
-	      NOT = { exists = NFL }
-	      NOT = { exists = ORA }
-	      NOT = { exists = TRN }
-		  NOT = { exists = BTV }
-	   }	   
-    }	
+	AND = {
+		tag = BTV
+		NOT = { exists = NFL }
+		NOT = { exists = ORA }
+		NOT = { exists = TRN }
+		NOT = { exists = LWE }
 	}
-	
-	mean_time_to_happen = { 
-	   days = 7
+	AND = {
+		tag = ORA
+		NOT = { exists = LWE }
+		NOT = { exists = NFL }
+		NOT = { exists = TRN }
+		NOT = { exists = BTV }
 	}
-	
-	option = { 
+	AND = {
+		tag = NFL
+		NOT = { exists = LWE }
+		NOT = { exists = ORA }
+		NOT = { exists = TRN }
+		NOT = { exists = BTV }
+	}
+	AND = {
+		tag = TRN
+		NOT = { exists = LWE }
+		NOT = { exists = ORA }
+		NOT = { exists = NFL }
+		NOT = { exists = BTV }
+	}
+	AND = {
+		tag = LWE
+		NOT = { exists = NFL }
+		NOT = { exists = ORA }
+		NOT = { exists = TRN }
+		NOT = { exists = BTV }
+	}
+	}
+	}
+
+	mean_time_to_happen = {
+	days = 7
+	}
+
+	option = {
 	name = "SAFN55.A"
 	prestige = 20
 	clr_global_flag = Geus_Civil_War
@@ -3678,18 +3675,18 @@ country_event = {
 	remove_country_modifier = small_country_draft
 	remove_country_modifier = CLM_fight
 	remove_country_modifier = geus_status_quo
-	remove_country_modifier = war_justification_blocked	
+	remove_country_modifier = war_justification_blocked
 	any_country = {
-	   limit = {
-	   OR = {
-	      primary_culture = boer
-	      primary_culture = afro_south_african
-	      }
-	   }
-	   remove_country_modifier = small_country_draft
-	   remove_country_modifier = CLM_fight
-	   remove_country_modifier = geus_status_quo
-	   remove_country_modifier = war_justification_blocked	
+	limit = {
+	OR = {
+		primary_culture = boer
+		primary_culture = afro_south_african
+		}
+	}
+	remove_country_modifier = small_country_draft
+	remove_country_modifier = CLM_fight
+	remove_country_modifier = geus_status_quo
+	remove_country_modifier = war_justification_blocked
 	}
 	}
 }
@@ -3709,24 +3706,24 @@ country_event = {
 	title = "The AI is being dumb"
 	desc = "As usual"
 	picture = "boer_war"
-	
+
 	trigger = {
 	exists = yes
 	ai = yes
 	OR ={
-	   tag = BRG
-	   tag = FRK
-	   tag = PBG 
+	tag = BRG
+	tag = FRK
+	tag = PBG
 	}
 	SAF = { OR = { vassal_of = BRG vassal_of = PBG } }
 	NOT = { has_country_flag = the_final_chapter_SAF }
 	}
-	
-	mean_time_to_happen = { 
-	   days = 1
+
+	mean_time_to_happen = {
+	days = 1
 	}
-	
-	option = { 
+
+	option = {
 	name = "This should never trigger for non-AI"
 	inherit = SAF
 	}
@@ -3739,39 +3736,39 @@ country_event = {
 	title = "SAFN56.T"
 	desc = "SAFN56.D"
 	picture = "boer_war"
-	
+
 	is_triggered_only = yes
-	
-	option = { 
+
+	option = {
 	name = "SAFN56.A"
 	prestige = -20
 	2094 = { secede_province = FROM remove_core = GRQ }
 	2095 = { secede_province = FROM remove_core = GRQ }
 	2088 = { secede_province = FROM }
 	2093 = { secede_province = FROM }
-	FROM = { prestige = 5 create_vassal = GRQ }	
-	ai_chance = { 
+	FROM = { prestige = 5 create_vassal = GRQ }
+	ai_chance = {
 	factor = 30
 		}
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN56.B"
 	add_country_modifier = {
 		name = taiping_draft
 		duration = 1440
 	}
-    FROM = {
-	   war = { 
-	   target = GRQ
-	      attacker_goal = {
-		     casus_belli = conquest_any
-		  }
-		  defender_goal = {
-		     casus_belli = status_quo
-		        }			
-	        }	
-	    }
+	FROM = {
+	war = {
+	target = GRQ
+		attacker_goal = {
+			casus_belli = conquest_any
+		}
+		defender_goal = {
+			casus_belli = status_quo
+				}
+			}
+		}
 	}
 }
 
@@ -3786,7 +3783,7 @@ country_event = {
 	major = yes
 
 	trigger = {
-	    OR = {
+		OR = {
 		tag = PBG
 		tag = BRG
 		tag = FRK
@@ -3798,11 +3795,11 @@ country_event = {
 		NOT = { has_country_flag = the_final_chapter_SAF }
 		NOT = { has_global_flag = 2087_Treaty }
 		NOT = { exists = SAF }
-	    NOT = { exists = BTV }
-	    NOT = { exists = NFL }
-	    NOT = { exists = LWE }
-	    NOT = { exists = ORA }
-	    NOT = { exists = TRN }
+		NOT = { exists = BTV }
+		NOT = { exists = NFL }
+		NOT = { exists = LWE }
+		NOT = { exists = ORA }
+		NOT = { exists = TRN }
 		is_possible_vassal = SAF
 	}
 
@@ -3848,9 +3845,9 @@ country_event = {
 		BTV = { all_core = { add_core = SAF } }
 		GRQ = { all_core = { add_core = SAF } }
 		any_country = {
-		limit = { 
+		limit = {
 		tag = GRQ
-		vassal_of = THIS 
+		vassal_of = THIS
 		}
 		country_event = { id = 333258 days = 2 }
 		}
@@ -3895,8 +3892,8 @@ country_event = {
 			modifier = {
 				factor = 2
 				AND = {
-				   government = hms_government
-				   tag = PBG
+				government = hms_government
+				tag = PBG
 				}
 			}
 			modifier = {
@@ -3935,8 +3932,8 @@ country_event = {
 				factor = 1.2
 				militancy = 5
 			}
-			
-		}	
+
+		}
 	}
 	option = {
 		name = "SAFN57.B"
@@ -3952,8 +3949,8 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				AND = {
-				   government = hms_government
-				   tag = PBG
+				government = hms_government
+				tag = PBG
 				}
 			}
 			modifier = {
@@ -4002,9 +3999,9 @@ country_event = {
 		BTV = { all_core = { add_core = SAF } }
 		GRQ = { all_core = { add_core = SAF } }
 		any_country = {
-		limit = { 
+		limit = {
 		tag = GRQ
-		vassal_of = THIS 
+		vassal_of = THIS
 		}
 		country_event = { id = 333258 days = 2 }
 		}
@@ -4047,25 +4044,25 @@ country_event = {
 	title = "SAFN58.T"
 	desc = "SAFN58.D"
 	picture = "boer_war_camps"
-	
+
 	is_triggered_only = yes
-	
-	option = { 
+
+	option = {
 	name = "SAFN58.A"
 	prestige = -20
 	SAF = { inherit = THIS add_accepted_culture = afro_south_african }
-	ai_chance = { 
+	ai_chance = {
 	factor = 100
 		}
 	}
-	
+
 	# Repeat the event in 3 days
-	
-	option = { 
+
+	option = {
 	name = "SAFN58.B"
 	country_event = { id = 333258 days = 1 }
-	change_tag_no_core_switch = SAF	
-	ai_chance = { 
+	change_tag_no_core_switch = SAF
+	ai_chance = {
 	factor = 0
 		}
 	}
@@ -4078,12 +4075,12 @@ country_event = {
 	title = "SAFN59.T"
 	desc = "SAFN59.D"
 	picture = "boer_war"
-	
+
 	major = yes
-	
+
 	trigger = {
 	exists = yes
-    OR = { 
+	OR = {
 	tag = BRG
 	tag = FRK
 	tag = PBG
@@ -4094,40 +4091,40 @@ country_event = {
 	has_country_flag = the_final_chapter_SAF
 	NOT = { has_global_flag = final_geus_revolt }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	months = 12
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN59.A"
 	set_global_flag = final_geus_revolt
 	any_country = {
 	limit = {
 	tag = BTV
-	exists = no 
+	exists = no
 	}
 	government = democracy
 	ruling_party_ideology = conservative
-    political_reform = population_equal_weight
-    political_reform = universal_voting
-    political_reform = yes_meeting
-    political_reform = free_press
-    political_reform = secret_ballots
-    
-	
-	
-	
-    
-	
-    
-    
-	
-	
-	
-	
-	
-	
+	political_reform = population_equal_weight
+	political_reform = universal_voting
+	political_reform = yes_meeting
+	political_reform = free_press
+	political_reform = secret_ballots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -4136,44 +4133,44 @@ country_event = {
 	clr_country_flag = reactionary_election_win
 	clr_country_flag = anarcho_liberal_election_win
 	clr_country_flag = social_liberal_election_win
-	clr_country_flag = market_liberal_election_win		
+	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
 	}
 	any_country = {
 	limit = {
 	tag = GRQ
-	exists = no 
+	exists = no
 	}
 	government = democracy
 	ruling_party_ideology = conservative
-    political_reform = population_equal_weight
-    political_reform = universal_voting
-    political_reform = yes_meeting
-    political_reform = free_press
-    political_reform = secret_ballots
-    
-	
-	
-	
-    
-	
-    
-    
-	
-	
-	
-	
-	
-	
+	political_reform = population_equal_weight
+	political_reform = universal_voting
+	political_reform = yes_meeting
+	political_reform = free_press
+	political_reform = secret_ballots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -4182,43 +4179,43 @@ country_event = {
 	clr_country_flag = reactionary_election_win
 	clr_country_flag = anarcho_liberal_election_win
 	clr_country_flag = social_liberal_election_win
-	clr_country_flag = market_liberal_election_win		
+	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
 	}
 	release_vassal = GRQ
-	any_owned = { 
-	  limit = { 
-	  is_core = BTV
-	  NOT = { is_core = LWE }
-	  }
-	  secede_province = BTV
+	any_owned = {
+	limit = {
+	is_core = BTV
+	NOT = { is_core = LWE }
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = XHO
-	  }
-	  secede_province = BTV
+	secede_province = BTV
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = BSH
-	  }
-	  secede_province = BTV
+	any_owned = {
+	limit = {
+	is_core = XHO
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = GRQ
-	  }
-	  secede_province = GRQ
+	secede_province = BTV
+	}
+	any_owned = {
+	limit = {
+	is_core = BSH
+	}
+	secede_province = BTV
+	}
+	any_owned = {
+	limit = {
+	is_core = GRQ
+	}
+	secede_province = GRQ
 	}
 	BTV = {
 	add_country_modifier = {
@@ -4246,25 +4243,25 @@ country_event = {
 	regular_clothes = 1000
 	all_core = { add_core = SAF }
 	}
-	war = { 
-	   target = BTV
-		    attacker_goal = {
-			    casus_belli = conquest_any
+	war = {
+	target = BTV
+			attacker_goal = {
+				casus_belli = conquest_any
 			}
 			defender_goal = {
 				casus_belli = geuzen_cb
-			}		
-	}		
-	war = { 
-	   target = GRQ
-	      attacker_goal = {
-		     casus_belli = conquest_any
-		  }
-		  defender_goal = {
-		     casus_belli = status_quo
-		}			
-	}	
-	}	
+			}
+	}
+	war = {
+	target = GRQ
+		attacker_goal = {
+			casus_belli = conquest_any
+		}
+		defender_goal = {
+			casus_belli = status_quo
+		}
+	}
+	}
 }
 
 ### The Final Geus Revolt - SAF vs GRQ/BTV ###
@@ -4276,43 +4273,43 @@ country_event = {
 	title = "SAFN60.T"
 	desc = "SAFN60.D"
 	picture = "boer_troops"
-	
-	trigger = { 
+
+	trigger = {
 	exists = yes
 	tag = SAF
 	owns = 2087
 	owns = 2049
-    NOT = { exists = BTV }
-    NOT = { exists = GRQ }
+	NOT = { exists = BTV }
+	NOT = { exists = GRQ }
 	is_vassal = no
 	is_greater_power = no
 	NOT = { has_country_flag = SAF_GP_War }
 	NOT = { has_global_flag = 2087_Treaty }
 	NOT = { has_global_flag = final_geus_revolt }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	months = 96
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN60.A"
 	set_country_flag = SAF_GP_War
 	prestige = -5
-	   any_pop = { 
-	      limit = {
-		     location = { is_core = BTV }
-		  }
-	      consciousness = 2
-	      militancy = 2
-	   }
-	   any_pop = { 
-	      limit = {
-		     location = { is_core = GRQ }
-		  }
-	      consciousness = 4
-	      militancy = 4
-	   }
+	any_pop = {
+		limit = {
+			location = { is_core = BTV }
+		}
+		consciousness = 2
+		militancy = 2
+	}
+	any_pop = {
+		limit = {
+			location = { is_core = GRQ }
+		}
+		consciousness = 4
+		militancy = 4
+	}
 	}
 }
 
@@ -4323,25 +4320,25 @@ country_event = {
 	title = "SAFN61.T"
 	desc = "SAFN61.D"
 	picture = "boer_war"
-	
+
 	major = yes
-	
+
 	trigger = {
 	exists = yes
-    tag = SAF
+	tag = SAF
 	owns = 2087
 	owns = 2049
 	has_country_flag = SAF_GP_War
-    NOT = { exists = BTV }
-    NOT = { exists = GRQ }
+	NOT = { exists = BTV }
+	NOT = { exists = GRQ }
 	NOT = { has_global_flag = final_geus_revolt }
 	}
-	
-	mean_time_to_happen = { 
+
+	mean_time_to_happen = {
 	months = 6
 	}
-	
-	option = { 
+
+	option = {
 	name = "SAFN61.A"
 	clr_country_flag = SAF_GP_War
 	set_global_flag = final_geus_revolt
@@ -4350,29 +4347,29 @@ country_event = {
 	any_country = {
 	limit = {
 	tag = BTV
-	exists = no 
+	exists = no
 	}
 	government = democracy
 	ruling_party_ideology = conservative
-    political_reform = population_equal_weight
-    political_reform = universal_voting
-    political_reform = yes_meeting
-    political_reform = free_press
-    political_reform = secret_ballots
-    
-	
-	
-	
-    
-	
-    
-    
-	
-	
-	
-	
-	
-	
+	political_reform = population_equal_weight
+	political_reform = universal_voting
+	political_reform = yes_meeting
+	political_reform = free_press
+	political_reform = secret_ballots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -4381,44 +4378,44 @@ country_event = {
 	clr_country_flag = reactionary_election_win
 	clr_country_flag = anarcho_liberal_election_win
 	clr_country_flag = social_liberal_election_win
-	clr_country_flag = market_liberal_election_win		
+	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
 	}
 	any_country = {
 	limit = {
 	tag = GRQ
-	exists = no 
+	exists = no
 	}
 	government = democracy
 	ruling_party_ideology = conservative
-    political_reform = population_equal_weight
-    political_reform = universal_voting
-    political_reform = yes_meeting
-    political_reform = free_press
-    political_reform = secret_ballots
-    
-	
-	
-	
-    
-	
-    
-    
-	
-	
-	
-	
-	
-	
+	political_reform = population_equal_weight
+	political_reform = universal_voting
+	political_reform = yes_meeting
+	political_reform = free_press
+	political_reform = secret_ballots
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	clr_country_flag = tory_election_win
 	clr_country_flag = socialist_election_win
 	clr_country_flag = liberal_election_win
@@ -4427,42 +4424,42 @@ country_event = {
 	clr_country_flag = reactionary_election_win
 	clr_country_flag = anarcho_liberal_election_win
 	clr_country_flag = social_liberal_election_win
-	clr_country_flag = market_liberal_election_win		
+	clr_country_flag = market_liberal_election_win
 		clr_country_flag = paternal_election_win
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = BTV
-	  NOT = { is_core = LWE }
-	  }
-	  secede_province = BTV
+	any_owned = {
+	limit = {
+	is_core = BTV
+	NOT = { is_core = LWE }
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = XHO
-	  }
-	  secede_province = BTV
+	secede_province = BTV
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = BSH
-	  }
-	  secede_province = BTV
+	any_owned = {
+	limit = {
+	is_core = XHO
 	}
-	any_owned = { 
-	  limit = { 
-	  is_core = GRQ
-	  }
-	  secede_province = GRQ
+	secede_province = BTV
+	}
+	any_owned = {
+	limit = {
+	is_core = BSH
+	}
+	secede_province = BTV
+	}
+	any_owned = {
+	limit = {
+	is_core = GRQ
+	}
+	secede_province = GRQ
 	}
 	BTV = {
 	add_country_modifier = {
@@ -4488,25 +4485,25 @@ country_event = {
 	canned_food = 1000
 	regular_clothes = 1000
 	}
-	war = { 
-	   target = BTV
-	      attacker_goal = {
-		     casus_belli = civil_war
-		  }
-		  defender_goal = {
-			 casus_belli = civil_war 
-		  }			
-	}		
-	war = { 
-	   target = GRQ
-	      attacker_goal = {
-		     casus_belli = civil_war 
-		  }
-		  defender_goal = {
-		     casus_belli = status_quo
-		}			
-	}	
-	}	
+	war = {
+	target = BTV
+		attacker_goal = {
+			casus_belli = civil_war
+		}
+		defender_goal = {
+			casus_belli = civil_war
+		}
+	}
+	war = {
+	target = GRQ
+		attacker_goal = {
+			casus_belli = civil_war
+		}
+		defender_goal = {
+			casus_belli = status_quo
+		}
+	}
+	}
 }
 
 ### Killing off the Zulu and Xhosa for BRG/PBG - Ported from HFM ###
@@ -4515,8 +4512,8 @@ country_event = {
 country_event = {
 	id = 44338
 	title = "EVTNAME98250"
- 	desc = "EVTDESC98250"
- 	picture = "zulu"
+	desc = "EVTDESC98250"
+	picture = "zulu"
 
 	trigger = {
 		war = no
@@ -4531,7 +4528,7 @@ country_event = {
 			neighbour = THIS
 			war = no
 			civilized = no
-			NOT = { truce_with = THIS }			
+			NOT = { truce_with = THIS }
 		}
 	}
 
@@ -4562,7 +4559,7 @@ country_event = {
 		war = {
 			target = ZUL
 			attacker_goal = { casus_belli = conquest_any }
-		}	
+		}
 		ai_chance = {
 			factor = 99
 			modifier = {
@@ -4596,9 +4593,9 @@ country_event = {
 	title = "EVTNAME98256" #The Final Straw
 	desc = "EVTDESC98256"
 	picture = "zulu"
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		war = no
 		OR = {
@@ -4613,7 +4610,7 @@ country_event = {
 			truce_with = XHO
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 40
 		modifier = {
@@ -4633,7 +4630,7 @@ country_event = {
 			year = 1880
 		}
 	}
-	
+
 	option = {
 		name = "EVT98256OPTA"
 		badboy = 2
@@ -4651,7 +4648,7 @@ country_event = {
 			factor = 99
 		}
 	}
-	
+
 	option = {
 		name = "EVT98256OPTB"
 		badboy = -2

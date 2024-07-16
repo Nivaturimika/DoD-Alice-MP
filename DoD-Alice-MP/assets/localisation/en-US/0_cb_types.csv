@@ -223,14 +223,6 @@ hre_unification2;Imperial Authority;;;;;;;;;;;;;
 hre_unification2_short;Liberate the Imperial lands from $RECIPIENT$;;;;;;;;;;;;;
 hre_unification2_desc;We have to beat our enemies and unify the HRE under our authority !;;;;;;;;;;;;;
 hre_unification2_setup;Liberate the Imperial lands from $RECIPIENT$;;;;;;;;;;;;;
-annex_india_AI;Scramble for India - Demand State;;;;;;;;;;;;x
-annex_india_AI_desc;Force an §Yuncivilized country§W to secede territory according to rules set at the Conference of Great Powers;;;;;;;;;;;;x
-annex_india_AI_setup;Demand that $RECIPIENT$ secede territory according to rules set at the Conference of Great Powers;;;;;;;;;;;;x
-annex_india_AI_short;Demand $STATE$;;;;;;;;;;;;x
-annex_india_full_AI;Scramble for India - Annex;;;;;;;;;;;;x
-annex_india_full_AI_desc;Force an §Yuncivilized country§W to become a protectorate according to rules set at the Conference of Great Powers;;;;;;;;;;;;x
-annex_india_full_AI_setup;Annex $RECIPIENT$ according to rules set at the Conference of Great Powers;;;;;;;;;;;;x
-annex_india_full_AI_short;Annex $RECIPIENT$;;;;;;;;;;;;x
 AGRESSION_WAR_CUSTOM_TREATY_NAME;$ORDER$$ORDER$ $FIRST$ Treaty War of $SECOND_COUNTRY$;$ORDER$ $FIRST$ libération de $SECOND_COUNTRY$;$ORDER$ $FIRST$ Befreiung von $SECOND_COUNTRY$;;;;;;;;;;;
 NORMAL_WAR_CUSTOM_TREATY_NAME;$ORDER$$ORDER$ $FIRST$ Treaty War of $SECOND_COUNTRY$;$ORDER$ $FIRST$ libération de $SECOND_COUNTRY$;$ORDER$ $FIRST$ Befreiung von $SECOND_COUNTRY$;;;;;;;;;;;
 AGRESSION_WAR_GEUZEN_NAME;$ORDER$$ORDER$ $FIRST$ Geuzen Liberation of $SECOND_COUNTRY$;$ORDER$ $FIRST$ libération de $SECOND_COUNTRY$;$ORDER$ $FIRST$ Befreiung von $SECOND_COUNTRY$;;;;;;;;;;;
@@ -337,12 +329,6 @@ claim_holy_land_short;Acquire $STATE$;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;
 claim_holy_land_setup;Acquire $STATE$ from $RECIPIENT$;Prendre ?at cl?$STATE$ de $RECIPIENT$;Kern-$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;
 NORMAL_WAR_HOLY_LAND_NAME;The $ORDER$$FIRST$-$SECOND$ Levantine War;;;;;;;;;;;;;
 AGRESSION_WAR_HOLY_LAND_NAME;The $ORDER$$FIRST$-$SECOND$ Levantine War;;;;;;;;;;;;;
-negotiated_transfer;Negotiated Transfer;;;;;;;;;;;;;
-negotiated_transfer_desc;Transfer a state or colonial region to another country with no effect on infamy, prestige, or jingoism;;;;;;;;;;;;;
-negotiated_transfer_short;$RECIPIENT$ receives $STATE$ from us;;;;;;;;;;;;;
-negotiated_transfer_setup;Transfer $STATE$ from our country to $RECIPIENT$;;;;;;;;;;;;;
-NORMAL_WAR_NEGOTIATE_NAME;$ORDER$$SECOND$ Transfer of $STATE$ to $FIRST_COUNTRY$;;;;;;;;;;;;;
-AGRESSION_WAR_NEGOTIATE_NAME;$ORDER$$SECOND$ Transfer of $STATE$ to $FIRST_COUNTRY$;;;;;;;;;;;;;
 cut_down_to_size_no_add_wargoal;Cut down to size;;;;;;;;;;;;;
 cut_down_to_size_no_add_wargoal_desc;Cut $RECIPIENT$ down to size;;;;;;;;;;;;;
 cut_down_to_size_no_add_wargoal_short;Force another §Ycountry§W to disarm and pay reparations to us;;;;;;;;;;;

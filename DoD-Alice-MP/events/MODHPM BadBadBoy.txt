@@ -64,19 +64,19 @@ country_event = {
 			duration = 1825
 		}
 		any_greater_power = {
-		casus_belli = {
-			target = THIS
-			type = humiliate
-			months = 60
+			casus_belli = {
+				target = THIS
+				type = humiliate
+				months = 60
 			}
-		casus_belli = {
-			target = THIS
-			type = free_peoples
-			months = 12
+			casus_belli = {
+				target = THIS
+				type = free_peoples
+				months = 12
 			}
-		relation = {
-			who = THIS
-			value = -100
+			relation = {
+				who = THIS
+				value = -100
 			}
 		}
 	}

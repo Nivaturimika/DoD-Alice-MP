@@ -3,17 +3,12 @@ political_decisions = {
 		alert = yes
 		picture = exhibition
 		potential = {
-			civilized = yes
-			is_greater_power = no
-			is_secondary_power = no
 			year = 1840
+			civilized = yes
+			test != is_colonial_power
 			classicism_n_early_romanticism = 1
-			NOT = {
-				romanticism = 1
-			}
-			NOT = {
-				has_country_modifier = exhibition
-			}
+			NOT = { romanticism = 1 }
+			NOT = { has_country_modifier = exhibition }
 		}
 		allow = {
 			money = 10000
@@ -28,24 +23,20 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			}
+		}
 	}
 
 	exhibition2 = {
 		alert = yes
 		picture = exhibition
 		potential = {
+			year = 1840
 			civilized = yes
 			is_greater_power = no
 			is_secondary_power = no
 			romanticism = 1
-			year = 1840
-			NOT = {
-				realism = 1
-			}
-			NOT = {
-				has_country_modifier = exhibition
-			}
+			NOT = { realism = 1 }
+			NOT = { has_country_modifier = exhibition }
 		}
 		allow = {
 			money = 20000
@@ -66,11 +57,11 @@ political_decisions = {
 		alert = yes
 		picture = exhibition
 		potential = {
+			year = 1840
 			civilized = yes
 			is_greater_power = no
 			is_secondary_power = no
 			realism = 1
-			year = 1840
 			NOT = {
 				impressionism = 1
 			}
