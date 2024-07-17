@@ -9,7 +9,7 @@
 the_open_door = {
 	trigger = {
 		nationalism_n_imperialism = 1
-		OR = { 
+		OR = {
 			continent = north_america
 			continent = south_america
 			continent = oceania
@@ -24,7 +24,7 @@ the_open_door = {
 
 landlocked_nation = {
 	trigger = {
-		NOT = { any_owned_province = { port = yes } }
+		NOT = { any_owned_province = { is_colonial = no port = yes } }
 	}
     import_cost = 0.5
     global_immigrant_attract = -1.5
@@ -34,7 +34,7 @@ landlocked_nation = {
 passports = {
 	trigger = {
 		state_n_government = 1
-		OR = { 
+		OR = {
 			continent = north_america
 			continent = south_america
 			continent = oceania
@@ -49,7 +49,7 @@ passports = {
 citizenship_tests = {
 	trigger = {
 		experimental_psychology = 1
-		OR = { 
+		OR = {
 			continent = north_america
 			continent = south_america
 			continent = oceania
@@ -73,23 +73,25 @@ winds_of_change_1900 = {
 
 ##############################
 
-#powerful_HRE = { 
-#	trigger = { 
-#		OR = { 
-#		primary_culture = south_german
-#		primary_culture = rheinish 
-#		primary_culture = north_german
-#			}
-#		in_sphere = BOH 
-#		NOT = { year = 1849 }
-#	}
-#	prestige = -0.50 
-#}
+powerful_HRE = {
+	trigger = {
+		OR = {
+			primary_culture = south_german
+			primary_culture = rheinish
+			primary_culture = north_german
+		}
+		in_sphere = BOH
+		NOT = { year = 1849 }
+	}
+	icon = 1
+	prestige = -0.50
+	research_points = 1
+}
 
 money_hoarder_3 = {
 	trigger = {
 		money = 5000000
-		not = { money = 10000000 }
+		NOT = { money = 10000000 }
 	}
 	tax_efficiency = -0.40
 	tariff_efficiency_modifier = -0.60
@@ -99,7 +101,7 @@ money_hoarder_3 = {
 money_hoarder_4 = {
 	trigger = {
 		money = 10000000
-		not = { money = 15000000 }
+		NOT = { money = 15000000 }
 	}
 	tax_efficiency = -0.50
 	tariff_efficiency_modifier = -0.80
@@ -109,7 +111,7 @@ money_hoarder_4 = {
 money_hoarder_5 = {
 	trigger = {
 		money = 15000000
-		not = { money = 30000000 }
+		NOT = { money = 30000000 }
 	}
 	factory_output = -0.10
 	tax_efficiency = -0.60
@@ -174,8 +176,7 @@ vassal_nation = {
 
 substate_nation = {
     trigger = {
-	    ai = yes
-        is_substate = yes       
+        is_substate = yes
     }
 
     prestige = -0.25
@@ -184,21 +185,6 @@ substate_nation = {
     max_military_spending = -0.25
     min_tariff = 1.2
     tax_efficiency = 0.3
-
-    icon = 10
-}
-
-substate_nation_player = {
-    trigger = {
-	    ai = no
-        is_substate = yes       
-    }
-
-    prestige = -0.25
-    max_loan_modifier = -1.0
-    max_military_spending = -0.25
-    tax_efficiency = 0.3
-
     icon = 10
 }
 
@@ -216,16 +202,7 @@ low_health_care_fully_funded = {
 	trigger = {
 		exists = yes
 		health_care = low_health_care
-		OR = {
-			AND = {
-				ai = yes
-				administration_spending = 0.25
-			}
-			AND = {
-				ai = no
-				administration_spending = 0.3
-			}
-		}
+		administration_spending = 0.25
 	}
 	global_population_growth = 0.002
 	icon = 19
@@ -235,16 +212,7 @@ acceptable_health_care_fully_funded = {
 	trigger = {
 		exists = yes
 		health_care = acceptable_health_care
-		OR = {
-			AND = {
-				ai = yes
-				administration_spending = 0.3
-			}
-			AND = {
-				ai = no
-				administration_spending = 0.4
-			}
-		}
+		administration_spending = 0.4
 	}
 	global_population_growth = 0.003
 	icon = 19
@@ -254,16 +222,7 @@ good_health_care_fully_funded = {
 	trigger = {
 		exists = yes
 		health_care = good_health_care
-		OR = {
-			AND = {
-				ai = yes
-				administration_spending = 0.3
-			}
-			AND = {
-				ai = no
-				administration_spending = 0.5
-			}
-		}
+		administration_spending = 0.5
 	}
 	global_population_growth = 0.004
 	icon = 19
@@ -273,16 +232,7 @@ health_care_fully_funded = {
 	trigger = {
 		exists = yes
 		health_care = good_health_care
-		OR = {
-			AND = {
-				ai = yes
-				administration_spending = 0.74
-			}
-			AND = {
-				ai = no
-				administration_spending = 0.99
-			}
-		}
+		administration_spending = 0.75
 	}
 	global_population_growth = 0.001
 	icon = 19
@@ -310,7 +260,6 @@ acceptable_schools_fully_funded = {
 
 good_schools_fully_funded = {
 	trigger = {
-		exists = yes
 		school_reforms = good_schools
 		education_spending = 0.5
 	}
@@ -320,18 +269,8 @@ good_schools_fully_funded = {
 
 education_fully_funded = {
 	trigger = {
-		exists = yes
 		school_reforms = good_schools
-		OR = {
-			AND = {
-				ai = yes
-				education_spending = 0.74
-			}
-			AND = {
-				ai = no
-				education_spending = 0.99
-			}
-		}
+		education_spending = 0.75
 	}
 	education_efficiency_modifier = 0.1
 	icon = 19
@@ -339,9 +278,7 @@ education_fully_funded = {
 
 neglected_education = {
 	trigger = {
-		exists = yes
 		civilized = yes
-		ai = no
 		number_of_states = 2
 		total_pops = 1000000
 		OR = {
@@ -364,23 +301,17 @@ neglected_education = {
 }
 
 educational_spen = {
-		trigger = {
-			ai = yes
-			exists = yes
-			administration_spending = 0.74
-		}
-
+	trigger = {
+		administration_spending = 0.74
+	}
 	education_efficiency_modifier = 0.3
 	icon = 16
 }
 
 admin_spen = {
-		trigger = {
-			ai = yes
-			exists = yes
-			administration_spending = 0.74
-		}
-
+	trigger = {
+		administration_spending = 0.74
+	}
 	administrative_efficiency_modifier = 0.3
 	icon = 16
 }
@@ -561,12 +492,12 @@ autonomous_dependency_modifier = {
     administrative_efficiency_modifier = 0.1
 	tariff_efficiency_modifier = -0.1
 	import_cost = -0.2
-    diplomatic_points_modifier = -0.5  
+    diplomatic_points_modifier = -0.5
 	global_pop_consciousness_modifier = -0.02
 	global_pop_militancy_modifier = -0.02
 	political_reform_desire = -0.1
 	ruling_party_support = 1
-	suppression_points_modifier = 1	
+	suppression_points_modifier = 1
 }
 
 ostfold_independent_spirit = {

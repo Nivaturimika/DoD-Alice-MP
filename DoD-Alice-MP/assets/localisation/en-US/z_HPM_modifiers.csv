@@ -44,7 +44,6 @@ war_focus;War Focused;;;;;;;;;;;;;
 war_focus_desc;This war is for one objective and one only.;;;;;;;;;;;;;
 loyal_vassal;Loyal Vassal;;;;;;;;;;;;;
 loyal_vassal_desc;We will stand by our protectors.;;;;;;;;;;;;;
-substate_nation_player;Substate;;;;;;;;;;;;;
 in_disrepair;Disrepair;;;;;;;;;;;;;
 in_disrepair_desc;Buildings in this province were neglected for so long they are falling apart.;;;;;;;;;;;;;
 nationalization_in_progress;Nationalization in Progress;;;;;;;;;;;;;
