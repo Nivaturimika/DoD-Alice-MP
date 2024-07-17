@@ -612,6 +612,8 @@ ALA = "countries/Aland.txt"
 BIR = "countries/Birid.txt"
 KOS = "countries/Kosovo.txt"
 LSF = "countries/La Santa Fe.txt"
+GYP = "countries/Gypsy.txt"
+AZA = "countries/Azawagh"
 
 ##HoD Dominions
 dynamic_tags  = yes #any tags after this is considered dynamic dominions
