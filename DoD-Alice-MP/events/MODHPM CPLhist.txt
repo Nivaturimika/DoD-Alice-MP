@@ -28,9 +28,9 @@ country_event = {
 		OR = {
 			war_exhaustion = 80
 			is_disarmed = yes
-			AND = {
-			has_country_flag = in_great_war
-			war_exhaustion = 40
+				AND = {
+				has_country_flag = in_great_war
+				war_exhaustion = 40
 			}
 			AND = {
 				has_recently_lost_war = yes	
@@ -42,13 +42,6 @@ country_event = {
 					}
 				}
 			}
-			#any_owned_province = {
-			#	any_core = { primary_culture = polish }
-			#	OR = {
-			#		average_militancy = 4
-			#		average_consciousness = 7 
-			#	}
-			#}
 		}
 	}
 	
@@ -85,7 +78,7 @@ country_event = {
 			treasury = 10000
 	
 			define_general = {
-				name = "Stanislaw Brzóska"
+				name = "Stanislaw Brzï¿½ska"
 				personality = energetic
 				background = nationalist
 			}
@@ -203,7 +196,7 @@ country_event = {
 			treasury = 10000
 	
 			define_general = {
-				name = "Stanislaw Brzóska"
+				name = "Stanislaw Brzï¿½ska"
 				personality = energetic
 				background = nationalist
 			}

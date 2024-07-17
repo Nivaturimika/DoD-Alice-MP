@@ -11,6 +11,24 @@ is_monarchy_government = {
 	}
 }
 
+has_elections = {
+	main_parameter = nation
+	OR = {
+		government = prussian_constitutionalism
+		government = hms_government
+		government = democracy
+		government = parliamentary_republic
+		government = socialist_republic
+		government = merchant_republic
+		# All forms of government that have elections
+	}
+	OR = {
+		vote_franschise = wealth_voting
+		vote_franschise = universal_weighted_voting
+		vote_franschise = universal_voting
+	}
+}
+
 is_republic_government = {
 	main_parameter = nation
 	OR = {

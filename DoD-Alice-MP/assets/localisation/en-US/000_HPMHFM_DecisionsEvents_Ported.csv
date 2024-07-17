@@ -1411,9 +1411,6 @@ GRQ_nambia_desc;It is clear that Africa is becoming more and more interesting to
 GRQ_hereroland_title;Claim Karasburg;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 GRQ_hereroland_desc;Following the Leeuwin War of Independence and the Great Trek away from the Cape, our people have established a home in the north among our brethren the Khoi and the San. Yet, there are those who dared to venture westwards towards the great Kalahari and beyond. Some of the greatest human tragedies of the Great Trek happened out west. The communities established there were so small and isolated that they were not included into when the Republic of Vryland. But now, with the republic consolidated, we can spare the resources to re-establish contact with the communities out west and extend our authority to Karasburg.;;;;;;;;;;;;;x,,,,,,,,
 ##### Extra HPM #####;;;;;;;;;;;;;;x,,,,,,,,
-EVTNAME11105;$FROMCOUNTRY$ has United!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-EVTDESC11105;We are finally a united people.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
-EVT11105OPTA;No need for those cores!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 EVTOPTA60141;The workers have prevailed.;;;;;;;;;;;;;;;;;;;x;;;;
 EVTOPTB2570;They are not worth our time.;;;;;;;;;;;;;;;;;;;;;x;;;;
 EVT2660OPTB;We will keep everything we've gained.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,

@@ -1,6 +1,6 @@
 ###########################################################################
 #
-#Suffragette Movements 
+#Suffragette Movements
 #
 # Event IDs 17000 are reserved for this. DO NOT CHANGE.
 #
@@ -12,32 +12,16 @@ country_event = {
 	title = "EVTNAME17000"
 	desc = "EVTDESC17000"
 	picture = "Womensrights"
-	
+
 	trigger = {
 		invention = womens_suffrage_movement
 		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}	
-
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
 
@@ -100,14 +84,14 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17000"
 		poor_strata = {
 			militancy = 2
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17000"
 		poor_strata = {
@@ -130,35 +114,19 @@ country_event = {
 	title = "EVTNAME17010"
 	desc =  "EVTDESC17010"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         invention = womens_suffrage_movement
 		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -218,7 +186,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17010"
 		prestige = -5
@@ -229,7 +197,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17010"
 		prestige = 5
@@ -256,35 +224,19 @@ country_event = {
 	title = "EVTNAME17020"
 	desc =  "EVTDESC17020"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         invention = womens_suffrage_movement
 		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -344,7 +296,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17020"
 		any_pop = {
@@ -362,7 +314,7 @@ country_event = {
 			consciousness = 0.5
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17020"
 		any_pop = {
@@ -378,37 +330,21 @@ country_event = {
 	title = "EVTNAME17030"
 	desc =  "EVTDESC17030"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
 		war = yes
 		war_exhaustion = 4
 		is_mobilised = yes
-		year = 1900
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}	
+		year >= 1900
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
-			}
-		
-		NOT = { capital_scope = { continent = oceania } }
+		}
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 70
 		modifier = {
@@ -468,7 +404,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17030"
 		war_exhaustion = -3
@@ -476,7 +412,7 @@ country_event = {
 			consciousness = 1
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17030"
 		any_pop = {
@@ -495,36 +431,19 @@ country_event = {
 	title = "EVTNAME17040"
 	desc =  "EVTDESC17040"
 	picture = "Womensrights"
-	
+
 	trigger = {
-		exists = yes
         year = 1890
-		civilized = yes
 		literacy = 0.7
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}	
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
-			}
-		
-		NOT = { capital_scope = { continent = oceania } }
+		}
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -584,7 +503,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17040"
 		any_pop = {
@@ -602,7 +521,7 @@ country_event = {
 			consciousness = 0.5
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17040"
 		prestige = 4
@@ -622,35 +541,18 @@ country_event = {
 	title = "EVTNAME17050"
 	desc = "EVTDESC17050"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         invention = womens_suffrage_movement
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 250
 		modifier = {
@@ -710,7 +612,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17050"
 		any_pop = {
@@ -720,7 +622,7 @@ country_event = {
 			factor = 34
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17050"
 		any_pop = {
@@ -739,7 +641,7 @@ country_event = {
 			factor = 33
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTC17050"
 		political_reform = no_meeting
@@ -749,7 +651,7 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 33
-			
+
 			modifier = {
 				factor = 0
 				NOT = {
@@ -771,35 +673,18 @@ country_event = {
 	title = "EVTNAME17060"
 	desc = "EVTDESC17060"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         invention = womens_suffrage_movement
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 175
 		modifier = {
@@ -859,7 +744,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17060"
 		random_state = {
@@ -871,7 +756,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17060"
 		random_state = {
@@ -892,35 +777,18 @@ country_event = {
 	desc = "EVTDESC17070"
 	picture = "Womensrights"
 
-	
-	trigger = { exists = yes
+
+	trigger = {
         invention = womens_suffrage_movement
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 175
 		modifier = {
@@ -980,7 +848,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17070"
 		random_state = {
@@ -996,7 +864,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17070"
 		random_state = {
@@ -1020,35 +888,18 @@ country_event = {
 	title = "EVTNAME17080"
 	desc = "EVTDESC17080"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         invention = womens_suffrage_movement
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 175
 		modifier = {
@@ -1108,7 +959,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17080"
 		random_state = {
@@ -1128,7 +979,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17080"
 		any_pop = {
@@ -1147,35 +998,18 @@ country_event = {
 	title = "EVTNAME17090"
 	desc = "EVTDESC17090"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         invention = womens_suffrage_movement
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 175
 		modifier = {
@@ -1235,7 +1069,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17090"
 		random_state = {
@@ -1251,7 +1085,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17090"
 		upper_house = {
@@ -1271,35 +1105,18 @@ country_event = {
 	title = "EVTNAME17100"
 	desc = "EVTDESC17100"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         invention = womens_suffrage_movement
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 175
 		modifier = {
@@ -1359,7 +1176,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17100"
 		random_state = {
@@ -1378,7 +1195,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17100"
 		random_state = {
@@ -1409,36 +1226,19 @@ country_event = {
 	title = "EVTNAME17110"
 	desc = "EVTDESC17110"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         invention = womens_suffrage_movement
         year = 1900
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 360
 		modifier = {
@@ -1498,7 +1298,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17110"
 		prestige = 5
@@ -1522,7 +1322,7 @@ country_event = {
 		name = "EVTOPTB17110"
 		prestige = -5
 		any_pop = {
-			consciousness = -0.5	
+			consciousness = -0.5
 		}
 	}
 }
@@ -1533,35 +1333,18 @@ country_event = {
 	title = "EVTNAME17120"
 	desc = "EVTDESC17120"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         invention = womens_suffrage_movement
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 220
 		modifier = {
@@ -1621,7 +1404,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17120"
 		upper_house = {
@@ -1633,7 +1416,7 @@ country_event = {
 			value = 0.1
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17120"
 		any_pop = {
@@ -1659,36 +1442,19 @@ country_event = {
 	title = "EVTNAME17130"
 	desc = "EVTDESC17130"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         year = 1890
         invention = womens_suffrage_movement
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 900
 		modifier = {
@@ -1752,7 +1518,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17130"
 		random_state = {
@@ -1788,36 +1554,19 @@ country_event = {
 	title = "EVTNAME17140"
 	desc = "EVTDESC17140"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         year = 1890
         invention = womens_suffrage_movement
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 350
 		modifier = {
@@ -1881,7 +1630,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17140"
 		random_state = {
@@ -1939,36 +1688,19 @@ country_event = {
 	title = "EVTNAME17150"
 	desc = "EVTDESC17150"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         year = 1890
         invention = womens_suffrage_movement
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 350
 		modifier = {
@@ -2032,7 +1764,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17150"
 		random_state = {
@@ -2044,7 +1776,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17150"
 		random_state = {
@@ -2064,43 +1796,26 @@ country_event = {
 		}
 	}
 }
-	
+
 #Study Circle
 country_event = {
 	id = 17160
 	title = "EVTNAME17160"
 	desc = "EVTDESC17160"
 	picture = "Womensrights"
-	
-	trigger = { exists = yes
+
+	trigger = {
         year = 1890
         invention = womens_suffrage_movement
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}
-		
+		test = has_elections
 		OR = {
 			capital_scope = { continent = europe }
 			capital_scope = { continent = north_america }
 			capital_scope = { continent = south_america }
 		}
-		
-		NOT = { capital_scope = { continent = oceania } }
 		NOT = { has_country_modifier = female_suffrage }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 350
 		modifier = {
@@ -2164,7 +1879,7 @@ country_event = {
 			public_meetings = yes_meeting
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17160"
 		prestige = 5
@@ -2179,7 +1894,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17160"
 		prestige = -5
@@ -2195,26 +1910,12 @@ country_event = {
 	title = "EVTNAME17170"
 	desc = "EVTDESC17170"
 	picture = "Womensrights"
-	
+
 	trigger = {
 		has_country_modifier = female_suffrage
-		civilized = yes
-		OR = {
-			government = prussian_constitutionalism
-			government = hms_government
-			government = democracy
-			government = parliamentary_republic
-			government = socialist_republic
-			government = merchant_republic
-			# All forms of government that have elections
-		}
-		OR = {
-			vote_franschise = wealth_voting
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-		}	
+		test = has_elections
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -2252,7 +1953,7 @@ country_event = {
 			is_greater_power = yes
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA17170"
 		random_state = {
@@ -2265,7 +1966,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "EVTOPTB17170"
 		random_country = {

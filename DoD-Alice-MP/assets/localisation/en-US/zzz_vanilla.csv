@@ -54,8 +54,6 @@ EVTNAME10224;Emperor Napoleon Deposed;;;;;;;;;;;;;
 EVTDESC10224;Angered by the inability of France to prevent the formation of Germany, as well as the humiliating loss of Alsace-Lorraine, the government has deposed Emperor Napoleon. We must choose what form our new government is to take.;;;;;;;;;;;;;
 EVTNAME11104;Revolution in $FROMCOUNTRY$!;;;;;;;;;;;;;
 EVTDESC11104;A pro-$UNION_ADJ$ revolution has taken hold in $FROMCOUNTRY$. Its liberal leaders believe that $COUNTRY$ is the nation best-suited to unite all of $CULTURE_GROUP_UNION$, and thus have sworn to support us until the union is ready to occur.;;;;;;;;;;;;;
-EVTNAME11106;The $FROMCOUNTRY_ADJ$ Proposal;;;;;;;;;;;;;
-EVTDESC11106;$MONARCHTITLE$, the $FROMCOUNTRY_ADJ$ ambassador has presented us with news from the recent parliament of German revolutionaries. $FROMCOUNTRY$ has agreed to assemble a federation of German states, with the goal of eventually forming a greater Germany. If we do not agree,it is possible that $FROMCOUNTRY$ will attempt to take our lands by force.;;;;;;;;;;;;;
 EVTNAME11108;Slavic Unification;;;;;;;;;;;;;
 EVTDESC11108;The call has gone out for the Slavic nations of the Balkans to finally unite under a common banner, to resist the encroachment of the Austrians and Turks as well as other European powers. Yugoslavia, it is said, will be a power to rival even its most powerful neighbours. Whether this new nation would succeed in holding together a people divided by centuries of bitter warfare is best left for speculation.;;;;;;;;;;;;;
 EVTNAME11109;The Creation of Greater Finland;;;;;;;;;;;;;

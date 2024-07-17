@@ -1,30 +1,21 @@
 country_event = {
-	
-	id = 90100 
-
+	id = 90100
 	trigger = {
-			ai = no
-			OR = {
-				press_rights = state_press
-				press_rights = censored_press
-				}
-			consciousness = 5
-			literacy = 0.40
-			free_press = 10
-			any_neighbor_country = {
-				press_rights = free_press
-			}
-			NOT = {
-				OR = {
-				has_country_flag = free_press_noway
-				has_country_flag = free_press_promised
-				}
-			}
+		has_country_modifier != free_press_promised
+		OR = {
+			press_rights = state_press
+			press_rights = censored_press
+		}
+		consciousness = 5
+		literacy = 0.40
+		free_press = 10
+		any_neighbor_country = {
+			press_rights = free_press
+		}
 	}
  
 	mean_time_to_happen =  {
 		months = 12
-
 		modifier = {
 			factor = 0.8
 			year = 1865
@@ -35,7 +26,6 @@ country_event = {
 	desc = "EVTDESC90100"
 	picture = "Demonstration"
 	
-
 	option = {
 		name = "EVTOPTA90100" 
 		any_pop = {
@@ -44,7 +34,6 @@ country_event = {
 				value = free_press
 			}
 		}
-		set_country_flag = free_press_promised
 		add_country_modifier = {
 			name = "free_press_promised"
 			duration = 1825
@@ -53,10 +42,9 @@ country_event = {
 	option = {
 		name = "EVTOPTB90100"
 		scaled_militancy = {
-				issue = free_press
-				factor = 2
-			}
-		set_country_flag = free_press_noway
+			issue = free_press
+			factor = 2
+		}
 	}
 }
 
@@ -65,17 +53,16 @@ country_event = {
 	id = 90101 
 
 	trigger = {
-			OR = {
-				press_rights = state_press
-				press_rights = censored_press
-				}
-			consciousness = 5
-			literacy = 0.40
-			has_country_flag = free_press_promised
-			NOT = { has_country_modifier = free_press_promised	}
-			NOT = { government = proletarian_dictatorship }
-			NOT = { government = fascist_dictatorship }
-			NOT = { government = fascist_monarchy }
+		OR = {
+			press_rights = state_press
+			press_rights = censored_press
+		}
+		consciousness = 5
+		literacy = 0.40
+		has_country_modifier = free_press_promised
+		NOT = { government = proletarian_dictatorship }
+		NOT = { government = fascist_dictatorship }
+		NOT = { government = fascist_monarchy }
 	}
  
 	mean_time_to_happen =  {
@@ -102,11 +89,11 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTB90101"
-		#clr_country_flag = free_press_promised
+		remove_country_modifier = free_press_promised
 		scaled_militancy = {
-				issue = free_press
-				factor = 9
-			}
+			issue = free_press
+			factor = 9
+		}
         set_country_flag = broken_promises
 	}
 }
@@ -345,21 +332,21 @@ country_event = {
 
 	trigger = {
 		has_country_flag = broken_promises
-		or = {
-			and = {
+		OR = {
+			AND = {
 				trade_unions = no_trade_unions
 				has_country_flag = trade_unions_promised
 			}
-			and = {
+			AND = {
 				public_meetings = no_meeting
 				has_country_flag = yes_meeting_promised
 			}
-			and = {
+			AND = {
 				OR = {
 					press_rights = state_press
 					press_rights = censored_press
 				}
-				has_country_flag = free_press_promised
+				has_country_modifier = free_press_promised
 			}
 		}
 	}
@@ -430,7 +417,7 @@ country_event = {
 		}
 		clr_country_flag = trade_unions_promised
 		clr_country_flag = yes_meeting_promised
-		clr_country_flag = free_press_promised
+		remove_country_modifier = free_press_promised
 	}
 	
 	option = {
@@ -466,6 +453,6 @@ country_event = {
 		}
 		clr_country_flag = trade_unions_promised
 		clr_country_flag = yes_meeting_promised
-		clr_country_flag = free_press_promised
+		remove_country_modifier = free_press_promised
 	}
 }
