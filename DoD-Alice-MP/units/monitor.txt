@@ -39,7 +39,7 @@ monitor = {
 		canned_food = 0.4
 		ammunition = 0.3
 		regular_clothes = 0.1
-		fuel = 0.5
+		ship_fuel = 0.5
 		coal = 0.5
 		tobacco = 0.6
 	}

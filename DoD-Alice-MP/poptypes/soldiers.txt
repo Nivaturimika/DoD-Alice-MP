@@ -70,7 +70,7 @@ luxury_needs = {
     paper = 1
     telephones = 0.5
     radio = 1
-    fuel = 0.1
+    land_fuel = 0.1
 	small_arms = 4
 	ammunition = 4
 }

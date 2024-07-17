@@ -315,9 +315,8 @@ synthetic_tropical_factory = {
 	advanced_factory = yes
 }
 
-fuel_refinery = {
+land_fuel_refinery = {
 	type = factory
-
 	on_completion = factory
 	completion_size = 0.2
 	max_level = 99
@@ -330,8 +329,43 @@ fuel_refinery = {
 	time = 182
 	visibility = yes
 	onmap = no
-
-	production_type = fuel_refinery
+	production_type = land_fuel_refinery
+	pop_build_factory = yes
+	#strategic_factory = yes
+}
+ship_fuel_refinery = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		machine_parts = 200
+		steel = 200
+		cement = 200
+	}
+	time = 182
+	visibility = yes
+	onmap = no
+	production_type = ship_fuel_refinery
+	pop_build_factory = yes
+	#strategic_factory = yes
+}
+air_fuel_refinery = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		machine_parts = 200
+		steel = 200
+		cement = 200
+	}
+	time = 182
+	visibility = yes
+	onmap = no
+	production_type = air_fuel_refinery
 	pop_build_factory = yes
 	#strategic_factory = yes
 }

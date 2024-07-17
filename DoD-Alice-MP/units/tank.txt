@@ -20,7 +20,7 @@ tank = {
 		barrels = 10
 		artillery = 10
 		canned_food = 10
-		fuel = 5
+		land_fuel = 5
 	}
 	
 	supply_consumption = 1
@@ -28,7 +28,7 @@ tank = {
 		barrels = 0.15
 		artillery = 0.1
 		canned_food = 0.1 #0.04
-		fuel = 0.2
+		land_fuel = 0.2
 	}
 	
 

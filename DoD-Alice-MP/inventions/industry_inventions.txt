@@ -1432,7 +1432,9 @@ cracking = {
 		}
 	}
 	effect = {
-		activate_building = fuel_refinery 
+		activate_building = land_fuel_refinery
+		activate_building = air_fuel_refinery
+		activate_building = ship_fuel_refinery 
 	}	
 }
 

@@ -1407,8 +1407,7 @@ country_event = {
 	picture = "Christiansborgs"
 	
 	trigger = {
-		any_state = { has_building = fuel_refinery }
-		fuel = 30
+		any_state = { has_building = land_fuel_refinery }
 	}
 	mean_time_to_happen = {
 		months = 600
@@ -1428,13 +1427,11 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA12180"
-		fuel = -250
+		land_fuel = -250
 		random_state = {
-			limit = {
-				has_building = fuel_refinery
-			}
+			limit = { has_building = land_fuel_refinery }
 			any_pop = {
-				militancy = 2
+				militancy = 5
 				consciousness = 6
 			}
 		}
@@ -1442,7 +1439,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTB12180"
-		fuel = -500
+		land_fuel = -500
 		treasury = -100000
 		ai_chance = {
 			factor = 50
@@ -1463,7 +1460,7 @@ country_event = {
 	
 	trigger = {
 		any_state = {
-			has_building = fuel_refinery
+			has_building = land_fuel_refinery
 			NOT = { unemployment_by_type = { type = labourers value = 0.1 } }
 		}
 		OR = {
@@ -1492,17 +1489,17 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA12190"
-		fuel = 250
+		land_fuel = 250
 	}
 	
 	option = {
 		name = "EVTOPTB12190"
 		random_state = {
 			limit = {
-				has_building = fuel_refinery
+				has_building = land_fuel_refinery
 			}
 			any_pop = {
-				militancy = -2
+				militancy = -5
 				consciousness = -6
 			}
 		}

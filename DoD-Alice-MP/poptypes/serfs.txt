@@ -47,7 +47,7 @@ luxury_needs = {
 	telephones = 1.0
 	automobiles = 0.5
 	radio = 1.0
-	fuel = 0.1
+	land_fuel = 0.1
 	opium = 2
 }
 

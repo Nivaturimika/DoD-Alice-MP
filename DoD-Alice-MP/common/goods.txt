@@ -128,7 +128,19 @@ industrial_goods = {
 		cost = 2.9
 		color = { 201 200 199 }
 	}
-	fuel = { 
+	land_fuel = { 
+		cost = 25.00 
+		available_from_start = no
+		overseas_penalty = yes
+		color = { 145 110 89 }
+	}
+	air_fuel = { 
+		cost = 25.00 
+		available_from_start = no
+		overseas_penalty = yes
+		color = { 145 110 89 }
+	}
+	ship_fuel = { 
 		cost = 25.00 
 		available_from_start = no
 		overseas_penalty = yes

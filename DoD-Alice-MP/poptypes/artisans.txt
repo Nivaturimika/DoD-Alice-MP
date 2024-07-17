@@ -58,7 +58,7 @@ luxury_needs = {
 	luxury_furniture = 1
 	automobiles = 1
 	wine = 10
-	fuel = 1
+	land_fuel = 1
 }
 
 country_migration_target =

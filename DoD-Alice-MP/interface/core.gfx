@@ -66,42 +66,47 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_resources_big"
 		texturefile = "gfx\\interface\\resources_big_solo_pdm.tga"
-		noOfFrames = 57
+		noOfFrames = 59
 		norefcount = yes
 	}
 	spriteType = {
 		name = "GFX_resources"
-		texturefile = "gfx\\interface\\resources_solo_pdm.tga"
-		noOfFrames = 57
+		texturefile = "gfx\\interface\\resources_big_solo_pdm.tga"
+		noOfFrames = 59
 		norefcount = yes
+		size = { 22 24 }
 	}
 	spriteType = {
 		name = "GFX_resources_transparent"
-		texturefile = "gfx\\interface\\resources_solo_pdm.tga"
-		noOfFrames = 57
+		texturefile = "gfx\\interface\\resources_big_solo_pdm.tga"
+		noOfFrames = 59
 		norefcount = yes
 		allwaystransparent = yes
+		size = { 22 24 }
 	}
 	spriteType = {
 		name = "GFX_resources_small"
-		texturefile = "gfx\\interface\\resources_small_solo_pdm.tga"
-		noOfFrames = 57
+		texturefile = "gfx\\interface\\resources_big_solo_pdm.tga"
+		noOfFrames = 59
 		norefcount = yes
 		allwaystransparent = no
+		size = { 18 16 }
 	}
 	spriteType = {
 		name = "GFX_resources_small_transparent"
-		texturefile = "gfx\\interface\\resources_small_solo_pdm.tga"
-		noOfFrames = 57
+		texturefile = "gfx\\interface\\resources_big_solo_pdm.tga"
+		noOfFrames = 59
 		norefcount = yes
 		transparencecheck = yes
+		size = { 18 16 }
 	}
 	spriteType = {
 		name = "GFX_resources_small_transparent_factory_filter"
-		texturefile = "gfx\\interface\\resources_small_solo_pdm.tga"
-		noOfFrames = 57
+		texturefile = "gfx\\interface\\resources_big_solo_pdm.tga"
+		noOfFrames = 59
 		norefcount = yes
 		allwaystransparent = yes
+		size = { 18 16 }
 	}
 
 	textSpriteType = {

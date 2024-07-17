@@ -13,8 +13,8 @@ neurology = {
 	}
 	effect = {
 		shared_prestige = 25
-	}	
-	core_pop_militancy_modifier = -0.01	
+	}
+	core_pop_militancy_modifier = -0.01
 }
 
 #Alfred Nobel
@@ -31,8 +31,8 @@ alfred_nobel = {
 	effect = {
 		factory_goods_output = {
 			explosives = 0.05
-		} 
-	}	
+		}
+	}
 }
 
 the_periodic_table = {
@@ -45,21 +45,21 @@ the_periodic_table = {
 		base = 5
 	}
 	effect = {
-	shared_prestige = 25
-	rgo_goods_throughput = {
+		shared_prestige = 25
+		rgo_goods_throughput = {
 			sulphur = 0.05
 		}
-	factory_goods_output = {
-		fertilizer = 0.05
+		factory_goods_output = {
+			fertilizer = 0.05
 		}
-	factory_goods_output = {
-		fuel = 0.05
-		}
-	}	
+	    factory_goods_output = { land_fuel = 0.15 }
+		factory_goods_output = { ship_fuel = 0.15 }
+		factory_goods_output = { air_fuel = 0.15 }
+	}
 }
 
 #Vladimir Ilyich Lenin
-lenin = { 
+lenin = {
 	limit = {
 		mass_politics = 1
 
@@ -105,9 +105,9 @@ lenin = {
 	social_reform_desire = 0.05
 }
 
-trotsky = { 
+trotsky = {
 	limit = {
-		mass_politics = 1 
+		mass_politics = 1
 
 	}
 	news = no
@@ -147,7 +147,7 @@ trotsky = {
 	social_reform_desire = 0.05
 }
 
-mussolini = { 
+mussolini = {
 	limit = {
 		mass_politics = 1
 
@@ -181,7 +181,7 @@ mussolini = {
 	effect = {
 		shared_prestige = 15
 		rebel_org_gain = {
-			faction = fascist_rebels 
+			faction = fascist_rebels
 			value = 0.25
 		}
 	}
@@ -208,12 +208,12 @@ prophylactics = {
 	}
 	effect = {
 		pop_growth = -0.0003
-	}	
+	}
 }
 
 cholera_vaccine = {
 	limit = {
-		organic_chemistry = 1	
+		organic_chemistry = 1
 		empiricism = 1
 
 	}
@@ -225,11 +225,11 @@ cholera_vaccine = {
 			electricity = 1
 		}
 	}
-	
+
 	effect = {
 		pop_growth = 0.0001
 		shared_prestige = 5
-	}	
+	}
 }
 
 anaesthesia = {
@@ -248,7 +248,7 @@ anaesthesia = {
 	effect = {
 		pop_growth = 0.0001
 		shared_prestige = 5
-	}	
+	}
 }
 
 antitoxins = {
@@ -273,19 +273,19 @@ antitoxins = {
 			synthetic_polymers = 1
 		}
 		modifier = {
-			factor = -2 
+			factor = -2
 			invention = vitamins
 		}
 	}
 	effect = {
 		pop_growth = 0.0001
 		shared_prestige = 5
-	}	
+	}
 }
 
 vitamins = {
 	limit = {
-		electricity = 1 
+		electricity = 1
 		analytic_philosophy = 1
 
 	}
@@ -305,19 +305,19 @@ vitamins = {
 			synthetic_polymers = 1
 		}
 		modifier = {
-			factor = -2 
+			factor = -2
 			invention = antitoxins
 		}
 	}
 	effect = {
 		pop_growth = 0.0001
 		shared_prestige = 5
-	}	
+	}
 }
 
 sanitation = {
 	limit = {
-		high_pressure_steam_engine = 1 
+		high_pressure_steam_engine = 1
 		empiricism = 1
 	}
 	news = no
@@ -334,14 +334,14 @@ sanitation = {
 	}
 	effect = {
 		pop_growth = 0.0001
-	}	
+	}
 }
 
 
 #Thomas Robert Malthus
 thomas_robert_malthus = {
 	limit = {
-		malthusian_thought = 1 
+		malthusian_thought = 1
 
 		not = { nationalvalue = nv_equality }
 	}
@@ -349,12 +349,12 @@ thomas_robert_malthus = {
 	chance = {
 		base = 2
 		modifier = {
-			factor = 2 
+			factor = 2
 			civilized = no
 		}
 
 	}
 	effect = {
 		pop_growth = 0.0001
-	}	
+	}
 }

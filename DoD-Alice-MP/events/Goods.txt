@@ -421,7 +421,7 @@ province_event = {
         NOT = { has_province_modifier = switched_production }
         OR = {
             AND = {
-                year = 1880
+                year = 1875
                 OR = {
                     province_id = 1354
                     province_id = 1364
@@ -446,7 +446,7 @@ province_event = {
                 }
             }
             AND = {
-                year = 1890
+                year = 1885
                 OR = {
                     province_id = 1957
                     province_id = 1986
@@ -597,9 +597,9 @@ province_event = {
         not = { trade_goods = oil }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
-			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = land_fuel_refinery } } }
 			owner = { invention = cracking }
-			owner = { any_owned_province = { has_building = fuel_refinery } }
+			owner = { any_owned_province = { has_building = land_fuel_refinery } }
 			year = 1900
 		}
     }
@@ -646,9 +646,9 @@ province_event = {
 		not = { trade_goods = oil }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
-			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
+			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = land_fuel_refinery } } }
 			owner = { invention = cracking }
-			owner = { any_owned_province = { has_building = fuel_refinery } }
+			owner = { any_owned_province = { has_building = land_fuel_refinery } }
 			year = 1900
 		}
     }

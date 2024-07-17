@@ -27,7 +27,7 @@ dreadnought = {
 		canned_food = 20
 		telephones = 20
 		regular_clothes = 20
-		fuel = 60
+		ship_fuel = 60
 	}
 	min_port_level = 5
 	limit_per_port = 1
@@ -39,7 +39,7 @@ dreadnought = {
 		artillery = 0.8
 		canned_food = 1
 		telephones = 0.02
-		fuel = 4
+		ship_fuel = 4
 		ammunition = 0.8
 		regular_clothes = 0.5
 		tobacco = 2

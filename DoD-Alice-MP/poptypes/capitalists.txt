@@ -43,7 +43,7 @@ everyday_needs = {
 	luxury_clothes = 5
 	luxury_furniture = 5
 	radio = 5
-	fuel = 20
+	land_fuel = 20
     paper = 20
 	telephones = 5
 	automobiles = 1
@@ -68,7 +68,7 @@ luxury_needs = {
 	automobiles = 20
 	aeroplanes = 5
 	radio = 20
-	fuel = 30
+	land_fuel = 30
 	clipper_convoy = 2
 	steamer_convoy = 2
 }

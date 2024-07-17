@@ -2097,7 +2097,7 @@ liberate_country = {
 			FROM = { exists = no }
 			FROM = { alliance_with = THIS }
 			FROM = { in_sphere = THIS }
-			FROM = { vasal_of = THIS }
+			FROM = { vassal_of = THIS }
 			FROM = { involved_in_crisis = yes }
 			AND = {
 				tag = EGY

@@ -82,7 +82,7 @@ luxury_needs = {
 	wine = 10
 	aeroplanes = 0.4
 	radio = 1
-	fuel = 0.2
+	land_fuel = 0.2
 }
 
 
