@@ -1,8 +1,8 @@
-# DoD-Alice-MP
+# DoD-MP
 
-Multiplayer version of DoD rework, for Alice.
+Multiplayer version of DoD rework.
 
-![DoD-Alice-MP](./dod_mp.png)
+![DoD-MP](./dod_mp.png)
 
 ## How to play?
 
