@@ -1,6 +1,5 @@
 capital = 1384
 primary_culture = malay
-culture = han
 religion = mahayana
 government = presidential_dictatorship
 plurality = 0.0

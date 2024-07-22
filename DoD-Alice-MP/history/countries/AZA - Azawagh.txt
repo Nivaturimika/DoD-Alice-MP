@@ -3,6 +3,7 @@ primary_culture = catalan
 culture = berber
 culture = maghrebi
 religion = catholic
+government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_equality
 literacy = 0.05
