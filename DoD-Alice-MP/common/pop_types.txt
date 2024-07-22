@@ -480,6 +480,37 @@ migration_chance = {
 			unemployment = 0.5
 		}
 	}
+	# DIRECT MIGRATION
+	group = {
+        modifier = {
+			factor = 1.5
+			location = { test = direct_migration_out }
+			country = {
+				has_country_flag = direct_migration
+				has_country_flag = direct_migration_primary
+			}
+			is_primary_culture = yes
+        }
+        modifier = {
+			factor = 1.5
+			location = { test = direct_migration_out }
+			country = {
+				has_country_flag = direct_migration
+				has_country_flag = direct_migration_accepted
+			}
+			is_accepted_culture = yes
+			is_primary_culture = no
+        }
+        modifier = {
+			factor = 2
+			location = { test = direct_migration_out }
+			country = {
+				has_country_flag = direct_migration
+				has_country_flag = direct_migration_nonaccepted
+			}
+			is_accepted_culture = no
+        }
+	}
 }
 
 #general colonial migration mtth, same for all pops
