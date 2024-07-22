@@ -727,7 +727,7 @@ country_event = {
 			limit = {
 				has_country_flag = civil_war_1
 			}
-			masquerade_as_nation = THIS
+			D51 = { masquerade_as_nation = THIS }
 			random_owned = { limit = { has_province_flag = revolt_origin } state_scope = { secede_province = D51 } }
 			if = { limit = { check_variable = { which = metropole_states value = 4 } }
 				random_owned = { limit = { test = can_join_civil_war } state_scope = { secede_province = D51 } }
@@ -774,7 +774,7 @@ country_event = {
 			limit = {
 				has_country_flag = civil_war_2
 			}
-			masquerade_as_nation = THIS
+			D52 = { masquerade_as_nation = THIS }
 			random_owned = { limit = { has_province_flag = revolt_origin } state_scope = { secede_province = D52 } }
 			if = { limit = { check_variable = { which = metropole_states value = 4 } }
 				random_owned = { limit = { test = can_join_civil_war } state_scope = { secede_province = D52 } }
@@ -820,7 +820,7 @@ country_event = {
 			limit = {
 				has_country_flag = civil_war_3
 			}
-			masquerade_as_nation = THIS
+			D53 = { masquerade_as_nation = THIS }
 			random_owned = { limit = { has_province_flag = revolt_origin } state_scope = { secede_province = D53 } }
 			if = { limit = { check_variable = { which = metropole_states value = 4 } }
 				random_owned = { limit = { test = can_join_civil_war } state_scope = { secede_province = D53 } }
@@ -866,7 +866,7 @@ country_event = {
 			limit = {
 				has_country_flag = civil_war_4
 			}
-			masquerade_as_nation = THIS
+			D54 = { masquerade_as_nation = THIS }
 			random_owned = { limit = { has_province_flag = revolt_origin } state_scope = { secede_province = D54 } }
 			if = { limit = { check_variable = { which = metropole_states value = 4 } }
 				random_owned = { limit = { test = can_join_civil_war } state_scope = { secede_province = D54 } }
@@ -912,7 +912,7 @@ country_event = {
 			limit = {
 				has_country_flag = civil_war_5
 			}
-			masquerade_as_nation = THIS
+			D55 = { masquerade_as_nation = THIS }
 			random_owned = { limit = { has_province_flag = revolt_origin } state_scope = { secede_province = D55 } }
 			if = { limit = { check_variable = { which = metropole_states value = 4 } }
 				random_owned = { limit = { test = can_join_civil_war } state_scope = { secede_province = D55 } }
@@ -958,7 +958,7 @@ country_event = {
 			limit = {
 				has_country_flag = civil_war_6
 			}
-			masquerade_as_nation = THIS
+			D56 = { masquerade_as_nation = THIS }
 			random_owned = { limit = { has_province_flag = revolt_origin } state_scope = { secede_province = D56 } }
 			if = { limit = { check_variable = { which = metropole_states value = 4 } }
 				random_owned = { limit = { test = can_join_civil_war } state_scope = { secede_province = D56 } }
@@ -1004,7 +1004,7 @@ country_event = {
 			limit = {
 				has_country_flag = civil_war_7
 			}
-			masquerade_as_nation = THIS
+			D57 = { masquerade_as_nation = THIS }
 			random_owned = { limit = { has_province_flag = revolt_origin } state_scope = { secede_province = D57 } }
 			if = { limit = { check_variable = { which = metropole_states value = 4 } }
 				random_owned = { limit = { test = can_join_civil_war } state_scope = { secede_province = D57 } }
@@ -1050,7 +1050,7 @@ country_event = {
 			limit = {
 				has_country_flag = civil_war_8
 			}
-			masquerade_as_nation = THIS
+			D58 = { masquerade_as_nation = THIS }
 			random_owned = { limit = { has_province_flag = revolt_origin } state_scope = { secede_province = D58 } }
 			if = { limit = { check_variable = { which = metropole_states value = 4 } }
 				random_owned = { limit = { test = can_join_civil_war } state_scope = { secede_province = D58 } }
@@ -1096,7 +1096,7 @@ country_event = {
 			limit = {
 				has_country_flag = civil_war_3
 			}
-			masquerade_as_nation = THIS
+			D59 = { masquerade_as_nation = THIS }
 			random_owned = { limit = { has_province_flag = revolt_origin } state_scope = { secede_province = D59 } }
 			if = { limit = { check_variable = { which = metropole_states value = 4 } }
 				random_owned = { limit = { test = can_join_civil_war } state_scope = { secede_province = D59 } }
@@ -1142,7 +1142,7 @@ country_event = {
 			limit = {
 				has_country_flag = civil_war_3
 			}
-			masquerade_as_nation = THIS
+			D60 = { masquerade_as_nation = THIS }
 			random_owned = { limit = { has_province_flag = revolt_origin } state_scope = { secede_province = D60 } }
 			if = { limit = { check_variable = { which = metropole_states value = 4 } }
 				random_owned = { limit = { test = can_join_civil_war } state_scope = { secede_province = D60 } }
