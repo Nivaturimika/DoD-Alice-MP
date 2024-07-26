@@ -251,12 +251,8 @@ default: break;
 // No province color is used here
 void main() {
 	vec4 terrain = get_land();
-	float is_land = terrain.a;
-	vec4 water = vec4(0.21, 0.38, 0.55, 1.0f);
-	water = get_water();
-
-	frag_color = mix(water, terrain, is_land);
-	frag_color.a = 1;
-
+	vec4 water = get_water();
+	frag_color.rgb = mix(water.rgb, terrain.rgb, min(1.f, floor(terrain.a + 0.5f)));
+	frag_color.a = 1.f;
 	frag_color = gamma_correct(frag_color);
 }
